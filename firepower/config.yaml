@@ -1,247 +1,274 @@
 hardware:
   platform: fast
-  driverboards:
-    - fast:io-1
-    - fast:io-2
-  leds:
-    - fast:exp-48
-    - fast:exp-b4
 
+fast:
+  net:
+    debug: false
+    port: auto
+    controller: neuron
+    io_loop:
+      io_pf_left:
+        model: FP-I/O-1616
+        order: 1
+      io_pf_right:
+        model: FP-I/O-3208
+        order: 2
+      io_cabinet:
+        model: FP-I/O-0024
+        order: 3
+
+  exp:
+    debug: false
+    port: auto
+    boards:
+      playfield_exp:
+        model: FP-EXP-0071
+
+  exp_int:
+    debug: false
+    port: auto
+    boards:
+      Neuron_exp:
+        model: FP-EXP-2000
+
+mpf:
+  report_crashes: never
+    
 balls_installed: 3
 
 switches:
-  trough_ball_3:
-    number: fast:io-2-41
+  sw_trough_ball_3:
+    number: 2-41
     type: NO
     tags: trough
-  left_upper_bumper:
-    number: fast:io-1-2
+  sw_left_upper_bumper:
+    number: 1-2
     type: NO
     tags: target
-  left_center_bumper:
-    number: fast:io-1-3
+  sw_left_center_bumper:
+    number: 1-3
     type: NO
     tags: target
-  lock_1_(left):
-    number: fast:io-1-4
+  sw_lock_1_(left):
+    number: 1-4
     type: NO
     tags: lock
-  left_lower_bumper:
-    number: fast:io-1-5
+  sw_left_lower_bumper:
+    number: 1-5
     type: NO
     tags: target
-  star_1_(left):
-    number: fast:io-1-6
+  sw_star_1_(left):
+    number: 1-6
     type: NO
     tags: rollover
-  shooter_trough:
-    number: fast:io-1-7
+  sw_shooter_trough:
+    number: 1-7
     type: NO
     tags: shooter_lane
-  left_out_lane_/_"sheild":
-    number: fast:io-1-8
+  sw_left_out_lane_/_sheild:
+    number: 1-8
     type: NO
     tags: playfield
-  left_return_lane:
-    number: fast:io-1-9
+  sw_left_return_lane:
+    number: 1-9
     type: NO
     tags: playfield
-  left_slingshot:
-    number: fast:io-1-10
+  sw_left_slingshot:
+    number: 1-10
     type: NO
     tags: target
-  left_flipper_eos:
-    number: fast:io-1-11
+  sw_left_flipper_eos:
+    number: 1-11
     type: NO
     tags: EOS
-  outhole:
-    number: fast:io-1-12
+  sw_outhole:
+    number: 1-12
     type: NO
     tags: drain
-  lane_"f":
-    number: fast:io-1-16
+  sw_lane_f:
+    number: 1-16
     type: NO
     tags: playfield
-  lane_"i":
-    number: fast:io-1-17
+  sw_lane_i:
+    number: 1-17
     type: NO
     tags: playfield
-  lane_"r":
-    number: fast:io-1-18
+  sw_lane_r:
+    number: 1-18
     type: NO
     tags: playfield
-  lane_"e":
-    number: fast:io-1-19
+  sw_lane_e:
+    number: 1-19
     type: NO
     tags: playfield
-  lock_3_(top):
-    number: fast:io-1-20
+  sw_lock_3_(top):
+    number: 1-20
     type: NO
     tags: lock
-  lock_2_(right):
-    number: fast:io-1-21
+  sw_lock_2_(right):
+    number: 1-21
     type: NO
     tags: lock
-  arrow_"6":
-    number: fast:io-1-24
+  sw_arrow_6:
+    number: 1-24
     type: NO
     tags: target
-  arrow_"5":
-    number: fast:io-1-25
+  sw_arrow_5:
+    number: 1-25
     type: NO
     tags: target
-  arrow_"4":
-    number: fast:io-1-26
+  sw_arrow_4:
+    number: 1-26
     type: NO
     tags: target
-  star_2_(right):
-    number: fast:io-1-27
+  sw_star_2_(right):
+    number: 1-27
     type: NO
     tags: playfield
-  pop_bumper_2:
-    number: fast:io-1-28
+  sw_pop_bumper_2:
+    number: 1-28
     type: NO
     tags: pop_bumper
-  pop_bumper_4:
-    number: fast:io-1-29
+  sw_pop_bumper_4:
+    number: 1-29
     type: NO
     tags: pop_bumper
-  pop_bumper_1:
-    number: fast:io-1-30
+  sw_pop_bumper_1:
+    number: 1-30
     type: NO
     tags: pop_bumper
-  pop_bumper_3:
-    number: fast:io-1-31
+  sw_pop_bumper_3:
+    number: 1-31
     type: NO
     tags: pop_bumper
-  right_upper_bumper:
-    number: fast:io-2-32
+  sw_right_upper_bumper:
+    number: 2-32
     type: NO
     tags: target
-  power_1:
-    number: fast:io-2-33
+  sw_power_1:
+    number: 2-33
     type: NO
     tags: target
-  power_2:
-    number: fast:io-2-34
+  sw_power_2:
+    number: 2-34
     type: NO
     tags: target
-  power_3:
-    number: fast:io-2-35
+  sw_power_3:
+    number: 2-35
     type: NO
     tags: target
-  right_lower_bumper:
-    number: fast:io-2-36
+  sw_right_lower_bumper:
+    number: 2-36
     type: NO
     tags: target
-  right_slingshot:
-    number: fast:io-2-37
+  sw_right_slingshot:
+    number: 2-37
     type: NO
     tags: slingshot
-  right_out_lane:
-    number: fast:io-2-38
+  sw_right_out_lane:
+    number: 2-38
     type: NO
     tags: playfield
-  right_return_lane:
-    number: fast:io-2-39
+  sw_right_return_lane:
+    number: 2-39
     type: NO
     tags: playfield
-  trough_ball_1:
-    number: fast:io-2-40
+  sw_trough_ball_1:
+    number: 2-40
     type: NO
     tags: trough
-  trough_ball_2:
-    number: fast:io-2-42
+  sw_trough_ball_2:
+    number: 2-42
     type: NO
     tags: trough
-  right_flipper_eos:
-    number: fast:io-2-43
+  sw_right_flipper_eos:
+    number: 2-43
     type: NO
     tags: eos
-  arrow_"3":
-    number: fast:io-2-44
+  sw_arrow_3:
+    number: 2-44
     type: NO
     tags: target
-  arrow_"2":
-    number: fast:io-2-45
+  sw_arrow_2:
+    number: 2-45
     type: NO
     tags: target
-  arrow_"1":
-    number: fast:io-2-46
+  sw_arrow_1:
+    number: 2-46
     type: NO
     tags: target
-  start_button:
-    number: fast:io-2-56
+  sw_start_button:
+    number: 2-56
     type: NO
     tags: Start
-  left_flipper:
-    number: fast:io-2-57
+  sw_left_flipper:
+    number: 2-57
     type: NO
     tags: flipper
-  right_flipper:
-    number: fast:io-2-65
+  sw_right_flipper:
+    number: 2-65
     type: NO
     tags: flipper
 
 coils:
-  shield_kicker:
-    number: fast:io-1-0
+  c_shield_kicker:
+    number: 1-0
     default_pulse_ms: 20
-  left_flipper:
-    number: fast:io-1-1
+  c_left_flipper:
+    number: 1-1
     default_pulse_ms: 20
-  left_flipper_hold:
-    number: fast:io-1-2
+  c_left_flipper_hold:
+    number: 1-2
     hold_power: 0.20
-  left_slingshot:
-    number: fast:io-1-3
+  c_left_slingshot:
+    number: 1-3
     default_pulse_ms: 20
-  lock_1_eject:
-    number: fast:io-1-4
+  c_lock_1_eject:
+    number: 1-4
     default_pulse_ms: 20
-  pop_bumper_2:
-    number: fast:io-1-5
+  c_pop_bumper_2:
+    number: 2-5
     default_pulse_ms: 20
-  pop_bumper_1:
-    number: fast:io-1-6
+  c_pop_bumper_1:
+    number: 2-6
     default_pulse_ms: 20
-  pop_bumper_3:
-    number: fast:io-1-7
+  c_pop_bumper_3:
+    number: 2-7
     default_pulse_ms: 20
-  pop_bumper_4:
-    number: fast:io-1-23
+  c_pop_bumper_4:
+    number: 2-23
     default_pulse_ms: 20
-  outhole_eject:
-    number: fast:io-1-16
+  c_outhole_eject:
+    number: 2-16
     default_pulse_ms: 20
-  ball_trough_eject:
-    number: fast:io-1-17
+  c_ball_trough_eject:
+    number: 2-17
     default_pulse_ms: 20
-  right_flipper:
-    number: fast:io-1-18
+  c_right_flipper:
+    number: 2-18
     default_pulse_ms: 20
-  right_flipper_hold:
-    number: fast:io-1-19
+  c_right_flipper_hold:
+    number: 2-19
     hold_power: 0.20
-  right_slingshot:
-    number: fast:io-1-20
+  c_right_slingshot:
+    number: 2-20
     default_pulse_ms: 20
-  lock_2_eject:
-    number: fast:io-1-21
+  c_lock_2_eject:
+    number: 2-21
     default_pulse_ms: 20
-  lock_3_eject:
-    number: fast:io-1-22
+  c_lock_3_eject:
+    number: 2-22
     default_pulse_ms: 20
 
 flippers:
-  left_flipper:
+  flipper_left:
     type: main/hold
     switch: left_flipper
     eos_switch: eos_switch_placeholder
     main_coil: left_flipper
     hold_coil: left_flipper_hold
     allow_enable: true
-  right_flipper:
+  flipper_right:
     type: main/hold
     switch: right_flipper
     eos_switch: eos_switch_placeholder
@@ -251,336 +278,320 @@ flippers:
 
 autofire_coils:
   left_slingshot:
-    coil: left_slingshot
-    switch: left_slingshot
+    coil: c_left_slingshot
+    switch: sw_left_slingshot
     cooldown_ms: 50
   pop_bumper_2:
-    coil: pop_bumper_2
-    switch: pop_bumper_1
+    coil: c_pop_bumper_2
+    switch: sw_pop_bumper_1
     cooldown_ms: 50
   pop_bumper_1:
-    coil: pop_bumper_1
-    switch: pop_bumper_2
+    coil: c_pop_bumper_1
+    switch: sw_pop_bumper_2
     cooldown_ms: 50
   pop_bumper_3:
-    coil: pop_bumper_3
-    switch: pop_bumper_3
+    coil: c_pop_bumper_3
+    switch: sw_pop_bumper_3
     cooldown_ms: 50
   pop_bumper_4:
-    coil: pop_bumper_4
-    switch: pop_bumper_4
+    coil: c_pop_bumper_4
+    switch: sw_pop_bumper_4
     cooldown_ms: 50
   right_slingshot:
-    coil: right_slingshot
-    switch: right_slingshot
+    coil: c_right_slingshot
+    switch: sw_right_slingshot
     cooldown_ms: 50
 
 lights:
-  player_1_score_indicator:
+  l_player_1_score_indicator:
     number: fast:exp-48-0.0
     subtype: rgb
     color_correction_profile: fast_grb
-  high_score_indicator:
+  l_high_score_indicator:
     number: fast:exp-48-1.0
     subtype: rgb
     color_correction_profile: fast_grb
-  player_2_score_indicator:
+  l_player_2_score_indicator:
     number: fast:exp-48-2.0
     subtype: rgb
     color_correction_profile: fast_grb
-  player_3_score_indicator:
+  l_player_3_score_indicator:
     number: fast:exp-48-3.0
     subtype: rgb
     color_correction_profile: fast_grb
-  player_4_score_indicator:
+  l_player_4_score_indicator:
     number: fast:exp-48-4.0
     subtype: rgb
     color_correction_profile: fast_grb
-  tilt:
+  l_tilt:
     number: fast:exp-48-5.0
     subtype: rgb
     color_correction_profile: fast_grb
-  player_4_indicator:
+  l_player_4_indicator:
     number: fast:exp-48-6.0
     subtype: rgb
     color_correction_profile: fast_grb
-  player_3_indicator:
+  l_player_3_indicator:
     number: fast:exp-48-7.0
     subtype: rgb
     color_correction_profile: fast_grb
-  player_2_indicator:
+  l_player_2_indicator:
     number: fast:exp-48-8.0
     subtype: rgb
     color_correction_profile: fast_grb
-  player_1_indicator:
+  l_player_1_indicator:
     number: fast:exp-48-9.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "fire_again!!":
+  l_fire_again:
     number: fast:exp-48-nan
     subtype: rgb
     color_correction_profile: fast_grb
-  "match":
+  l_match:
     number: fast:exp-48-12.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "ball_in_play":
+  l_ball_in_play:
     number: fast:exp-48-13.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "game_over":
+  l_game_over:
     number: fast:exp-48-nan
     subtype: rgb
     color_correction_profile: fast_grb
-  "fire"_lane_1000_when_lit:
+  l_fire_lane_1000_when_lit:
     number: fast:exp-b4-0.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  lock_1_(left)_star_rollover:
+  l_lock_1_(left)_star_rollover:
     number: fast:exp-b4-1.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  lock_1_"lock"_arrow:
+  l_lock_1_lock_arrow:
     number: fast:exp-b4-2.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  shield_on_when_lit:
+  l_shield_on_when_lit:
     number: fast:exp-b4-3.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  left_ball_return_lane_3000_when_lit:
+  l_left_ball_return_lane_3000_when_lit:
     number: fast:exp-b4-4.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  left_outlane_"special":
+  l_left_outlane_special:
     number: fast:exp-b4-5.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  left_outlane_illumination_left:
+  l_left_outlane_illumination_left:
     number: fast:exp-b4-6.0
     subtype: rgb
     color_correction_profile: fast_grb
-  left_outlane_illumination_right:
+  l_left_outlane_illumination_right:
     number: fast:exp-b4-7.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "2x"_bonus_multiplier:
+  l_2x_bonus_multiplier:
     number: fast:exp-b4-8.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "3x"_bonus_multiplier:
+  l_3x_bonus_multiplier:
     number: fast:exp-b4-9.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "fire"_lamp_3:
+  l_fire_lamp_3:
     number: fast:exp-b4-10.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "fire"_lamp_2:
+  l_fire_lamp_2:
     number: fast:exp-b4-11.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "fire"_lamp_1:
+  l_fire_lamp_1:
     number: fast:exp-b4-12.0
     subtype: rgb
     color_correction_profile: fast_grb
-  arrow_"1":
+  l_arrow_1:
     number: fast:exp-b4-32.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  arrow_"2":
+  l_arrow_2:
     number: fast:exp-b4-33.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  arrow_"3":
+  l_arrow_3:
     number: fast:exp-b4-34.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  arrow_"4":
+  l_arrow_4:
     number: fast:exp-b4-35.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  arrow_"5":
+  l_arrow_5:
     number: fast:exp-b4-36.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  arrow_"6":
+  l_arrow_6:
     number: fast:exp-b4-37.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"20":
+  l_bonus_20:
     number: fast:exp-b4-38.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"10":
+  l_bonus_10:
     number: fast:exp-b4-39.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"9":
+  l_bonus_9:
     number: fast:exp-b4-40.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"8":
+  l_bonus_8:
     number: fast:exp-b4-41.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"7":
+  l_bonus_7:
     number: fast:exp-b4-42.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"6":
+  l_bonus_6:
     number: fast:exp-b4-43.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"5":
+  l_bonus_5:
     number: fast:exp-b4-44.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"4":
+  l_bonus_4:
     number: fast:exp-b4-45.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"3":
+  l_bonus_3:
     number: fast:exp-b4-46.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"2":
+  l_bonus_2:
     number: fast:exp-b4-47.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  bonus_"1":
+  l_bonus_1:
     number: fast:exp-b4-48.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "fire_again":
+  l_fire_again:
     number: fast:exp-b4-49.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  lock_2_(right)_star_rollover:
+  l_lock_2_(right)_star_rollover:
     number: fast:exp-b4-64.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  lock_2_"lock"_arrow:
+  l_lock_2_lock_arrow:
     number: fast:exp-b4-65.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  right_target_indicator_1:
+  l_right_target_indicator_1:
     number: fast:exp-b4-66.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  right_target_indicator_2:
+  l_right_target_indicator_2:
     number: fast:exp-b4-67.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  right_target_indicator_3:
+  l_right_target_indicator_3:
     number: fast:exp-b4-68.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  extra_ball_arrow:
+  l_extra_ball_arrow:
     number: fast:exp-b4-69.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  right_outlane_"special":
+  l_right_outlane_special:
     number: fast:exp-b4-70.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  right_return_lane_100_when_lit:
+  l_right_return_lane_100_when_lit:
     number: fast:exp-b4-71.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "power"_lamp_3:
+  l_power_lamp_3:
     number: fast:exp-b4-72.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "power"_lamp_2:
+  l_power_lamp_2:
     number: fast:exp-b4-73.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "power"_lamp_1:
+  l_power_lamp_1:
     number: fast:exp-b4-74.0
     subtype: rgb
     color_correction_profile: fast_grb
-  right_outlane_illumination_left:
+  l_right_outlane_illumination_left:
     number: fast:exp-b4-75.0
     subtype: rgb
     color_correction_profile: fast_grb
-  right_outlane_illumination_right:
+  l_right_outlane_illumination_right:
     number: fast:exp-b4-76.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "5x"_bonus_multiplier:
+  l_5x_bonus_multiplier:
     number: fast:exp-b4-77.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "4x"_bonus_multiplier:
+  l_4x_bonus_multiplier:
     number: fast:exp-b4-78.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "f":
+  l_f:
     number: fast:exp-b4-96.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  lock_3_(top)_arrow:
+  l_lock_3_(top)_arrow:
     number: fast:exp-b4-97.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "i":
+  l_i:
     number: fast:exp-b4-98.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "r":
+  l_r:
     number: fast:exp-b4-99.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "e":
+  l_e:
     number: fast:exp-b4-100.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "fire"_lane_guide_4:
+  l_fire_lane_guide_4:
     number: fast:exp-b4-101.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "fire"_lane_guide_3:
+  l_fire_lane_guide_3:
     number: fast:exp-b4-102.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "target_scores_1000":
+  l_target_scores_1000:
     number: fast:exp-b4-103.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  "fire"_lane_guide_2:
+  l_fire_lane_guide_2:
     number: fast:exp-b4-104.0
     subtype: rgb
     color_correction_profile: fast_grb
-  "fire"_lane_guide_1:
+  l_fire_lane_guide_1:
     number: fast:exp-b4-105.0
     subtype: rgb
     color_correction_profile: fast_grb
-  target_score_10,000:
+  l_target_score_10,000:
     number: fast:exp-b4-106.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  target_score_30,000:
+  l_target_score_30,000:
     number: fast:exp-b4-107.0
     subtype: rgb
     color_correction_profile: fast_rgb
-  target_score_50,000:
+  l_target_score_50,000:
     number: fast:exp-b4-108.0
-    subtype: rgb
-    color_correction_profile: fast_rgb
-  nan:
-    number: fast:exp-b4-nan
-    subtype: rgb
-    color_correction_profile: fast_rgb
-  nan:
-    number: fast:exp-b4-nan
-    subtype: rgb
-    color_correction_profile: fast_rgb
-  nan:
-    number: fast:exp-b4-nan
-    subtype: rgb
-    color_correction_profile: fast_rgb
-  nan:
-    number: fast:exp-b4-nan
     subtype: rgb
     color_correction_profile: fast_rgb

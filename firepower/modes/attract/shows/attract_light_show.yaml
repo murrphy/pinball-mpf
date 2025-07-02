@@ -1,0 +1,132 @@
+#show_version=6
+##! show: attract_light_show
+- duration: 1
+  lights:
+    l_bonus_1: AntiqueWhite
+- duration: 1
+  lights:
+    l_bonus_2: AntiqueWhite
+- duration: 1
+  lights:
+    l_bonus_3: AntiqueWhite
+    l_bonus_multipliers: green
+- duration: 1
+  lights:
+    l_bonus_4: AntiqueWhite
+- duration: 1
+  lights:
+    l_bonus_1: off
+    l_bonus_4: AntiqueWhite
+- duration: 1
+  lights: 
+    l_bonus_2: off
+    l_bonus_5: AntiqueWhite
+- duration: 1
+  lights:
+    l_bonus_3: off
+    l_bonus_6: AntiqueWhite
+- duration: 1
+  lights:
+    l_bonus_4: off
+    l_bonus_7: AntiqueWhite
+- duration: 1
+  lights:
+    l_bonus_5: off
+    l_bonus_8: AntiqueWhite
+- duration: 1
+  lights:
+    l_bonus_6: off
+    l_bonus_9: AntiqueWhite
+- duration: 1
+  lights:
+    l_bonus_7: off
+    l_bonus_10: AntiqueWhite
+    l_lock_1_star_rollover: red
+    l_lock_2_star_rollover: red
+    l_fire: red
+    l_power: 0
+    l_arrow_1: orange
+    l_arrow_2: 0
+    l_arrow_3: 0
+    l_arrow_4: 0
+    l_arrow_5: 0
+    l_arrow_6: orange
+    l_target_score_10000: 0
+    l_target_score_30000: 0
+    l_target_score_50000: 0
+    l_target_score_1000: 0
+- duration: 1
+  lights:
+    l_bonus_8: off
+    l_bonus_20: AntiqueWhite
+    l_lock_1_star_rollover: 0
+    l_lock_2_star_rollover: 0
+    l_fire: 0
+    l_power: blue
+    l_arrow_1: 0
+    l_arrow_2: orange
+    l_arrow_5: orange
+    l_arrow_6: 0
+- duration: 1
+  lights:
+    l_bonus_9: off
+    l_lock_1_star_rollover: red
+    l_lock_2_star_rollover: red
+    l_fire: red
+    l_power: 0
+    l_arrow_2: 0
+    l_arrow_3: orange
+    l_arrow_4: orange
+    l_arrow_5: 0
+- duration: 1
+  lights:
+    l_bonus_10: off
+    l_bonus_20: off
+    l_lock_1_star_rollover: 0
+    l_lock_2_star_rollover: 0
+    l_arrow_3: 0
+    l_arrow_4: 0
+    l_fire: 0
+    l_power: blue
+    l_target_score_10000: red
+    l_target_score_30000: 0
+    l_target_score_50000: 0
+    l_target_score_1000: 0
+- duration: 1
+  lights:
+    l_lock_1_star_rollover: red
+    l_lock_2_star_rollover: red
+    l_fire: red
+    l_power: 0
+    l_target_score_10000: 0
+    l_target_score_30000: red
+- duration: 1
+  lights:
+    l_lock_1_star_rollover: 0
+    l_lock_2_star_rollover: 0
+    l_fire: 0
+    l_power: blue
+    l_target_score_30000: 0
+    l_target_score_50000: red
+- duration: 1
+  lights:
+    l_lock_1_star_rollover: 0
+    l_lock_2_star_rollover: 0
+    l_fire: red
+    l_power: blue
+    l_target_score_50000: 0
+    l_target_score_1000: blue
+- duration: 1
+  lights:
+    l_lock_1_star_rollover: 0
+    l_lock_2_star_rollover: 0
+    l_fire: 0
+    l_power: 0
+    l_target_score_1000: 0
+- duration: 1
+  lights:
+    l_lock_1_star_rollover: 0
+    l_lock_2_star_rollover: 0
+    l_fire: red
+    l_power: blue
+    l_target_score_1000: white

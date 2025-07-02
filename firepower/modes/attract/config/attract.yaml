@@ -1,0 +1,14 @@
+#config_version=6
+##! show: attract_display_loop
+#! - duration: .1
+#!   events: ok_super
+##! mode: attract
+
+show_player:
+  mode_attract_started: 
+    attract_light_show:
+      speed: 4
+##! test
+#! mock_event ok_super
+#! advance_time_and_run .1
+#! assert_event_called ok_super

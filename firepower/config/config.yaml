@@ -6,7 +6,6 @@ fast:
   net:
     debug: true
     port: /dev/ttyAMA3
-    #port: auto
     controller: neuron
     io_loop:
       cabinet:
@@ -22,7 +21,6 @@ fast:
   exp:
     debug: false
     port: /dev/ttyAMA5
-    #port: auto
     boards:
       playfield:
         model: FP-EXP-0071
@@ -30,7 +28,6 @@ fast:
   exp_int:
     debug: false
     port: /dev/ttyAMA4
-    #port: auto
     boards:
       backbox:
         model: FP-EXP-2000
@@ -53,250 +50,260 @@ ball_devices:
     tags: drain
   bd_trough:
     ball_switches: s_trough1, s_trough2, s_trough3
-    eject_coil: c_trough_release
+    eject_coil: c_trough_eject
     eject_targets: bd_plunger_lane
     tags: home, trough
     eject_timeouts: 3s
   bd_plunger_lane:
     ball_switches: s_plunger
     mechanical_eject: true
+  bd_lock1:
+    ball_switches: s_lock_1
+    eject_coil: c_lock_1_eject
+    eject_timeouts: 750ms
+  bd_lock2:
+    ball_switches: s_lock_2
+    eject_coil: c_lock_2_eject
+    eject_timeouts: 750ms
+  bd_lock3:
+    ball_switches: s_lock_3
+    eject_coil: c_lock_3_eject
+    eject_timeouts: 750ms
 
 playfields:
   playfield:
     default_source_device: bd_plunger_lane
     tags: default
 
+game:
+  balls_per_game: 5
+
+# segment_displays:
+#   number: 1
+#   default_color: blue
+#   default_transition_update_hz: 30
+#   integrated_commas: true
+#   integrated_dots: false
+#   size: 7
+
+modes:
+  - base
+
 switches:
-  s_drain:
-    number: playfield1-0
-    type: NO
-    tags: drain
-  s_trough1:
-    number: playfield1-9
-    type: NO
-  s_trough2:
-    number: playfield1-11
-    type: NO
-  s_trough3:
-    number: playfield1-10
-    type: NO
-  s_plunger:
-    number: playfield2-5
-    type: NO
-  s_left_upper_bumper:
-    number: playfield2-0
-    type: NO
-    tags: target
-  s_left_center_bumper:
-    number: playfield2-1
-    type: NO
-    tags: target
-  s_lock_1:
-    number: playfield2-2
-    type: NO
-    tags: lock
-  s_left_lower_bumper:
-    number: playfield2-3
-    type: NO
-    tags: target
-  s_star_1:
-    number: playfield2-4
-    type: NO
-    tags: rollover
-  s_left_out_lane_shield:
-    number: playfield2-6
-    type: NO
-    tags: playfield
-  s_left_return_lane:
-    number: playfield2-7
-    type: NO
-    tags: playfield
-  s_left_slingshot:
-    number: playfield2-8
-    type: NO
-    tags: target
-  s_left_flipper_eos:
-    number: playfield2-9
-    type: NO
-    tags: EOS
-  s_lane_f:
-    number: playfield2-10
-    type: NO
-    tags: playfield
-  s_lane_i:
-    number: playfield2-11
-    type: NO
-    tags: playfield
-  s_lane_r:
-    number: playfield2-12
-    type: NO
-    tags: playfield
-  s_lane_e:
-    number: playfield2-13
-    type: NO
-    tags: playfield
-  s_lock_3:
-    number: playfield2-14
-    type: NO
-    tags: lock
-  s_lock_2:
-    number: playfield2-15
-    type: NO
-    tags: lock
-  s_arrow_6:
-    number: playfield2-16
-    type: NO
-    tags: target
-  s_arrow_5:
-    number: playfield2-17
-    type: NO
-    tags: target
-  s_arrow_4:
-    number: playfield2-18
-    type: NO
-    tags: target
-  s_star_2:
-    number: playfield2-19
-    type: NO
-    tags: playfield
-  s_pop_bumper_2:
-    number: playfield2-20
-    type: NO
-    tags: pop_bumper
-  s_pop_bumper_4:
-    number: playfield2-21
-    type: NO
-    tags: pop_bumper
-  s_pop_bumper_1:
-    number: playfield2-22
-    type: NO
-    tags: pop_bumper
-  s_pop_bumper_3:
-    number: playfield2-23
-    type: NO
-    tags: pop_bumper
-  s_right_upper_bumper:
-    number: playfield1-1
-    type: NO
-    tags: target
-  s_power_1:
-    number: playfield1-2
-    type: NO
-    tags: target
-  s_power_2:
-    number: playfield1-3
-    type: NO
-    tags: target
-  s_power_3:
-    number: playfield1-4
-    type: NO
-    tags: target
-  s_right_lower_bumper:
-    number: playfield1-5
-    type: NO
-    tags: target
-  s_right_slingshot:
-    number: playfield1-6
-    type: NO
-    tags: slingshot
-  s_right_out_lane:
-    number: playfield1-7
-    type: NO
-    tags: playfield
-  s_right_return_lane:
-    number: playfield1-8
-    type: NO
-    tags: playfield
-  s_right_flipper_eos:
-    number: playfield1-12
-    type: NO
-    tags: eos
-  s_arrow_3:
-    number: playfield1-13
-    type: NO
-    tags: target
-  s_arrow_2:
-    number: playfield1-14
-    type: NO
-    tags: target
-  s_arrow_1:
-    number: playfield1-15
-    type: NO
-    tags: target
   s_start_button:
-    number: cabinet-11
+    number: cabinet-8
     type: NO
-    tags: Start
+    tags: start
   s_left_flipper:
     number: cabinet-10
     type: NO
-    tags: flipper
   s_right_flipper:
     number: cabinet-18
     type: NO
-    tags: flipper
+  s_spinner:
+    number: playfield1-1
+    type: NO
+    tags: playfield_active
+  s_left_upper_bumper:
+    number: playfield1-2
+    type: NO
+    tags: playfield_active
+  s_left_center_bumper:
+    number: playfield1-3
+    type: NO
+    tags: playfield_active
+  s_lock_1:
+    number: playfield1-4
+    type: NO
+  s_left_lower_bumper:
+    number: playfield1-5
+    type: NO
+    tags: playfield_active
+  s_star_1:
+    number: playfield1-6
+    type: NO
+    tags: playfield_active
+  s_plunger:
+    number: playfield1-7
+    type: NO
+  s_left_out_lane:
+    number: playfield1-8
+    type: NO
+    tags: playfield_active
+  s_left_return_lane:
+    number: playfield1-9
+    type: NO
+    tags: playfield_active
+  s_left_slingshot:
+    number: playfield1-10
+    type: NO
+  s_left_flipper_eos:
+    number: playfield1-11
+    type: NO
+  s_drain:
+    number: playfield1-12
+    type: NO
+  s_lane_f:
+    number: playfield2-0
+    type: NO
+    tags: playfield_active
+  s_lane_i:
+    number: playfield2-1
+    type: NO
+    tags: playfield_active
+  s_lane_r:
+    number: playfield2-2
+    type: NO
+    tags: playfield_active
+  s_lane_e:
+    number: playfield2-3
+    type: NO
+    tags: playfield_active
+  s_lock_3:
+    number: playfield2-4
+    type: NO
+  s_lock_2:
+    number: playfield2-5
+    type: NO
+  s_arrow_6:
+    number: playfield2-8
+    type: NO
+    tags: playfield_active
+  s_arrow_5:
+    number: playfield2-9
+    type: NO
+    tags: playfield_active
+  s_arrow_4:
+    number: playfield2-10
+    type: NO
+    tags: playfield_active
+  s_star_2:
+    number: playfield2-11
+    type: NO
+    tags: playfield_active
+  s_pop_bumper_2:
+    number: playfield2-12
+    type: NO
+  s_pop_bumper_4:
+    number: playfield2-13
+    type: NO
+  s_pop_bumper_1:
+    number: playfield2-14
+    type: NO
+  s_pop_bumper_3:
+    number: playfield2-15
+    type: NO
+  s_right_upper_bumper:
+    number: playfield2-16
+    type: NO
+    tags: playfield_active
+  s_power_1:
+    number: playfield2-17
+    type: NO
+    tags: playfield_active
+  s_power_2:
+    number: playfield2-18
+    type: NO
+    tags: playfield_active
+  s_power_3:
+    number: playfield2-19
+    type: NO
+    tags: playfield_active
+  s_right_lower_bumper:
+    number: playfield2-20
+    type: NO
+    tags: playfield_active
+  s_right_slingshot:
+    number: playfield2-21
+    type: NO
+  s_right_out_lane:
+    number: playfield2-22
+    type: NO
+  s_right_return_lane:
+    number: playfield2-23
+    type: NO
+    tags: playfield_active
+  s_trough3:
+    number: playfield2-24
+    type: NO
+  s_trough1:
+    number: playfield2-25
+    type: NO
+  s_trough2:
+    number: playfield2-26
+    type: NO
+  s_right_flipper_eos:
+    number: playfield2-27
+    type: NO
+  s_arrow_3:
+    number: playfield2-28
+    type: NO
+    tags: playfield_active
+  s_arrow_2:
+    number: playfield2-29
+    type: NO
+    tags: playfield_active
+  s_arrow_1:
+    number: playfield2-30
+    type: NO
+    tags: playfield_active
+  s_top_target:
+    number: playfield2-31
+    type: NO
+    tags: playfield_active
 
 coils:
   c_shield_kicker:
-    number: playfield2-0
+    number: playfield1-0
     default_pulse_ms: 20
   c_left_flipper:
-    number: playfield2-1
+    number: playfield1-1
     default_pulse_ms: 20
   c_left_flipper_hold:
-    number: playfield2-2
+    number: playfield1-2
     default_pulse_ms: 10
     default_hold_power: .2
   c_left_slingshot:
-    number: playfield2-3
-    default_pulse_ms: 20
-  c_lock_1_eject:
-    number: playfield2-4
-    default_pulse_ms: 20
-  c_pop_bumper_2:
-    number: playfield1-0
-    default_pulse_ms: 20
-  c_pop_bumper_1:
-    number: playfield1-1
-    default_pulse_ms: 20
-  c_pop_bumper_3:
-    number: playfield1-2
-    default_pulse_ms: 20
-  c_pop_bumper_4:
     number: playfield1-3
     default_pulse_ms: 20
-  c_drain_eject:
+  c_lock_1_eject:
     number: playfield1-4
     default_pulse_ms: 20
-    allow_enable: true
-  c_trough_release:
+  c_pop_bumper_2:
     number: playfield1-5
     default_pulse_ms: 20
-  c_right_flipper:
+  c_pop_bumper_1:
     number: playfield1-6
     default_pulse_ms: 20
-  c_right_flipper_hold:
+  c_pop_bumper_3:
     number: playfield1-7
+    default_pulse_ms: 20
+  c_drain_eject:
+    number: playfield2-0
+    default_pulse_ms: 20
+    default_pulse_power: .5
+  c_trough_eject:
+    number: playfield2-1
+    default_pulse_ms: 20
+  c_right_flipper:
+    number: playfield2-2
+    default_pulse_ms: 20
+  c_right_flipper_hold:
+    number: playfield2-3
     default_pulse_ms: 10
     default_hold_power: .2
   c_right_slingshot:
-    number: playfield1-8
+    number: playfield2-4
     default_pulse_ms: 20
   c_lock_2_eject:
-    number: playfield1-9
+    number: playfield2-5
     default_pulse_ms: 20
   c_lock_3_eject:
-    number: playfield1-10
+    number: playfield2-6
     default_pulse_ms: 20
-dual_wound_coils:
-  c_dw_left_flipper:
-    hold_coil: c_left_flipper_hold
-    main_coil: c_left_flipper
-    eos_switch: s_left_flipper_eos
-  c_dw_right_flipper:
-    hold_coil: c_right_flipper_hold
-    main_coil: c_right_flipper
-    eos_switch: s_right_flipper_eos
+  c_pop_bumper_4:
+    number: playfield2-7
+    default_pulse_ms: 20
   
 flippers:
   flipper_left:
@@ -304,23 +311,18 @@ flippers:
     hold_coil: c_left_flipper_hold
     activation_switch: s_left_flipper
     eos_switch: s_left_flipper_eos
-    enable_events: machine_reset_phase_3
   flipper_right:
     main_coil: c_right_flipper
     hold_coil: c_right_flipper_hold
     activation_switch: s_right_flipper
     eos_switch: s_right_flipper_eos
-    enable_events: machine_reset_phase_3
 
 autofire_coils:
-  left_slingshot:
-    coil: c_left_slingshot
-    switch: s_left_slingshot
-  pop_bumper_2:
-    coil: c_pop_bumper_2
-    switch: s_pop_bumper_1
   pop_bumper_1:
     coil: c_pop_bumper_1
+    switch: s_pop_bumper_1
+  pop_bumper_2:
+    coil: c_pop_bumper_2
     switch: s_pop_bumper_2
   pop_bumper_3:
     coil: c_pop_bumper_3
@@ -328,6 +330,9 @@ autofire_coils:
   pop_bumper_4:
     coil: c_pop_bumper_4
     switch: s_pop_bumper_4
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
   right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
@@ -552,6 +557,3 @@ lights:
   l_target_score_50,000:
     number: playfield-3-28
     type: rgb
-
-game:
-  balls_per_game: 5

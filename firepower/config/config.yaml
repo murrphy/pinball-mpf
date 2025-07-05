@@ -1,6 +1,9 @@
 #config_version=6
 hardware:
   platform: fast
+  driverboards: fast
+  coils: fast
+  segment_displays: fast
 
 fast:
   net:
@@ -18,6 +21,13 @@ fast:
         model: FP-I/O-3208
         order: 3
 
+  exp_int:
+    debug: false
+    port: /dev/ttyAMA4
+    boards:
+      backbox:
+        model: FP-EXP-2000
+
   exp:
     debug: false
     port: /dev/ttyAMA5
@@ -25,12 +35,6 @@ fast:
       playfield:
         model: FP-EXP-0071
 
-  exp_int:
-    debug: false
-    port: /dev/ttyAMA4
-    boards:
-      backbox:
-        model: FP-EXP-2000
   
   seg:
     port: /dev/ttyAMA2
@@ -76,18 +80,48 @@ playfields:
     tags: default
 
 game:
-  balls_per_game: 5
-
-# segment_displays:
-#   number: 1
-#   default_color: blue
-#   default_transition_update_hz: 30
-#   integrated_commas: true
-#   integrated_dots: false
-#   size: 7
+  balls_per_game: 1
 
 modes:
   - base
+
+segment_displays:
+  player1_display:
+    number: 0
+    size: 7
+    integrated_commas: true
+    update_method: replace
+  player2_display:
+    number: 1
+    size: 7
+    integrated_commas: true
+    update_method: replace
+  player3_display:
+    number: 2
+    size: 7
+    integrated_commas: true
+    update_method: replace
+  player4_display:
+    number: 3
+    size: 7
+    integrated_commas: true
+    update_method: replace
+  credit_ball_display:
+    number: 4
+    size: 6
+    update_method: replace
+
+info_lights:
+  tilt:
+    light: l_tilt
+  player_1:
+    light: l_player_1_indicator
+  player_2:
+    light: l_player_2_indicator
+  player_3:
+    light: l_player_3_indicator
+  player_4:
+    light: l_player_4_indicator
 
 switches:
   s_start_button:
@@ -253,57 +287,56 @@ switches:
     tags: playfield_active
 
 coils:
-  c_shield_kicker:
-    number: playfield1-0
-    default_pulse_ms: 20
+
   c_left_flipper:
     number: playfield1-1
-    default_pulse_ms: 20
+    default_pulse_ms: 9
   c_left_flipper_hold:
     number: playfield1-2
-    default_pulse_ms: 10
-    default_hold_power: .2
-  c_left_slingshot:
-    number: playfield1-3
-    default_pulse_ms: 20
-  c_lock_1_eject:
-    number: playfield1-4
-    default_pulse_ms: 20
-  c_pop_bumper_2:
-    number: playfield1-5
-    default_pulse_ms: 20
-  c_pop_bumper_1:
-    number: playfield1-6
-    default_pulse_ms: 20
-  c_pop_bumper_3:
-    number: playfield1-7
-    default_pulse_ms: 20
-  c_drain_eject:
-    number: playfield2-0
-    default_pulse_ms: 20
-    default_pulse_power: .5
-  c_trough_eject:
-    number: playfield2-1
-    default_pulse_ms: 20
+    allow_enable: true
   c_right_flipper:
     number: playfield2-2
-    default_pulse_ms: 20
+    default_pulse_ms: 9
   c_right_flipper_hold:
     number: playfield2-3
+    allow_enable: true
+
+  c_shield_kicker:
+    number: playfield1-0
     default_pulse_ms: 10
-    default_hold_power: .2
+  c_left_slingshot:
+    number: playfield1-3
+    default_pulse_ms: 9
   c_right_slingshot:
     number: playfield2-4
-    default_pulse_ms: 20
-  c_lock_2_eject:
-    number: playfield2-5
-    default_pulse_ms: 20
-  c_lock_3_eject:
-    number: playfield2-6
-    default_pulse_ms: 20
+    default_pulse_ms: 9
+  c_pop_bumper_1:
+    number: playfield1-6
+    default_pulse_ms: 10
+  c_pop_bumper_2:
+    number: playfield1-5
+    default_pulse_ms: 10
+  c_pop_bumper_3:
+    number: playfield1-7
+    default_pulse_ms: 10
   c_pop_bumper_4:
     number: playfield2-7
-    default_pulse_ms: 20
+    default_pulse_ms: 10
+  c_drain_eject:
+    number: playfield2-0
+    default_pulse_ms: 6
+  c_trough_eject:
+    number: playfield2-1
+    default_pulse_ms: 6
+  c_lock_1_eject:
+    number: playfield1-4
+    default_pulse_ms: 10
+  c_lock_2_eject:
+    number: playfield2-5
+    default_pulse_ms: 10
+  c_lock_3_eject:
+    number: playfield2-6
+    default_pulse_ms: 10
   
 flippers:
   flipper_left:
@@ -336,63 +369,95 @@ autofire_coils:
   right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
-
+light_settings:
+    default_fade_ms: 40
 lights:
   l_player_1_score_indicator:
     number: backbox-1-1
     type: grb
+    label: player active 1
+    default_on_color: F3C35F
   l_high_score_indicator:
     number: backbox-1-2
     type: grb
+    label: high score
+    default_on_color: F3C35F
   l_player_2_score_indicator:
     number: backbox-1-3
     type: grb
+    label: player active 2
+    default_on_color: F3C35F
   l_player_3_score_indicator:
     number: backbox-1-4
     type: grb
+    label: player active 3
+    default_on_color: F3C35F
   l_player_4_score_indicator:
     number: backbox-1-5
     type: grb
+    label: player active 4
+    default_on_color: F3C35F
   l_tilt:
     number: backbox-1-6
     type: grb
+    default_on_color: F3C35F
   l_player_4_indicator:
     number: backbox-1-7
     type: grb
+    default_on_color: F3C35F
   l_player_3_indicator:
     number: backbox-1-8
     type: grb
+    default_on_color: F3C35F
   l_player_2_indicator:
     number: backbox-1-9
     type: grb
+    default_on_color: F3C35F
   l_player_1_indicator:
     number: backbox-1-10
     type: grb
-  l_match:
+    default_on_color: F3C35F
+  l_fire_again_1:
     number: backbox-1-11
     type: grb
-  l_ball_in_play:
+    tags: t_fire_again
+    default_on_color: F3C35F
+  l_fire_again_2:
     number: backbox-1-12
     type: grb
-  l_game_over_1:
+    tags: t_fire_again
+    default_on_color: F3C35F
+  l_ball_in_play:
     number: backbox-1-14
     type: grb
-  l_game_over_2:
+    default_on_color: F3C35F
+  l_match:
+    number: backbox-1-13
+    type: grb
+    default_on_color: F3C35F
+  l_game_over_1:
     number: backbox-1-15
     type: grb
+    tags: t_game_over
+    default_on_color: F3C35F
+  l_game_over_2:
+    number: backbox-1-16
+    type: grb
+    tags: t_game_over
+    default_on_color: F3C35F
   l_fire_lane_1000_when_lit:
     number: playfield-1-1
     type: rgb
   l_lock_1_star_rollover:
     number: playfield-1-2
     type: rgb
-  l_lock_1_lock_arrow:
+  l_lock_1_arrow:
     number: playfield-1-3
     type: rgb
   l_shield_on_when_lit:
     number: playfield-1-4
     type: rgb
-  l_left_ball_return_lane_3000_when_lit:
+  l_left_return_lane_3000_when_lit:
     number: playfield-1-5
     type: rgb
   l_left_outlane_special:
@@ -407,18 +472,23 @@ lights:
   l_2x_bonus_multiplier:
     number: playfield-1-9
     type: rgb
+    tags: l_bonus_multipliers
   l_3x_bonus_multiplier:
     number: playfield-1-10
     type: rgb
+    tags: l_bonus_multipliers
   l_fire_lamp_3:
     number: playfield-1-11
     type: grb
+    tags: l_fire
   l_fire_lamp_2:
     number: playfield-1-12
     type: grb
+    tags: l_fire
   l_fire_lamp_1:
     number: playfield-1-13
     type: grb
+    tags: l_fire
   l_arrow_1:
     number: playfield-2-1
     type: rgb
@@ -476,7 +546,7 @@ lights:
   l_lock_2_star_rollover:
     number: playfield-3-1
     type: rgb
-  l_lock_2_lock_arrow:
+  l_lock_2_arrow:
     number: playfield-3-2
     type: rgb
   l_right_target_indicator_1:
@@ -500,12 +570,15 @@ lights:
   l_power_lamp_3:
     number: playfield-3-9
     type: grb
+    tags: l_power
   l_power_lamp_2:
     number: playfield-3-10
     type: grb
+    tags: l_power
   l_power_lamp_1:
     number: playfield-3-11
     type: grb
+    tags: l_power
   l_right_outlane_illumination_left:
     number: playfield-3-12
     type: grb
@@ -515,45 +588,125 @@ lights:
   l_5x_bonus_multiplier:
     number: playfield-3-14
     type: rgb
+    tags: l_bonus_multipliers
   l_4x_bonus_multiplier:
     number: playfield-3-15
     type: rgb
+    tags: l_bonus_multipliers
   l_f:
-    number: playfield-3-16
+    number: playfield-4-1
     type: rgb
   l_lock_3_arrow:
-    number: playfield-3-17
+    number: playfield-4-2
     type: rgb
   l_i:
-    number: playfield-3-18
+    number: playfield-4-3
     type: rgb
   l_r:
-    number: playfield-3-19
+    number: playfield-4-4
     type: rgb
   l_e:
-    number: playfield-3-20
+    number: playfield-4-5
     type: rgb
   l_fire_lane_guide_4:
-    number: playfield-3-21
+    number: playfield-4-10
     type: grb
   l_fire_lane_guide_3:
-    number: playfield-3-22
+    number: playfield-4-9
     type: grb
-  l_target_scores_1000:
-    number: playfield-3-23
+  l_target_score_1000:
+    number: playfield-4-8
     type: rgb
   l_fire_lane_guide_2:
-    number: playfield-3-24
+    number: playfield-4-7
     type: grb
   l_fire_lane_guide_1:
-    number: playfield-3-25
+    number: playfield-4-6
     type: grb
-  l_target_score_10,000:
-    number: playfield-3-26
+  l_target_score_10000:
+    number: playfield-4-11
     type: rgb
-  l_target_score_30,000:
-    number: playfield-3-27
+  l_target_score_30000:
+    number: playfield-4-12
     type: rgb
-  l_target_score_50,000:
-    number: playfield-3-28
+  l_target_score_50000:
+    number: playfield-4-13
     type: rgb
+
+segment_display_player:
+  mode_player1_active_started:
+    player1_display:
+      action: add
+      color: orange
+      text: "{current_player.score}"
+    player2_display:
+      action: add
+      color: orange
+      text: ""
+    player3_display:
+      action: add
+      color: orange
+      text: ""
+    player4_display:
+      action: add
+      color: orange
+      text: ""
+    credit_ball_display:
+      action: add
+      color: orange
+      text: "{current_player.ball:d}"
+
+# show score when adding players
+  player_added{num==1}:
+    player1_display:
+      text: "{players[0].score:d}"
+  player_added{num==2}:
+    player2_display:
+      text: "{players[1].score:d}"
+  player_added{num==3}:
+    player3_display:
+      text: "{players[2].score:d}"
+  player_added{num==4}:
+    player4_display:
+      text: "{players[3].score:d}"
+
+# clear only display0 after game
+  game_ended:
+    credit_ball_display:
+      text: ""                          # should show coins if not in freeplay
+  game_ended{machine.player1_score > 0}:
+    player1_display:
+      text: "{machine.player1_score:d}"
+  game_ended{machine.player2_score > 0}:
+    player2_display:
+      text: "{machine.player2_score:d}"
+  game_ended{machine.player3_score > 0}:
+    player3_display:
+      text: "{machine.player3_score:d}"
+  game_ended{machine.player4_score > 0}:
+    player4_display:
+      text: "{machine.player4_score:d}"
+
+#flash display on player turn
+  ball_starting{player==1}:
+    player1_display:
+      action: flash
+  ball_starting{player==2}:
+    player2_display:
+      action: flash
+  ball_starting{player==3}:
+    player3_display:
+      action: flash
+  ball_starting{player==4}:
+    player4_display:
+      action: flash
+
+  player_score:
+    player1_display:
+      action: no_flash
+    player2_display:
+      action: no_flash
+    player3_display:
+      action: no_flash
+    player4_display:
+      action: no_flash

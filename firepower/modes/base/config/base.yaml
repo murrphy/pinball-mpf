@@ -2,3 +2,67 @@
 mode:
   start_events: ball_starting
   priority: 100
+
+
+variable_player:
+  s_spinner_active:
+    score: 100
+  s_left_return_lane_active:
+    score: 1000
+  s_right_return_lane_active:
+    score: 1000
+  s_lane_f_active:
+    score: 1000
+  s_lane_i_active:
+    score: 1000
+  s_lane_r_active:
+    score: 1000
+  s_lane_e_active:
+    score: 1000
+  s_left_upper_bumper_active:
+    score: 100
+  s_right_upper_bumper_active:
+    score: 100
+  s_left_center_bumper_active:
+    score: 100
+  s_left_lower_bumper_active:
+    score: 100
+  s_right_lower_bumper_active:
+    score: 100
+  s_top_target_active:
+    score: 1000
+  s_pop_bumper_1_active:
+    score: 101
+  s_pop_bumper_2_active:
+    score: 102
+  s_pop_bumper_3_active:
+    score: 103
+  s_pop_bumper_4_active:
+    score: 104
+  s_lock_1_active:
+    score: 105
+  s_lock_2_active:
+    score: 106
+  s_lock_3_active:
+    score: 107
+  s_arrow_1_active:
+    score: 100
+  s_arrow_2_active:
+    score: 100
+  s_arrow_3_active:
+    score: 100
+  s_arrow_4_active:
+    score: 100
+  s_arrow_5_active:
+    score: 100
+  s_arrow_6_active:
+    score: 100
+  s_power_1_active:
+    score: 100
+  s_power_2_active:
+    score: 100
+  s_power_3_active:
+    score: 100
+
+show_player:
+  mode_base_started: base_light_show

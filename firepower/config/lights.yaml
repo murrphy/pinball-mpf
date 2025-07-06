@@ -1,0 +1,265 @@
+#config_version=6
+
+light_settings:
+    default_fade_ms: 40
+lights:
+  l_player_1_score_indicator:
+    number: backbox-1-1
+    type: grb
+    label: player active 1
+    default_on_color: F3C35F
+  l_high_score_indicator:
+    number: backbox-1-2
+    type: grb
+    label: high score
+    default_on_color: F3C35F
+  l_player_2_score_indicator:
+    number: backbox-1-3
+    type: grb
+    label: player active 2
+    default_on_color: F3C35F
+  l_player_3_score_indicator:
+    number: backbox-1-4
+    type: grb
+    label: player active 3
+    default_on_color: F3C35F
+  l_player_4_score_indicator:
+    number: backbox-1-5
+    type: grb
+    label: player active 4
+    default_on_color: F3C35F
+  l_tilt:
+    number: backbox-1-6
+    type: grb
+    default_on_color: F3C35F
+  l_player_4_indicator:
+    number: backbox-1-7
+    type: grb
+    default_on_color: F3C35F
+  l_player_3_indicator:
+    number: backbox-1-8
+    type: grb
+    default_on_color: F3C35F
+  l_player_2_indicator:
+    number: backbox-1-9
+    type: grb
+    default_on_color: F3C35F
+  l_player_1_indicator:
+    number: backbox-1-10
+    type: grb
+    default_on_color: F3C35F
+  l_fire_again_1:
+    number: backbox-1-11
+    type: grb
+    tags: t_fire_again
+    default_on_color: F3C35F
+  l_fire_again_2:
+    number: backbox-1-12
+    type: grb
+    tags: t_fire_again
+    default_on_color: F3C35F
+  l_ball_in_play:
+    number: backbox-1-14
+    type: grb
+    default_on_color: F3C35F
+  l_match:
+    number: backbox-1-13
+    type: grb
+    default_on_color: F3C35F
+  l_game_over_1:
+    number: backbox-1-15
+    type: grb
+    tags: t_game_over
+    default_on_color: F3C35F
+  l_game_over_2:
+    number: backbox-1-16
+    type: grb
+    tags: t_game_over
+    default_on_color: F3C35F
+  l_fire_lane_1000_when_lit:
+    number: playfield-1-1
+    type: rgb
+  l_lock_1_star_rollover:
+    number: playfield-1-2
+    type: rgb
+  l_lock_1_arrow:
+    number: playfield-1-3
+    type: rgb
+  l_shield_on_when_lit:
+    number: playfield-1-4
+    type: rgb
+  l_left_return_lane_3000_when_lit:
+    number: playfield-1-5
+    type: rgb
+  l_left_outlane_special:
+    number: playfield-1-6
+    type: rgb
+  l_left_outlane_illumination_left:
+    number: playfield-1-7
+    type: grb
+  l_left_outlane_illumination_right:
+    number: playfield-1-8
+    type: grb
+  l_2x_bonus_multiplier:
+    number: playfield-1-9
+    type: rgb
+    tags: l_bonus_multipliers
+  l_3x_bonus_multiplier:
+    number: playfield-1-10
+    type: rgb
+    tags: l_bonus_multipliers
+  l_fire_lamp_3:
+    number: playfield-1-11
+    type: grb
+    tags: l_fire
+  l_fire_lamp_2:
+    number: playfield-1-12
+    type: grb
+    tags: l_fire
+  l_fire_lamp_1:
+    number: playfield-1-13
+    type: grb
+    tags: l_fire
+  l_arrow_1:
+    number: playfield-2-1
+    type: rgb
+  l_arrow_2:
+    number: playfield-2-2
+    type: rgb
+  l_arrow_3:
+    number: playfield-2-3
+    type: rgb
+  l_arrow_4:
+    number: playfield-2-4
+    type: rgb
+  l_arrow_5:
+    number: playfield-2-5
+    type: rgb
+  l_arrow_6:
+    number: playfield-2-6
+    type: rgb
+  l_bonus_20:
+    number: playfield-2-7
+    type: rgb
+  l_bonus_10:
+    number: playfield-2-8
+    type: rgb
+  l_bonus_9:
+    number: playfield-2-9
+    type: rgb
+  l_bonus_8:
+    number: playfield-2-10
+    type: rgb
+  l_bonus_7:
+    number: playfield-2-11
+    type: rgb
+  l_bonus_6:
+    number: playfield-2-12
+    type: rgb
+  l_bonus_5:
+    number: playfield-2-13
+    type: rgb
+  l_bonus_4:
+    number: playfield-2-14
+    type: rgb
+  l_bonus_3:
+    number: playfield-2-15
+    type: rgb
+  l_bonus_2:
+    number: playfield-2-16
+    type: rgb
+  l_bonus_1:
+    number: playfield-2-17
+    type: rgb
+  l_fire_again:
+    number: playfield-2-18
+    type: rgb
+  l_lock_2_star_rollover:
+    number: playfield-3-1
+    type: rgb
+  l_lock_2_arrow:
+    number: playfield-3-2
+    type: rgb
+  l_right_target_indicator_1:
+    number: playfield-3-3
+    type: rgb
+  l_right_target_indicator_2:
+    number: playfield-3-4
+    type: rgb
+  l_right_target_indicator_3:
+    number: playfield-3-5
+    type: rgb
+  l_extra_ball_arrow:
+    number: playfield-3-6
+    type: rgb
+  l_right_outlane_special:
+    number: playfield-3-7
+    type: rgb
+  l_right_return_lane_100_when_lit:
+    number: playfield-3-8
+    type: rgb
+  l_power_lamp_3:
+    number: playfield-3-9
+    type: grb
+    tags: l_power
+  l_power_lamp_2:
+    number: playfield-3-10
+    type: grb
+    tags: l_power
+  l_power_lamp_1:
+    number: playfield-3-11
+    type: grb
+    tags: l_power
+  l_right_outlane_illumination_left:
+    number: playfield-3-12
+    type: grb
+  l_right_outlane_illumination_right:
+    number: playfield-3-13
+    type: grb
+  l_5x_bonus_multiplier:
+    number: playfield-3-14
+    type: rgb
+    tags: l_bonus_multipliers
+  l_4x_bonus_multiplier:
+    number: playfield-3-15
+    type: rgb
+    tags: l_bonus_multipliers
+  l_f:
+    number: playfield-4-1
+    type: rgb
+  l_lock_3_arrow:
+    number: playfield-4-2
+    type: rgb
+  l_i:
+    number: playfield-4-3
+    type: rgb
+  l_r:
+    number: playfield-4-4
+    type: rgb
+  l_e:
+    number: playfield-4-5
+    type: rgb
+  l_fire_lane_guide_4:
+    number: playfield-4-10
+    type: grb
+  l_fire_lane_guide_3:
+    number: playfield-4-9
+    type: grb
+  l_target_score_1000:
+    number: playfield-4-8
+    type: rgb
+  l_fire_lane_guide_2:
+    number: playfield-4-7
+    type: grb
+  l_fire_lane_guide_1:
+    number: playfield-4-6
+    type: grb
+  l_target_score_10000:
+    number: playfield-4-11
+    type: rgb
+  l_target_score_30000:
+    number: playfield-4-12
+    type: rgb
+  l_target_score_50000:
+    number: playfield-4-13
+    type: rgb

@@ -1,0 +1,41 @@
+#config_version=6
+
+hardware:
+  platform: fast
+  driverboards: fast
+  coils: fast
+  segment_displays: fast
+
+fast:
+  net:
+    debug: true
+    port: /dev/ttyAMA3
+    controller: neuron
+    io_loop:
+      cabinet:
+        model: FP-I/O-0024
+        order: 1
+      playfield1:
+        model: FP-I/O-1616
+        order: 2
+      playfield2:
+        model: FP-I/O-3208
+        order: 3
+
+  exp_int:
+    debug: false
+    port: /dev/ttyAMA4
+    boards:
+      backbox:
+        model: FP-EXP-2000
+
+  exp:
+    debug: false
+    port: /dev/ttyAMA5
+    boards:
+      playfield:
+        model: FP-EXP-0071
+
+  
+  seg:
+    port: /dev/ttyAMA2

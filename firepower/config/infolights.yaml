@@ -1,0 +1,13 @@
+#config_version=6
+
+info_lights:
+  tilt:
+    light: l_tilt
+  player_1:
+    light: l_player_1_indicator
+  player_2:
+    light: l_player_2_indicator
+  player_3:
+    light: l_player_3_indicator
+  player_4:
+    light: l_player_4_indicator

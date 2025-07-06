@@ -1,0 +1,43 @@
+#config_version=6
+
+shots:
+  target_arrow1:
+    switch: s_arrow_1
+    show_tokens:
+      light: l_arrow_1
+  target_arrow2:
+    switch: s_arrow_2
+    show_tokens:
+      light: l_arrow_2
+  target_arrow3:
+    switch: s_arrow_3
+    show_tokens:
+      light: l_arrow_3
+  target_arrow4:
+    switch: s_arrow_4
+    show_tokens:
+      light: l_arrow_4
+  target_arrow5:
+    switch: s_arrow_5
+    show_tokens:
+      light: l_arrow_5
+  target_arrow6:
+    switch: s_arrow_6
+    show_tokens:
+      light: l_arrow_6
+  lane_f:
+    switch: s_lane_f
+    show_tokens:
+      light: l_f
+  lane_i:
+    switch: s_lane_i
+    show_tokens:
+      light: l_i
+  lane_r:
+    switch: s_lane_r
+    show_tokens:
+      light: l_r
+  lane_e:
+    switch: s_lane_e
+    show_tokens:
+      light: l_e

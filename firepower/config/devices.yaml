@@ -1,0 +1,29 @@
+#config_version=6
+
+ball_devices:
+  bd_drain:
+    ball_switches: s_drain
+    eject_coil: c_drain_eject
+    eject_targets: bd_trough
+    tags: drain
+  bd_trough:
+    ball_switches: s_trough1, s_trough2, s_trough3
+    eject_coil: c_trough_eject
+    eject_targets: bd_plunger_lane
+    tags: home, trough
+    eject_timeouts: 3s
+  bd_plunger_lane:
+    ball_switches: s_plunger
+    mechanical_eject: true
+  bd_lock1:
+    ball_switches: s_lock_1
+    eject_coil: c_lock_1_eject
+    eject_timeouts: 750ms
+  bd_lock2:
+    ball_switches: s_lock_2
+    eject_coil: c_lock_2_eject
+    eject_timeouts: 750ms
+  bd_lock3:
+    ball_switches: s_lock_3
+    eject_coil: c_lock_3_eject
+    eject_timeouts: 750ms

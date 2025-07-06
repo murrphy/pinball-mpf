@@ -1,0 +1,83 @@
+#config_version=6
+
+coils:
+  c_left_flipper:
+    number: playfield1-1
+    default_pulse_ms: 9
+  c_left_flipper_hold:
+    number: playfield1-2
+    allow_enable: true
+  c_right_flipper:
+    number: playfield2-2
+    default_pulse_ms: 9
+  c_right_flipper_hold:
+    number: playfield2-3
+    allow_enable: true
+  c_shield_kicker:
+    number: playfield1-0
+    default_pulse_ms: 10
+  c_left_slingshot:
+    number: playfield1-3
+    default_pulse_ms: 9
+  c_right_slingshot:
+    number: playfield2-4
+    default_pulse_ms: 9
+  c_pop_bumper_1:
+    number: playfield1-6
+    default_pulse_ms: 10
+  c_pop_bumper_2:
+    number: playfield1-5
+    default_pulse_ms: 10
+  c_pop_bumper_3:
+    number: playfield1-7
+    default_pulse_ms: 10
+  c_pop_bumper_4:
+    number: playfield2-7
+    default_pulse_ms: 10
+  c_drain_eject:
+    number: playfield2-0
+    default_pulse_ms: 6
+  c_trough_eject:
+    number: playfield2-1
+    default_pulse_ms: 6
+  c_lock_1_eject:
+    number: playfield1-4
+    default_pulse_ms: 10
+  c_lock_2_eject:
+    number: playfield2-5
+    default_pulse_ms: 10
+  c_lock_3_eject:
+    number: playfield2-6
+    default_pulse_ms: 10
+
+flippers:
+  flipper_left:
+    main_coil: c_left_flipper
+    hold_coil: c_left_flipper_hold
+    activation_switch: s_left_flipper
+    eos_switch: s_left_flipper_eos
+  flipper_right:
+    main_coil: c_right_flipper
+    hold_coil: c_right_flipper_hold
+    activation_switch: s_right_flipper
+    eos_switch: s_right_flipper_eos
+
+autofire_coils:
+  pop_bumper_1:
+    coil: c_pop_bumper_1
+    switch: s_pop_bumper_1
+  pop_bumper_2:
+    coil: c_pop_bumper_2
+    switch: s_pop_bumper_2
+  pop_bumper_3:
+    coil: c_pop_bumper_3
+    switch: s_pop_bumper_3
+  pop_bumper_4:
+    coil: c_pop_bumper_4
+    switch: s_pop_bumper_4
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
+  right_slingshot:
+    coil: c_right_slingshot
+    switch: s_right_slingshot

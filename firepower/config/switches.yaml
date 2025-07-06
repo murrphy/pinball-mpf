@@ -1,0 +1,164 @@
+#config_version=6
+
+switches:
+  s_start_button:
+    number: cabinet-8
+    type: NO
+    tags: start
+  s_left_flipper:
+    number: cabinet-10
+    type: NO
+  s_right_flipper:
+    number: cabinet-18
+    type: NO
+  s_spinner:
+    number: playfield1-1
+    type: NO
+    tags: playfield_active
+  s_left_upper_bumper:
+    number: playfield1-2
+    type: NO
+    tags: playfield_active
+  s_left_center_bumper:
+    number: playfield1-3
+    type: NO
+    tags: playfield_active
+  s_lock_1:
+    number: playfield1-4
+    type: NO
+  s_left_lower_bumper:
+    number: playfield1-5
+    type: NO
+    tags: playfield_active
+  s_star_1:
+    number: playfield1-6
+    type: NO
+    tags: playfield_active
+  s_plunger:
+    number: playfield1-7
+    type: NO
+  s_left_out_lane:
+    number: playfield1-8
+    type: NO
+    tags: playfield_active
+  s_left_return_lane:
+    number: playfield1-9
+    type: NO
+    tags: playfield_active
+  s_left_slingshot:
+    number: playfield1-10
+    type: NO
+  s_left_flipper_eos:
+    number: playfield1-11
+    type: NO
+  s_drain:
+    number: playfield1-12
+    type: NO
+  s_lane_f:
+    number: playfield2-0
+    type: NO
+    tags: playfield_active
+  s_lane_i:
+    number: playfield2-1
+    type: NO
+    tags: playfield_active
+  s_lane_r:
+    number: playfield2-2
+    type: NO
+    tags: playfield_active
+  s_lane_e:
+    number: playfield2-3
+    type: NO
+    tags: playfield_active
+  s_lock_3:
+    number: playfield2-4
+    type: NO
+  s_lock_2:
+    number: playfield2-5
+    type: NO
+  s_arrow_6:
+    number: playfield2-8
+    type: NO
+    tags: playfield_active
+  s_arrow_5:
+    number: playfield2-9
+    type: NO
+    tags: playfield_active
+  s_arrow_4:
+    number: playfield2-10
+    type: NO
+    tags: playfield_active
+  s_star_2:
+    number: playfield2-11
+    type: NO
+    tags: playfield_active
+  s_pop_bumper_2:
+    number: playfield2-12
+    type: NO
+  s_pop_bumper_4:
+    number: playfield2-13
+    type: NO
+  s_pop_bumper_1:
+    number: playfield2-14
+    type: NO
+  s_pop_bumper_3:
+    number: playfield2-15
+    type: NO
+  s_right_upper_bumper:
+    number: playfield2-16
+    type: NO
+    tags: playfield_active
+  s_power_1:
+    number: playfield2-17
+    type: NO
+    tags: playfield_active
+  s_power_2:
+    number: playfield2-18
+    type: NO
+    tags: playfield_active
+  s_power_3:
+    number: playfield2-19
+    type: NO
+    tags: playfield_active
+  s_right_lower_bumper:
+    number: playfield2-20
+    type: NO
+    tags: playfield_active
+  s_right_slingshot:
+    number: playfield2-21
+    type: NO
+  s_right_out_lane:
+    number: playfield2-22
+    type: NO
+  s_right_return_lane:
+    number: playfield2-23
+    type: NO
+    tags: playfield_active
+  s_trough3:
+    number: playfield2-24
+    type: NO
+  s_trough1:
+    number: playfield2-25
+    type: NO
+  s_trough2:
+    number: playfield2-26
+    type: NO
+  s_right_flipper_eos:
+    number: playfield2-27
+    type: NO
+  s_arrow_3:
+    number: playfield2-28
+    type: NO
+    tags: playfield_active
+  s_arrow_2:
+    number: playfield2-29
+    type: NO
+    tags: playfield_active
+  s_arrow_1:
+    number: playfield2-30
+    type: NO
+    tags: playfield_active
+  s_top_target:
+    number: playfield2-31
+    type: NO
+    tags: playfield_active

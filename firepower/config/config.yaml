@@ -19,10 +19,17 @@ machine:
 playfields:
   playfield:
     default_source_device: bd_plunger_lane
+    enable_ball_search: true
     tags: default
 
 game:
   balls_per_game: 2
+  max_players: 4
 
 modes:
   - base
+  - segment_display
+  - bonus
+  - lane_change
+  - arrow_targets
+  - circle_targets

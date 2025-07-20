@@ -1,0 +1,37 @@
+#config_version=6
+
+mode:
+  start_events: ball_starting
+  stop_events: stop_mode_circle_targets, ball_will_end
+  priority: 300
+
+shot_profiles:
+  circle_target_profile:
+    states:
+      - name:
+        show: off
+        speed: 10
+      - name: hit
+        show: on
+
+shot_groups:
+  circle_target_group:
+    shots: circle_target_1, circle_target_2, circle_target_3
+    reset_events: circle_target_group_hit_complete
+
+shots:
+  circle_target_1:
+    switch: s_power_1    
+    profile: circle_target_profile
+    show_tokens:
+      led: l_right_target_1
+  circle_target_2:
+    switch: s_power_2    
+    profile: circle_target_profile
+    show_tokens:
+      led: l_right_target_2
+  circle_target_3:
+    switch: s_power_3    
+    profile: circle_target_profile
+    show_tokens:
+      led: l_right_target_3

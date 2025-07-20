@@ -1,0 +1,6 @@
+#config_version=6
+
+mode_settings:
+  bonus_entries:
+    - entry: bonus_hit
+      score: 100

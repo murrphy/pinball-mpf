@@ -54,30 +54,36 @@ flippers:
   flipper_left:
     main_coil: c_left_flipper
     hold_coil: c_left_flipper_hold
-    activation_switch: s_left_flipper
-    eos_switch: s_left_flipper_eos
+    activation_switch: s_flipper_left
+    eos_switch: s_flipper_left_eos
   flipper_right:
     main_coil: c_right_flipper
     hold_coil: c_right_flipper_hold
-    activation_switch: s_right_flipper
-    eos_switch: s_right_flipper_eos
+    activation_switch: s_flipper_right
+    eos_switch: s_flipper_right_eos
 
 autofire_coils:
   pop_bumper_1:
     coil: c_pop_bumper_1
     switch: s_pop_bumper_1
+    ball_search_order: 0
   pop_bumper_2:
     coil: c_pop_bumper_2
     switch: s_pop_bumper_2
+    ball_search_order: 0
   pop_bumper_3:
     coil: c_pop_bumper_3
     switch: s_pop_bumper_3
+    ball_search_order: 0
   pop_bumper_4:
     coil: c_pop_bumper_4
     switch: s_pop_bumper_4
+    ball_search_order: 0
   left_slingshot:
     coil: c_left_slingshot
     switch: s_left_slingshot
+    ball_search_order: 0
   right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
+    ball_search_order: 0

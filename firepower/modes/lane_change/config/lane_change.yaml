@@ -1,0 +1,47 @@
+#config_version=6
+
+mode:
+  start_events: start_mode_lane_change, ball_starting
+  stop_events: stop_mode_lane_change, ball_will_end
+
+shots:
+  top_lane_f:
+    switch: s_lane_f    
+    profile: fire_lane_profile
+    show_tokens:
+      led: l_lane_f
+  top_lane_i:
+    switch: s_lane_i    
+    profile: fire_lane_profile
+    show_tokens:
+      led: l_lane_i
+  top_lane_r:
+    switch: s_lane_r    
+    profile: fire_lane_profile
+    show_tokens:
+      led: l_lane_r
+  top_lane_e:
+    switch: s_lane_e    
+    profile: fire_lane_profile
+    show_tokens:
+      led: l_lane_e
+
+shot_groups:
+  fire_lane_group:
+    shots: top_lane_f, top_lane_i, top_lane_r, top_lane_e
+    reset_events: fire_lane_group_hit_complete
+    rotate_right_events: s_flipper_right_active
+
+shot_profiles:
+   fire_lane_profile:
+     states:
+       - name:
+         show: off
+       - name: hit
+         show: on
+
+variable_player:
+  top_lane_group_hit_complete:
+    score: 10000
+    bonus_multiplier: 1
+    l_fire: on

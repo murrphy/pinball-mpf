@@ -1,0 +1,66 @@
+#config_version=6
+mode:
+  start_events: reset_complete
+  events_when_started: displays_init_done
+  priority: 100
+  game_mode: false
+
+segment_display_player:
+  # Clear all segments when the game starts
+  game_started:
+    player1_display:
+      text: ""
+    player2_display:
+      text: ""
+    player3_display:
+      text: ""
+    player4_display:
+      text: ""
+
+  # Player 1
+  ball_started{player == 1}:
+    player1_display:
+      text: "{players[0].score:d}"
+      flashing: all
+      priority: 1
+  player_score{player_num == 1}:
+    player1_display:
+      text: "{players[0].score:d}"
+      flashing: off
+      priority: 10
+
+  # Player 2
+  ball_started{player == 2}:
+    player2_display:
+      text: "{players[1].score:d}"
+      flashing: all
+      priority: 1
+  player_score{player_num == 2}:
+    player2_display:
+      text: "{players[1].score:d}"
+      flashing: off
+      priority: 10
+
+  # Player 3
+  ball_started{player == 3}:
+    player3_display:
+      text: "{players[2].score:d}"
+      flashing: all
+      priority: 1
+  player_score{player_num == 3}:
+    player3_display:
+      text: "{players[2].score:d}"
+      flashing: off
+      priority: 10
+
+  # Player 4
+  ball_started{player == 4}:
+    player4_display:
+      text: "{players[3].score:d}"
+      flashing: all
+      priority: 1
+  player_score{player_num == 4}:
+    player4_display:
+      text: "{players[3].score:d}"
+      flashing: off
+      priority: 10

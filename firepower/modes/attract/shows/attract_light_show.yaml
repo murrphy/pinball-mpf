@@ -7,10 +7,10 @@
     l_bonus_1: on
     l_fire: off
     l_power: off
-    l_f: green
-    l_i: off
-    l_r: off
-    l_e: off
+    l_lane_f: green
+    l_lane_i: off
+    l_lane_r: off
+    l_lane_e: off
     l_fire_lane_guide_1: off
     l_fire_lane_guide_2: off
     l_fire_lane_guide_3: white
@@ -19,9 +19,9 @@
     l_target_score_10000: off
     l_target_score_30000: off
     l_target_score_50000: off
-    l_right_target_indicator_1: off
-    l_right_target_indicator_2: blue
-    l_right_target_indicator_3: off
+    l_right_target_1: off
+    l_right_target_2: blue
+    l_right_target_3: off
     l_right_return_lane_100_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
@@ -35,14 +35,14 @@
 - duration: 1
   lights:
     l_bonus_2: on
-    l_f: off
-    l_i: green
+    l_lane_f: off
+    l_lane_i: green
     l_fire_lane_guide_4: off
     l_fire_lane_guide_3: white
     l_fire_lane_guide_2: white
-    l_right_target_indicator_1: blue
-    l_right_target_indicator_2: off
-    l_right_target_indicator_3: blue
+    l_right_target_1: blue
+    l_right_target_2: off
+    l_right_target_3: blue
     l_right_return_lane_100_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
@@ -55,13 +55,13 @@
   lights:
     l_bonus_3: on
     l_bonus_multipliers: green
-    l_i: off
-    l_r: green
+    l_lane_i: off
+    l_lane_r: green
     l_fire_lane_guide_3: off
     l_fire_lane_guide_1: white
-    l_right_target_indicator_1: off
-    l_right_target_indicator_2: blue
-    l_right_target_indicator_3: off
+    l_right_target_1: off
+    l_right_target_2: blue
+    l_right_target_3: off
     l_right_return_lane_100_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
@@ -74,11 +74,11 @@
   lights:
     l_fire_again: off
     l_bonus_4: on
-    l_r: off
-    l_e: green
-    l_right_target_indicator_1: blue
-    l_right_target_indicator_2: off
-    l_right_target_indicator_3: blue
+    l_lane_r: off
+    l_lane_e: green
+    l_right_target_1: blue
+    l_right_target_2: off
+    l_right_target_3: blue
     l_right_return_lane_100_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
@@ -93,12 +93,12 @@
   lights:
     l_bonus_1: off
     l_bonus_4: on
-    l_e: off
+    l_lane_e: off
     l_fire_lane_guide_2: off
     l_fire_lane_guide_1: off
-    l_right_target_indicator_1: off
-    l_right_target_indicator_2: blue
-    l_right_target_indicator_3: off
+    l_right_target_1: off
+    l_right_target_2: blue
+    l_right_target_3: off
     l_right_return_lane_100_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
@@ -113,9 +113,9 @@
   lights: 
     l_bonus_2: off
     l_bonus_5: on
-    l_right_target_indicator_1: blue
-    l_right_target_indicator_2: off
-    l_right_target_indicator_3: blue
+    l_right_target_1: blue
+    l_right_target_2: off
+    l_right_target_3: blue
     l_right_return_lane_100_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
@@ -128,9 +128,9 @@
   lights:
     l_bonus_3: off
     l_bonus_6: on
-    l_right_target_indicator_1: off
-    l_right_target_indicator_2: blue
-    l_right_target_indicator_3: off
+    l_right_target_1: off
+    l_right_target_2: blue
+    l_right_target_3: off
     l_right_return_lane_100_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
@@ -143,9 +143,9 @@
   lights:
     l_bonus_4: off
     l_bonus_7: on
-    l_right_target_indicator_1: blue
-    l_right_target_indicator_2: off
-    l_right_target_indicator_3: blue
+    l_right_target_1: blue
+    l_right_target_2: off
+    l_right_target_3: blue
     l_right_return_lane_100_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
@@ -160,9 +160,9 @@
   lights:
     l_bonus_5: off
     l_bonus_8: on
-    l_right_target_indicator_1: off
-    l_right_target_indicator_2: blue
-    l_right_target_indicator_3: off
+    l_right_target_1: off
+    l_right_target_2: blue
+    l_right_target_3: off
     l_right_return_lane_100_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
@@ -177,9 +177,9 @@
   lights:
     l_bonus_6: off
     l_bonus_9: on
-    l_right_target_indicator_1: blue
-    l_right_target_indicator_2: off
-    l_right_target_indicator_3: blue
+    l_right_target_1: blue
+    l_right_target_2: off
+    l_right_target_3: blue
     l_right_return_lane_100_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
@@ -202,9 +202,9 @@
     l_arrow_4: off
     l_arrow_5: off
     l_arrow_6: yellow
-    l_right_target_indicator_1: off
-    l_right_target_indicator_2: blue
-    l_right_target_indicator_3: off
+    l_right_target_1: off
+    l_right_target_2: blue
+    l_right_target_3: off
     l_right_return_lane_100_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
@@ -225,9 +225,9 @@
     l_arrow_2: yellow
     l_arrow_5: yellow
     l_arrow_6: off
-    l_right_target_indicator_1: blue
-    l_right_target_indicator_2: off
-    l_right_target_indicator_3: blue
+    l_right_target_1: blue
+    l_right_target_2: off
+    l_right_target_3: blue
     l_right_return_lane_100_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
@@ -249,9 +249,9 @@
     l_arrow_3: yellow
     l_arrow_4: yellow
     l_arrow_5: off
-    l_right_target_indicator_1: off
-    l_right_target_indicator_2: blue
-    l_right_target_indicator_3: off
+    l_right_target_1: off
+    l_right_target_2: blue
+    l_right_target_3: off
     l_right_return_lane_100_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
@@ -276,9 +276,9 @@
     l_target_score_30000: off
     l_target_score_50000: off
     l_target_score_1000: off
-    l_right_target_indicator_1: blue
-    l_right_target_indicator_2: off
-    l_right_target_indicator_3: blue
+    l_right_target_1: blue
+    l_right_target_2: off
+    l_right_target_3: blue
     l_right_return_lane_100_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
@@ -295,9 +295,9 @@
     l_power: off
     l_target_score_10000: off
     l_target_score_30000: red
-    l_right_target_indicator_1: off
-    l_right_target_indicator_2: blue
-    l_right_target_indicator_3: off
+    l_right_target_1: off
+    l_right_target_2: blue
+    l_right_target_3: off
     l_right_return_lane_100_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
@@ -314,9 +314,9 @@
     l_power: blue
     l_target_score_30000: off
     l_target_score_50000: red
-    l_right_target_indicator_1: blue
-    l_right_target_indicator_2: off
-    l_right_target_indicator_3: blue
+    l_right_target_1: blue
+    l_right_target_2: off
+    l_right_target_3: blue
     l_right_return_lane_100_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
@@ -334,9 +334,9 @@
     l_power: blue
     l_target_score_50000: off
     l_target_score_1000: red
-    l_right_target_indicator_1: off
-    l_right_target_indicator_2: blue
-    l_right_target_indicator_3: off
+    l_right_target_1: off
+    l_right_target_2: blue
+    l_right_target_3: off
     l_right_return_lane_100_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
@@ -353,9 +353,9 @@
     l_fire: off
     l_power: off
     l_target_score_1000: yellow
-    l_right_target_indicator_1: blue
-    l_right_target_indicator_2: off
-    l_right_target_indicator_3: blue
+    l_right_target_1: blue
+    l_right_target_2: off
+    l_right_target_3: blue
     l_right_return_lane_100_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
@@ -371,9 +371,9 @@
     l_fire: red
     l_power: blue
     l_target_score_1000: blue
-    l_right_target_indicator_1: off
-    l_right_target_indicator_2: blue
-    l_right_target_indicator_3: off
+    l_right_target_1: off
+    l_right_target_2: blue
+    l_right_target_3: off
     l_right_return_lane_100_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off

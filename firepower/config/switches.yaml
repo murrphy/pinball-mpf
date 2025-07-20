@@ -5,10 +5,10 @@ switches:
     number: cabinet-8
     type: NO
     tags: start
-  s_left_flipper:
+  s_flipper_left:
     number: cabinet-10
     type: NO
-  s_right_flipper:
+  s_flipper_right:
     number: cabinet-18
     type: NO
   s_spinner:
@@ -48,7 +48,7 @@ switches:
   s_left_slingshot:
     number: playfield1-10
     type: NO
-  s_left_flipper_eos:
+  s_flipper_left_eos:
     number: playfield1-11
     type: NO
   s_drain:
@@ -143,7 +143,7 @@ switches:
   s_trough2:
     number: playfield2-26
     type: NO
-  s_right_flipper_eos:
+  s_flipper_right_eos:
     number: playfield2-27
     type: NO
   s_arrow_3:

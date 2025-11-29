@@ -29,7 +29,6 @@ game:
 modes:
   - base
   - segment_display
-  - bonus
   - lane_change
   - arrow_targets
   - circle_targets

@@ -1,16 +1,435 @@
 #show_version=6
 # modes/base/shows/bonus_lamp_progress.yaml
 # Lights are listed in the specific order you want them to light
-- duration: 1
+- duration: -1
   lights:
-    l_bonus_1: (on if %bonus_hit% > 0 else off)
-    l_bonus_2: (on if %bonus_hit% > 1 else off)
-    l_bonus_3: (on if %bonus_hit% > 2 else off)
-    l_bonus_4: (on if %bonus_hit% > 3 else off)
-    l_bonus_5: (on if %bonus_hit% > 4 else off)
-    l_bonus_6: (on if %bonus_hit% > 5 else off)
-    l_bonus_7: (on if %bonus_hit% > 6 else off)
-    l_bonus_8: (on if %bonus_hit% > 7 else off)
-    l_bonus_9: (on if %bonus_hit% > 8 else off)
-    l_bonus_10: (on if %bonus_hit% > 9 else off)
-    l_bonus_20: (on if %bonus_hit% > 10 else off)
+    l_bonus_1: off
+    l_bonus_2: off
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: off
+- duration: -1
+  lights:
+    l_bonus_1: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: on
+    l_bonus_8: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: on
+    l_bonus_8: on
+    l_bonus_9: on
+- duration: -1
+  lights:
+    l_bonus_1: off
+    l_bonus_2: off
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: off
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: on
+    l_bonus_8: on
+    l_bonus_9: off
+    l_bonus_10: on
+- duration: -1
+  lights:
+    l_bonus_1: off
+    l_bonus_2: off
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: off
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: on
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: on
+    l_bonus_8: on
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: on
+    l_bonus_8: on
+    l_bonus_9: on
+    l_bonus_10: off
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: off
+    l_bonus_2: off
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: off
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: on
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: on
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: on
+    l_bonus_8: on
+    l_bonus_9: off
+    l_bonus_10: on
+    l_bonus_20: on
+- duration: -1
+  lights:
+    l_bonus_1: on
+    l_bonus_2: on
+    l_bonus_3: on
+    l_bonus_4: on
+    l_bonus_5: on
+    l_bonus_6: on
+    l_bonus_7: on
+    l_bonus_8: on
+    l_bonus_9: on
+    l_bonus_10: on
+    l_bonus_20: on

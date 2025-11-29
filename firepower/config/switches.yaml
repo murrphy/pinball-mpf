@@ -15,21 +15,26 @@ switches:
     number: playfield1-1
     type: NO
     tags: playfield_active
+    events_when_activated: score_100
   s_left_upper_bumper:
     number: playfield1-2
     type: NO
     tags: playfield_active
+    events_when_activated: score_100
   s_left_center_bumper:
     number: playfield1-3
     type: NO
     tags: playfield_active
+    events_when_activated: score_100
   s_lock_1:
     number: playfield1-4
     type: NO
+    events_when_activated: score_1000
   s_left_lower_bumper:
     number: playfield1-5
     type: NO
     tags: playfield_active
+    events_when_activated: score_100
   s_star_1:
     number: playfield1-6
     type: NO
@@ -41,10 +46,12 @@ switches:
     number: playfield1-8
     type: NO
     tags: playfield_active
+    events_when_activated: score_1000
   s_left_return_lane:
     number: playfield1-9
     type: NO
     tags: playfield_active
+    events_when_activated: store_1000
   s_left_slingshot:
     number: playfield1-10
     type: NO
@@ -58,36 +65,48 @@ switches:
     number: playfield2-0
     type: NO
     tags: playfield_active
+    events_when_activated: score_1000
   s_lane_i:
     number: playfield2-1
     type: NO
     tags: playfield_active
+    events_when_activated: score_1000
   s_lane_r:
     number: playfield2-2
     type: NO
     tags: playfield_active
+    events_when_activated: score_1000
   s_lane_e:
     number: playfield2-3
     type: NO
     tags: playfield_active
+    events_when_activated: score_1000
   s_lock_3:
     number: playfield2-4
     type: NO
+    events_when_activated: score_1000
   s_lock_2:
     number: playfield2-5
     type: NO
+    events_when_activated: score_1000
   s_arrow_6:
     number: playfield2-8
     type: NO
     tags: playfield_active
+    debounce: normal
+    events_when_activated: score_1000
   s_arrow_5:
     number: playfield2-9
     type: NO
     tags: playfield_active
+    debounce: normal
+    events_when_activated: score_1000
   s_arrow_4:
     number: playfield2-10
     type: NO
     tags: playfield_active
+    debounce: normal
+    events_when_activated: score_1000
   s_star_2:
     number: playfield2-11
     type: NO
@@ -95,45 +114,56 @@ switches:
   s_pop_bumper_2:
     number: playfield2-12
     type: NO
+    events_when_activated: score_100
   s_pop_bumper_4:
     number: playfield2-13
     type: NO
+    events_when_activated: score_100
   s_pop_bumper_1:
     number: playfield2-14
     type: NO
+    events_when_activated: score_100
   s_pop_bumper_3:
     number: playfield2-15
     type: NO
+    events_when_activated: score_100
   s_right_upper_bumper:
     number: playfield2-16
     type: NO
     tags: playfield_active
+    events_when_activated: score_100
   s_power_1:
     number: playfield2-17
     type: NO
     tags: playfield_active
+    events_when_activated: score_1000
   s_power_2:
     number: playfield2-18
     type: NO
     tags: playfield_active
+    events_when_activated: score_1000
   s_power_3:
     number: playfield2-19
     type: NO
     tags: playfield_active
+    events_when_activated: score_1000
   s_right_lower_bumper:
     number: playfield2-20
     type: NO
     tags: playfield_active
+    events_when_activated: score_100
   s_right_slingshot:
     number: playfield2-21
     type: NO
   s_right_out_lane:
     number: playfield2-22
     type: NO
+    events_when_activated: score_1000
   s_right_return_lane:
     number: playfield2-23
     type: NO
     tags: playfield_active
+    events_when_activated: score_1000
   s_trough3:
     number: playfield2-24
     type: NO
@@ -150,15 +180,22 @@ switches:
     number: playfield2-28
     type: NO
     tags: playfield_active
+    debounce: normal
+    events_when_activated: score_1000
   s_arrow_2:
     number: playfield2-29
     type: NO
     tags: playfield_active
+    debounce: normal
+    events_when_activated: score_1000
   s_arrow_1:
     number: playfield2-30
     type: NO
     tags: playfield_active
+    debounce: normal
+    events_when_activated: score_1000
   s_top_target:
     number: playfield2-31
     type: NO
     tags: playfield_active
+    events_when_activated: score_1000

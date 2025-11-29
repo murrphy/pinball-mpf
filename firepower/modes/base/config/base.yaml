@@ -5,93 +5,193 @@ mode:
   # stop_events: ball_will_stop
   priority: 100
 
-counters:
-  bonus_add:
-    starting_count: 1
-    count_events:
-    - s_left_return_lane_active
-    - s_right_return_lane_active
-    - s_left_out_lane_active
-    - s_right_out_lane_active
-    - s_lane_f_active
-    - s_lane_i_active
-    - s_lane_r_active
-    - s_lane_e_active
-    - s_lock_1_active
-    - s_lock_2_active
-    - s_lock_3_active
-    - s_arrow_1_active
-    - s_arrow_2_active
-    - s_arrow_3_active
-    - s_arrow_4_active
-    - s_arrow_5_active
-    - s_arrow_6_active
+########################################################################
+### New code from Codex starts here                                  ###
+#vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-    
+########################################
+# 1. Player variable logic
+########################################
+
 variable_player:
-  s_spinner_active:
+  score_100:
     score: 100
-  s_left_return_lane_active:
+  score_1000:
     score: 1000
-  s_right_return_lane_active:
-    score: 1000
-  s_left_out_lane_active:
-    score: 1000
-  s_right_out_lane_active:
-    score: 1000
-  s_lane_f_active:
-    score: 1000
-  s_lane_i_active:
-    score: 1000
-  s_lane_r_active:
-    score: 1000
-  s_lane_e_active:
-    score: 1000
-  s_left_upper_bumper_active:
-    score: 100
-  s_right_upper_bumper_active:
-    score: 100
-  s_left_center_bumper_active:
-    score: 100
-  s_left_lower_bumper_active:
-    score: 100
-  s_right_lower_bumper_active:
-    score: 100
-  s_top_target_active:
-    score: 1000
-  s_pop_bumper_1_active:
-    score: 100
-  s_pop_bumper_2_active:
-    score: 100
-  s_pop_bumper_3_active:
-    score: 100
-  s_pop_bumper_4_active:
-    score: 100
-  s_lock_1_active:
-    score: 1000
-  s_lock_2_active:
-    score: 1000
-  s_lock_3_active:
-    score: 1000
-  s_arrow_1_active:
-    score: 1000
-  s_arrow_2_active:
-    score: 1000
-  s_arrow_3_active:
-    score: 1000
-  s_arrow_4_active:
-    score: 1000
-  s_arrow_5_active:
-    score: 1000
-  s_arrow_6_active:
-    score: 1000
-  s_power_1_active:
-    score: 1000
-  s_power_2_active:
-    score: 1000
-  s_power_3_active:
-    score: 1000
+  # Reset bonus & multiplier at the start of each ball
+  ball_started:
+    bonus_steps:
+      int: 0
+      action: set
+    bonus_multiplier:
+      int: 1
+      action: set
 
+  # -----------------------------
+  # BONUS-BUILDING SWITCHES
+  # Each hit adds +1 bonus step (= 1000 pts of base bonus).
+  # -----------------------------
+  s_power_1_active:
+    bonus_steps: 1
+  s_power_2_active:
+    bonus_steps: 1
+  s_power_3_active:
+    bonus_steps: 1
+  s_right_out_lane_active:
+    bonus_steps: 1
+  s_left_out_lane_active:
+    bonus_steps: 1
+  s_star_1_active:
+    bonus_steps: 1
+  s_star_2_active:
+    bonus_steps: 1
+  s_lock_1_active:
+    bonus_steps: 1
+  s_lock_2_active:
+    bonus_steps: 1
+  s_lock_3_active:
+    bonus_steps: 1
+  s_arrow_1_active:
+    bonus_steps: 1
+  s_arrow_2_active:
+    bonus_steps: 1
+  s_arrow_3_active:
+    bonus_steps: 1
+  s_arrow_4_active:
+    bonus_steps: 1
+  s_arrow_5_active:
+    bonus_steps: 1
+  s_arrow_6_active:
+    bonus_steps: 1
+  s_right_return_lane_active:
+    bonus_steps: 1
+  s_left_return_lane_active:
+    bonus_steps: 1
+
+  # -----------------------------
+  # FIRE lanes completed → multiplier++ (max 5x)
+  # Event comes from the logic block below.
+  # -----------------------------
+  fire_lanes_all_lit{current_player.bonus_multiplier < 5}:
+    bonus_multiplier: 1
+
+
+########################################
+# 2. FIRE lane completion logic block
+########################################
+
+accruals:
+  fire_lanes_complete:
+    events:
+      - s_lane_f_active
+      - s_lane_i_active
+      - s_lane_r_active
+      - s_lane_e_active
+    events_when_complete: fire_lanes_all_lit
+    reset_on_complete: true
+
+
+########################################
+# 3. Bonus & multiplier lamps
+########################################
+
+light_player:
+
+  ######################################
+  # BONUS LAMPS (ladder representation)
+  #
+  # Lamps:
+  #   l_bonus_1  .. l_bonus_10, l_bonus_20
+  #
+  # We treat bonus_steps as a ladder:
+  #   >=1  → l_bonus_1 on
+  #   >=2  → l_bonus_2 on
+  #   ...
+  #   >=11 → l_bonus_20 on
+  ######################################
+
+  player_bonus_steps{value==0}:
+    l_bonus_1: off
+    l_bonus_2: off
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: off
+
+  player_bonus_steps{value>=1}:
+    l_bonus_1: on
+  player_bonus_steps{value>=2}:
+    l_bonus_2: on
+  player_bonus_steps{value>=3}:
+    l_bonus_3: on
+  player_bonus_steps{value>=4}:
+    l_bonus_4: on
+  player_bonus_steps{value>=5}:
+    l_bonus_5: on
+  player_bonus_steps{value>=6}:
+    l_bonus_6: on
+  player_bonus_steps{value>=7}:
+    l_bonus_7: on
+  player_bonus_steps{value>=8}:
+    l_bonus_8: on
+  player_bonus_steps{value>=9}:
+    l_bonus_9: on
+  player_bonus_steps{value>=10}:
+    l_bonus_10: on
+  player_bonus_steps{value>=11}:
+    l_bonus_20: on
+
+  ######################################
+  # MULTIPLIER LAMPS
+  #
+  # Lamps:
+  #   l_2x_bonus_multiplier
+  #   l_3x_bonus_multiplier
+  #   l_4x_bonus_multiplier
+  #   l_5x_bonus_multiplier
+  #
+  # 1x = all off
+  # 2x–5x = exactly one lamp on
+  ######################################
+
+  player_bonus_multiplier{value==1}:
+    l_2x_bonus_multiplier: off
+    l_3x_bonus_multiplier: off
+    l_4x_bonus_multiplier: off
+    l_5x_bonus_multiplier: off
+
+  player_bonus_multiplier{value==2}:
+    l_2x_bonus_multiplier: on
+    l_3x_bonus_multiplier: off
+    l_4x_bonus_multiplier: off
+    l_5x_bonus_multiplier: off
+
+  player_bonus_multiplier{value==3}:
+    l_2x_bonus_multiplier: off
+    l_3x_bonus_multiplier: on
+    l_4x_bonus_multiplier: off
+    l_5x_bonus_multiplier: off
+
+  player_bonus_multiplier{value==4}:
+    l_2x_bonus_multiplier: off
+    l_3x_bonus_multiplier: off
+    l_4x_bonus_multiplier: on
+    l_5x_bonus_multiplier: off
+
+  player_bonus_multiplier{value==5}:
+    l_2x_bonus_multiplier: off
+    l_3x_bonus_multiplier: off
+    l_4x_bonus_multiplier: off
+    l_5x_bonus_multiplier: on
+
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### New code from Codex ends here                                    ###
+########################################################################
 
 
 ########################################################################
@@ -244,22 +344,6 @@ show_player:
         txt: "     00"
       key: p4scoreadd
       priority: 3
-
-  # single_player_ball_started:
-  # ball_started:
-  #   credit_ball_display:
-  #     show_tokens:
-  #       txt: " {(machine.credit_units):<3,d} + {(player1_ball):>3,d}"
-  #   ball_display:
-  #     show_tokens:
-  #       txt: "{(players[0].ball):0>2,d}"
-  ########################################################################
-  ### Show Player - Bonus                                              ###
-  ########################################################################
-  # player_bonus_value:
-  # bonus_lamp_progress:
-  #   tokens:
-  #     hits: (int)min(%player_bonus_value%, 11)
 
 shows:
   ball_starting_show:

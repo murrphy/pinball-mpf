@@ -25,3 +25,4 @@ segment_displays:
     number: 4
     size: 6
     update_method: replace
+    integrated_commas: false

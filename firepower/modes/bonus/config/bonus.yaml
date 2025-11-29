@@ -1,6 +1,23 @@
 #config_version=6
+##! mode: bonus
 
 mode_settings:
+  # One bonus "entry" that uses:
+  #   - current_player.bonus_steps as the number of units
+  #   - 1000 * current_player.bonus_multiplier points per unit
+  #   - and resets bonus_steps when done.
   bonus_entries:
-    - entry: bonus_hit
-      score: 100
+    - event: firepower_bonus
+      score: 1000 * current_player.bonus_multiplier
+      player_score_entry: bonus_steps
+      reset_player_score_entry: true
+
+show_player:
+  # When the bonus total is being processed, run the countdown show.
+  # loops is "how many extra times to repeat", so:
+  #   loops = current_player.bonus_multiplier - 1
+  # gives one full pass per multiplier (1x = 1 pass, 2x = 2 passes, etc.).
+  bonus_entry_total:
+    bonus_countdown:
+      loops: current_player.bonus_multiplier - 1
+      priority: 10

@@ -144,7 +144,70 @@ light_player:
   player_bonus_steps{value>=10}:
     l_bonus_10: on
   player_bonus_steps{value>=11}:
+    bonus_lamp: off
+    l_bonus_10: on
+    l_bonus_1: on
+  player_bonus_steps{value>=12}:
+    l_bonus_2: on
+  player_bonus_steps{value>=13}:
+    l_bonus_3: on
+  player_bonus_steps{value>=14}:
+    l_bonus_4: on
+  player_bonus_steps{value>=15}:
+    l_bonus_5: on
+  player_bonus_steps{value>=16}:
+    l_bonus_6: on
+  player_bonus_steps{value>=17}:
+    l_bonus_7: on
+  player_bonus_steps{value>=18}:
+    l_bonus_8: on
+  player_bonus_steps{value>=19}:
+    l_bonus_10: on
+  player_bonus_steps{value>=20}:
+    bonus_lamp: off
     l_bonus_20: on
+  player_bonus_steps{value>=21}:
+    l_bonus_1: on
+  player_bonus_steps{value>=22}:
+    l_bonus_2: on
+  player_bonus_steps{value>=23}:
+    l_bonus_3: on
+  player_bonus_steps{value>=24}:
+    l_bonus_4: on
+  player_bonus_steps{value>=25}:
+    l_bonus_5: on
+  player_bonus_steps{value>=26}:
+    l_bonus_6: on
+  player_bonus_steps{value>=27}:
+    l_bonus_7: on
+  player_bonus_steps{value>=28}:
+    l_bonus_8: on
+  player_bonus_steps{value>=29}:
+    l_bonus_9: on
+  player_bonus_steps{value>=30}:
+    bonus_lamp: off
+    l_bonus_20: on
+    l_bonus_10: on
+  player_bonus_steps{value>=31}:
+    l_bonus_1: on
+  player_bonus_steps{value>=32}:
+    l_bonus_2: on
+  player_bonus_steps{value>=33}:
+    l_bonus_3: on
+  player_bonus_steps{value>=34}:
+    l_bonus_4: on
+  player_bonus_steps{value>=35}:
+    l_bonus_5: on
+  player_bonus_steps{value>=36}:
+    l_bonus_6: on
+  player_bonus_steps{value>=37}:
+    l_bonus_7: on
+  player_bonus_steps{value>=38}:
+    l_bonus_8: on
+  player_bonus_steps{value>=39}:
+    l_bonus_9: on
+
+
 
   ######################################
   # MULTIPLIER LAMPS
@@ -200,6 +263,11 @@ light_player:
 ########################################################################
 show_player:
   game_started_show: base_light_show
+  ball_started{player==1}: player_1_up_show
+  ball_started{player==2}: player_2_up_show
+  ball_started{player==3}: player_3_up_show
+  ball_started{player==4}: player_4_up_show
+  ball_ended: all_player_indicators_off_show
   bonus_add_updated:
     bonus_lamp_progress:
       show_tokens:

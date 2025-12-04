@@ -5,24 +5,29 @@ segment_displays:
     number: 0
     size: 7
     integrated_commas: true
+    default_color: orange
     update_method: replace
   player2_display:
     number: 1
     size: 7
     integrated_commas: true
+    default_color: orange
     update_method: replace
   player3_display:
     number: 2
     size: 7
     integrated_commas: true
+    default_color: orange
     update_method: replace
   player4_display:
     number: 3
     size: 7
     integrated_commas: true
+    default_color: orange
     update_method: replace
   credit_ball_display:
     number: 4
     size: 6
-    update_method: replace
     integrated_commas: false
+    default_color: orange
+    update_method: replace

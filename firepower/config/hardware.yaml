@@ -8,7 +8,7 @@ hardware:
 
 fast:
   net:
-    debug: true
+    debug: false
     port: /dev/ttyAMA3
     controller: neuron
     io_loop:

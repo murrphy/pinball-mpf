@@ -11,24 +11,8 @@ segment_display_player:
   mode_player1_active_started:
     player1_display:
       action: add
-      color: orange
+      set_color: orange
       text: "{current_player.score}"
-    player2_display:
-      action: add
-      color: orange
-      text: ""
-    player3_display:
-      action: add
-      color: orange
-      text: ""
-    player4_display:
-      action: add
-      color: orange
-      text: ""
-    credit_ball_display:
-      action: add
-      color: orange
-      text: "{current_player.ball:d}"
 
 # show score when adding players
   player_added{num==1}:

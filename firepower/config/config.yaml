@@ -4,10 +4,11 @@ config:
 - hardware.yaml
 - displays.yaml
 - devices.yaml
-- infolights.yaml
 - switches.yaml
 - coils.yaml
 - lights.yaml
+- logging.yaml
+- infolights.yaml
 
 mpf:
   report_crashes: never

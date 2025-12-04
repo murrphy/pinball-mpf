@@ -39,6 +39,19 @@ shot_profiles:
          show: off
        - name: hit
          show: on
+shows:
+  group_complete:
+      - duration: 1s
+      # TODO: add scoring and sounds
+        shows:
+          flash:
+            priority: 10
+            show_tokens:
+              color: green
+              lights: l_lane_f, l_lane_i, l_lane_r, l_lane_e
+            speed: 4
+
+
 
 variable_player:
   top_lane_group_hit_complete:

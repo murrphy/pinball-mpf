@@ -1,0 +1,36 @@
+#config_version=6
+logging:
+  console_log: False
+  file:
+    asset_manager: none
+    ball_controller: none
+    ball_search: none
+    bcp: none
+    bcp_client: none
+    bcp_interface: none
+    bcp_server: none
+    clock: none
+    config_players: none
+    data_manager: none
+    delay_manager: none
+    device_manager: none
+    event_manager: full
+    file_manager: none
+    light_controller: none
+    logic_blocks: none
+    machine_controller: none
+    machine_vars: none
+    mode_controller: full
+    placeholder_manager: none
+    platforms: none
+    platform_controller: none
+    players: none
+    plugins: none
+    score_reel_controller: none
+    scriptlets: none
+    service_controller: none
+    settings_controller: none
+    show_controller: none
+    switch_controller: none
+    text_ui: none
+    timers: none

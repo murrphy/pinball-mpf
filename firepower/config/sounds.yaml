@@ -1,0 +1,6 @@
+#config_version=6
+
+sound_player:
+  mode_attract_started:
+    fire_power:
+      bus: voice

@@ -7,8 +7,9 @@ config:
 - switches.yaml
 - coils.yaml
 - lights.yaml
-- logging.yaml
+- sounds.yaml
 - infolights.yaml
+- logging.yaml
 
 mpf:
   report_crashes: never

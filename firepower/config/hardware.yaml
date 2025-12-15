@@ -36,6 +36,5 @@ fast:
       playfield:
         model: FP-EXP-0071
 
-  
   seg:
     port: /dev/ttyAMA2

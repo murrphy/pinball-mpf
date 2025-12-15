@@ -8,7 +8,10 @@ firepower/export.cfg
 firepower/export_credentials.cfg
 firepower/*.tmp
 
-# Imported translation (augomatically generated from CSV files)
+# Godot logs (soft link)
+firepower/godot_logs
+
+# Imported translation (automatically generated from CSV files)
 firepower/*.translation
 
 # Mono-specific ignores

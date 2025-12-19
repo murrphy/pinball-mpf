@@ -4,3 +4,41 @@ sound_player:
   mode_attract_started:
     fire_power:
       bus: voice
+    FP11:
+      bus: effects
+
+  fire_lane_group_hit_complete:
+    FP15:
+      bus: effects
+
+  s_lane_f_active:
+    FP13:
+      bus: effects
+
+  s_lane_i_active:
+    FP13:
+      bus: effects
+
+  s_lane_r_active:
+    FP13:
+      bus: effects
+
+  s_lane_e_active:
+    FP13:
+      bus: effects
+
+  sw_pop_bumpers_active:
+    FP13:
+      bus: effects
+
+  s_spinner_active:
+    FP09:
+      bus: effects
+
+  s_plunger_inactive:
+    FP12:
+      bus: effects
+
+  s_start_button_active:
+    fire_power:
+      bus: effects

@@ -27,7 +27,7 @@ playfields:
 game:
   balls_per_game: 2
   max_players: 4
-
+  
 modes:
   - base
   - segment_display

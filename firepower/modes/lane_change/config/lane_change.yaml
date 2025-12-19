@@ -58,3 +58,9 @@ variable_player:
     score: 10000
     bonus_multiplier: 1
     l_fire: on
+
+show_player:
+  fire_lane_group_hit_complete: 
+    fire_lane_group_complete:
+      speed: 8
+      loops: 3

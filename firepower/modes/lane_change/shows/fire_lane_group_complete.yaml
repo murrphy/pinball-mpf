@@ -1,0 +1,26 @@
+#show_version=6
+
+- duration: 1
+  lights:
+    l_lane_f: green
+    l_lane_i: off
+    l_lane_r: off
+    l_lane_e: off
+- duration: 1
+  lights:
+    l_lane_f: off
+    l_lane_i: green
+    l_lane_r: off
+    l_lane_e: off
+- duration: 1
+  lights:
+    l_lane_f: off
+    l_lane_i: off
+    l_lane_r: green
+    l_lane_e: off
+- duration: 1
+  lights:
+    l_lane_f: off
+    l_lane_i: off
+    l_lane_r: off
+    l_lane_e: green

@@ -115,18 +115,22 @@ switches:
     number: playfield2-12
     type: NO
     events_when_activated: score_100
+    tags: pop_bumpers
   s_pop_bumper_4:
     number: playfield2-13
     type: NO
     events_when_activated: score_100
+    tags: pop_bumpers
   s_pop_bumper_1:
     number: playfield2-14
     type: NO
     events_when_activated: score_100
+    tags: pop_bumpers
   s_pop_bumper_3:
     number: playfield2-15
     type: NO
     events_when_activated: score_100
+    tags: pop_bumpers
   s_right_upper_bumper:
     number: playfield2-16
     type: NO

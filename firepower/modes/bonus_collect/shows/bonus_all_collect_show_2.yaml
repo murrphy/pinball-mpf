@@ -1,0 +1,81 @@
+#show_version=6
+##! show: bonus_all_collect_show_2
+
+#################### 1st pass ####################    
+# Step 1   
+- duration: 1
+  lights:
+   led_bns_adv_1: red-f100ms
+
+
+# Step 2   
+- duration: 1
+  lights:
+   led_bns_adv_1: off
+   led_bns_adv_2: red-f100ms
+    
+# Step 3   
+- duration: 1
+  lights:
+   led_bns_adv_2: off
+   led_bns_adv_3: red-f100ms
+    
+# Step 4   
+- duration: 1
+  lights:
+   led_bns_adv_3: off
+   led_bns_adv_4: red-f100ms
+   
+   
+# Step 5   
+- duration: 1
+  lights:
+   led_bns_adv_4: off
+   led_bns_adv_5: red-f100ms
+
+   
+# Step 6   
+- duration: 1
+  lights:
+   led_bns_adv_5: off
+   led_bns_adv_6: red-f100ms
+   
+# Step 7   
+- duration: 1
+  lights:
+   led_bns_adv_6: off
+   led_bns_adv_7: red-f100ms
+   
+# Step 8   
+- duration: 1
+  lights:
+   led_bns_adv_7: off
+   led_bns_adv_8: red-f100ms
+   
+# Step 8   
+- duration: 1
+  lights:
+   led_bns_adv_8: off
+   led_bns_adv_9: red-f100ms
+
+   
+# Step 9   
+- duration: 1
+  lights:
+   led_bns_adv_9: off
+   led_bns_adv_10: red-f100ms
+   
+# Step 10   
+- duration: 1
+  lights:
+   led_bns_adv_10: off
+   led_bns_adv_20: red-f100ms
+   
+# Step 11   
+- duration: 1
+  lights:
+   led_bns_adv_20: off
+
+   
+    
+

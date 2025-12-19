@@ -1,0 +1,360 @@
+#show_version=6
+##! show: bonus_show
+
+
+- duration: 1
+  lights:
+    (led): (color1)
+- duration: 1
+  lights:
+    (led): (color2)
+
+- duration: 0.95
+  lights:
+    (led): (color1)
+- duration: 0.95
+  lights:
+    (led): (color2)
+    
+- duration: 0.90
+  lights:
+    (led): (color1)
+- duration: 0.90
+  lights:
+    (led): (color2)
+    
+- duration: 0.85
+  lights:
+    (led): (color1)
+- duration: 0.85
+  lights:
+    (led): (color2)
+    
+- duration: 0.80
+  lights:
+    (led): (color1)
+- duration: 0.80
+  lights:
+    (led): (color2)
+    
+- duration: 0.75
+  lights:
+    (led): (color1)
+- duration: 0.75
+  lights:
+    (led): (color2)
+    
+- duration: 0.70
+  lights:
+    (led): (color1)
+- duration: 0.70
+  lights:
+    (led): (color2)
+    
+- duration: 0.65
+  lights:
+    (led): (color1)
+- duration: 0.65
+  lights:
+    (led): (color2)
+    
+- duration: 0.60
+  lights:
+    (led): (color1)
+- duration: 0.60
+  lights:
+    (led): (color2)
+    
+- duration: 0.50
+  lights:
+    (led): (color1)
+- duration: 0.50
+  lights:
+    (led): (color2)
+    
+- duration: 0.45
+  lights:
+    (led): (color1)
+- duration: 0.45
+  lights:
+    (led): (color2)
+    
+- duration: 0.40
+  lights:
+    (led): (color1)
+- duration: 0.40
+  lights:
+    (led): (color2)
+    
+- duration: 0.35
+  lights:
+    (led): (color1)
+- duration: 0.35
+  lights:
+    (led): (color2)
+    
+- duration: 0.30
+  lights:
+    (led): (color1)
+- duration: 0.30
+  lights:
+    (led): (color2)
+    
+- duration: 0.25
+  lights:
+    (led): (color1)
+- duration: 0.25
+  lights:
+    (led): (color2)
+    
+- duration: 0.20
+  lights:
+    (led): (color1)
+- duration: 0.20
+  lights:
+    (led): (color2)
+    
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+    
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+    
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+    
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+    
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+    
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+    
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+    
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+    
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)
+
+- duration: 0.15
+  lights:
+    (led): (color1)
+- duration: 0.15
+  lights:
+    (led): (color2)

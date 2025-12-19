@@ -1,0 +1,758 @@
+#config_version=6
+##! mode: bonus_collect
+
+#GORGAR
+
+# Observed rules:  Starts at 1 bonus count at ball start.  Drain lane hits add 3 bonus.  Bonus Multiplier (2x, 3x, 4x, 5x)
+# adds another bounus collect turn.  Count speeds up per collect turn.  Each bonus lit adds 1000 points on collect.
+
+mode:
+  start_events: start_mode_bonus_collect
+  stop_events: stop_mode_bonus_collect
+  priority: 250
+  
+ 
+  
+event_player:
+  mode_bonus_started: initialize_bonus_collect
+ 
+  #adv_bonus_count_done{count==1}: count_up  
+  #adv_bonus_count_done{count==2}: count_up, count_up_again  
+  #count_up_again: count_up
+  ball_started: count_up
+  
+  #### cheat to get switches to count up 2 times
+  #s_ro_left_lwr_out_active: count_up  
+  #s_ro_left_lwr_out_active.1: count_up  
+  
+  s_ro_left_lwr_in_active: count_up
+  #s_ro_left_lwr_in_active.1: count_up
+  #logicblock_magna_save_left_bonus_sequence_complete: count_up
+  #logicblock_magna_save_left_bonus_sequence_complete.1: count_up
+  #logicblock_magna_save_left_bonus_sequence_complete.2: count_up
+  
+  s_ro_right_lwr_in_active: count_up 
+  #s_ro_right_lwr_in_active.1: count_up
+  #logicblock_magna_save_right_bonus_sequence_complete: count_up
+  #logicblock_magna_save_right_bonus_sequence_complete.1: count_up
+  #logicblock_magna_save_right_bonus_sequence_complete.2: count_up
+  
+  #s_ro_right_lwr_out_active: count_up 
+  #s_ro_right_lwr_out_active.1: count_up
+  #s_ro_upr_left_ramp_active: count_up  
+  
+  s_ro_a_active: count_up
+  s_ro_b_active: count_up
+  s_ro_c_active: count_up
+
+  
+    
+  player_bonus_collect_bonus_collect_show_speed_timer_tick{value==1}: bonus_collect_show_pause
+  player_bonus_collect_bonus_collect_show_speed_timer_tick{value==3}: bonus_collect_show_resume
+  
+  
+  bonus_collect_count_done{count>=1}: reset_bonus_counter_end_value
+  
+  bonus_collect_count_done{count==1}: adv_1_active, loop_collect_0
+  bonus_collect_count_done{count==2}: adv_2_active
+  bonus_collect_count_done{count==3}: adv_3_active
+  bonus_collect_count_done{count==4}: adv_4_active
+  bonus_collect_count_done{count==5}: adv_5_active
+  bonus_collect_count_done{count==6}: adv_6_active
+  bonus_collect_count_done{count==7}: adv_7_active
+  bonus_collect_count_done{count==8}: adv_8_active
+  bonus_collect_count_done{count==9}: adv_9_active
+  bonus_collect_count_done{count==10}: adv_10_active
+  
+  bonus_collect_count_done{count==11}: adv_1_active, clear_lights, loop_collect_1
+  bonus_collect_count_done{count==12}: adv_2_active
+  bonus_collect_count_done{count==13}: adv_3_active
+  bonus_collect_count_done{count==14}: adv_4_active
+  bonus_collect_count_done{count==15}: adv_5_active
+  bonus_collect_count_done{count==16}: adv_6_active
+  bonus_collect_count_done{count==17}: adv_7_active
+  bonus_collect_count_done{count==18}: adv_8_active
+  bonus_collect_count_done{count==19}: adv_9_active
+  bonus_collect_count_done{count==20}: adv_10_active, adv_20_active
+  
+  bonus_collect_count_done{count==21}: adv_1_active, clear_lights, loop_collect_2
+  bonus_collect_count_done{count==22}: adv_2_active
+  bonus_collect_count_done{count==23}: adv_3_active
+  bonus_collect_count_done{count==24}: adv_4_active
+  bonus_collect_count_done{count==25}: adv_5_active
+  bonus_collect_count_done{count==26}: adv_6_active
+  bonus_collect_count_done{count==27}: adv_7_active
+  bonus_collect_count_done{count==28}: adv_8_active
+  bonus_collect_count_done{count==29}: adv_9_active
+  bonus_collect_count_done{count==30}: adv_10_active, adv_20_active, adv_30_active
+  
+  bonus_collect_count_done{count==31}: adv_1_active, clear_lights, loop_collect_3
+  bonus_collect_count_done{count==32}: adv_2_active
+  bonus_collect_count_done{count==33}: adv_3_active
+  bonus_collect_count_done{count==34}: adv_4_active
+  bonus_collect_count_done{count==35}: adv_5_active
+  bonus_collect_count_done{count==36}: adv_6_active
+  bonus_collect_count_done{count==37}: adv_7_active
+  bonus_collect_count_done{count==38}: adv_8_active
+  bonus_collect_count_done{count==39}: adv_9_active
+  bonus_collect_count_done{count==40}: adv_10_active, adv_20_active, adv_30_active, adv_40_active
+  
+  bonus_collect_count_done{count==41}: adv_1_active, clear_lights, loop_collect_4
+  bonus_collect_count_done{count==42}: adv_2_active
+  bonus_collect_count_done{count==43}: adv_3_active
+  bonus_collect_count_done{count==44}: adv_4_active
+  bonus_collect_count_done{count==45}: adv_5_active
+  bonus_collect_count_done{count==46}: adv_6_active
+  bonus_collect_count_done{count==47}: adv_7_active
+  bonus_collect_count_done{count==48}: adv_8_active
+  bonus_collect_count_done{count==49}: adv_9_active
+  bonus_collect_count_done{count==50}: adv_10_active, adv_20_active, adv_30_active, adv_40_active
+  
+  
+    
+
+
+
+  
+counters:
+
+# Counters will get multiplied by 1 to 3 advances.  Need event
+
+
+    
+  bonus_collect_count:
+    count_events: count_up
+    events_when_hit: bonus_collect_count_done
+    starting_count: 0
+    direction: up
+    count_complete_value: 51
+    reset_on_complete: true
+    persist_state: false
+    start_enabled: true
+    disable_on_complete: true
+    restart_events: ball_started
+    
+
+
+    
+#the left outlane, right return
+#lane, and the green inline targets advance from 1 to 3 advances 
+    
+
+    
+    
+timers:  #start_ball_ending_show
+  bonus_collect_timer:
+    start_value:  30
+    end_value: 0
+    direction: down
+    tick_interval: 1 #0.070 * current_player.collect_hit_total
+    control_events:
+      - action: start
+        event:  start_ball_ending_show
+      - action: reset
+        event: mode_bonus_collect_show_ended #mode_start_ball_ending_show_ended
+        
+  bonus_collect_timer2:
+    start_value:  1
+    end_value: 0
+    direction: down
+    tick_interval: 1 #0.070 * current_player.collect_hit_total
+    control_events:
+      - action: start
+        event:  mode_bonus_collect_show_ended
+      - action: reset
+        event: timer_bonus_collect_timer2_complete #mode_start_ball_ending_show_ended
+        
+  bonus_collect_show_speed_timer:
+    start_value:  0
+    end_value: 20
+    direction: up
+    tick_interval: 0.15s
+    control_events:
+      - action: start
+        event:  start_ball_ending_show
+      - action: reset
+        event: mode_bonus_collect_show_ended #mode_start_ball_ending_show_ended
+        
+
+     
+
+        
+    
+    
+light_player:
+
+
+            
+  adv_1_active:
+        led_bns_adv_1:
+            color: red
+            fade: 500ms
+  adv_2_active:
+        led_bns_adv_2:
+            color: red
+            fade: 500ms
+  adv_3_active:
+        led_bns_adv_3:
+            color: red
+            fade: 500ms
+  adv_4_active:
+        led_bns_adv_4:
+            color: red
+            fade: 500ms
+  adv_5_active:
+        led_bns_adv_5:
+            color: red
+            fade: 500ms
+  adv_6_active:
+        led_bns_adv_6:
+            color: red
+            fade: 500ms
+  adv_7_active:
+        led_bns_adv_7:
+            color: red
+            fade: 500ms
+  adv_8_active:
+        led_bns_adv_8:
+            color: red
+            fade: 500ms
+  adv_9_active:
+        led_bns_adv_9:
+            color: red
+            fade: 500ms
+  adv_10_active:
+        led_bns_adv_10:
+            color: red
+            fade: 500ms
+  adv_20_active:
+        led_bns_adv_20:
+            color: red
+            fade: 500ms
+
+            
+  #clear lights on next base 10 count up.
+  
+
+            
+  clear_lights:
+  
+        led_bns_adv_2:
+            color: off
+            fade: 500ms
+  
+        led_bns_adv_3:
+            color: off
+            fade: 500ms
+  
+        led_bns_adv_4:
+            color: off
+            fade: 500ms
+  
+        led_bns_adv_5:
+            color: off
+            fade: 500ms
+  
+        led_bns_adv_6:
+            color: off
+            fade: 500ms
+ 
+        led_bns_adv_7:
+            color: off
+            fade: 500ms
+  
+        led_bns_adv_8:
+            color: off
+            fade: 500ms
+  
+        led_bns_adv_9:
+            color: off
+            fade: 500ms
+            
+  mode_bonus_collect_show_ended:
+        
+        led_bns_adv:
+            color: off
+            fade: 500ms
+            
+        #ledx:
+        #    color: off
+        #    fade: 500ms
+        
+  
+        #led_bns_adv_10:
+            #color: off
+            #fade: 500ms
+            
+    #clear lights on next base 10 count up.
+    
+sequences:
+
+
+##### play back bonus collect show by adding loops based on bobuses collected #########
+    seq_collect_1_loop:
+        events:
+          - loop_collect_0
+          - start_ball_ending_show
+        events_when_complete: seq_collect_1_loop_done 
+        #reset_events: loop_collect_1
+        disable_events: loop_collect_1
+        enable_events: loop_collect_0
+    seq_collect_2_loop:
+        events:          
+          - loop_collect_1
+          - start_ball_ending_show
+        events_when_complete: seq_collect_2_loop_done
+        #reset_events: loop_collect_2
+        disable_events: loop_collect_2
+        enable_events: loop_collect_0
+    seq_collect_3_loop:
+        events:          
+          - loop_collect_2
+          - start_ball_ending_show
+        events_when_complete: seq_collect_3_loop_done
+        #reset_events: loop_collect_3
+        disable_events: loop_collect_3
+        enable_events: loop_collect_0
+    seq_collect_4_loop:
+        events:          
+          - loop_collect_3
+          - start_ball_ending_show
+        events_when_complete: seq_collect_4_loop_done
+        #reset_events: loop_collect_4
+        disable_events: loop_collect_4
+        enable_events: loop_collect_0
+    
+
+show_player:
+
+    count_up:
+        bonus_collect_hit_show:
+            loops: 0
+            speed: 16
+
+    ###### slow throttle up to bonus collect ######
+    #player_bonus_collect_bonus_collect_show_speed_timer_tick{value==1}:
+    #    bonus_collect_show:
+    #         action: pause
+             
+    #player_bonus_collect_bonus_collect_show_speed_timer_tick{value==3}:
+    #    bonus_collect_show:
+    #         action: resume
+             
+    #player_bonus_collect_bonus_collect_show_speed_timer_tick{value==4}:
+    #    bonus_collect_show:
+    #         action: pause
+             
+    #player_bonus_collect_bonus_collect_show_speed_timer_tick{value==5}:
+    #    bonus_collect_show:
+    #         action: resume
+    ###### slow throttle up to bonus collect ######
+    
+    ###### bonus multiplier adds loops to bounus collect show ######
+   
+    seq_collect_1_loop_done:
+        bonus_collect_show:
+            loops: 0
+            speed: 5
+            start_step: current_player.collect_hit_total            
+            events_when_stopped: mode_bonus_collect_show_ended
+               
+    seq_collect_2_loop_done:
+        bonus_collect_show:
+            loops: 1
+            speed: 10
+            start_step: current_player.collect_hit_total
+            events_when_stopped: mode_bonus_collect_show_ended
+            
+    seq_collect_3_loop_done:
+        bonus_collect_show:
+            loops: 2
+            speed: 10
+            start_step: current_player.collect_hit_total
+            events_when_stopped: mode_bonus_collect_show_ended       
+            
+    seq_collect_4_loop_done:
+        bonus_collect_show:
+            loops: 3
+            speed: 10
+            start_step: current_player.collect_hit_total
+            events_when_stopped: mode_bonus_collect_show_ended       
+            
+    
+            
+    ########### Pinball Wizard! - Flaming Sword Show on 49 bonuses  ##############
+    
+    bonus_collect_count_done{count>=49}:
+        bonus_all_collect_show: 
+            loops: -1
+            speed: 6
+        
+     ########### Pinball Wizard! - Flaming Sword Show on all multipliers  ##############
+    
+    #mltp_lanes_done{count==4}:
+    #    bonus_all_collect_show_2: 
+    #        loops: -1
+    #        speed: 6    
+        
+  
+  
+variable_player:
+
+# new multiplier values set in bluebonus and greenbonus modes.
+
+  #start_ball_ending_show:
+  #  score: 1000 * current_player.collect_hit_total
+    
+  #bonus_collect_count_down_done:
+  #  score: 1000
+    
+  player_bonus_collect_bonus_collect_show_speed_timer_tick:
+    score: 1000
+    
+    
+ 
+
+  #mode_bonus_collect_started:
+  #  3x_bonus_pf_multiplier:
+  #    int: 1
+  #    action: set
+    
+    bonus_adv_multiplier:
+      int: 0
+      action: set
+    
+      
+
+  timer_bonus_collect_timer_complete:   
+    collect_hit_total:
+      int: 0
+      action: set
+      
+
+      
+  bonus_collect_count_done{count==1}:
+    collect_hit_total:
+      int: 12
+      action: set   
+    collect_score_total:
+      int: 1
+      action: set         
+  bonus_collect_count_done{count==2}:
+    collect_hit_total:
+      int: 11
+      action: set
+    collect_score_total:
+      int: 2
+      action: set      
+  bonus_collect_count_done{count==3}:
+    collect_hit_total:
+      int: 10
+      action: set
+    collect_score_total:
+      int: 3
+      action: set      
+  bonus_collect_count_done{count==4}:
+    collect_hit_total:
+      int: 9
+      action: set
+    collect_score_total:
+      int: 4
+      action: set      
+  bonus_collect_count_done{count==5}:
+    collect_hit_total:
+      int: 8
+      action: set
+    collect_score_total:
+      int: 5
+      action: set      
+  bonus_collect_count_done{count==6}:
+    collect_hit_total:
+      int: 7
+      action: set
+    collect_score_total:
+      int: 6
+      action: set      
+  bonus_collect_count_done{count==7}:
+    collect_hit_total:
+      int: 6
+      action: set
+    collect_score_total:
+      int: 7
+      action: set      
+  bonus_collect_count_done{count==8}:
+    collect_hit_total:
+      int: 5
+      action: set
+    collect_score_total:
+      int: 8
+      action: set      
+  bonus_collect_count_done{count==9}:
+    collect_hit_total:
+      int: 4
+      action: set
+    collect_score_total:
+      int: 9
+      action: set      
+  bonus_collect_count_done{count==10}:
+    collect_hit_total:
+      int: 3
+      action: set
+    collect_score_total:
+      int: 10
+      action: set      
+  bonus_collect_count_done{count==11}:
+    collect_hit_total:
+      int: 11
+      action: set
+      
+  bonus_collect_count_done{count==12}:
+    collect_hit_total:
+      int: 12
+      action: set
+  bonus_collect_count_done{count==13}:
+    collect_hit_total:
+      int: 11
+      action: set
+  bonus_collect_count_done{count==14}:
+    collect_hit_total:
+      int: 10
+      action: set
+  bonus_collect_count_done{count==15}:
+    collect_hit_total:
+      int: 9
+      action: set
+  bonus_collect_count_done{count==16}:
+    collect_hit_total:
+      int: 8
+      action: set
+  bonus_collect_count_done{count==17}:
+    collect_hit_total:
+      int: 7
+      action: set
+  bonus_collect_count_done{count==18}:
+    collect_hit_total:
+      int: 6
+      action: set
+  bonus_collect_count_done{count==19}:
+    collect_hit_total:
+      int: 5
+      action: set
+  bonus_collect_count_done{count==20}:
+    collect_hit_total:
+      int: 4
+      action: set
+  bonus_collect_count_done{count==21}:
+    collect_hit_total:
+      int: 3
+      action: set
+  bonus_collect_count_done{count==22}:
+    collect_hit_total:
+      int: 2
+      action: set
+  bonus_collect_count_done{count==23}:
+    collect_hit_total:
+      int: 1
+      action: set
+  bonus_collect_count_done{count==24}:
+    collect_hit_total:
+      int: 10
+      action: set
+  bonus_collect_count_done{count==25}:
+    collect_hit_total:
+      int: 9
+      action: set
+  bonus_collect_count_done{count==26}:
+    collect_hit_total:
+      int: 8
+      action: set
+  bonus_collect_count_done{count==27}:
+    collect_hit_total:
+      int: 7
+      action: set
+  bonus_collect_count_done{count==28}:
+    collect_hit_total:
+      int: 6
+      action: set
+  bonus_collect_count_done{count==29}:
+    collect_hit_total:
+      int: 5
+      action: set
+  bonus_collect_count_done{count==30}:
+    collect_hit_total:
+      int: 4
+      action: set
+  bonus_collect_count_done{count==31}:
+    collect_hit_total:
+      int: 3
+      action: set
+  bonus_collect_count_done{count==32}:
+    collect_hit_total:
+      int: 2
+      action: set
+  bonus_collect_count_done{count==33}:
+    collect_hit_total:
+      int: 1
+      action: set
+  bonus_collect_count_done{count==34}:
+    collect_hit_total:
+      int: 12
+      action: set
+  bonus_collect_count_done{count==35}:
+    collect_hit_total:
+      int: 11
+      action: set
+  bonus_collect_count_done{count==36}:
+    collect_hit_total:
+      int: 10
+      action: set
+  bonus_collect_count_done{count==37}:
+    collect_hit_total:
+      int: 19
+      action: set
+  bonus_collect_count_done{count==38}:
+    collect_hit_total:
+      int: 8
+      action: set
+  bonus_collect_count_done{count==39}:
+    collect_hit_total:
+      int: 7
+      action: set
+  bonus_collect_count_done{count==40}:
+    collect_hit_total:
+      int: 6
+      action: set
+  bonus_collect_count_done{count==41}:
+    collect_hit_total:
+      int: 5
+      action: set
+  bonus_collect_count_done{count==42}:
+    collect_hit_total:
+      int: 4
+      action: set
+  bonus_collect_count_done{count==43}:
+    collect_hit_total:
+      int: 3
+      action: set
+  bonus_collect_count_done{count==44}:
+    collect_hit_total:
+      int: 2
+      action: set
+  bonus_collect_count_done{count==45}:
+    collect_hit_total:
+      int: 1
+      action: set
+  bonus_collect_count_done{count==46}:
+    collect_hit_total:
+      int: 12
+      action: set
+  bonus_collect_count_done{count==47}:
+    collect_hit_total:
+      int: 11
+      action: set
+  bonus_collect_count_done{count==48}:
+    collect_hit_total:
+      int: 10
+      action: set
+  bonus_collect_count_done{count==49}:
+    collect_hit_total:
+      int: 9
+      action: set
+  bonus_collect_count_done{count==50}:
+    collect_hit_total:
+      int: 8
+      action: set
+  bonus_collect_count_done{count==51}:
+    collect_hit_total:
+      int: 7
+      action: set
+  bonus_collect_count_done{count==52}:
+    collect_hit_total:
+      int: 6
+      action: set
+  bonus_collect_count_done{count==53}:
+    collect_hit_total:
+      int: 5
+      action: set
+  bonus_collect_count_done{count==54}:
+    collect_hit_total:
+      int: 4
+      action: set
+  bonus_collect_count_done{count==55}:
+    collect_hit_total:
+      int: 3
+      action: set
+  bonus_collect_count_done{count==56}:
+    collect_hit_total:
+      int: 2
+      action: set
+
+  mltp_lanes_done{count==1}:
+    multiplier_hit_total:
+      int: 4
+      action: set
+  mltp_lanes_done{count==2}:
+    multiplier_hit_total:
+      int: 3
+      action: set
+  mltp_lanes_done{count==3}:
+    multiplier_hit_total:
+      int: 2
+      action: set
+  mltp_lanes_done{count==4}:
+    multiplier_hit_total:
+      int: 1
+      action: set
+  
+############ Roll-Over Scores ############
+
+  s_ro_left_lwr_out_active:
+    score: 5000 * current_player.pf_multiplier
+  s_ro_right_lwr_out_active:
+    score: 5000 * current_player.pf_multiplier
+  s_ro_left_lwr_in_active:
+    score: 1000 * current_player.pf_multiplier
+  s_ro_right_lwr_in_active:
+    score: 1000 * current_player.pf_multiplier
+  s_ro_a_active:
+    score: 1000 * current_player.pf_multiplier
+  s_ro_b_active:
+    score: 1000 * current_player.pf_multiplier
+  s_ro_c_active:
+    score: 1000 * current_player.pf_multiplier
+   
+  #bonus_collect_count_done:
+    #bonus_total_advance:    
+      #int: current_player.collect_hit_total
+      #action: set
+
+#the left outlane, right return
+#lane,and the green inline targets advance from 1 to 3 advances 
+
+  player_bonus_collect_bonus_collect_show_speed_timer_tick{value==1}: 
+    show_speed_value:
+      int: 2
+      action: set
+     
+
+      
+sound_player:
+
+  player_bonus_collect_bonus_collect_show_speed_timer_tick: bonus_collect_sound
+  
+  
+  
+  #timer_bonus_collect_timer_started:
+  #  spinner_sound:
+  #    action: play
+  #    loops: 1
+  ##timer_bonus_collect_timer_complete:
+  #mode_bonus_collect_show_ended: 
+  #  spinner_sound:
+  #    action: stop
+
+
+
+
+        
+    

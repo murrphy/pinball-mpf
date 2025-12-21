@@ -2,6 +2,7 @@
 
 config:
 - hardware.yaml
+- colors.yaml
 - displays.yaml
 - devices.yaml
 - switches.yaml
@@ -9,6 +10,7 @@ config:
 - lights.yaml
 - sounds.yaml
 - infolights.yaml
+- modes.yaml
 - logging.yaml
 
 mpf:
@@ -25,12 +27,5 @@ playfields:
     tags: default
 
 game:
-  balls_per_game: 2
+  balls_per_game: 3
   max_players: 4
-  
-modes:
-  - base
-  - segment_display
-  - lane_change
-  - arrow_targets
-  - circle_targets

@@ -7,7 +7,7 @@
     l_bonus_1: on
     l_fire: off
     l_power: off
-    l_lane_f: green
+    l_lane_f: warm_white
     l_lane_i: off
     l_lane_r: off
     l_lane_e: off
@@ -27,16 +27,16 @@
     l_left_outlane_special: off
     l_right_outlane_special: off
     l_shield_on_when_lit: yellow
-    l_lock_1_arrow: green
+    l_lock_1_arrow: warm_white
     l_lock_2_arrow: off
     l_lock_3_arrow: off
     l_extra_ball_arrow: yellow
     l_fire_lane_1000_when_lit: red
 - duration: 1
   lights:
-    l_bonus_2: on
+    l_bonus_2: warm_white
     l_lane_f: off
-    l_lane_i: green
+    l_lane_i: warm_white
     l_fire_lane_guide_4: off
     l_fire_lane_guide_3: white
     l_fire_lane_guide_2: white
@@ -48,15 +48,15 @@
     l_left_outlane_special: red
     l_right_outlane_special: red
     l_shield_on_when_lit: off
-    l_lock_1_arrow: green
-    l_lock_2_arrow: green
+    l_lock_1_arrow: warm_white
+    l_lock_2_arrow: warm_white
     l_lock_3_arrow: off
 - duration: 1
   lights:
-    l_bonus_3: on
-    l_bonus_multipliers: green
+    l_bonus_3: warm_white
+    l_bonus_multipliers: warm_white
     l_lane_i: off
-    l_lane_r: green
+    l_lane_r: warm_white
     l_fire_lane_guide_3: off
     l_fire_lane_guide_1: white
     l_right_target_1: off
@@ -67,15 +67,15 @@
     l_left_outlane_special: off
     l_right_outlane_special: off
     l_shield_on_when_lit: yellow
-    l_lock_1_arrow: green
-    l_lock_2_arrow: green
-    l_lock_3_arrow: green
+    l_lock_1_arrow: warm_white
+    l_lock_2_arrow: warm_white
+    l_lock_3_arrow: warm_white
 - duration: 1
   lights:
     l_fire_again: off
-    l_bonus_4: on
+    l_bonus_4: warm_white
     l_lane_r: off
-    l_lane_e: green
+    l_lane_e: warm_white
     l_right_target_1: blue
     l_right_target_2: off
     l_right_target_3: blue
@@ -85,8 +85,8 @@
     l_right_outlane_special: red
     l_shield_on_when_lit: off
     l_lock_1_arrow: off
-    l_lock_2_arrow: green
-    l_lock_3_arrow: green
+    l_lock_2_arrow: warm_white
+    l_lock_3_arrow: warm_white
     l_extra_ball_arrow: off
     l_fire_lane_1000_when_lit: off
 - duration: 1
@@ -106,7 +106,7 @@
     l_shield_on_when_lit: yellow
     l_lock_1_arrow: off
     l_lock_2_arrow: off
-    l_lock_3_arrow: green
+    l_lock_3_arrow: warm_white
     l_extra_ball_arrow: yellow
     l_fire_lane_1000_when_lit: red
 - duration: 1
@@ -136,7 +136,7 @@
     l_left_outlane_special: off
     l_right_outlane_special: off
     l_shield_on_when_lit: yellow
-    l_lock_1_arrow: green
+    l_lock_1_arrow: warm_white
     l_lock_2_arrow: off
     l_lock_3_arrow: off
 - duration: 1
@@ -151,8 +151,8 @@
     l_left_outlane_special: red
     l_right_outlane_special: red
     l_shield_on_when_lit: off
-    l_lock_1_arrow: green
-    l_lock_2_arrow: green
+    l_lock_1_arrow: warm_white
+    l_lock_2_arrow: warm_white
     l_lock_3_arrow: off
     l_extra_ball_arrow: off
     l_fire_lane_1000_when_lit: off
@@ -168,9 +168,9 @@
     l_left_outlane_special: off
     l_right_outlane_special: off
     l_shield_on_when_lit: yellow
-    l_lock_1_arrow: green
-    l_lock_2_arrow: green
-    l_lock_3_arrow: green
+    l_lock_1_arrow: warm_white
+    l_lock_2_arrow: warm_white
+    l_lock_3_arrow: warm_white
     l_extra_ball_arrow: yellow
     l_fire_lane_1000_when_lit: red
 - duration: 1
@@ -186,8 +186,8 @@
     l_right_outlane_special: red
     l_shield_on_when_lit: off
     l_lock_1_arrow: off
-    l_lock_2_arrow: green
-    l_lock_3_arrow: green
+    l_lock_2_arrow: warm_white
+    l_lock_3_arrow: warm_white
 - duration: 1
   lights:
     l_bonus_7: off
@@ -212,7 +212,7 @@
     l_shield_on_when_lit: yellow
     l_lock_1_arrow: off
     l_lock_2_arrow: off
-    l_lock_3_arrow: green
+    l_lock_3_arrow: warm_white
 - duration: 1
   lights:
     l_bonus_8: off
@@ -257,7 +257,7 @@
     l_left_outlane_special: off
     l_right_outlane_special: off
     l_shield_on_when_lit: yellow
-    l_lock_1_arrow: green
+    l_lock_1_arrow: warm_white
     l_lock_2_arrow: off
     l_lock_3_arrow: off
     l_extra_ball_arrow: yellow
@@ -284,8 +284,8 @@
     l_left_outlane_special: red
     l_right_outlane_special: red
     l_shield_on_when_lit: off
-    l_lock_1_arrow: green
-    l_lock_2_arrow: green
+    l_lock_1_arrow: warm_white
+    l_lock_2_arrow: warm_white
     l_lock_3_arrow: off
 - duration: 1
   lights:
@@ -303,9 +303,9 @@
     l_left_outlane_special: off
     l_right_outlane_special: off
     l_shield_on_when_lit: yellow
-    l_lock_1_arrow: green
-    l_lock_2_arrow: green
-    l_lock_3_arrow: green
+    l_lock_1_arrow: warm_white
+    l_lock_2_arrow: warm_white
+    l_lock_3_arrow: warm_white
 - duration: 1
   lights:
     l_lock_1_star_rollover: off
@@ -323,8 +323,8 @@
     l_right_outlane_special: red
     l_shield_on_when_lit: off
     l_lock_1_arrow: off
-    l_lock_2_arrow: green
-    l_lock_3_arrow: green
+    l_lock_2_arrow: warm_white
+    l_lock_3_arrow: warm_white
     l_extra_ball_arrow: off
 - duration: 1
   lights:
@@ -344,7 +344,7 @@
     l_shield_on_when_lit: yellow
     l_lock_1_arrow: off
     l_lock_2_arrow: off
-    l_lock_3_arrow: green
+    l_lock_3_arrow: warm_white
     l_extra_ball_arrow: yellow
 - duration: 1
   lights:

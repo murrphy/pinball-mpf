@@ -161,57 +161,57 @@ lights:
     number: playfield-2-17
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_1, led_bns_adv
   l_bonus_2:
     number: playfield-2-16
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_2, led_bns_adv
   l_bonus_3:
     number: playfield-2-15
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_3, led_bns_adv
   l_bonus_4:
     number: playfield-2-14
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_4, led_bns_adv
   l_bonus_5:
     number: playfield-2-13
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_5, led_bns_adv
   l_bonus_6:
     number: playfield-2-12
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_6, led_bns_adv
   l_bonus_7:
     number: playfield-2-11
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_7, led_bns_adv
   l_bonus_8:
     number: playfield-2-10
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_8, led_bns_adv
   l_bonus_9:
     number: playfield-2-9
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_9, led_bns_adv
   l_bonus_10:
     number: playfield-2-8
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_10, led_bns_adv
   l_bonus_20:
     number: playfield-2-7
     type: rgb
     default_on_color: F3C35F
-    tags: bonus_lamp
+    tags: led_bns_adv_20, led_bns_adv
   
 
   l_fire_again:

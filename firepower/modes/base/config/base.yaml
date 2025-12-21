@@ -5,9 +5,18 @@ mode:
   # stop_events: ball_will_stop
   priority: 100
 
-########################################################################
-### New code from Codex starts here                                  ###
-#vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+########################################
+# Fire off events to get modes going
+########################################
+
+event_player:
+  mode_base_started:
+    - start_mode_bonus_collect    # Priority 250
+
+queue_relay_player:
+  ball_ending:
+    post: start_ball_ending_show
+    wait_for: timer_bonus_collect_timer2_complete
 
 ########################################
 # 1. Player variable logic
@@ -89,172 +98,6 @@ accruals:
       - s_lane_e_active
     events_when_complete: fire_lanes_all_lit
     reset_on_complete: true
-
-
-########################################
-# 3. Bonus & multiplier lamps
-########################################
-
-light_player:
-
-  ######################################
-  # BONUS LAMPS (ladder representation)
-  #
-  # Lamps:
-  #   l_bonus_1  .. l_bonus_10, l_bonus_20
-  #
-  # We treat bonus_steps as a ladder:
-  #   >=1  → l_bonus_1 on
-  #   >=2  → l_bonus_2 on
-  #   ...
-  #   >=11 → l_bonus_20 on
-  ######################################
-
-  player_bonus_steps{value==0}:
-    l_bonus_1: off
-    l_bonus_2: off
-    l_bonus_3: off
-    l_bonus_4: off
-    l_bonus_5: off
-    l_bonus_6: off
-    l_bonus_7: off
-    l_bonus_8: off
-    l_bonus_9: off
-    l_bonus_10: off
-    l_bonus_20: off
-
-  player_bonus_steps{value>=1}:
-    l_bonus_1: on
-  player_bonus_steps{value>=2}:
-    l_bonus_2: on
-  player_bonus_steps{value>=3}:
-    l_bonus_3: on
-  player_bonus_steps{value>=4}:
-    l_bonus_4: on
-  player_bonus_steps{value>=5}:
-    l_bonus_5: on
-  player_bonus_steps{value>=6}:
-    l_bonus_6: on
-  player_bonus_steps{value>=7}:
-    l_bonus_7: on
-  player_bonus_steps{value>=8}:
-    l_bonus_8: on
-  player_bonus_steps{value>=9}:
-    l_bonus_9: on
-  player_bonus_steps{value>=10}:
-    l_bonus_10: on
-  player_bonus_steps{value>=11}:
-    bonus_lamp: off
-    l_bonus_10: on
-    l_bonus_1: on
-  player_bonus_steps{value>=12}:
-    l_bonus_2: on
-  player_bonus_steps{value>=13}:
-    l_bonus_3: on
-  player_bonus_steps{value>=14}:
-    l_bonus_4: on
-  player_bonus_steps{value>=15}:
-    l_bonus_5: on
-  player_bonus_steps{value>=16}:
-    l_bonus_6: on
-  player_bonus_steps{value>=17}:
-    l_bonus_7: on
-  player_bonus_steps{value>=18}:
-    l_bonus_8: on
-  player_bonus_steps{value>=19}:
-    l_bonus_10: on
-  player_bonus_steps{value>=20}:
-    bonus_lamp: off
-    l_bonus_20: on
-  player_bonus_steps{value>=21}:
-    l_bonus_1: on
-  player_bonus_steps{value>=22}:
-    l_bonus_2: on
-  player_bonus_steps{value>=23}:
-    l_bonus_3: on
-  player_bonus_steps{value>=24}:
-    l_bonus_4: on
-  player_bonus_steps{value>=25}:
-    l_bonus_5: on
-  player_bonus_steps{value>=26}:
-    l_bonus_6: on
-  player_bonus_steps{value>=27}:
-    l_bonus_7: on
-  player_bonus_steps{value>=28}:
-    l_bonus_8: on
-  player_bonus_steps{value>=29}:
-    l_bonus_9: on
-  player_bonus_steps{value>=30}:
-    bonus_lamp: off
-    l_bonus_20: on
-    l_bonus_10: on
-  player_bonus_steps{value>=31}:
-    l_bonus_1: on
-  player_bonus_steps{value>=32}:
-    l_bonus_2: on
-  player_bonus_steps{value>=33}:
-    l_bonus_3: on
-  player_bonus_steps{value>=34}:
-    l_bonus_4: on
-  player_bonus_steps{value>=35}:
-    l_bonus_5: on
-  player_bonus_steps{value>=36}:
-    l_bonus_6: on
-  player_bonus_steps{value>=37}:
-    l_bonus_7: on
-  player_bonus_steps{value>=38}:
-    l_bonus_8: on
-  player_bonus_steps{value>=39}:
-    l_bonus_9: on
-
-
-
-  ######################################
-  # MULTIPLIER LAMPS
-  #
-  # Lamps:
-  #   l_2x_bonus_multiplier
-  #   l_3x_bonus_multiplier
-  #   l_4x_bonus_multiplier
-  #   l_5x_bonus_multiplier
-  #
-  # 1x = all off
-  # 2x–5x = exactly one lamp on
-  ######################################
-
-  player_bonus_multiplier{value==1}:
-    l_2x_bonus_multiplier: off
-    l_3x_bonus_multiplier: off
-    l_4x_bonus_multiplier: off
-    l_5x_bonus_multiplier: off
-
-  player_bonus_multiplier{value==2}:
-    l_2x_bonus_multiplier: on
-    l_3x_bonus_multiplier: off
-    l_4x_bonus_multiplier: off
-    l_5x_bonus_multiplier: off
-
-  player_bonus_multiplier{value==3}:
-    l_2x_bonus_multiplier: off
-    l_3x_bonus_multiplier: on
-    l_4x_bonus_multiplier: off
-    l_5x_bonus_multiplier: off
-
-  player_bonus_multiplier{value==4}:
-    l_2x_bonus_multiplier: off
-    l_3x_bonus_multiplier: off
-    l_4x_bonus_multiplier: on
-    l_5x_bonus_multiplier: off
-
-  player_bonus_multiplier{value==5}:
-    l_2x_bonus_multiplier: off
-    l_3x_bonus_multiplier: off
-    l_4x_bonus_multiplier: off
-    l_5x_bonus_multiplier: on
-
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-### New code from Codex ends here                                    ###
-########################################################################
 
 
 ########################################################################

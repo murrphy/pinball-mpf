@@ -23,3 +23,5 @@ firepower/mono_crash.*.json
 firepower/data/machine_vars.yaml
 firepower/data/audits.yaml
 firepower/logs/
+firepower/sounds/fx/*.import
+firepower/sounds/voice/*.import

@@ -1,0 +1,79 @@
+#config_version=6
+
+mode:
+  start_events: start_mode_shield_qualifier
+  stop_events: stop_mode_shield_qualifier, game_ended
+  priority: 200
+
+shot_profiles:
+  shield_qualifier_profile:
+    advance_on_hit: true
+    states:
+      - name: off
+        show: flash
+        speed: 5
+      - name: lit
+        show: on
+
+shots:
+  arrow_target_1:
+    switch: s_arrow_1
+    profile: shield_qualifier_profile
+    show_tokens:
+      led: l_arrow_1
+
+  arrow_target_2:
+    switch: s_arrow_2
+    profile: shield_qualifier_profile
+    show_tokens:
+      led: l_arrow_2
+
+  arrow_target_3:
+    switch: s_arrow_3
+    profile: shield_qualifier_profile
+    show_tokens:
+      led: l_arrow_3    
+
+  arrow_target_4:
+    switch: s_arrow_4
+    profile: shield_qualifier_profile
+    show_tokens:
+      led: l_arrow_4    
+
+  arrow_target_5:
+    switch: s_arrow_5
+    profile: shield_qualifier_profile
+    show_tokens:
+      led: l_arrow_5    
+
+  arrow_target_6:
+    switch: s_arrow_6
+    profile: shield_qualifier_profile
+    show_tokens:
+      led: l_arrow_6
+
+shot_groups:
+  left_shield_qualifier:
+    shots: arrow_target_1, arrow_target_2, arrow_target_3
+    restart_events: shield_lit_complete, ball_ended
+
+  right_shield_qualifier:
+    shots: arrow_target_4, arrow_target_5, arrow_target_6
+    restart_events: sheild_lit_complete, ball_ended
+
+  all_six_qualifier:
+    shots: arrow_target_1, arrow_target_2, arrow_target_3, arrow_target_4, arrow_target_5, arrow_target_6
+    restart_events: ball_ended
+
+
+
+# show player doesn't seem to make anything work better
+# in this case.  Leaving this section commented out in case
+# I want to play around with this later.
+# show_player:
+#   mode_shield_qualifier_started: shield_qualifier_show
+#   mode_shield_qualifier_stopped: shield_qualifier_show
+event_player:
+ left_shield_qualifier_lit_complete: start_mode_shield
+ right_shield_qualifier_lit_complete: start_mode_shield
+ all_six_qualifier_lit_complete: start_mode_jet_bumpers

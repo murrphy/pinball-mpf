@@ -77,8 +77,212 @@ lights:
     type: grb
     tags: t_game_over
     default_on_color: F3C35F
+
+#######################################
+# Jet Bumper Lights, 8 LED's per unit #
+#######################################
+  # l_jetbumper_1_1:
+  #   channels:
+  #     red:
+  #       - number: backbox-2-1
+  #     green:
+  #       - number: backbox-2-2
+  #     blue:
+  #       - number: backbox-2-3
+  #     white:
+  #       - number: backbox-2-4
+  #   tags: l_jetbumper_1
+    #default_on_color: 00F3C35F
   
-  # Playfield lamps
+  # l_jetbumper_1_2:
+  #   number: backbox-2-2
+  #   type: grb
+  #   tags: l_jetbumper_1
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_1_3:
+  #   number: backbox-2-3
+  #   type: grb
+  #   tags: l_jetbumper_1
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_1_4:
+  #   number: backbox-2-4
+  #   type: grb
+  #   tags: l_jetbumper_1
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_1_5:
+  #   number: backbox-2-5
+  #   type: grb
+  #   tags: l_jetbumper_1
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_1_6:
+  #   number: backbox-2-6
+  #   type: grb
+  #   tags: l_jetbumper_1
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_1_7:
+  #   number: backbox-2-7
+  #   type: grb
+  #   tags: l_jetbumper_1
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_1_8:
+  #   number: backbox-2-8
+  #   type: grb
+  #   tags: l_jetbumper_1
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_2_1:
+  #   number: backbox-2-9
+  #   type: grb
+  #   tags: l_jetbumper_2
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_2_2:
+  #   number: backbox-2-10
+  #   type: grb
+  #   tags: l_jetbumper_2
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_2_3:
+  #   number: backbox-2-11
+  #   type: grb
+  #   tags: l_jetbumper_2
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_2_4:
+  #   number: backbox-2-12
+  #   type: grb
+  #   tags: l_jetbumper_2
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_2_5:
+  #   number: backbox-2-13
+  #   type: grb
+  #   tags: l_jetbumper_2
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_2_6:
+  #   number: backbox-2-14
+  #   type: grb
+  #   tags: l_jetbumper_2
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_2_7:
+  #   number: backbox-2-15
+  #   type: grb
+  #   tags: l_jetbumper_2
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_2_8:
+  #   number: backbox-2-16
+  #   type: grb
+  #   tags: l_jetbumper_2
+  #   default_on_color: F3C35F
+
+  # l_jetbumper_3_1:
+  #   number: backbox-2-17
+  #   type: grb
+  #   tags: l_jetbumper_3
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_3_2:
+  #   number: backbox-2-18
+  #   type: grb
+  #   tags: l_jetbumper_3
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_3_3:
+  #   number: backbox-2-19
+  #   type: grb
+  #   tags: l_jetbumper_3
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_3_4:
+  #   number: backbox-2-20
+  #   type: grb
+  #   tags: l_jetbumper_3
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_3_5:
+  #   number: backbox-2-21
+  #   type: grb
+  #   tags: l_jetbumper_3
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_3_6:
+  #   number: backbox-2-22
+  #   type: grb
+  #   tags: l_jetbumper_3
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_3_7:
+  #   number: backbox-2-23
+  #   type: grb
+  #   tags: l_jetbumper_3
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_3_8:
+  #   number: backbox-2-24
+  #   type: grb
+  #   tags: l_jetbumper_3
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_4_1:
+  #   number: backbox-2-25
+  #   type: grb
+  #   tags: l_jetbumper_4
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_4_2:
+  #   number: backbox-2-26
+  #   type: grb
+  #   tags: l_jetbumper_4
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_4_3:
+  #   number: backbox-2-27
+  #   type: grb
+  #   tags: l_jetbumper_4
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_4_4:
+  #   number: backbox-2-28
+  #   type: grb
+  #   tags: l_jetbumper_4
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_4_5:
+  #   number: backbox-2-29
+  #   type: grb
+  #   tags: l_jetbumper_4
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_4_6:
+  #   number: backbox-2-30
+  #   type: grb
+  #   tags: l_jetbumper_4
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_4_7:
+  #   number: backbox-2-31
+  #   type: grb
+  #   tags: l_jetbumper_4
+  #   default_on_color: F3C35F
+  
+  # l_jetbumper_4_8:
+  #   number: backbox-2-32
+  #   type: grb
+  #   tags: l_jetbumper_4
+  #   default_on_color: F3C35F
+  
+  #######################################
+  # Playfield lamps                     #
+  #######################################
   l_fire_lane_1000_when_lit:
     number: playfield-1-1
     type: rgb
@@ -100,29 +304,36 @@ lights:
     type: rgb
 
 
-  l_shield_on_when_lit:
+  l_shield:
     number: playfield-1-4
     type: rgb
+    default_on_color: F3C35F
   l_left_return_lane_3000_when_lit:
     number: playfield-1-5
     type: rgb
+    default_on_color: F3C35F
   l_left_outlane_special:
     number: playfield-1-6
     type: rgb
+    default_on_color: F3C35F
   l_left_outlane_illumination_left:
     number: playfield-1-7
     type: grb
+    default_on_color: F3C35F
   l_left_outlane_illumination_right:
     number: playfield-1-8
     type: grb
-  l_2x_bonus_multiplier:
+    default_on_color: F3C35F
+  l_bonus_multiplier_2x:
     number: playfield-1-9
     type: rgb
     tags: l_bonus_multipliers
-  l_3x_bonus_multiplier:
+    default_on_color: warm_white
+  l_bonus_multiplier_3x:
     number: playfield-1-10
     type: rgb
     tags: l_bonus_multipliers
+    default_on_color: warm_white
   l_fire_lamp_3:
     number: playfield-1-11
     type: grb
@@ -140,21 +351,27 @@ lights:
   l_arrow_1:
     number: playfield-2-1
     type: rgb
+    default_on_color: F3C35F
   l_arrow_2:
     number: playfield-2-2
     type: rgb
+    default_on_color: F3C35F
   l_arrow_3:
     number: playfield-2-3
     type: rgb
+    default_on_color: F3C35F
   l_arrow_4:
     number: playfield-2-4
     type: rgb
+    default_on_color: F3C35F
   l_arrow_5:
     number: playfield-2-5
     type: rgb
+    default_on_color: F3C35F
   l_arrow_6:
     number: playfield-2-6
     type: rgb
+    default_on_color: F3C35F
 
   ## Bonus indicator lamps
   l_bonus_1:
@@ -217,89 +434,116 @@ lights:
   l_fire_again:
     number: playfield-2-18
     type: rgb
+    default_on_color: F3C35F
 
   l_right_target_1:
     number: playfield-3-3
     type: rgb
+    default_on_color: blue
   l_right_target_2:
     number: playfield-3-4
     type: rgb
+    default_on_color: blue
   l_right_target_3:
     number: playfield-3-5
     type: rgb
+    default_on_color: blue
   l_extra_ball_arrow:
     number: playfield-3-6
     type: rgb
+    default_on_color: F3C35F
   l_right_outlane_special:
     number: playfield-3-7
     type: rgb
-  l_right_return_lane_100_when_lit:
+    default_on_color: F3C35F
+  l_right_return_lane_3000_when_lit:
     number: playfield-3-8
     type: rgb
+    default_on_color: F3C35F
   l_power_lamp_3:
     number: playfield-3-9
     type: grb
     tags: l_power
+    default_on_color: F3C35F
   l_power_lamp_2:
     number: playfield-3-10
     type: grb
     tags: l_power
+    default_on_color: F3C35F
   l_power_lamp_1:
     number: playfield-3-11
     type: grb
     tags: l_power
+    default_on_color: F3C35F
   l_right_outlane_illumination_left:
     number: playfield-3-12
     type: grb
+    default_on_color: F3C35F
   l_right_outlane_illumination_right:
     number: playfield-3-13
     type: grb
-  l_5x_bonus_multiplier:
+    default_on_color: F3C35F
+  l_bonus_multiplier_5x:
     number: playfield-3-14
     type: rgb
     tags: l_bonus_multipliers
-  l_4x_bonus_multiplier:
+    default_on_color: warm_white
+  l_bonus_multiplier_4x:
     number: playfield-3-15
     type: rgb
     tags: l_bonus_multipliers
+    default_on_color: warm_white
   l_lane_f:
     number: playfield-4-1
     type: rgb
+    default_on_color: warm_white
   l_lock_3_arrow:
     number: playfield-4-2
     type: rgb
+    default_on_color: F3C35F
   l_lane_i:
     number: playfield-4-3
     type: rgb
+    default_on_color: warm_white
   l_lane_r:
     number: playfield-4-4
     type: rgb
+    default_on_color: warm_white
   l_lane_e:
     number: playfield-4-5
     type: rgb
+    default_on_color: warm_white
   l_fire_lane_guide_4:
     number: playfield-4-10
     type: grb
+    tags: fire_lane_guides
   l_fire_lane_guide_3:
     number: playfield-4-9
     type: grb
+    tags: fire_lane_guides
   l_target_score_1000:
     number: playfield-4-8
-    type: rgb
+    type: grb
+    tags: fire_lane_guides
   l_fire_lane_guide_2:
     number: playfield-4-7
     type: grb
+    tags: fire_lane_guides
   l_fire_lane_guide_1:
     number: playfield-4-6
     type: grb
+    tags: fire_lane_guides
   l_target_score_10000:
     number: playfield-4-11
     type: rgb
+    default_on_color: F3C35F
   l_target_score_30000:
     number: playfield-4-12
     type: rgb
+    default_on_color: F3C35F
   l_target_score_50000:
     number: playfield-4-13
     type: rgb
+    default_on_color: F3C35F
 
   

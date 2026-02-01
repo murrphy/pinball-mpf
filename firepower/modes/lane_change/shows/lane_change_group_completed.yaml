@@ -1,0 +1,36 @@
+#show_version=6
+# shows:
+  # group_complete:
+  #     - duration: 1s
+  #     # TODO: add scoring and sounds
+  #       shows:
+  #         flash:
+  #           priority: 10
+  #           show_tokens:
+  #             color: warm_white
+  #             lights: l_lane_f, l_lane_i, l_lane_r, l_lane_e
+  #           speed: 4
+- duration: 1
+  lights:
+    l_lane_f: warm_white
+    l_lane_i: off
+    l_lane_r: off
+    l_lane_e: off
+- duration: 1
+  lights:
+    l_lane_f: off
+    l_lane_i: warm_white
+    l_lane_r: off
+    l_lane_e: off
+- duration: 1
+  lights:
+    l_lane_f: off
+    l_lane_i: off
+    l_lane_r: warm_white
+    l_lane_e: off
+- duration: 1
+  lights:
+    l_lane_f: off
+    l_lane_i: off
+    l_lane_r: off
+    l_lane_e: warm_white

@@ -197,6 +197,9 @@ light_player:
     led_bns_adv:
       color: off
       fade: 500ms
+    l_bonus_multipliers:
+      color: off
+      fade: 500ms
 
 sequences:
   ##### play back bonus collect show by adding loops based on bonuses collected #########

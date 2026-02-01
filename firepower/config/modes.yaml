@@ -1,9 +1,10 @@
 #config_version=6
 
 modes:
-  - arrow_targets
   - base
   - bonus_collect
-  - circle_targets
+  - power_targets
   - lane_change
   - segment_display
+  - shield_qualifier
+  - shield

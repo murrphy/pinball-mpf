@@ -22,16 +22,20 @@
     l_right_target_1: off
     l_right_target_2: blue
     l_right_target_3: off
-    l_right_return_lane_100_when_lit: blue
+    l_right_return_lane_3000_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
     l_right_outlane_special: off
-    l_shield_on_when_lit: yellow
+    l_shield: on
     l_lock_1_arrow: warm_white
     l_lock_2_arrow: off
     l_lock_3_arrow: off
     l_extra_ball_arrow: yellow
     l_fire_lane_1000_when_lit: red
+    # l_jetbumper_1: on
+    # l_jetbumper_2: on
+    # l_jetbumper_3: on
+    # l_jetbumper_4: on
 - duration: 1
   lights:
     l_bonus_2: warm_white
@@ -43,11 +47,11 @@
     l_right_target_1: blue
     l_right_target_2: off
     l_right_target_3: blue
-    l_right_return_lane_100_when_lit: off
+    l_right_return_lane_3000_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
     l_right_outlane_special: red
-    l_shield_on_when_lit: off
+    l_shield: off
     l_lock_1_arrow: warm_white
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: off
@@ -62,11 +66,11 @@
     l_right_target_1: off
     l_right_target_2: blue
     l_right_target_3: off
-    l_right_return_lane_100_when_lit: blue
+    l_right_return_lane_3000_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
     l_right_outlane_special: off
-    l_shield_on_when_lit: yellow
+    l_shield: on
     l_lock_1_arrow: warm_white
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: warm_white
@@ -79,11 +83,11 @@
     l_right_target_1: blue
     l_right_target_2: off
     l_right_target_3: blue
-    l_right_return_lane_100_when_lit: off
+    l_right_return_lane_3000_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
     l_right_outlane_special: red
-    l_shield_on_when_lit: off
+    l_shield: off
     l_lock_1_arrow: off
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: warm_white
@@ -99,11 +103,11 @@
     l_right_target_1: off
     l_right_target_2: blue
     l_right_target_3: off
-    l_right_return_lane_100_when_lit: blue
+    l_right_return_lane_3000_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
     l_right_outlane_special: off
-    l_shield_on_when_lit: yellow
+    l_shield: on
     l_lock_1_arrow: off
     l_lock_2_arrow: off
     l_lock_3_arrow: warm_white
@@ -116,11 +120,11 @@
     l_right_target_1: blue
     l_right_target_2: off
     l_right_target_3: blue
-    l_right_return_lane_100_when_lit: off
+    l_right_return_lane_3000_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
     l_right_outlane_special: red
-    l_shield_on_when_lit: off
+    l_shield: off
     l_lock_1_arrow: off
     l_lock_2_arrow: off
     l_lock_3_arrow: off
@@ -131,11 +135,11 @@
     l_right_target_1: off
     l_right_target_2: blue
     l_right_target_3: off
-    l_right_return_lane_100_when_lit: blue
+    l_right_return_lane_3000_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
     l_right_outlane_special: off
-    l_shield_on_when_lit: yellow
+    l_shield: on
     l_lock_1_arrow: warm_white
     l_lock_2_arrow: off
     l_lock_3_arrow: off
@@ -146,11 +150,11 @@
     l_right_target_1: blue
     l_right_target_2: off
     l_right_target_3: blue
-    l_right_return_lane_100_when_lit: off
+    l_right_return_lane_3000_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
     l_right_outlane_special: red
-    l_shield_on_when_lit: off
+    l_shield: off
     l_lock_1_arrow: warm_white
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: off
@@ -163,11 +167,11 @@
     l_right_target_1: off
     l_right_target_2: blue
     l_right_target_3: off
-    l_right_return_lane_100_when_lit: blue
+    l_right_return_lane_3000_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
     l_right_outlane_special: off
-    l_shield_on_when_lit: yellow
+    l_shield: on
     l_lock_1_arrow: warm_white
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: warm_white
@@ -180,11 +184,11 @@
     l_right_target_1: blue
     l_right_target_2: off
     l_right_target_3: blue
-    l_right_return_lane_100_when_lit: off
+    l_right_return_lane_3000_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
     l_right_outlane_special: red
-    l_shield_on_when_lit: off
+    l_shield: off
     l_lock_1_arrow: off
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: warm_white
@@ -205,11 +209,11 @@
     l_right_target_1: off
     l_right_target_2: blue
     l_right_target_3: off
-    l_right_return_lane_100_when_lit: blue
+    l_right_return_lane_3000_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
     l_right_outlane_special: off
-    l_shield_on_when_lit: yellow
+    l_shield: on
     l_lock_1_arrow: off
     l_lock_2_arrow: off
     l_lock_3_arrow: warm_white
@@ -228,11 +232,11 @@
     l_right_target_1: blue
     l_right_target_2: off
     l_right_target_3: blue
-    l_right_return_lane_100_when_lit: off
+    l_right_return_lane_3000_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
     l_right_outlane_special: red
-    l_shield_on_when_lit: off
+    l_shield: off
     l_lock_1_arrow: off
     l_lock_2_arrow: off
     l_lock_3_arrow: off
@@ -252,11 +256,11 @@
     l_right_target_1: off
     l_right_target_2: blue
     l_right_target_3: off
-    l_right_return_lane_100_when_lit: blue
+    l_right_return_lane_3000_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
     l_right_outlane_special: off
-    l_shield_on_when_lit: yellow
+    l_shield: on
     l_lock_1_arrow: warm_white
     l_lock_2_arrow: off
     l_lock_3_arrow: off
@@ -279,11 +283,11 @@
     l_right_target_1: blue
     l_right_target_2: off
     l_right_target_3: blue
-    l_right_return_lane_100_when_lit: off
+    l_right_return_lane_3000_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
     l_right_outlane_special: red
-    l_shield_on_when_lit: off
+    l_shield: off
     l_lock_1_arrow: warm_white
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: off
@@ -298,11 +302,11 @@
     l_right_target_1: off
     l_right_target_2: blue
     l_right_target_3: off
-    l_right_return_lane_100_when_lit: blue
+    l_right_return_lane_3000_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
     l_right_outlane_special: off
-    l_shield_on_when_lit: yellow
+    l_shield: on
     l_lock_1_arrow: warm_white
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: warm_white
@@ -317,11 +321,11 @@
     l_right_target_1: blue
     l_right_target_2: off
     l_right_target_3: blue
-    l_right_return_lane_100_when_lit: off
+    l_right_return_lane_3000_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
     l_right_outlane_special: red
-    l_shield_on_when_lit: off
+    l_shield: off
     l_lock_1_arrow: off
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: warm_white
@@ -337,11 +341,11 @@
     l_right_target_1: off
     l_right_target_2: blue
     l_right_target_3: off
-    l_right_return_lane_100_when_lit: blue
+    l_right_return_lane_3000_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
     l_right_outlane_special: off
-    l_shield_on_when_lit: yellow
+    l_shield: on
     l_lock_1_arrow: off
     l_lock_2_arrow: off
     l_lock_3_arrow: warm_white
@@ -356,11 +360,11 @@
     l_right_target_1: blue
     l_right_target_2: off
     l_right_target_3: blue
-    l_right_return_lane_100_when_lit: off
+    l_right_return_lane_3000_when_lit: off
     l_left_return_lane_3000_when_lit: off
     l_left_outlane_special: red
     l_right_outlane_special: red
-    l_shield_on_when_lit: off
+    l_shield: off
     l_lock_1_arrow: off
     l_lock_2_arrow: off
     l_lock_3_arrow: off
@@ -374,9 +378,9 @@
     l_right_target_1: off
     l_right_target_2: blue
     l_right_target_3: off
-    l_right_return_lane_100_when_lit: blue
+    l_right_return_lane_3000_when_lit: blue
     l_left_return_lane_3000_when_lit: blue
     l_left_outlane_special: off
     l_right_outlane_special: off
-    l_shield_on_when_lit: yellow
+    l_shield: on
     l_extra_ball_arrow: off

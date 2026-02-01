@@ -1,0 +1,20 @@
+#config_version=6
+mode:
+  start_events: start_mode_shield
+  stop_events: timer_shield_timer_complete
+  priority: 100
+
+show_player:
+  mode_shield_started: shield_on_show
+  mode_shield_stopped: shield_off_show
+
+timers:
+  shield_timer:
+    start_value: 2
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    start_running: false
+    control_events:
+      - event: s_left_out_lane_active
+        action: start

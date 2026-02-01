@@ -1,6 +1,14 @@
 #config_version=6
 
 switches:
+  s_coin_left:
+    number: cabinet-0
+    type: NO
+    tags: coin-right
+  s_coin_right:
+    number: cabinet-1
+    type: NO
+    tags: coin-left
   s_start_button:
     number: cabinet-8
     type: NO
@@ -19,12 +27,12 @@ switches:
   s_left_upper_bumper:
     number: playfield1-2
     type: NO
-    tags: playfield_active
+    tags: playfield_active, side_bumper
     events_when_activated: score_100
   s_left_center_bumper:
     number: playfield1-3
     type: NO
-    tags: playfield_active
+    tags: playfield_active, side_bumper
     events_when_activated: score_100
   s_lock_1:
     number: playfield1-4
@@ -33,7 +41,7 @@ switches:
   s_left_lower_bumper:
     number: playfield1-5
     type: NO
-    tags: playfield_active
+    tags: playfield_active, side_bumper
     events_when_activated: score_100
   s_star_1:
     number: playfield1-6
@@ -45,7 +53,6 @@ switches:
   s_left_out_lane:
     number: playfield1-8
     type: NO
-    tags: playfield_active
     events_when_activated: score_1000
   s_left_return_lane:
     number: playfield1-9
@@ -92,19 +99,19 @@ switches:
   s_arrow_6:
     number: playfield2-8
     type: NO
-    tags: playfield_active
+    tags: playfield_active, fire_arrow
     debounce: normal
     events_when_activated: score_1000
   s_arrow_5:
     number: playfield2-9
     type: NO
-    tags: playfield_active
+    tags: playfield_active, fire_arrow
     debounce: normal
     events_when_activated: score_1000
   s_arrow_4:
     number: playfield2-10
     type: NO
-    tags: playfield_active
+    tags: playfield_active, fire_arrow
     debounce: normal
     events_when_activated: score_1000
   s_star_2:
@@ -134,27 +141,27 @@ switches:
   s_right_upper_bumper:
     number: playfield2-16
     type: NO
-    tags: playfield_active
+    tags: playfield_active, side_bumper
     events_when_activated: score_100
   s_power_1:
     number: playfield2-17
     type: NO
-    tags: playfield_active
+    tags: playfield_active, power_target
     events_when_activated: score_1000
   s_power_2:
     number: playfield2-18
     type: NO
-    tags: playfield_active
+    tags: playfield_active, power_target
     events_when_activated: score_1000
   s_power_3:
     number: playfield2-19
     type: NO
-    tags: playfield_active
+    tags: playfield_active, power_target
     events_when_activated: score_1000
   s_right_lower_bumper:
     number: playfield2-20
     type: NO
-    tags: playfield_active
+    tags: playfield_active, side_bumper
     events_when_activated: score_100
   s_right_slingshot:
     number: playfield2-21
@@ -183,19 +190,19 @@ switches:
   s_arrow_3:
     number: playfield2-28
     type: NO
-    tags: playfield_active
+    tags: playfield_active, fire_arrow
     debounce: normal
     events_when_activated: score_1000
   s_arrow_2:
     number: playfield2-29
     type: NO
-    tags: playfield_active
+    tags: playfield_active, fire_arrow
     debounce: normal
     events_when_activated: score_1000
   s_arrow_1:
     number: playfield2-30
     type: NO
-    tags: playfield_active
+    tags: playfield_active, fire_arrow
     debounce: normal
     events_when_activated: score_1000
   s_top_target:

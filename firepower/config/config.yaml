@@ -6,6 +6,7 @@ config:
 - displays.yaml
 - devices.yaml
 - switches.yaml
+- credits.yaml
 - coils.yaml
 - lights.yaml
 - sounds.yaml

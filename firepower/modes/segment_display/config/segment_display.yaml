@@ -1,4 +1,216 @@
 #config_version=6
+mode:
+  start_events: reset_complete, mode_attract_started
+  events_when_started: displays_init_done
+  priority: 100
+  game_mode: false
 
-config:
-- segment_display_player.yaml
+segment_display_player:
+  # Clear all segments when the game starts
+  game_started:
+    player1_display:
+      text: ""
+    player2_display:
+      text: ""
+    player3_display:
+      text: ""
+    player4_display:
+      text: ""
+
+  # Player 1
+  ball_started{player == 1}:
+    player1_display:
+      text: "{players[0].score:d}"
+      flashing: all
+      priority: 1
+  player_score{player_num == 1}:
+    player1_display:
+      text: "{players[0].score:d}"
+      flashing: off
+      priority: 10
+
+  # Player 2
+  ball_started{player == 2}:
+    player2_display:
+      text: "{players[1].score:d}"
+      flashing: all
+      priority: 1
+  player_score{player_num == 2}:
+    player2_display:
+      text: "{players[1].score:d}"
+      flashing: off
+      priority: 10
+
+  # Player 3
+  ball_started{player == 3}:
+    player3_display:
+      text: "{players[2].score:d}"
+      flashing: all
+      priority: 1
+  player_score{player_num == 3}:
+    player3_display:
+      text: "{players[2].score:d}"
+      flashing: off
+      priority: 10
+
+  # Player 4
+  ball_started{player == 4}:
+    player4_display:
+      text: "{players[3].score:d}"
+      flashing: all
+      priority: 1
+  player_score{player_num == 4}:
+    player4_display:
+      text: "{players[3].score:d}"
+      flashing: off
+      priority: 10
+
+########################################################################
+### Show Player - Run the segment displays with player score values  ###
+### Thanks to @FatBoy in TridentPinball/MPF                          ###
+########################################################################
+show_player:
+  ball_started{player==1 and (ball>1 or is_extra_ball==True)}:
+    P1_scoreFlash:
+      show_tokens:
+        txt: "{(current_player.score):>7,d}"
+      key: scoreFlash
+      priority: 2
+      speed: 3
+  ball_started{player==2 and (ball>1 or is_extra_ball==True)}:
+    P2_scoreFlash:
+      show_tokens:
+        txt: "{(players[1].score):>7,d}"
+      key: scoreFlash
+      priority: 2
+      speed: 3
+  ball_started{player==3 and (ball>1 or is_extra_ball==True)}:
+    P3_scoreFlash:
+      show_tokens:
+        txt: "{(players[2].score):>7,d}"
+      key: scoreFlash
+      priority: 2
+      speed: 3
+  ball_started{player==4 and (ball>1 or is_extra_ball==True)}:
+    P4_scoreFlash:
+      show_tokens:
+        txt: "{(players[3].score):>7,d}"
+      key: scoreFlash
+      priority: 2
+      speed: 3
+
+  ball_started{player!=1}:
+    P1_score:
+      show_tokens:
+        txt: "{(player1_score):>7,d}"
+      key: p1score
+  ball_started{player!=2 and game.num_players > 1}:
+    P2_score:
+      show_tokens:
+        txt: "{(players[1].score):>7,d}"
+      key: p2score
+  ball_started{player!=3 and game.num_players > 2}:
+    P3_score:
+      show_tokens:
+        txt: "{(players[2].score):>7,d}"
+      key: p3score
+  ball_started{player!=4 and game.num_players > 3}:
+    P4_score:
+      show_tokens:
+        txt: "{(players[3].score):>7,d}"
+      key: p4score
+  ball_started{player!=2 and game.num_players > 1 and players[1].score == 0}:
+    P2_score:
+      show_tokens:
+        txt: "     00"
+      key: p2score0
+      priority: 3
+  ball_started{player!=3 and game.num_players > 2 and players[2].score == 0}:
+    P3_score:
+      show_tokens:
+        txt: "     00"
+      key: p3score0
+      priority: 3
+  ball_started{player!=4 and game.num_players > 3 and players[3].score == 0}:
+    P4_score:
+      show_tokens:
+        txt: "     00"
+      key: p4score0
+      priority: 3
+
+  player_score{player_num==1 and value>0}:
+    scoreFlash: stop
+    P1_score:
+      show_tokens:
+        txt: "{(players[0].score):>7,d}"
+      key: p1score
+  player_score{player_num==2 and value>0}:
+    scoreFlash: stop
+    P2_score:
+      show_tokens:
+        txt: "{(players[1].score):>7,d}"
+      key: p2score
+  player_score{player_num==3 and value>0}:
+    scoreFlash: stop
+    P3_score:
+      show_tokens:
+        txt: "{(players[2].score):>7,d}"
+      key: p3score
+  player_score{player_num==4 and value>0}:
+    scoreFlash: stop
+    P4_score:
+      show_tokens:
+        txt: "{(players[3].score):>7,d}"
+      key: p4score
+
+  ball_started{player==1 and ball==1 and is_extra_ball==False}:
+    P1_scoreFlash:
+      show_tokens:
+        txt: "     00"
+      key: scoreFlash
+      priority: 3
+      speed: 3
+  ball_started{player==2 and ball==1 and is_extra_ball==False}:
+    P2_scoreFlash:
+      show_tokens:
+        txt: "     00"
+      key: scoreFlash
+      priority: 3
+      speed: 3
+  ball_started{player==3 and ball==1 and is_extra_ball==False}:
+    P3_scoreFlash:
+      show_tokens:
+        txt: "     00"
+      key: scoreFlash
+      priority: 3
+      speed: 3
+  ball_started{player==4 and ball==1 and is_extra_ball==False}:
+    P4_scoreFlash:
+      show_tokens:
+        txt: "     00"
+      key: scoreFlash
+      priority: 3
+      speed: 3
+  ball_started{player==1 and is_extra_ball==False}:
+    credit_ball:
+        show_tokens:
+            txt: "{(machine.credit_units):<2,d} {(players[0].ball):<2,d} "
+
+  player_added{num==2}:
+    P2_score:
+      show_tokens:
+        txt: "     00"
+      key: p2scoreadd
+      priority: 3
+  player_added{num==3}:
+    P3_score:
+      show_tokens:
+        txt: "     00"
+      key: p3scoreadd
+      priority: 3
+  player_added{num==4}:
+    P4_score:
+      show_tokens:
+        txt: "     00"
+      key: p4scoreadd
+      priority: 3

@@ -1,0 +1,18 @@
+#config_version=6
+
+credits:
+  max_credits: 12
+  free_play: false
+  service_credits_switch: s_service_coin
+  switches:
+    - switch: s_coin_left
+      type: money
+      value: .25
+    - switch: s_coin_right
+      type: money
+      value: .25
+  pricing_tiers:
+    - price: .50
+      credits: 1
+    - price: 1
+      credits: 3

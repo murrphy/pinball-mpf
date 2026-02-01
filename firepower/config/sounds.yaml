@@ -42,3 +42,15 @@ sound_player:
   s_start_button_active:
     fire_power:
       bus: effects
+
+  sw_side_bumper_active:
+    side_bumpers:
+      bus: effects
+  
+  sw_fire_arrow_active:
+    fire_targets:
+      bus: effects
+  
+  sw_power_arrow_active:
+    power_target:
+      bus: effects

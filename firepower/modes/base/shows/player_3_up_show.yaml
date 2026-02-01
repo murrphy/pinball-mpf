@@ -1,7 +1,7 @@
 #show_version=6
 - duration: -1
   lights:
-    l_player_1_score_indicator: on
+    l_player_1_score_indicator: off
     l_player_2_score_indicator: off
-    l_player_3_score_indicator: off
+    l_player_3_score_indicator: on
     l_player_4_score_indicator: off

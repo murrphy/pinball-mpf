@@ -2,3 +2,10 @@
 - duration: -1
   lights:
     t_game_over: off
+    fire_lane_guides: red
+    l_shield: off
+    l_ball_in_play: on
+    l_left_outlane_illumination_left: on
+    l_left_outlane_illumination_right: on
+    l_right_outlane_illumination_left: on
+    l_right_outlane_illumination_right: on

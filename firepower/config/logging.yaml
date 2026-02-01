@@ -10,17 +10,18 @@ logging:
     bcp_interface: none
     bcp_server: none
     clock: none
-    config_players: none
+    config_players: basic
+    counters: none
     data_manager: none
     delay_manager: none
     device_manager: none
-    event_manager: full
+    event_manager: basic
     file_manager: none
     light_controller: none
     logic_blocks: none
     machine_controller: none
-    machine_vars: none
-    mode_controller: full
+    machine_vars: basic
+    mode_controller: none
     placeholder_manager: none
     platforms: none
     platform_controller: none
@@ -30,7 +31,7 @@ logging:
     scriptlets: none
     service_controller: none
     settings_controller: none
-    show_controller: none
+    show_controller: basic
     switch_controller: none
     text_ui: none
     timers: none

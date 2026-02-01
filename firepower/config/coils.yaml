@@ -87,3 +87,9 @@ autofire_coils:
     coil: c_right_slingshot
     switch: s_right_slingshot
     ball_search_order: 0
+  shield_kicker:
+    coil: c_shield_kicker
+    switch: s_left_out_lane
+    ball_search_order: 0
+    enable_events: mode_shield_started
+    disable_events: mode_shield_stopped, ball_ended, game_ended

@@ -1,8 +1,7 @@
 #config_version=6
 mode:
   start_events: ball_starting
-  # start_events: ball_will_start #{ball>1}
-  # stop_events: ball_will_stop
+  stop_events: game_ended
   priority: 100
 
 ########################################
@@ -12,6 +11,8 @@ mode:
 event_player:
   mode_base_started:
     - start_mode_bonus_collect    # Priority 250
+    - start_mode_lane_change      # Priority 200
+    - start_mode_shield_qualifier # Priority 200
 
 queue_relay_player:
   ball_ending:
@@ -60,52 +61,13 @@ variable_player:
     bonus_steps: 1
   s_lock_3_active:
     bonus_steps: 1
-  s_arrow_1_active:
-    bonus_steps: 1
-  s_arrow_2_active:
-    bonus_steps: 1
-  s_arrow_3_active:
-    bonus_steps: 1
-  s_arrow_4_active:
-    bonus_steps: 1
-  s_arrow_5_active:
-    bonus_steps: 1
-  s_arrow_6_active:
-    bonus_steps: 1
   s_right_return_lane_active:
     bonus_steps: 1
   s_left_return_lane_active:
     bonus_steps: 1
 
-  # -----------------------------
-  # FIRE lanes completed → multiplier++ (max 5x)
-  # Event comes from the logic block below.
-  # -----------------------------
-  fire_lanes_all_lit{current_player.bonus_multiplier < 5}:
-    bonus_multiplier: 1
-
-
-########################################
-# 2. FIRE lane completion logic block
-########################################
-
-accruals:
-  fire_lanes_complete:
-    events:
-      - s_lane_f_active
-      - s_lane_i_active
-      - s_lane_r_active
-      - s_lane_e_active
-    events_when_complete: fire_lanes_all_lit
-    reset_on_complete: true
-
-
-########################################################################
-### Show Player - Run the segment displays with player score values  ###
-### Thanks to @FatBoy in TridentPinball/MPF                          ###
-########################################################################
-show_player:
-  game_started_show: base_light_show
+show_player: 
+  ball_started: base_light_show
   ball_started{player==1}: player_1_up_show
   ball_started{player==2}: player_2_up_show
   ball_started{player==3}: player_3_up_show
@@ -115,162 +77,22 @@ show_player:
     bonus_lamp_progress:
       show_tokens:
         txt: "{(bonus_add)}"
-  ball_started{player==1 and (ball>1 or is_extra_ball==True)}:
-    P1_scoreFlash:
-      show_tokens:
-        txt: "{(current_player.score):>7,d}"
-      key: scoreFlash
-      priority: 2
-      speed: 3
-  ball_started{player==2 and (ball>1 or is_extra_ball==True)}:
-    P2_scoreFlash:
-      show_tokens:
-        txt: "{(players[1].score):>7,d}"
-      key: scoreFlash
-      priority: 2
-      speed: 3
-  ball_started{player==3 and (ball>1 or is_extra_ball==True)}:
-    P3_scoreFlash:
-      show_tokens:
-        txt: "{(players[2].score):>7,d}"
-      key: scoreFlash
-      priority: 2
-      speed: 3
-  ball_started{player==4 and (ball>1 or is_extra_ball==True)}:
-    P4_scoreFlash:
-      show_tokens:
-        txt: "{(players[3].score):>7,d}"
-      key: scoreFlash
-      priority: 2
-      speed: 3
-
-  ball_started{player!=1}:
-    P1_score:
-      show_tokens:
-        txt: "{(player1_score):>7,d}"
-      key: p1score
-  ball_started{player!=2 and game.num_players > 1}:
-    P2_score:
-      show_tokens:
-        txt: "{(players[1].score):>7,d}"
-      key: p2score
-  ball_started{player!=3 and game.num_players > 2}:
-    P3_score:
-      show_tokens:
-        txt: "{(players[2].score):>7,d}"
-      key: p3score
-  ball_started{player!=4 and game.num_players > 3}:
-    P4_score:
-      show_tokens:
-        txt: "{(players[3].score):>7,d}"
-      key: p4score
-  ball_started{player!=2 and game.num_players > 1 and players[1].score == 0}:
-    P2_score:
-      show_tokens:
-        txt: "     00"
-      key: p2score0
-      priority: 3
-  ball_started{player!=3 and game.num_players > 2 and players[2].score == 0}:
-    P3_score:
-      show_tokens:
-        txt: "     00"
-      key: p3score0
-      priority: 3
-  ball_started{player!=4 and game.num_players > 3 and players[3].score == 0}:
-    P4_score:
-      show_tokens:
-        txt: "     00"
-      key: p4score0
-      priority: 3
-
-  player_score{player_num==1 and value>0}:
-    scoreFlash: stop
-    P1_score:
-      show_tokens:
-        txt: "{(players[0].score):>7,d}"
-      key: p1score
-  player_score{player_num==2 and value>0}:
-    scoreFlash: stop
-    P2_score:
-      show_tokens:
-        txt: "{(players[1].score):>7,d}"
-      key: p2score
-  player_score{player_num==3 and value>0}:
-    scoreFlash: stop
-    P3_score:
-      show_tokens:
-        txt: "{(players[2].score):>7,d}"
-      key: p3score
-  player_score{player_num==4 and value>0}:
-    scoreFlash: stop
-    P4_score:
-      show_tokens:
-        txt: "{(players[3].score):>7,d}"
-      key: p4score
-
-  ball_started{player==1 and ball==1 and is_extra_ball==False}:
-    P1_scoreFlash:
-      show_tokens:
-        txt: "     00"
-      key: scoreFlash
-      priority: 3
-      speed: 3
-  ball_started{player==2 and ball==1 and is_extra_ball==False}:
-    P2_scoreFlash:
-      show_tokens:
-        txt: "     00"
-      key: scoreFlash
-      priority: 3
-      speed: 3
-  ball_started{player==3 and ball==1 and is_extra_ball==False}:
-    P3_scoreFlash:
-      show_tokens:
-        txt: "     00"
-      key: scoreFlash
-      priority: 3
-      speed: 3
-  ball_started{player==4 and ball==1 and is_extra_ball==False}:
-    P4_scoreFlash:
-      show_tokens:
-        txt: "     00"
-      key: scoreFlash
-      priority: 3
-      speed: 3
-
-  player_added{num==2}:
-    P2_score:
-      show_tokens:
-        txt: "     00"
-      key: p2scoreadd
-      priority: 3
-  player_added{num==3}:
-    P3_score:
-      show_tokens:
-        txt: "     00"
-      key: p3scoreadd
-      priority: 3
-  player_added{num==4}:
-    P4_score:
-      show_tokens:
-        txt: "     00"
-      key: p4scoreadd
-      priority: 3
 
 shows:
   ball_starting_show:
     - duration: 3s
-  #ball_starting_light_show:
-  #- duration: 3s
   ball_ending_show:
     - duration: 10s
-  #ball_ending_voice_show:
-  #- duration: 5s
   ball_1_starting_voice_show:
     - duration: 3s
   #####################################################
   ###  Shows - Segment display show score values   ####
   #####################################################
-
+  credit_ball:
+    - duration: -1
+      segment_displays:
+        credit_ball_display:
+          text: (txt)
   P1_score:
     - duration: -1
       segment_displays:
@@ -328,47 +150,7 @@ shows:
         player4_display:
           text: "        "
 
-  # ball_display:
-  #     - duration: -1
-  #       segment_displays:
-  #         neoSegball:
-  #             text: (txt)
-
-  # credit_display:
-  #     - duration: -1
-  #       segment_displays:
-  #         neoSegcredit:
-  #             text: (txt)
-
 shots:
-  # right_return_lane:
-  #   switch: s_right_return_lane
-  #   show_tokens:
-  #     light:
-  target_arrow1:
-    switch: s_arrow_1
-    show_tokens:
-      light: l_arrow_1
-  target_arrow2:
-    switch: s_arrow_2
-    show_tokens:
-      light: l_arrow_2
-  target_arrow3:
-    switch: s_arrow_3
-    show_tokens:
-      light: l_arrow_3
-  target_arrow4:
-    switch: s_arrow_4
-    show_tokens:
-      light: l_arrow_4
-  target_arrow5:
-    switch: s_arrow_5
-    show_tokens:
-      light: l_arrow_5
-  target_arrow6:
-    switch: s_arrow_6
-    show_tokens:
-      light: l_arrow_6
   target_power1:
     switch: s_power_1
     show_tokens:
@@ -381,19 +163,3 @@ shots:
     switch: s_power_3
     show_tokens:
       light: l_right_target_3
-  lane_f:
-    switch: s_lane_f
-    show_tokens:
-      light: l_lane_f
-  lane_i:
-    switch: s_lane_i
-    show_tokens:
-      light: l_lane_i
-  lane_r:
-    switch: s_lane_r
-    show_tokens:
-      light: l_lane_r
-  lane_e:
-    switch: s_lane_e
-    show_tokens:
-      light: l_lane_e

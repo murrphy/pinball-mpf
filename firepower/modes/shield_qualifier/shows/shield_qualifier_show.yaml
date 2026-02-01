@@ -1,0 +1,10 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_arrow_1: on
+    l_arrow_2: on
+    l_arrow_3: on
+    l_arrow_4: on
+    l_arrow_5: on
+    l_arrow_6: on

@@ -1,8 +1,17 @@
 #config_version=6
 
 mode:
-  start_events: start_mode_lane_change, ball_starting
-  stop_events: stop_mode_lane_change, ball_will_end
+  start_events: start_mode_lane_change
+  stop_events: stop_mode_lane_change
+  priority: 200
+
+shot_profiles:
+   fire_lane_profile:
+     states:
+       - name: off
+         show: off
+       - name: on
+         show: on
 
 shots:
   top_lane_f:
@@ -27,40 +36,74 @@ shots:
       led: l_lane_e
 
 shot_groups:
-  fire_lane_group:
+  lane_change:
     shots: top_lane_f, top_lane_i, top_lane_r, top_lane_e
-    reset_events: fire_lane_group_hit_complete
+    reset_events: 
+      lane_change_on_complete: 1s
     rotate_right_events: s_flipper_right_active
 
-shot_profiles:
-   fire_lane_profile:
-     states:
-       - name:
-         show: off
-       - name: hit
-         show: on
-shows:
-  group_complete:
-      - duration: 1s
-      # TODO: add scoring and sounds
-        shows:
-          flash:
-            priority: 10
-            show_tokens:
-              color: green
-              lights: l_lane_f, l_lane_i, l_lane_r, l_lane_e
-            speed: 4
+counters:
+  lane_change_mltp_complete_count:
+    count_events: lane_change_on_complete
+    events_when_hit: mltp_lanes_done
+    starting_count: 0
+    direction: up
+    persist_state: false
 
 
-
-variable_player:
-  top_lane_group_hit_complete:
-    score: 10000
-    bonus_multiplier: 1
-    l_fire: on
 
 show_player:
-  fire_lane_group_hit_complete: 
-    fire_lane_group_complete:
-      speed: 8
+  lane_change_on_complete: 
+    lane_change_group_completed:
       loops: 3
+      speed: 8
+  mltp_lanes_done{count==1}: multiplier_2x_lit
+  mltp_lanes_done{count==2}: multiplier_3x_lit
+  mltp_lanes_done{count==3}: multiplier_4x_lit
+  mltp_lanes_done{count==4}: multiplier_5x_lit
+
+variable_player:
+  lane_change_on_hit:
+    score: 100 * current_player.pf_multiplier
+  lane_change_off_hit:
+    score: 500 * current_player.pf_multiplier
+  lane_change_on_complete:
+    score: 5000 * current_player.pf_multiplier
+  mode_lane_change_started:
+    pf_multiplier:
+      int: 1
+      action: set
+  mltp_lanes_done{count==1}:
+    pf_multiplier:
+      int: 2
+      action: set
+    pf_bonus_multiplier:
+      int: 1
+      action: set
+    bonus_2x_mltp_lanes: 1
+  mltp_lanes_done{count==2}:
+    pf_multiplier:
+      int: 3
+      action: set
+    bonus_3x_mltp_lanes: 1
+    pf_bonus_3x_multiplier:
+      int: 1
+      action: set
+  mltp_lanes_done{count==3}:
+    pf_multiplier:
+      int: 3
+      action: set
+    bonus_4x_mltp_lanes: 1
+    pf_bonus_4x_multiplier:
+      int: 1
+      action: set
+  mltp_lanes_done{count==4}:
+    pf_multiplier:
+      int: 3
+      action: set
+    bonus_5x_mltp_lanes: 1
+    pf_bonus_5x_multiplier:
+      int: 1
+      action: set
+  lane_change_complete:
+    score: 1000 * current_player.pf_multiplier

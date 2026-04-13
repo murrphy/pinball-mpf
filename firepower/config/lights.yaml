@@ -59,12 +59,12 @@ lights:
     type: grb
     tags: t_fire_again
     default_on_color: F3C35F
-  l_ball_in_play:
-    number: backbox-1-14
-    type: grb
-    default_on_color: F3C35F
   l_match:
     number: backbox-1-13
+    type: grb
+    default_on_color: F3C35F
+  l_ball_in_play:
+    number: backbox-1-14
     type: grb
     default_on_color: F3C35F
   l_game_over_1:
@@ -78,207 +78,7 @@ lights:
     tags: t_game_over
     default_on_color: F3C35F
 
-#######################################
-# Jet Bumper Lights, 8 LED's per unit #
-#######################################
-  # l_jetbumper_1_1:
-  #   channels:
-  #     red:
-  #       - number: backbox-2-1
-  #     green:
-  #       - number: backbox-2-2
-  #     blue:
-  #       - number: backbox-2-3
-  #     white:
-  #       - number: backbox-2-4
-  #   tags: l_jetbumper_1
-    #default_on_color: 00F3C35F
-  
-  # l_jetbumper_1_2:
-  #   number: backbox-2-2
-  #   type: grb
-  #   tags: l_jetbumper_1
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_1_3:
-  #   number: backbox-2-3
-  #   type: grb
-  #   tags: l_jetbumper_1
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_1_4:
-  #   number: backbox-2-4
-  #   type: grb
-  #   tags: l_jetbumper_1
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_1_5:
-  #   number: backbox-2-5
-  #   type: grb
-  #   tags: l_jetbumper_1
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_1_6:
-  #   number: backbox-2-6
-  #   type: grb
-  #   tags: l_jetbumper_1
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_1_7:
-  #   number: backbox-2-7
-  #   type: grb
-  #   tags: l_jetbumper_1
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_1_8:
-  #   number: backbox-2-8
-  #   type: grb
-  #   tags: l_jetbumper_1
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_2_1:
-  #   number: backbox-2-9
-  #   type: grb
-  #   tags: l_jetbumper_2
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_2_2:
-  #   number: backbox-2-10
-  #   type: grb
-  #   tags: l_jetbumper_2
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_2_3:
-  #   number: backbox-2-11
-  #   type: grb
-  #   tags: l_jetbumper_2
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_2_4:
-  #   number: backbox-2-12
-  #   type: grb
-  #   tags: l_jetbumper_2
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_2_5:
-  #   number: backbox-2-13
-  #   type: grb
-  #   tags: l_jetbumper_2
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_2_6:
-  #   number: backbox-2-14
-  #   type: grb
-  #   tags: l_jetbumper_2
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_2_7:
-  #   number: backbox-2-15
-  #   type: grb
-  #   tags: l_jetbumper_2
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_2_8:
-  #   number: backbox-2-16
-  #   type: grb
-  #   tags: l_jetbumper_2
-  #   default_on_color: F3C35F
 
-  # l_jetbumper_3_1:
-  #   number: backbox-2-17
-  #   type: grb
-  #   tags: l_jetbumper_3
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_3_2:
-  #   number: backbox-2-18
-  #   type: grb
-  #   tags: l_jetbumper_3
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_3_3:
-  #   number: backbox-2-19
-  #   type: grb
-  #   tags: l_jetbumper_3
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_3_4:
-  #   number: backbox-2-20
-  #   type: grb
-  #   tags: l_jetbumper_3
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_3_5:
-  #   number: backbox-2-21
-  #   type: grb
-  #   tags: l_jetbumper_3
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_3_6:
-  #   number: backbox-2-22
-  #   type: grb
-  #   tags: l_jetbumper_3
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_3_7:
-  #   number: backbox-2-23
-  #   type: grb
-  #   tags: l_jetbumper_3
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_3_8:
-  #   number: backbox-2-24
-  #   type: grb
-  #   tags: l_jetbumper_3
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_4_1:
-  #   number: backbox-2-25
-  #   type: grb
-  #   tags: l_jetbumper_4
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_4_2:
-  #   number: backbox-2-26
-  #   type: grb
-  #   tags: l_jetbumper_4
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_4_3:
-  #   number: backbox-2-27
-  #   type: grb
-  #   tags: l_jetbumper_4
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_4_4:
-  #   number: backbox-2-28
-  #   type: grb
-  #   tags: l_jetbumper_4
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_4_5:
-  #   number: backbox-2-29
-  #   type: grb
-  #   tags: l_jetbumper_4
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_4_6:
-  #   number: backbox-2-30
-  #   type: grb
-  #   tags: l_jetbumper_4
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_4_7:
-  #   number: backbox-2-31
-  #   type: grb
-  #   tags: l_jetbumper_4
-  #   default_on_color: F3C35F
-  
-  # l_jetbumper_4_8:
-  #   number: backbox-2-32
-  #   type: grb
-  #   tags: l_jetbumper_4
-  #   default_on_color: F3C35F
   
   #######################################
   # Playfield lamps                     #
@@ -307,7 +107,7 @@ lights:
   l_shield:
     number: playfield-1-4
     type: rgb
-    default_on_color: F3C35F
+    default_on_color: white
   l_left_return_lane_3000_when_lit:
     number: playfield-1-5
     type: rgb
@@ -546,4 +346,197 @@ lights:
     type: rgb
     default_on_color: F3C35F
 
+#####################################################
+# Jet Bumper Lights, 8 RGBW (SK6812) LED's per unit #
+#####################################################
+  l_jetbumper_1_1:
+    number: playfield-5-1
+    type: rgb
+    tags: l_jetbumper_1
+    default_on_color: white
   
+  l_jetbumper_1_2:
+    number: playfield-5-2
+    type: rgb
+    tags: l_jetbumper_1
+    default_on_color: white
+  
+  l_jetbumper_1_3:
+    number: playfield-5-3
+    type: rgb
+    tags: l_jetbumper_1
+    default_on_color: white
+  
+  l_jetbumper_1_4:
+    number: playfield-5-4
+    type: rgb
+    tags: l_jetbumper_1
+    default_on_color: white
+  
+  l_jetbumper_1_5:
+    number: playfield-5-5
+    type: rgb
+    tags: l_jetbumper_1
+    default_on_color: white
+  
+  l_jetbumper_1_6:
+    number: playfield-5-6
+    type: rgb
+    tags: l_jetbumper_1
+    default_on_color: white
+  
+  l_jetbumper_1_7:
+    number: playfield-5-7
+    type: rgb
+    tags: l_jetbumper_1
+    default_on_color: white
+  
+  l_jetbumper_1_8:
+    number: playfield-5-8
+    type: rgb
+    tags: l_jetbumper_1
+    default_on_color: white
+  
+  l_jetbumper_2_1:
+    number: playfield-5-9
+    type: rgb
+    tags: l_jetbumper_2
+    default_on_color: white
+  
+  l_jetbumper_2_2:
+    number: playfield-5-10
+    type: rgb
+    tags: l_jetbumper_2
+    default_on_color: white
+  
+  l_jetbumper_2_3:
+    number: playfield-5-11
+    type: rgb
+    tags: l_jetbumper_2
+    default_on_color: white
+  
+  l_jetbumper_2_4:
+    number: playfield-5-12
+    type: rgb
+    tags: l_jetbumper_2
+    default_on_color: white
+  
+  l_jetbumper_2_5:
+    number: playfield-5-13
+    type: rgb
+    tags: l_jetbumper_2
+    default_on_color: white
+  
+  l_jetbumper_2_6:
+    number: playfield-5-14
+    type: rgb
+    tags: l_jetbumper_2
+    default_on_color: white
+  
+  l_jetbumper_2_7:
+    number: playfield-5-15
+    type: rgb
+    tags: l_jetbumper_2
+    default_on_color: white
+  
+  l_jetbumper_2_8:
+    number: playfield-5-16
+    type: rgb
+    tags: l_jetbumper_2
+    default_on_color: white
+
+  l_jetbumper_3_1:
+    number: playfield-5-17
+    type: rgb
+    tags: l_jetbumper_3
+    default_on_color: white
+  
+  l_jetbumper_3_2:
+    number: playfield-5-18
+    type: rgb
+    tags: l_jetbumper_3
+    default_on_color: white
+  
+  l_jetbumper_3_3:
+    number: playfield-5-19
+    type: rgb
+    tags: l_jetbumper_3
+    default_on_color: white
+  
+  l_jetbumper_3_4:
+    number: playfield-5-20
+    type: rgb
+    tags: l_jetbumper_3
+    default_on_color: white
+  
+  l_jetbumper_3_5:
+    number: playfield-5-21
+    type: rgb
+    tags: l_jetbumper_3
+    default_on_color: white
+  
+  l_jetbumper_3_6:
+    number: playfield-5-22
+    type: rgb
+    tags: l_jetbumper_3
+    default_on_color: white
+  
+  l_jetbumper_3_7:
+    number: playfield-5-23
+    type: rgb
+    tags: l_jetbumper_3
+    default_on_color: white
+  
+  l_jetbumper_3_8:
+    number: playfield-5-24
+    type: rgb
+    tags: l_jetbumper_3
+    default_on_color: white
+  
+  l_jetbumper_4_1:
+    number: playfield-5-25
+    type: rgb
+    tags: l_jetbumper_4
+    default_on_color: white
+  
+  l_jetbumper_4_2:
+    number: playfield-5-26
+    type: rgb
+    tags: l_jetbumper_4
+    default_on_color: white
+  
+  l_jetbumper_4_3:
+    number: playfield-5-27
+    type: rgb
+    tags: l_jetbumper_4
+    default_on_color: white
+  
+  l_jetbumper_4_4:
+    number: playfield-5-28
+    type: rgb
+    tags: l_jetbumper_4
+    default_on_color: white
+  
+  l_jetbumper_4_5:
+    number: playfield-5-29
+    type: rgb
+    tags: l_jetbumper_4
+    default_on_color: white
+  
+  l_jetbumper_4_6:
+    number: playfield-5-30
+    type: rgb
+    tags: l_jetbumper_4
+    default_on_color: white
+  
+  l_jetbumper_4_7:
+    number: playfield-5-31
+    type: rgb
+    tags: l_jetbumper_4
+    default_on_color: white
+  
+  l_jetbumper_4_8:
+    number: playfield-5-32
+    type: rgb
+    tags: l_jetbumper_4
+    default_on_color: white

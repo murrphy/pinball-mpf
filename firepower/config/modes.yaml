@@ -3,8 +3,9 @@
 modes:
   - base
   - bonus_collect
-  - power_targets
+  - fire
   - lane_change
+  - power_targets
   - segment_display
   - shield_qualifier
   - shield

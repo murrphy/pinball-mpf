@@ -14,6 +14,8 @@ config/name="Firepower"
 run/main_scene="uid://ds4gduf8660uj"
 run/disable_stdout=true
 config/features=PackedStringArray("4.5", "Forward Plus")
+boot_splash/show_image=false
+boot_splash/fullsize=false
 config/icon="res://icon.svg"
 
 [autoload]

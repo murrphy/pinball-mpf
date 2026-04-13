@@ -32,10 +32,10 @@
     l_lock_3_arrow: off
     l_extra_ball_arrow: yellow
     l_fire_lane_1000_when_lit: red
-    # l_jetbumper_1: on
-    # l_jetbumper_2: on
-    # l_jetbumper_3: on
-    # l_jetbumper_4: on
+    l_jetbumper_1: on
+    l_jetbumper_2: on
+    l_jetbumper_3: on
+    l_jetbumper_4: on
 - duration: 1
   lights:
     l_bonus_2: warm_white

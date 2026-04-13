@@ -1,0 +1,82 @@
+#show_version=6
+##! show: attract_light_show
+- duration: 1
+  lights:
+    l_jetbumper_1_8: off
+    l_jetbumper_2_8: off
+    l_jetbumper_3_8: off
+    l_jetbumper_4_8: off
+    l_jetbumper_1_1: on
+    l_jetbumper_2_1: on
+    l_jetbumper_3_1: on
+    l_jetbumper_4_1: on
+- duration: 1
+  lights:
+    l_jetbumper_1_1: off
+    l_jetbumper_2_1: off
+    l_jetbumper_3_1: off
+    l_jetbumper_4_1: off
+    l_jetbumper_1_2: on
+    l_jetbumper_2_2: on
+    l_jetbumper_3_2: on
+    l_jetbumper_4_2: on
+- duration: 1
+  lights:
+    l_jetbumper_1_2: off
+    l_jetbumper_2_2: off
+    l_jetbumper_3_2: off
+    l_jetbumper_4_2: off
+    l_jetbumper_1_3: on
+    l_jetbumper_2_3: on
+    l_jetbumper_3_3: on
+    l_jetbumper_4_3: on
+- duration: 1
+  lights:
+    l_jetbumper_1_3: off
+    l_jetbumper_2_3: off
+    l_jetbumper_3_3: off
+    l_jetbumper_4_3: off
+    l_jetbumper_1_4: on
+    l_jetbumper_2_4: on
+    l_jetbumper_3_4: on
+    l_jetbumper_4_4: on
+- duration: 1
+  lights:
+    l_jetbumper_1_4: off
+    l_jetbumper_2_4: off
+    l_jetbumper_3_4: off
+    l_jetbumper_4_4: off
+    l_jetbumper_1_5: on
+    l_jetbumper_2_5: on
+    l_jetbumper_3_5: on
+    l_jetbumper_4_5: on
+- duration: 1
+  lights:
+    l_jetbumper_1_5: off
+    l_jetbumper_2_5: off
+    l_jetbumper_3_5: off
+    l_jetbumper_4_5: off
+    l_jetbumper_1_6: on
+    l_jetbumper_2_6: on
+    l_jetbumper_3_6: on
+    l_jetbumper_4_6: on
+- duration: 1
+  lights:
+    l_jetbumper_1_6: off
+    l_jetbumper_2_6: off
+    l_jetbumper_3_6: off
+    l_jetbumper_4_6: off
+    l_jetbumper_1_7: on
+    l_jetbumper_2_7: on
+    l_jetbumper_3_7: on
+    l_jetbumper_4_7: on
+- duration: 1
+  lights:
+    l_jetbumper_1_7: off
+    l_jetbumper_2_7: off
+    l_jetbumper_3_7: off
+    l_jetbumper_4_7: off
+    l_jetbumper_1_8: on
+    l_jetbumper_2_8: on
+    l_jetbumper_3_8: on
+    l_jetbumper_4_8: on

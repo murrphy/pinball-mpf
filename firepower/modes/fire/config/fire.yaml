@@ -1,8 +1,0 @@
-#config_version=6
-mode:
-  start_events: start_mode_fire
-  stop_events: game_ended
-
-show_player:
-  mode_fire_started: fire_on_show
-  mode_fire_stopped: fire_off_show

@@ -61,7 +61,7 @@ shot_groups:
     shots: arrow_target_4, arrow_target_5, arrow_target_6
     restart_events: sheild_lit_complete, ball_ended
 
-  all_six_qualifier:
+  fire_qualifier:
     shots: arrow_target_1, arrow_target_2, arrow_target_3, arrow_target_4, arrow_target_5, arrow_target_6
     restart_events: ball_ended
 
@@ -76,4 +76,4 @@ shot_groups:
 event_player:
  left_shield_qualifier_lit_complete: start_mode_shield
  right_shield_qualifier_lit_complete: start_mode_shield
- all_six_qualifier_lit_complete: start_mode_jet_bumpers
+ all_arrows_lit_complete: start_mode_jet_bumpers

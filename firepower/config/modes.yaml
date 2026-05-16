@@ -3,7 +3,6 @@
 modes:
   - base
   - bonus_collect
-  - fire
   - lane_change
   - power_targets
   - segment_display

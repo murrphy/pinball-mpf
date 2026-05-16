@@ -50,17 +50,16 @@ counters:
     direction: up
     persist_state: false
 
-
-
 show_player:
   lane_change_on_complete: 
     lane_change_group_completed:
       loops: 3
       speed: 8
-  mltp_lanes_done{count==1}: multiplier_2x_lit
-  mltp_lanes_done{count==2}: multiplier_3x_lit
-  mltp_lanes_done{count==3}: multiplier_4x_lit
-  mltp_lanes_done{count==4}: multiplier_5x_lit
+  mltp_lanes_done{count==1}: multiplier_2x_lit, fire_lit
+  mltp_lanes_done{count==2}: multiplier_3x_lit, fire_lit
+  mltp_lanes_done{count==3}: multiplier_4x_lit, fire_lit
+  mltp_lanes_done{count==4}: multiplier_5x_lit, fire_lit
+  mltp_lanes_done{count==5}: extra_ball_lit, fire_lit
 
 variable_player:
   lane_change_on_hit:

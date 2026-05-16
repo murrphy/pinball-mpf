@@ -1,0 +1,8 @@
+- Light all 6 center targets to start flashing lock holes
+- Light FIRE when F-I-R-E is lit.
+- Light POWER when the three
+- Multiball
+- Making 3 power targets scores 10,000 and lights flipper return lanes
+- Lighting F-I-R-E and "POWER" scores and increases "Fire Power" 
+  bonus value and lights outlanes for special
+- End of game match

@@ -25,3 +25,4 @@ firepower/data/audits.yaml
 firepower/logs/
 firepower/sounds/fx/*.import
 firepower/sounds/voice/*.import
+.python-version

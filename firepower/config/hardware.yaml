@@ -30,15 +30,15 @@ fast:
       backbox:
         model: FP-EXP-2000
         led_ports:
-        - port: 1
-          count: 32
-          type: ws2812
-        - port: 2
-          count: 0
-        - port: 3
-          count: 0
-        - port: 4
-          count: 0
+          - port: 1
+            count: 32
+            type: ws2812
+          - port: 2
+            count: 0
+          - port: 3
+            count: 0
+          - port: 4
+            count: 0
         led_hz: 30
 
   exp:

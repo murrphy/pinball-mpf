@@ -2,36 +2,90 @@
 
 mode:
   start_events: ball_starting
-  stop_events: stop_mode_power_targets, ball_will_end
+  stop_events: stop_mode_power_targets, ball_will_end, game_ended
   priority: 300
 
 shot_profiles:
   circle_target_profile:
     states:
-      - name:
+      - name: unlit
         show: off
         speed: 10
       - name: hit
         show: on
 
-shot_groups:
-  circle_target_group:
-    shots: circle_target_1, circle_target_2, circle_target_3
-    reset_events: circle_target_group_hit_complete
-
 shots:
   circle_target_1:
-    switch: s_power_1    
+    switch: s_power_1
     profile: circle_target_profile
     show_tokens:
       led: l_right_target_1
+
   circle_target_2:
-    switch: s_power_2    
+    switch: s_power_2
     profile: circle_target_profile
     show_tokens:
       led: l_right_target_2
+
   circle_target_3:
-    switch: s_power_3    
+    switch: s_power_3
     profile: circle_target_profile
     show_tokens:
       led: l_right_target_3
+
+shot_groups:
+  circle_target_group:
+    shots: circle_target_1, circle_target_2, circle_target_3
+    restart_events: circle_target_group_hit_complete, ball_ended
+
+event_player:
+  s_power_1_active:
+    - play_power_target_sound
+  s_power_2_active:
+    - play_power_target_sound
+  s_power_3_active:
+    - play_power_target_sound
+  circle_target_group_hit_complete:
+    - power_lit_awarded
+    - light_return_lanes
+
+show_player:
+  power_lit_awarded:
+    power_lit_show:
+      action: play
+      loops: -1
+
+  light_return_lanes:
+    return_lanes_lit_show:
+      action: play
+      loops: -1
+
+  s_left_return_lane_active{current_player.return_lanes_lit==1}:
+    return_lanes_lit_show:
+      action: stop
+
+  s_right_return_lane_active{current_player.return_lanes_lit==1}:
+    return_lanes_lit_show:
+      action: stop
+
+variable_player:
+  circle_target_group_hit_complete:
+    score: 7000
+    power_lit:
+      int: 1
+      action: set
+    return_lanes_lit:
+      int: 1
+      action: set
+
+  s_left_return_lane_active{current_player.return_lanes_lit==1}:
+    score: 2000
+    return_lanes_lit:
+      int: 0
+      action: set
+
+  s_right_return_lane_active{current_player.return_lanes_lit==1}:
+    score: 2000
+    return_lanes_lit:
+      int: 0
+      action: set

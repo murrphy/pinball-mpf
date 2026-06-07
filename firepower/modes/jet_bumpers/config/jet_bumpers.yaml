@@ -1,9 +1,127 @@
 #config_version=6
+
 mode:
-  start_events: start_mode_jet_bumpers
-  stop_events: ball_ended
-  priority: 100
+  start_events: ball_starting
+  stop_events: ball_ended, game_ended
+  priority: 250
 
 show_player:
-  mode_shield_started: jet_bumpers_on_show
-  mode_shield_stopped: jet_bumpers_off_show
+  mode_jet_bumpers_started:
+    jet_bumpers_off_show:
+      action: play
+      loops: -1
+
+  enable_jet_bumpers_pair_left:
+    jet_bumpers_off_show:
+      action: stop
+    jet_bumpers_pair_a_show:
+      action: play
+      loops: -1
+
+  enable_jet_bumpers_pair_right:
+    jet_bumpers_off_show:
+      action: stop
+    jet_bumpers_pair_b_show:
+      action: play
+      loops: -1
+
+  enable_jet_bumpers_all:
+    jet_bumpers_off_show:
+      action: stop
+    jet_bumpers_pair_a_show:
+      action: stop
+    jet_bumpers_pair_b_show:
+      action: stop
+    jet_bumpers_all_show:
+      action: play
+      loops: -1
+
+  jet_bumper_toggle_to_a:
+    jet_bumpers_pair_b_show:
+      action: stop
+    jet_bumpers_pair_a_show:
+      action: play
+      loops: -1
+
+  jet_bumper_toggle_to_b:
+    jet_bumpers_pair_a_show:
+      action: stop
+    jet_bumpers_pair_b_show:
+      action: play
+      loops: -1  
+
+event_player:
+  s_pop_bumper_1_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==0}: jet_bumper_toggle_to_b
+  s_pop_bumper_2_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==0}: jet_bumper_toggle_to_b
+  s_pop_bumper_3_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==0}: jet_bumper_toggle_to_b
+  s_pop_bumper_4_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==0}: jet_bumper_toggle_to_b
+
+  s_pop_bumper_1_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==1}: jet_bumper_toggle_to_a
+  s_pop_bumper_2_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==1}: jet_bumper_toggle_to_a
+  s_pop_bumper_3_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==1}: jet_bumper_toggle_to_a
+  s_pop_bumper_4_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==1}: jet_bumper_toggle_to_a
+
+variable_player:
+  enable_jet_bumpers_pair_left{current_player.jet_bumpers_all==0}:
+    jet_bumper_pair_left:
+      int: 1
+      action: set
+    jet_bumper_diagonal:
+      int: 0
+      action: set
+
+  enable_jet_bumpers_pair_right{current_player.jet_bumpers_all==0}:
+    jet_bumper_pair_left:
+      int: 1
+      action: set
+    jet_bumper_diagonal:
+      int: 0
+      action: set
+
+  enable_jet_bumpers_all:
+    jet_bumper_pair_left:
+      int: 1
+      action: set
+    jet_bumper_pair_right:
+      int: 1
+      action: set
+    jet_bumpers_all:
+      int: 1
+      action: set
+
+  jet_bumper_toggle_to_a:
+    jet_bumper_diagonal:
+      int: 0
+      action: set
+
+  jet_bumper_toggle_to_b:
+    jet_bumper_diagonal:
+      int: 1
+      action: set
+
+  # All four lit: all bumpers score high.
+  s_pop_bumper_1_active{current_player.jet_bumpers_all==1}:
+    score: 900
+
+  s_pop_bumper_2_active{current_player.jet_bumpers_all==1}:
+    score: 900
+
+  s_pop_bumper_3_active{current_player.jet_bumpers_all==1}:
+    score: 900
+
+  s_pop_bumper_4_active{current_player.jet_bumpers_all==1}:
+    score: 900
+
+  # Two-lit mode, diagonal A lit: 1 + 4 score high.
+  s_pop_bumper_1_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==0}:
+    score: 900
+
+  s_pop_bumper_4_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==0}:
+    score: 900
+
+  # Two-lit mode, diagonal B lit: 2 + 3 score high.
+  s_pop_bumper_2_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==1}:
+    score: 900
+
+  s_pop_bumper_3_active{current_player.jet_bumpers_all==0 and current_player.jet_bumper_pair_left==1 and current_player.jet_bumper_diagonal==1}:
+    score: 900

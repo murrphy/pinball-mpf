@@ -55,25 +55,31 @@ shots:
 shot_groups:
   left_shield_qualifier:
     shots: arrow_target_1, arrow_target_2, arrow_target_3
-    restart_events: shield_lit_complete, ball_ended
+    restart_events: reset_arrow_targets, shield_lit_complete, ball_ended
 
   right_shield_qualifier:
     shots: arrow_target_4, arrow_target_5, arrow_target_6
-    restart_events: sheild_lit_complete, ball_ended
+    restart_events: reset_arrow_targets, shield_lit_complete, ball_ended
 
   fire_qualifier:
     shots: arrow_target_1, arrow_target_2, arrow_target_3, arrow_target_4, arrow_target_5, arrow_target_6
-    restart_events: ball_ended
+    restart_events: reset_arrow_targets, ball_ended
 
-
-
-# show player doesn't seem to make anything work better
-# in this case.  Leaving this section commented out in case
-# I want to play around with this later.
-# show_player:
-#   mode_shield_qualifier_started: shield_qualifier_show
-#   mode_shield_qualifier_stopped: shield_qualifier_show
 event_player:
- left_shield_qualifier_lit_complete: start_mode_shield
- right_shield_qualifier_lit_complete: start_mode_shield
- all_arrows_lit_complete: start_mode_jet_bumpers
+  left_shield_qualifier_lit_complete{current_player.jet_bumpers_all==0}:
+    - start_mode_shield
+    - enable_jet_bumpers_pair_left
+
+  left_shield_qualifier_lit_complete{current_player.jet_bumpers_all==1}:
+    - start_mode_shield
+
+  right_shield_qualifier_lit_complete{current_player.jet_bumpers_all==0}:
+    - start_mode_shield
+    - enable_jet_bumpers_pair_right
+
+  right_shield_qualifier_lit_complete{current_player.jet_bumpers_all==1}:
+    - start_mode_shield
+
+  fire_qualifier_lit_complete:
+    - enable_jet_bumpers_all
+    - reset_arrow_targets

@@ -1,0 +1,14 @@
+#show_version=6
+- duration: 300ms
+  lights:
+    l_jetbumper_2: 2040ff
+    l_jetbumper_3: 2040ff
+    l_jetbumper_1: off
+    l_jetbumper_4: off
+
+- duration: 300ms
+  lights:
+    l_jetbumper_2: 80c0ff
+    l_jetbumper_3: 80c0ff
+    l_jetbumper_1: off
+    l_jetbumper_4: off

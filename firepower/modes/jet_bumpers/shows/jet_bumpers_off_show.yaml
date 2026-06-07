@@ -1,0 +1,7 @@
+#show_version=6
+- duration: -1
+  lights:
+    l_jetbumper_1: off
+    l_jetbumper_2: off
+    l_jetbumper_3: off
+    l_jetbumper_4: off

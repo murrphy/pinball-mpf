@@ -58,7 +58,7 @@ switches:
     number: playfield1-9
     type: NO
     tags: playfield_active
-    events_when_activated: store_1000
+    events_when_activated: score_1000
   s_left_slingshot:
     number: playfield1-10
     type: NO

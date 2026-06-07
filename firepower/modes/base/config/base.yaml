@@ -28,6 +28,7 @@ variable_player:
     score: 100
   score_1000:
     score: 1000
+
   # Reset bonus & multiplier at the start of each ball
   ball_started:
     bonus_steps:
@@ -36,35 +37,27 @@ variable_player:
     bonus_multiplier:
       int: 1
       action: set
-
-  # -----------------------------
-  # BONUS-BUILDING SWITCHES
-  # Each hit adds +1 bonus step (= 1000 pts of base bonus).
-  # -----------------------------
-  s_power_1_active:
-    bonus_steps: 1
-  s_power_2_active:
-    bonus_steps: 1
-  s_power_3_active:
-    bonus_steps: 1
-  s_right_out_lane_active:
-    bonus_steps: 1
-  s_left_out_lane_active:
-    bonus_steps: 1
-  s_star_1_active:
-    bonus_steps: 1
-  s_star_2_active:
-    bonus_steps: 1
-  s_lock_1_active:
-    bonus_steps: 1
-  s_lock_2_active:
-    bonus_steps: 1
-  s_lock_3_active:
-    bonus_steps: 1
-  s_right_return_lane_active:
-    bonus_steps: 1
-  s_left_return_lane_active:
-    bonus_steps: 1
+    power_lit:
+      int: 0
+      action: set
+    return_lanes_lit:
+      int: 0
+      action: set
+    special_lit:
+      int: 0
+      action: set
+    jet_bumper_pair_left:
+      int: 0
+      action: set
+    jet_bumper_pair_right:
+      int: 0
+      action: set
+    jet_bumpers_all:
+      int: 0
+      action: set
+    jet_bumper_diagonal:
+      int: 0
+      action: set
 
 show_player: 
   ball_started: base_light_show

@@ -1,0 +1,14 @@
+#show_version=6
+- duration: 200ms
+  lights:
+    l_jetbumper_1: ff3000
+    l_jetbumper_2: ffa000
+    l_jetbumper_3: ff3000
+    l_jetbumper_4: ffa000
+
+- duration: 200ms
+  lights:
+    l_jetbumper_1: ffa000
+    l_jetbumper_2: ff3000
+    l_jetbumper_3: ffa000
+    l_jetbumper_4: ff3000

@@ -1,8 +1,8 @@
 #config_version=6
-
 modes:
   - base
   - bonus_collect
+  - jet_bumpers
   - lane_change
   - power_targets
   - segment_display

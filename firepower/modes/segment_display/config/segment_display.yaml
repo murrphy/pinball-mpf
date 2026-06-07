@@ -71,7 +71,7 @@ show_player:
             txt: "{(machine.credit_units):<2,d} {(players[0].ball):<2,d} "
 
   player_added{num==1}:
-    P1_Score:
+    P1_score:
       show_tokens:
         txt: "     00"
       key: p1scoreadd

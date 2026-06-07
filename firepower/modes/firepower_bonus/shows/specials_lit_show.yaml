@@ -1,0 +1,11 @@
+#show_version=6
+
+- duration: 250ms
+  lights:
+    l_left_outlane_special: on
+    l_right_outlane_special: off
+
+- duration: 250ms
+  lights:
+    l_left_outlane_special: off
+    l_right_outlane_special: on

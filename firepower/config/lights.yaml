@@ -83,7 +83,7 @@ lights:
   #######################################
   # Playfield lamps                     #
   #######################################
-  l_fire_lane_1000_when_lit:
+  l_spinner_1000_when_lit:
     number: playfield-1-1
     type: rgb
   

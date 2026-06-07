@@ -1,0 +1,7 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_target_score_10000: off
+    l_target_score_30000: on
+    l_target_score_50000: off

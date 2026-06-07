@@ -48,6 +48,8 @@ event_player:
   circle_target_group_hit_complete:
     - power_lit_awarded
     - light_return_lanes
+  circle_target_group_hit_complete{current_player.fire_lit==1}:
+    - fire_power_lit
 
 show_player:
   power_lit_awarded:

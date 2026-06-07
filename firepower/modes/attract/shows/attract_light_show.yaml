@@ -31,7 +31,7 @@
     l_lock_2_arrow: off
     l_lock_3_arrow: off
     l_extra_ball_arrow: yellow
-    l_fire_lane_1000_when_lit: red
+    l_spinner_1000_when_lit: red
     l_jetbumper_1: on
     l_jetbumper_2: on
     l_jetbumper_3: on
@@ -92,7 +92,7 @@
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: warm_white
     l_extra_ball_arrow: off
-    l_fire_lane_1000_when_lit: off
+    l_spinner_1000_when_lit: off
 - duration: 1
   lights:
     l_bonus_1: off
@@ -112,7 +112,7 @@
     l_lock_2_arrow: off
     l_lock_3_arrow: warm_white
     l_extra_ball_arrow: yellow
-    l_fire_lane_1000_when_lit: red
+    l_spinner_1000_when_lit: red
 - duration: 1
   lights: 
     l_bonus_2: off
@@ -159,7 +159,7 @@
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: off
     l_extra_ball_arrow: off
-    l_fire_lane_1000_when_lit: off
+    l_spinner_1000_when_lit: off
 - duration: 1
   lights:
     l_bonus_5: off
@@ -176,7 +176,7 @@
     l_lock_2_arrow: warm_white
     l_lock_3_arrow: warm_white
     l_extra_ball_arrow: yellow
-    l_fire_lane_1000_when_lit: red
+    l_spinner_1000_when_lit: red
 - duration: 1
   lights:
     l_bonus_6: off
@@ -241,7 +241,7 @@
     l_lock_2_arrow: off
     l_lock_3_arrow: off
     l_extra_ball_arrow: off
-    l_fire_lane_1000_when_lit: off
+    l_spinner_1000_when_lit: off
 - duration: 1
   lights:
     l_bonus_9: off
@@ -265,7 +265,7 @@
     l_lock_2_arrow: off
     l_lock_3_arrow: off
     l_extra_ball_arrow: yellow
-    l_fire_lane_1000_when_lit: red
+    l_spinner_1000_when_lit: red
 - duration: 1
   lights:
     l_bonus_10: off

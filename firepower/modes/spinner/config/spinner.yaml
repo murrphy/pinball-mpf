@@ -1,0 +1,30 @@
+#config_version=6
+
+mode:
+  start_events: ball_starting
+  stop_events: ball_ended, game_ended
+  priority: 275
+
+show_player:
+  light_spinner:
+    spinner_lit_show:
+      action: play
+      loops: -1
+
+  ball_ended:
+    spinner_lit_show:
+      action: stop
+
+variable_player:
+  ball_started:
+    spinner_lit:
+      int: 0
+      action: set
+
+  light_spinner:
+    spinner_lit:
+      int: 1
+      action: set
+
+  s_spinner_active{current_player.spinner_lit==1}:
+    score: 900

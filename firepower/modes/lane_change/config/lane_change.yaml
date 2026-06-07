@@ -61,6 +61,10 @@ show_player:
   mltp_lanes_done{count==4}: multiplier_5x_lit, fire_lit
   mltp_lanes_done{count==5}: extra_ball_lit, fire_lit
 
+event_player:
+  mltp_lanes_done{count>=1 and current_player.power_lit==1}:
+    - fire_power_lit
+
 variable_player:
   lane_change_on_hit:
     score: 100 * current_player.pf_multiplier
@@ -76,6 +80,9 @@ variable_player:
     pf_multiplier:
       int: 2
       action: set
+    fire_lit:
+      int: 1
+      action: set
     pf_bonus_multiplier:
       int: 1
       action: set
@@ -85,22 +92,31 @@ variable_player:
       int: 3
       action: set
     bonus_3x_mltp_lanes: 1
+    fire_lit:
+      int: 1
+      action: set
     pf_bonus_3x_multiplier:
       int: 1
       action: set
   mltp_lanes_done{count==3}:
     pf_multiplier:
-      int: 3
+      int: 4
       action: set
     bonus_4x_mltp_lanes: 1
+    fire_lit:
+      int: 1
+      action: set
     pf_bonus_4x_multiplier:
       int: 1
       action: set
   mltp_lanes_done{count==4}:
     pf_multiplier:
-      int: 3
+      int: 5
       action: set
     bonus_5x_mltp_lanes: 1
+    fire_lit:
+      int: 1
+      action: set
     pf_bonus_5x_multiplier:
       int: 1
       action: set

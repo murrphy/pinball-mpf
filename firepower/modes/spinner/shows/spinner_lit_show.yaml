@@ -1,0 +1,5 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_spinner_1000_when_lit: on

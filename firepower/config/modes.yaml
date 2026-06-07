@@ -2,9 +2,11 @@
 modes:
   - base
   - bonus_collect
+  - firepower_bonus
   - jet_bumpers
   - lane_change
   - power_targets
   - segment_display
   - shield_qualifier
   - shield
+  - spinner

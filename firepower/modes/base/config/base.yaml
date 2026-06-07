@@ -37,6 +37,9 @@ variable_player:
     bonus_multiplier:
       int: 1
       action: set
+    fire_lit:
+      int: 0
+      action: set
     power_lit:
       int: 0
       action: set

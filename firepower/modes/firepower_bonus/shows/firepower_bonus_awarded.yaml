@@ -1,0 +1,21 @@
+#show_version=6
+
+- duration: 70ms
+  lights:
+    l_fire: red
+    l_power: off
+
+- duration: 70ms
+  lights:
+    l_fire: off
+    l_power: off
+
+- duration: 70ms
+  lights:
+    l_fire: off
+    l_power: blue
+
+- duration: 70ms
+  lights:
+    l_fire: off
+    l_power: off

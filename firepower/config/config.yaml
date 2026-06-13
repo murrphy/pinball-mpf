@@ -28,5 +28,10 @@ playfields:
     tags: default
 
 game:
-  balls_per_game: 3
+  balls_per_game: 5
   max_players: 4
+
+player_vars:
+  firepower_bonus_level:
+    initial_value: 1
+    value_type: int

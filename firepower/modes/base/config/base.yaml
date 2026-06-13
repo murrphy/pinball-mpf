@@ -46,9 +46,6 @@ variable_player:
     return_lanes_lit:
       int: 0
       action: set
-    special_lit:
-      int: 0
-      action: set
     jet_bumper_pair_left:
       int: 0
       action: set

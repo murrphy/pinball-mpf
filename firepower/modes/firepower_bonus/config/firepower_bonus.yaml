@@ -11,13 +11,18 @@ event_player:
   fire_power_lit{current_player.firepower_bonus_level==3}: collect_firepower_bonus_50000
   fire_power_lit{current_player.firepower_bonus_level>=4}: light_outlane_specials
 
-show_player:
-  mode_firepower_bonus_started:
-    firepower_bonus_10000_lit:
-      action: play
-      loops: -1
+  mode_firepower_bonus_started{current_player.firepower_bonus_level==1}: restore_firepower_bonus_10000
+  mode_firepower_bonus_started{current_player.firepower_bonus_level==2}: restore_firepower_bonus_30000
+  mode_firepower_bonus_started{current_player.firepower_bonus_level==3}: restore_firepower_bonus_50000
 
+  s_left_out_lane_active{current_player.special_lit==1}: collect_special
+  s_right_out_lane_active{current_player.special_lit==1}: collect_special
+
+show_player:
   collect_firepower_bonus_10000:
+    firepower_bonus_awarded:
+      action: play
+      loops: 3
     firepower_bonus_10000_lit:
       action: stop
     firepower_bonus_30000_lit:
@@ -25,6 +30,9 @@ show_player:
       loops: -1
 
   collect_firepower_bonus_30000:
+    firepower_bonus_awarded:
+      action: play
+      loops: 3
     firepower_bonus_30000_lit:
       action: stop
     firepower_bonus_50000_lit:
@@ -32,22 +40,44 @@ show_player:
       loops: -1
 
   collect_firepower_bonus_50000:
+    firepower_bonus_awarded:
+      action: play
+      loops: 3
     firepower_bonus_50000_lit:
       action: stop
 
   light_outlane_specials:
+    firepower_bonus_awarded:
+      action: play
+      loops: 3
     specials_lit_show:
       action: play
       loops: -1
 
-variable_player:
-  ball_started:
-    firepower_bonus_level:
-      int: 1
-      action: set
+  restore_firepower_bonus_10000:
+    firepower_bonus_10000_lit:
+      action: play
+      loops: -1
 
+  restore_firepower_bonus_30000:
+    firepower_bonus_30000_lit:
+      action: play
+      loops: -1
+
+  restore_firepower_bonus_50000:
+    firepower_bonus_50000_lit:
+      action: play
+      loops: -1
+
+  collect_special:
+    specials_lit_show:
+      action: stop
+
+variable_player:
   collect_firepower_bonus_10000:
-    score: 10000
+    score:
+      int: 10000
+      action: add
     firepower_bonus_level:
       int: 2
       action: set
@@ -59,7 +89,9 @@ variable_player:
       action: set
 
   collect_firepower_bonus_30000:
-    score: 30000
+    score:
+      int: 30000
+      action: add
     firepower_bonus_level:
       int: 3
       action: set
@@ -71,7 +103,9 @@ variable_player:
       action: set
 
   collect_firepower_bonus_50000:
-    score: 50000
+    score:
+      int: 50000
+      action: add
     firepower_bonus_level:
       int: 4
       action: set
@@ -91,4 +125,18 @@ variable_player:
       action: set
     power_lit:
       int: 0
+      action: set
+
+  collect_special:
+    special_lit:
+      int: 0
+      action: set
+    fire_lit:
+      int: 0
+      action: set
+    power_lit:
+      int: 0
+      action: set
+    firepower_bonus_level:
+      int: 1
       action: set

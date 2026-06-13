@@ -1,0 +1,36 @@
+#show_version=6
+
+- duration: 70ms
+  lights:
+    l_lane_f: on
+    l_lane_i: off
+    l_lane_r: off
+    l_lane_e: off
+
+- duration: 70ms
+  lights:
+    l_lane_f: off
+    l_lane_i: on
+    l_lane_r: off
+    l_lane_e: off
+
+- duration: 70ms
+  lights:
+    l_lane_f: off
+    l_lane_i: off
+    l_lane_r: on
+    l_lane_e: off
+
+- duration: 70ms
+  lights:
+    l_lane_f: off
+    l_lane_i: off
+    l_lane_r: off
+    l_lane_e: on
+
+- duration: 70ms
+  lights:
+    l_lane_f: off
+    l_lane_i: off
+    l_lane_r: off
+    l_lane_e: off

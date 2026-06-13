@@ -54,3 +54,19 @@ sound_player:
   sw_power_arrow_active:
     power_target:
       bus: effects
+  
+  play_fire_sound:
+    fire:
+      bus: voice
+
+  play_one_sound:
+    one:
+      bus: voice
+
+  play_two_sound:
+    two:
+      bus: voice
+
+  play_three_sound:
+    three:
+      bus: voice

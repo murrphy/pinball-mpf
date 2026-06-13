@@ -83,4 +83,5 @@ event_player:
   fire_qualifier_lit_complete:
     - enable_jet_bumpers_all
     - light_spinner
+    - qualify_locks
     - reset_arrow_targets

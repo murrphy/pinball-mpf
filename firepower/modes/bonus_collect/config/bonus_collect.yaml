@@ -12,8 +12,7 @@ mode:
   priority: 250
 
 event_player:
-  mode_bonus_started: initialize_bonus_collect
-  ball_started: count_up
+  mode_bonus_collect_started: initialize_bonus_collect
   s_lane_f_active: count_up
   s_lane_i_active: count_up
   s_lane_r_active: count_up

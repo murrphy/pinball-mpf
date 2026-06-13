@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 250ms
+  lights:
+    l_lock_1_arrow: on
+
+- duration: 250ms
+  lights:
+    l_lock_1_arrow: off

@@ -55,20 +55,37 @@ show_player:
   power_lit_awarded:
     power_lit_show:
       action: play
+      key: power_lit_indicator
       loops: -1
-
   light_return_lanes:
     return_lanes_lit_show:
       action: play
       loops: -1
-
   s_left_return_lane_active{current_player.return_lanes_lit==1}:
     return_lanes_lit_show:
       action: stop
-
   s_right_return_lane_active{current_player.return_lanes_lit==1}:
     return_lanes_lit_show:
       action: stop
+  collect_firepower_bonus_10000:
+    power_lit_show:
+      action: stop
+      key: power_lit_indicator
+
+  collect_firepower_bonus_30000:
+    power_lit_show:
+      action: stop
+      key: power_lit_indicator
+
+  collect_firepower_bonus_50000:
+    power_lit_show:
+      action: stop
+      key: power_lit_indicator
+
+  light_outlane_specials:
+    power_lit_show:
+      action: stop
+      key: power_lit_indicator
 
 variable_player:
   circle_target_group_hit_complete:

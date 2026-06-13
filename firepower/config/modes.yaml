@@ -2,7 +2,9 @@
 modes:
   - base
   - bonus_collect
+  - lock_qualification
   - firepower_bonus
+  - firepower_multiball
   - jet_bumpers
   - lane_change
   - power_targets

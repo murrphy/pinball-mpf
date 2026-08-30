@@ -2,6 +2,7 @@
 modes:
   - base
   - bonus_collect
+  - bonus_ladder
   - lock_qualification
   - firepower_bonus
   - firepower_multiball

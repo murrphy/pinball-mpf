@@ -37,7 +37,7 @@ switches:
   s_lock_1:
     number: playfield1-4
     type: NO
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_left_lower_bumper:
     number: playfield1-5
     type: NO
@@ -53,12 +53,12 @@ switches:
   s_left_out_lane:
     number: playfield1-8
     type: NO
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_left_return_lane:
     number: playfield1-9
     type: NO
     tags: playfield_active
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_left_slingshot:
     number: playfield1-10
     type: NO
@@ -91,29 +91,29 @@ switches:
   s_lock_3:
     number: playfield2-4
     type: NO
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_lock_2:
     number: playfield2-5
     type: NO
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_arrow_6:
     number: playfield2-8
     type: NO
     tags: playfield_active, fire_arrow
     debounce: normal
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_arrow_5:
     number: playfield2-9
     type: NO
     tags: playfield_active, fire_arrow
     debounce: normal
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_arrow_4:
     number: playfield2-10
     type: NO
     tags: playfield_active, fire_arrow
     debounce: normal
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_star_2:
     number: playfield2-11
     type: NO
@@ -169,12 +169,12 @@ switches:
   s_right_out_lane:
     number: playfield2-22
     type: NO
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_right_return_lane:
     number: playfield2-23
     type: NO
     tags: playfield_active
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_trough3:
     number: playfield2-24
     type: NO
@@ -192,19 +192,19 @@ switches:
     type: NO
     tags: playfield_active, fire_arrow
     debounce: normal
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_arrow_2:
     number: playfield2-29
     type: NO
     tags: playfield_active, fire_arrow
     debounce: normal
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_arrow_1:
     number: playfield2-30
     type: NO
     tags: playfield_active, fire_arrow
     debounce: normal
-    events_when_activated: score_1000
+    events_when_activated: score_1000, advance_end_of_ball_bonus
   s_top_target:
     number: playfield2-31
     type: NO

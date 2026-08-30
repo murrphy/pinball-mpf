@@ -25,7 +25,7 @@ multiball_locks:
   firepower_lock_3:
     lock_devices: bd_lock3
     balls_to_lock: 1
-    balls_to_replace: 0
+    balls_to_replace: 1
     enable_events: qualify_lock_3
     disable_events: multiball_firepower_started, game_ended
     reset_count_for_current_player_events: multiball_firepower_started
@@ -36,6 +36,12 @@ event_player:
   ball_started{current_player.lock_2_lit==1 and current_player.lock_2_held==0}:
     - qualify_lock_2
   ball_started{current_player.lock_3_lit==1 and current_player.lock_3_held==0}:
+    - qualify_lock_3
+  ball_started{current_player.lock_1_lit==1 and current_player.lock_1_held==1}:
+    - qualify_lock_1
+  ball_started{current_player.lock_2_lit==1 and current_player.lock_2_held==1}:
+    - qualify_lock_2
+  ball_started{current_player.lock_3_lit==1 and current_player.lock_3_held==1}:
     - qualify_lock_3
   qualify_locks{current_player.lock_qualify_count==0}:
     - qualify_lock_1
@@ -60,32 +66,45 @@ show_player:
     lock_1_ready_show:
       action: play
       loops: -1
-
   qualify_lock_2:
     lock_2_ready_show:
       action: play
       loops: -1
-
   qualify_lock_3:
     lock_3_ready_show:
       action: play
       loops: -1
-
   multiball_lock_firepower_lock_1_locked_ball:
     lock_1_ready_show:
       action: stop
     lock_1_locked_show:
       action: play
       loops: -1
-
   multiball_lock_firepower_lock_2_locked_ball:
     lock_2_ready_show:
       action: stop
     lock_2_locked_show:
       action: play
       loops: -1
-
   multiball_lock_firepower_lock_3_locked_ball:
+    lock_3_ready_show:
+      action: stop
+    lock_3_locked_show:
+      action: play
+      loops: -1
+  ball_started{current_player.lock_1_held==1}:
+    lock_1_ready_show:
+      action: stop
+    lock_1_locked_show:
+      action: play
+      loops: -1
+  ball_started{current_player.lock_2_held==1}:
+    lock_2_ready_show:
+      action: stop
+    lock_2_locked_show:
+      action: play
+      loops: -1
+  ball_started{current_player.lock_3_held==1}:
     lock_3_ready_show:
       action: stop
     lock_3_locked_show:

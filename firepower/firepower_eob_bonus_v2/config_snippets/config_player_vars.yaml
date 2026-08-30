@@ -1,0 +1,25 @@
+# Merge these into config.yaml under player_vars:
+player_vars:
+  firepower_bonus_level:
+    initial_value: 1
+    value_type: int
+
+  bonus_value:
+    initial_value: 0
+    value_type: int
+
+  bonus_multiplier:
+    initial_value: 1
+    value_type: int
+
+  bonus_collect_base_value:
+    initial_value: 0
+    value_type: int
+
+  bonus_collect_pass:
+    initial_value: 1
+    value_type: int
+
+  bonus_collect_running:
+    initial_value: 0
+    value_type: int

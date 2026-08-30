@@ -1,0 +1,8 @@
+# Ensure modes.yaml includes these modes and does not include the old built-in bonus mode:
+#
+# modes:
+#   - base
+#   - bonus_ladder
+#   - bonus_collect
+#   - lane_change
+#   ...

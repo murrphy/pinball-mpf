@@ -6,31 +6,31 @@ mode:
   priority: 200
 
 shot_profiles:
-   fire_lane_profile:
-     states:
-       - name: off
-         show: off
-       - name: on
-         show: on
+  fire_lane_profile:
+    states:
+      - name: off
+        show: off
+      - name: on
+        show: on
 
 shots:
   top_lane_f:
-    switch: s_lane_f    
+    switch: s_lane_f
     profile: fire_lane_profile
     show_tokens:
       led: l_lane_f
   top_lane_i:
-    switch: s_lane_i    
+    switch: s_lane_i
     profile: fire_lane_profile
     show_tokens:
       led: l_lane_i
   top_lane_r:
-    switch: s_lane_r    
+    switch: s_lane_r
     profile: fire_lane_profile
     show_tokens:
       led: l_lane_r
   top_lane_e:
-    switch: s_lane_e    
+    switch: s_lane_e
     profile: fire_lane_profile
     show_tokens:
       led: l_lane_e
@@ -38,7 +38,7 @@ shots:
 shot_groups:
   lane_change:
     shots: top_lane_f, top_lane_i, top_lane_r, top_lane_e
-    reset_events: 
+    reset_events:
       lane_change_on_complete: 1s
     rotate_right_events: s_flipper_right_active
 
@@ -50,136 +50,134 @@ counters:
     direction: up
     persist_state: false
 
-show_player:
-  mltp_lanes_done{count==1}:
-    multiplier_2x_lit:
-      action: play
-    fire_lit:
-      action: play
-      key: fire_lit_indicator
-      loops: -1
-    fire_lanes_complete_chase:
-      action: play
-      loops: 3
-  mltp_lanes_done{count==2}:
-    multiplier_3x_lit:
-      action: play
-    fire_lit:
-      action: play
-      key: fire_lit_indicator
-      loops: -1
-    fire_lanes_complete_chase:
-      action: play
-      loops: 3
-  mltp_lanes_done{count==3}:
-    multiplier_2x_lit:
-      action: play
-    fire_lit:
-      action: play
-      key: fire_lit_indicator
-      loops: -1
-    fire_lanes_complete_chase:
-      action: play
-      loops: 3
-  mltp_lanes_done{count==4}:
-    multiplier_3x_lit:
-      action: play
-    fire_lit:
-      action: play
-      key: fire_lit_indicator
-      loops: -1
-    fire_lanes_complete_chase:
-      action: play
-      loops: 3
-  mltp_lanes_done{count==5}:
-    multiplier_3x_lit:
-      action: play
-    fire_lit:
-      action: play
-      key: fire_lit_indicator
-      loops: -1
-    fire_lanes_complete_chase:
-      action: play
-      loops: 3
-  collect_firepower_bonus_10000:
-    fire_lit:
-      action: stop
-      key: fire_lit_indicator
-
-  collect_firepower_bonus_30000:
-    fire_lit:
-      action: stop
-      key: fire_lit_indicator
-
-  collect_firepower_bonus_50000:
-    fire_lit:
-      action: stop
-      key: fire_lit_indicator
-
-  light_outlane_specials:
-    fire_lit:
-      action: stop
-      key: fire_lit_indicator
-
-
 event_player:
+  # FIRE rollovers always score 1000, but only unlit rollovers advance end-of-ball bonus.
+  lane_change_off_hit:
+    - advance_end_of_ball_bonus
+
+  # FIRE + POWER is the separate Firepower Bonus feature.
   mltp_lanes_done{current_player.power_lit==1}:
     - fire_power_lit
 
 variable_player:
-  lane_change_on_hit:
-    score: 100 * current_player.pf_multiplier
-  lane_change_off_hit:
-    score: 500 * current_player.pf_multiplier
-  lane_change_on_complete:
-    score: 5000 * current_player.pf_multiplier
+  collect_firepower_bonus_10000:
+    fire_lit:
+      int: 0
+      action: set
+  collect_firepower_bonus_30000:
+    fire_lit:
+      int: 0
+      action: set
+  collect_firepower_bonus_50000:
+    fire_lit:
+      int: 0
+      action: set
+  light_outlane_specials:
+    fire_lit:
+      int: 0
+      action: set
+  # Reset end-of-ball bonus multiplier at start of lane-change mode / fresh ball.
   mode_lane_change_started:
-    pf_multiplier:
+    bonus_multiplier:
       int: 1
       action: set
+  # FIRE completions advance the one true end-of-ball bonus multiplier.
   mltp_lanes_done{count==1}:
-    pf_multiplier:
+    bonus_multiplier:
       int: 2
       action: set
     fire_lit:
       int: 1
       action: set
-    pf_bonus_multiplier:
-      int: 1
-      action: set
-    bonus_2x_mltp_lanes: 1
   mltp_lanes_done{count==2}:
-    pf_multiplier:
+    bonus_multiplier:
       int: 3
       action: set
-    bonus_3x_mltp_lanes: 1
     fire_lit:
-      int: 1
-      action: set
-    pf_bonus_3x_multiplier:
       int: 1
       action: set
   mltp_lanes_done{count==3}:
-    pf_multiplier:
+    bonus_multiplier:
       int: 4
       action: set
-    bonus_4x_mltp_lanes: 1
     fire_lit:
       int: 1
       action: set
-    pf_bonus_4x_multiplier:
-      int: 1
-      action: set
-  mltp_lanes_done{count==4}:
-    pf_multiplier:
+  mltp_lanes_done{count>=4}:
+    bonus_multiplier:
       int: 5
       action: set
-    bonus_5x_mltp_lanes: 1
     fire_lit:
       int: 1
       action: set
-    pf_bonus_5x_multiplier:
-      int: 1
-      action: set
-  lane_change_complete:
-    score: 1000 * current_player.pf_multiplier
+
+light_player:
+  # Multiplier lamps show current end-of-ball bonus multiplier.
+  mode_lane_change_started:
+    l_bonus_multiplier_2x: off
+    l_bonus_multiplier_3x: off
+    l_bonus_multiplier_4x: off
+    l_bonus_multiplier_5x: off
+  mltp_lanes_done{count==1}:
+    l_bonus_multiplier_2x: on
+    l_bonus_multiplier_3x: off
+    l_bonus_multiplier_4x: off
+    l_bonus_multiplier_5x: off
+  mltp_lanes_done{count==2}:
+    l_bonus_multiplier_2x: off
+    l_bonus_multiplier_3x: on
+    l_bonus_multiplier_4x: off
+    l_bonus_multiplier_5x: off
+  mltp_lanes_done{count==3}:
+    l_bonus_multiplier_2x: off
+    l_bonus_multiplier_3x: off
+    l_bonus_multiplier_4x: on
+    l_bonus_multiplier_5x: off
+  mltp_lanes_done{count>=4}:
+    l_bonus_multiplier_2x: off
+    l_bonus_multiplier_3x: off
+    l_bonus_multiplier_4x: off
+    l_bonus_multiplier_5x: on
+  player_fire_lit{value==1}:
+    l_fire:
+      color: on
+      priority: 2000
+
+  player_fire_lit{value==0}:
+    l_fire:
+      color: off
+      priority: 2000
+
+show_player:
+  mltp_lanes_done:
+    fire_lit:
+      action: play
+      key: fire_lit_indicator
+      loops: -1
+      priority: 1000
+    fire_lanes_complete_chase:
+      action: play
+      loops: 5
+      priority: 900
+  collect_firepower_bonus_10000:
+    fire_lit:
+      action: stop
+      key: fire_lit_indicator
+  collect_firepower_bonus_30000:
+    fire_lit:
+      action: stop
+      key: fire_lit_indicator
+  collect_firepower_bonus_50000:
+    fire_lit:
+      action: stop
+      key: fire_lit_indicator
+  light_outlane_specials:
+    fire_lit:
+      action: stop
+      key: fire_lit_indicator
+  ball_started{current_player.fire_lit==1}:
+    fire_lit:
+      action: play
+      key: fire_lit_indicator
+      loops: -1
+      priority: 1000

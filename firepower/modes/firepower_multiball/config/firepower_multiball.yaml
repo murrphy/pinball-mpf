@@ -8,8 +8,6 @@ mode:
 multiballs:
   firepower:
     ball_count: 3
-    ball_count_type: total
+    start_events: start_firepower_multiball
     replace_balls_in_play: true
-    ball_locks: bd_lock1, bd_lock2, bd_lock3
-    start_events: mode_firepower_multiball_started
-    shoot_again: false
+    

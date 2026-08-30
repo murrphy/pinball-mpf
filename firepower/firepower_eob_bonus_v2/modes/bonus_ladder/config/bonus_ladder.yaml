@@ -1,0 +1,98 @@
+#config_version=6
+##! mode: bonus_ladder
+
+# Firepower end-of-ball bonus value/lamp tracker.
+#
+# This mode owns the static bonus ladder lamps during gameplay and during the
+# bonus countdown. It does not own Firepower Bonus lamps; those are the separate
+# FIRE+POWER 10k/30k/50k/Special feature.
+#
+# Lamp encoding:
+#   l_bonus_20 = +20
+#   l_bonus_10 = +10
+#   l_bonus_1..l_bonus_9 = cumulative ones lamps
+#
+# Examples:
+#   0  = no bonus lamps
+#   9  = 1..9 lit
+#   10 = 10 lit
+#   19 = 10 + 1..9 lit
+#   20 = 20 lit
+#   29 = 20 + 1..9 lit
+#   30 = 20 + 10 lit
+#   39 = 20 + 10 + 1..9 lit
+
+mode:
+  start_events: ball_started
+  stop_events: game_ended
+  priority: 90
+
+variable_player:
+  # Shared event used by gameplay switches/modes that should advance end-of-ball bonus.
+  # Max Firepower end-of-ball bonus display is 39 units = 39,000 before multiplier.
+  advance_end_of_ball_bonus{current_player.bonus_value < 39}:
+    bonus_value:
+      int: 1
+      action: add
+
+  # Fresh ball starts with no accumulated end-of-ball bonus. Bonus collection also
+  # resets this at the end; this is a safety reset and lamp-sync point.
+  mode_bonus_ladder_started:
+    bonus_value:
+      int: 0
+      action: set
+
+event_player:
+  # Keep lamp state synchronized whenever bonus_value changes. The small delay lets
+  # variable_player finish before conditional light rules evaluate.
+  player_bonus_value:
+    - clear_bonus_lamps
+    - update_bonus_lamps|10ms
+
+  mode_bonus_ladder_started:
+    - clear_bonus_lamps
+    - update_bonus_lamps|10ms
+
+light_player:
+  clear_bonus_lamps:
+    l_bonus_1: off
+    l_bonus_2: off
+    l_bonus_3: off
+    l_bonus_4: off
+    l_bonus_5: off
+    l_bonus_6: off
+    l_bonus_7: off
+    l_bonus_8: off
+    l_bonus_9: off
+    l_bonus_10: off
+    l_bonus_20: off
+
+  # Ones lamps are cumulative based on bonus_value % 10.
+  update_bonus_lamps{current_player.bonus_value%10>=1}:
+    l_bonus_1: on
+  update_bonus_lamps{current_player.bonus_value%10>=2}:
+    l_bonus_2: on
+  update_bonus_lamps{current_player.bonus_value%10>=3}:
+    l_bonus_3: on
+  update_bonus_lamps{current_player.bonus_value%10>=4}:
+    l_bonus_4: on
+  update_bonus_lamps{current_player.bonus_value%10>=5}:
+    l_bonus_5: on
+  update_bonus_lamps{current_player.bonus_value%10>=6}:
+    l_bonus_6: on
+  update_bonus_lamps{current_player.bonus_value%10>=7}:
+    l_bonus_7: on
+  update_bonus_lamps{current_player.bonus_value%10>=8}:
+    l_bonus_8: on
+  update_bonus_lamps{current_player.bonus_value%10>=9}:
+    l_bonus_9: on
+
+  # 10 lamp is lit for 10..19 and 30..39.
+  update_bonus_lamps{current_player.bonus_value>=10 and current_player.bonus_value<20}:
+    l_bonus_10: on
+  update_bonus_lamps{current_player.bonus_value>=30}:
+    l_bonus_10: on
+
+  # 20 lamp is lit for 20..39.
+  update_bonus_lamps{current_player.bonus_value>=20}:
+    l_bonus_20: on

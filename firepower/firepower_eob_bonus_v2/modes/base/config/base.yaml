@@ -15,13 +15,17 @@ event_player:
 
 
 ########################################
-# End-of-ball bonus collection
+# End-of-ball bonus collection queue
 ########################################
 
+# ball_ending is a queue event. This pauses normal ball-end processing,
+# starts the Firepower custom bonus_collect mode, and resumes only after
+# that mode stops. This prevents the next ball from being served while
+# the bonus lamps/score are still counting down.
 queue_relay_player:
   ball_ending:
     post: start_bonus_collect
-    wait_for: bonus_collect_done
+    wait_for: mode_bonus_collect_stopped
 
 ########################################
 # 1. Player variable logic
@@ -35,7 +39,7 @@ variable_player:
 
   # Reset bonus & multiplier at the start of each ball
   ball_started:
-    bonus_steps:
+    bonus_value:
       int: 0
       action: set
     bonus_multiplier:

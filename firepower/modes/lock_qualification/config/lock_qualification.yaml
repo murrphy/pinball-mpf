@@ -25,7 +25,7 @@ multiball_locks:
   firepower_lock_3:
     lock_devices: bd_lock3
     balls_to_lock: 1
-    balls_to_replace: 1
+    balls_to_replace: 0
     enable_events: qualify_lock_3
     disable_events: multiball_firepower_started, game_ended
     reset_count_for_current_player_events: multiball_firepower_started

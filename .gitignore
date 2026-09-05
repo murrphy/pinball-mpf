@@ -26,3 +26,7 @@ firepower/logs/
 firepower/sounds/fx/*.import
 firepower/sounds/voice/*.import
 .python-version
+
+# Ignore pycache
+__pycache__/
+*.py[cod]

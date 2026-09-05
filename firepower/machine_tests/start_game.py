@@ -1,6 +1,10 @@
 from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
 class startgame(MpfMachineTestCase):
+    def get_enable_plugins(self):
+        """The machine-side smoke test does not require MPF-MC plugins."""
+        return False
+
     def test_start_game(self):
         self.hit_switch_and_run("s_trough1", .1)
         self.hit_switch_and_run("s_trough2", .1)

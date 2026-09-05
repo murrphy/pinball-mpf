@@ -10,28 +10,8 @@
 
 - time: +800ms
   events:
-    - eject_firepower_lock_1
-
-- time: +500ms
-  events:
-    - play_fire_sound
-
-- time: +250ms
-  events:
     - play_two_sound
 
 - time: +800ms
   events:
-    - eject_firepower_lock_2
-
-- time: +500ms
-  events:
-    - play_fire_sound
-
-- time: +250ms
-  events:
     - play_three_sound
-
-- time: +800ms
-  events:
-    - eject_firepower_lock_3

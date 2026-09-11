@@ -22,30 +22,34 @@ coils:
   c_right_slingshot:
     number: playfield2-4
     default_pulse_ms: 9
+  # First tuning pass: 11ms pulse; FAST autofire derives 22ms recycle (2x).
   c_pop_bumper_1:
     number: playfield1-6
-    default_pulse_ms: 10
+    default_pulse_ms: 11
   c_pop_bumper_2:
     number: playfield1-5
-    default_pulse_ms: 10
+    default_pulse_ms: 11
   c_pop_bumper_3:
     number: playfield1-7
-    default_pulse_ms: 10
+    default_pulse_ms: 11
   c_pop_bumper_4:
     number: playfield2-7
-    default_pulse_ms: 10
+    default_pulse_ms: 11
   c_drain_eject:
     number: playfield2-0
     default_pulse_ms: 6
   c_trough_eject:
     number: playfield2-1
     default_pulse_ms: 6
+  # LEFT physical lock
   c_lock_1_eject:
     number: playfield1-4
     default_pulse_ms: 10
+  # RIGHT physical lock
   c_lock_2_eject:
     number: playfield2-5
     default_pulse_ms: 10
+  # TOP physical lock
   c_lock_3_eject:
     number: playfield2-6
     default_pulse_ms: 10

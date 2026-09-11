@@ -43,15 +43,16 @@ variable_player:
       action: set
 
 event_player:
-  # Keep lamp state synchronized whenever bonus_value changes. The small delay lets
-  # variable_player finish before conditional light rules evaluate.
+  # Player-variable events run after the value is assigned. Refresh in the same
+  # event cycle as scoring, without a delayed blank. Lamp transitions retain
+  # the machine-wide 40ms incandescent-style fade within each 130ms bonus step.
   player_bonus_value:
     - clear_bonus_lamps
-    - update_bonus_lamps|10ms
+    - update_bonus_lamps
 
   mode_bonus_ladder_started:
     - clear_bonus_lamps
-    - update_bonus_lamps|10ms
+    - update_bonus_lamps
 
 light_player:
   clear_bonus_lamps:

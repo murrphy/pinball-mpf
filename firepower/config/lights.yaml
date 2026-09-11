@@ -91,18 +91,21 @@ lights:
   l_lock_1_star_rollover:
     number: playfield-1-2
     type: rgb
+  # LEFT physical lock
   l_lock_1_arrow:
     number: playfield-1-3
     type: rgb
+    default_on_color: warm_white
 
   ## Lock 2  
   l_lock_2_star_rollover:
     number: playfield-3-1
     type: rgb
+  # RIGHT physical lock
   l_lock_2_arrow:
     number: playfield-3-2
     type: rgb
-
+    default_on_color: warm_white
 
   l_shield:
     number: playfield-1-4
@@ -111,11 +114,11 @@ lights:
   l_left_return_lane_3000_when_lit:
     number: playfield-1-5
     type: rgb
-    default_on_color: F3C35F
+    default_on_color: blue
   l_left_outlane_special:
     number: playfield-1-6
     type: rgb
-    default_on_color: F3C35F
+    default_on_color: red
   l_left_outlane_illumination_left:
     number: playfield-1-7
     type: grb
@@ -255,11 +258,11 @@ lights:
   l_right_outlane_special:
     number: playfield-3-7
     type: rgb
-    default_on_color: F3C35F
+    default_on_color: red
   l_right_return_lane_3000_when_lit:
     number: playfield-3-8
     type: rgb
-    default_on_color: F3C35F
+    default_on_color: blue
   l_power_lamp_3:
     number: playfield-3-9
     type: grb
@@ -297,10 +300,11 @@ lights:
     number: playfield-4-1
     type: rgb
     default_on_color: warm_white
+  # TOP physical lock
   l_lock_3_arrow:
     number: playfield-4-2
     type: rgb
-    default_on_color: F3C35F
+    default_on_color: warm_white
   l_lane_i:
     number: playfield-4-3
     type: rgb

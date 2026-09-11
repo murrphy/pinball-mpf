@@ -6,6 +6,46 @@ mode:
   priority: 250
 
 show_player:
+  s_pop_bumper_1_active:
+    jet_impact_flash:
+      key: jet_1_impact
+      loops: 0
+      priority: 100
+      # A played event also prevents MPF from suppressing an identical retrigger.
+      events_when_played: jet_1_impact_started
+      show_tokens:
+        cap: l_jetbumper_1
+
+  s_pop_bumper_2_active:
+    jet_impact_flash:
+      key: jet_2_impact
+      loops: 0
+      priority: 100
+      # A played event also prevents MPF from suppressing an identical retrigger.
+      events_when_played: jet_2_impact_started
+      show_tokens:
+        cap: l_jetbumper_2
+
+  s_pop_bumper_3_active:
+    jet_impact_flash:
+      key: jet_3_impact
+      loops: 0
+      priority: 100
+      # A played event also prevents MPF from suppressing an identical retrigger.
+      events_when_played: jet_3_impact_started
+      show_tokens:
+        cap: l_jetbumper_3
+
+  s_pop_bumper_4_active:
+    jet_impact_flash:
+      key: jet_4_impact
+      loops: 0
+      priority: 100
+      # A played event also prevents MPF from suppressing an identical retrigger.
+      events_when_played: jet_4_impact_started
+      show_tokens:
+        cap: l_jetbumper_4
+
   mode_jet_bumpers_started:
     jet_bumpers_off_show:
       action: play

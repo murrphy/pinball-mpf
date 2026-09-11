@@ -34,6 +34,7 @@ switches:
     type: NO
     tags: playfield_active, side_bumper
     events_when_activated: score_100
+  # LEFT physical lock
   s_lock_1:
     number: playfield1-4
     type: NO
@@ -88,10 +89,12 @@ switches:
     type: NO
     tags: playfield_active
     events_when_activated: score_1000
+  # TOP physical lock
   s_lock_3:
     number: playfield2-4
     type: NO
     events_when_activated: score_1000, advance_end_of_ball_bonus
+  # RIGHT physical lock
   s_lock_2:
     number: playfield2-5
     type: NO
@@ -119,21 +122,25 @@ switches:
     type: NO
     tags: playfield_active
   s_pop_bumper_2:
+    debounce: quick  # FAST: 2ms close and open; retain chatter filtering.
     number: playfield2-12
     type: NO
     events_when_activated: score_100
     tags: pop_bumpers
   s_pop_bumper_4:
+    debounce: quick  # FAST: 2ms close and open; retain chatter filtering.
     number: playfield2-13
     type: NO
     events_when_activated: score_100
     tags: pop_bumpers
   s_pop_bumper_1:
+    debounce: quick  # FAST: 2ms close and open; retain chatter filtering.
     number: playfield2-14
     type: NO
     events_when_activated: score_100
     tags: pop_bumpers
   s_pop_bumper_3:
+    debounce: quick  # FAST: 2ms close and open; retain chatter filtering.
     number: playfield2-15
     type: NO
     events_when_activated: score_100

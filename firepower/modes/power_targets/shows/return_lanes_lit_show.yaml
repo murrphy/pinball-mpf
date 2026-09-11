@@ -2,10 +2,10 @@
 
 - duration: 250ms
   lights:
-    l_left_return_lane_3000_when_lit: F3C35F
+    l_left_return_lane_3000_when_lit: blue
     l_right_return_lane_3000_when_lit: off
 
 - duration: 250ms
   lights:
     l_left_return_lane_3000_when_lit: off
-    l_right_return_lane_3000_when_lit: F3C35F
+    l_right_return_lane_3000_when_lit: blue

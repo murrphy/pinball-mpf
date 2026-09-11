@@ -19,49 +19,35 @@
 #   - reset bonus_value and bonus_multiplier for the next ball
 
 mode:
+  code: bonus_collect.BonusCollect
   start_events: start_bonus_collect
   stop_events: bonus_collect_done
   priority: 250
 
-timers:
-  bonus_collect_countdown:
-    start_value: 0
-    end_value: 1000
-    direction: up
-    tick_interval: 160ms
-    control_events:
-      - event: bonus_collect_start_countdown
-        action: restart
-      - event: bonus_collect_done
-        action: stop
-      - event: bonus_collect_done
-        action: reset
+mode_settings:
+  # Wait after processing a countdown cycle; never catch up overdue ticks.
+  step_interval: 130ms
 
 event_player:
   # Initialize the pass counter and save the original bonus before the first tick.
   mode_bonus_collect_started{current_player.bonus_value > 0}:
     - bonus_collect_prepare
-    - bonus_collect_start_countdown|80ms
 
   # No bonus to collect, but still release the ball_ending queue.
   mode_bonus_collect_started{current_player.bonus_value <= 0}:
     - bonus_collect_done
 
   # One real scoring/countdown step.
-  timer_bonus_collect_countdown_tick{current_player.bonus_value > 0 and current_player.bonus_collect_pass <= current_player.bonus_multiplier}:
+  bonus_collect_countdown_tick{current_player.bonus_value > 0 and current_player.bonus_collect_pass <= current_player.bonus_multiplier}:
     - bonus_collect_score_step
 
   # Finished one pass, but more multiplier passes remain.
-  timer_bonus_collect_countdown_tick{current_player.bonus_value <= 0 and current_player.bonus_collect_pass < current_player.bonus_multiplier}:
+  bonus_collect_countdown_tick{current_player.bonus_value <= 0 and current_player.bonus_collect_pass < current_player.bonus_multiplier}:
     - bonus_collect_next_pass
     - bonus_collect_restore_base|10ms
 
   # Finished the final pass.
-  timer_bonus_collect_countdown_tick{current_player.bonus_value <= 0 and current_player.bonus_collect_pass >= current_player.bonus_multiplier}:
-    - bonus_collect_done
-
-  # Safety: if something goes wrong, do not hold the ball_ending queue forever.
-  timer_bonus_collect_countdown_complete:
+  bonus_collect_countdown_tick{current_player.bonus_value <= 0 and current_player.bonus_collect_pass >= current_player.bonus_multiplier}:
     - bonus_collect_done
 
   bonus_collect_done:

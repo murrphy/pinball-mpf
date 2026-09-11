@@ -6,22 +6,26 @@ mode:
   priority: 325
 
 multiball_locks:
+  # Replacement is decided from shared physical availability below, not lock identity.
+  # LEFT physical lock
   firepower_lock_1:
     lock_devices: bd_lock1
     balls_to_lock: 1
-    balls_to_replace: 1
+    balls_to_replace: 0
     enable_events: qualify_lock_1
     disable_events: multiball_firepower_started, game_ended
     reset_count_for_current_player_events: multiball_firepower_started
 
+  # RIGHT physical lock
   firepower_lock_2:
     lock_devices: bd_lock2
     balls_to_lock: 1
-    balls_to_replace: 1
+    balls_to_replace: 0
     enable_events: qualify_lock_2
     disable_events: multiball_firepower_started, game_ended
     reset_count_for_current_player_events: multiball_firepower_started
 
+  # TOP physical lock
   firepower_lock_3:
     lock_devices: bd_lock3
     balls_to_lock: 1
@@ -31,6 +35,13 @@ multiball_locks:
     reset_count_for_current_player_events: multiball_firepower_started
 
 event_player:
+  # locked_ball is posted after the ball device has accounted for its capture.
+  multiball_lock_firepower_lock_1_locked_ball: check_firepower_lock_replacement
+  multiball_lock_firepower_lock_2_locked_ball: check_firepower_lock_replacement
+  multiball_lock_firepower_lock_3_locked_ball: check_firepower_lock_replacement
+  check_firepower_lock_replacement{game.balls_in_play==1 and device.ball_devices.bd_trough.available_balls>0 and device.ball_devices.bd_lock1.balls+device.ball_devices.bd_lock2.balls+device.ball_devices.bd_lock3.balls<3}:
+    - serve_firepower_lock_replacement
+
   ball_started{current_player.lock_1_lit==1 and current_player.lock_1_held==0}:
     - qualify_lock_1
   ball_started{current_player.lock_2_lit==1 and current_player.lock_2_held==0}:
@@ -62,15 +73,22 @@ event_player:
     - start_firepower_multiball
 
 show_player:
-  qualify_lock_1:
+  # Physical occupancy wins over availability, including repeated qualification.
+  qualify_lock_1{device.ball_devices.bd_lock1.balls==0}:
+    lock_1_locked_show:
+      action: stop
     lock_1_ready_show:
       action: play
       loops: -1
-  qualify_lock_2:
+  qualify_lock_2{device.ball_devices.bd_lock2.balls==0}:
+    lock_2_locked_show:
+      action: stop
     lock_2_ready_show:
       action: play
       loops: -1
-  qualify_lock_3:
+  qualify_lock_3{device.ball_devices.bd_lock3.balls==0}:
+    lock_3_locked_show:
+      action: stop
     lock_3_ready_show:
       action: play
       loops: -1
@@ -92,24 +110,60 @@ show_player:
     lock_3_locked_show:
       action: play
       loops: -1
-  ball_started{current_player.lock_1_held==1}:
+  ball_started{device.ball_devices.bd_lock1.balls>0}:
     lock_1_ready_show:
       action: stop
     lock_1_locked_show:
       action: play
       loops: -1
-  ball_started{current_player.lock_2_held==1}:
+  ball_started{device.ball_devices.bd_lock2.balls>0}:
     lock_2_ready_show:
       action: stop
     lock_2_locked_show:
       action: play
       loops: -1
-  ball_started{current_player.lock_3_held==1}:
+  ball_started{device.ball_devices.bd_lock3.balls>0}:
     lock_3_ready_show:
       action: stop
     lock_3_locked_show:
       action: play
       loops: -1
+
+  qualify_lock_1{device.ball_devices.bd_lock1.balls>0}:
+    lock_1_ready_show:
+      action: stop
+    lock_1_locked_show:
+      action: play
+      loops: -1
+  ball_started{device.ball_devices.bd_lock1.balls==0 and current_player.lock_1_lit==0}:
+    lock_1_ready_show:
+      action: stop
+    lock_1_locked_show:
+      action: stop
+
+  qualify_lock_2{device.ball_devices.bd_lock2.balls>0}:
+    lock_2_ready_show:
+      action: stop
+    lock_2_locked_show:
+      action: play
+      loops: -1
+  ball_started{device.ball_devices.bd_lock2.balls==0 and current_player.lock_2_lit==0}:
+    lock_2_ready_show:
+      action: stop
+    lock_2_locked_show:
+      action: stop
+
+  qualify_lock_3{device.ball_devices.bd_lock3.balls>0}:
+    lock_3_ready_show:
+      action: stop
+    lock_3_locked_show:
+      action: play
+      loops: -1
+  ball_started{device.ball_devices.bd_lock3.balls==0 and current_player.lock_3_lit==0}:
+    lock_3_ready_show:
+      action: stop
+    lock_3_locked_show:
+      action: stop
 
   multiball_firepower_started:
     lock_1_ready_show:

@@ -30,3 +30,13 @@ firepower/sounds/voice/*.import
 # Ignore pycache
 __pycache__/
 *.py[cod]
+
+# Ignore machine tests
+firepower/config/display_trace.yaml
+firepower/config/drain_trace.yaml
+
+# Ignore .vscode
+.vscode/
+
+# Ignore the diagnostics directory created by Codex
+firepower/diagnostics/

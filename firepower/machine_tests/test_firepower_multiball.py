@@ -48,9 +48,14 @@ class FirepowerMultiballTest(MpfMachineTestCase):
             self.assertEqual(1, len(switches))
 
     def test_first_two_locks_replace_the_captured_ball(self):
-        config = self.machine.modes["lock_qualification"].config["multiball_locks"]
-        self.assertEqual(1, config["firepower_lock_1"]["balls_to_replace"])
-        self.assertEqual(1, config["firepower_lock_2"]["balls_to_replace"])
+        self._start_single_ball_game()
+        for number, trough_remaining in ((1, 1), (2, 0)):
+            self._lock_ball(number)
+            self.assertEqual(1, self.machine.ball_devices[f"bd_lock{number}"].balls)
+            self.assertEqual(trough_remaining, self.machine.ball_devices["bd_trough"].balls)
+            self.assertBallsOnPlayfield(1)
+            self.assertEqual(1, self.machine.game.balls_in_play)
+            self.assertNumBallsKnown(3)
 
     def test_third_lock_does_not_request_a_fourth_ball(self):
         config = self.machine.modes["lock_qualification"].config["multiball_locks"]

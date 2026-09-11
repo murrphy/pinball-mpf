@@ -1,0 +1,8 @@
+#show_version=6
+# Override only the struck cap, then remove this layer with the normal fade.
+- duration: 80ms
+  lights:
+    (cap): white-f0ms
+- duration: 40ms
+  lights:
+    (cap): stop-f40ms

@@ -160,3 +160,49 @@ shots:
     switch: s_power_3
     show_tokens:
       light: l_right_target_3
+
+# Gameplay switch audio belongs here so handlers unload when the game ends.
+sound_player:
+  fire_lane_group_hit_complete:
+    FP15:
+      bus: effects
+
+  s_lane_f_active:
+    FP13:
+      bus: effects
+
+  s_lane_i_active:
+    FP13:
+      bus: effects
+
+  s_lane_r_active:
+    FP13:
+      bus: effects
+
+  s_lane_e_active:
+    FP13:
+      bus: effects
+
+  sw_pop_bumpers_active:
+    FP13:
+      bus: effects
+
+  s_spinner_active:
+    FP09:
+      bus: effects
+
+  s_plunger_inactive:
+    FP12:
+      bus: effects
+
+  sw_side_bumper_active:
+    side_bumpers:
+      bus: effects
+
+  sw_fire_arrow_active:
+    fire_targets:
+      bus: effects
+
+  sw_power_arrow_active:
+    power_target:
+      bus: effects

@@ -40,3 +40,6 @@ firepower/config/drain_trace.yaml
 
 # Ignore the diagnostics directory created by Codex
 firepower/diagnostics/
+
+# Local audio investigation scripts, variants, captures and source archive
+firepower/audio/diagnostics/

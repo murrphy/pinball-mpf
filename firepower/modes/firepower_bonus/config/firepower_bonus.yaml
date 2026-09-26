@@ -21,6 +21,8 @@ event_player:
 show_player:
   collect_firepower_bonus_10000:
     firepower_bonus_awarded:
+      events_when_played: firepower_background_award_started
+      events_when_stopped: firepower_background_award_stopped
       action: play
       loops: 3
     firepower_bonus_10000_lit:
@@ -31,6 +33,8 @@ show_player:
 
   collect_firepower_bonus_30000:
     firepower_bonus_awarded:
+      events_when_played: firepower_background_award_started
+      events_when_stopped: firepower_background_award_stopped
       action: play
       loops: 3
     firepower_bonus_30000_lit:
@@ -41,6 +45,8 @@ show_player:
 
   collect_firepower_bonus_50000:
     firepower_bonus_awarded:
+      events_when_played: firepower_background_award_started
+      events_when_stopped: firepower_background_award_stopped
       action: play
       loops: 3
     firepower_bonus_50000_lit:
@@ -48,6 +54,8 @@ show_player:
 
   light_outlane_specials:
     firepower_bonus_awarded:
+      events_when_played: firepower_background_award_started
+      events_when_stopped: firepower_background_award_stopped
       action: play
       loops: 3
     specials_lit_show:

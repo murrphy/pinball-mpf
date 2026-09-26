@@ -1,0 +1,14 @@
+#config_version=6
+mode:
+  code: background_audio.BackgroundAudio
+  start_events: ball_starting
+  stop_events: ball_will_end, ball_ended, game_ended, tilt, slam_tilt, service_mode_entered
+  priority: 100
+
+# Playback approximation only; ROM-derived time/opportunities own stage changes.
+mode_settings:
+  enabled: true
+  minimum_rate: 0.85
+  maximum_rate: 1.25
+  slow_region_rate: 0.85  # Distinct stages 32-36 share this slow-region rate.
+  ramp_ms: 150

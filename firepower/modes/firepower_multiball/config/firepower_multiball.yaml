@@ -16,5 +16,7 @@ multiballs:
 show_player:
   multiball_firepower_started:
     firepower_multiball_release:
+      events_when_played: firepower_background_release_started
+      events_when_stopped: firepower_background_release_stopped
       action: play
       loops: 0

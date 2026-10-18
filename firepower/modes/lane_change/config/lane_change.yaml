@@ -147,6 +147,12 @@ light_player:
     l_fire:
       color: off
       priority: 2000
+  # The award can queue a stale player_fire_lit=1 update after its reset.
+  # Reassert the current state when the celebration releases the lamps.
+  firepower_background_award_stopped{current_player.fire_lit==0}:
+    l_fire:
+      color: off
+      priority: 2000
 
 show_player:
   mltp_lanes_done:

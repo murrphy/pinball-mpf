@@ -1,0 +1,1426 @@
+[
+  {
+    "baseline": false,
+    "buses": {
+      "Master": {
+        "gain_db": -0.0438385009765625
+      }
+    },
+    "failures": 0,
+    "mix_rate": 44100.0,
+    "renders": [
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.662,
+        "label": "FIRE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 13,
+        "stream_path": "res://sounds/voice/l6/phrase_c2ff8e7c88a0.wav",
+        "taps": {
+          "input": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -15.5720157638987,
+            "captured_frames": 40960,
+            "peak_dbfs": -4.53809518282884
+          },
+          "master": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -10.0217439945156,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38760002933382
+          },
+          "prelimit": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -6.75525503501948,
+            "captured_frames": 40960,
+            "peak_dbfs": 4.10026084388351
+          },
+          "voice": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -9.9340668512554,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29992252530586
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 97.78668585329085,
+          "active_seconds": 0.6471882086167801,
+          "mean_db": 2.9666650475264134,
+          "max_db": 5.400184094418654,
+          "p95_db": 5.057669610204233,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 97.41656958815871,
+          "active_seconds": 0.6447165532879818,
+          "mean_db": 8.679912860693332,
+          "max_db": 12.741686986472217,
+          "p95_db": 11.81580987286662,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.2,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.661958333333333,
+        "label": "POWER",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 26,
+        "stream_path": "res://sounds/voice/l6/phrase_809582e3eab7.wav",
+        "taps": {
+          "input": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -15.3649770333105,
+            "captured_frames": 40960,
+            "peak_dbfs": -2.30803872789303
+          },
+          "master": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -10.283946912877,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38759517013937
+          },
+          "prelimit": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -7.27110801074431,
+            "captured_frames": 40960,
+            "peak_dbfs": 4.36254506242708
+          },
+          "voice": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -10.1962697647028,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29991771491458
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.6618367346938776,
+          "mean_db": 2.939645342339865,
+          "max_db": 5.66246354759658,
+          "p95_db": 5.457404438865292,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 98.80422120194613,
+          "active_seconds": 0.6539002267573696,
+          "mean_db": 8.632479875723975,
+          "max_db": 16.149083985828504,
+          "p95_db": 14.024713404955534,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.1,
+        "true_peak_dbfs": -1.2
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 1.41085416666667,
+        "label": "FIRE_ONE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_f4be220a378a.wav",
+        "taps": {
+          "input": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -15.3618275926264,
+            "captured_frames": 73728,
+            "peak_dbfs": -1.37272965640557
+          },
+          "master": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -9.78592783354761,
+            "captured_frames": 73728,
+            "peak_dbfs": -1.38760063673331
+          },
+          "prelimit": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -6.62204910782877,
+            "captured_frames": 73728,
+            "peak_dbfs": 4.08364933776541
+          },
+          "voice": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -9.69825068539268,
+            "captured_frames": 73728,
+            "peak_dbfs": -1.29992312660496
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 1.4106349206349207,
+          "mean_db": 2.8967635182282008,
+          "max_db": 5.383572867227027,
+          "p95_db": 4.904560401647656,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 98.78789827347845,
+          "active_seconds": 1.393469387755102,
+          "mean_db": 7.803496595695295,
+          "max_db": 17.779475725787364,
+          "p95_db": 14.409960891194824,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -7.6,
+        "true_peak_dbfs": -1.2
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.705541666666667,
+        "label": "TWO",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_ab9ce987252b.wav",
+        "taps": {
+          "input": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -15.6006924268685,
+            "captured_frames": 45056,
+            "peak_dbfs": -2.77850387211473
+          },
+          "master": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -10.0464945966998,
+            "captured_frames": 45056,
+            "peak_dbfs": -1.38759395534119
+          },
+          "prelimit": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -7.21770067244378,
+            "captured_frames": 45056,
+            "peak_dbfs": 4.41563304548445
+          },
+          "voice": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -9.95881744811016,
+            "captured_frames": 45056,
+            "peak_dbfs": -1.29991651231717
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.7053287981859411,
+          "mean_db": 2.5116772596029495,
+          "max_db": 5.715550294369795,
+          "p95_db": 4.45748863941667,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 87.36216042436907,
+          "active_seconds": 0.6161904761904762,
+          "mean_db": 8.182850942246539,
+          "max_db": 15.521342850328388,
+          "p95_db": 12.773972538051828,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.6,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.738166666666667,
+        "label": "THREE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_5e8a7b3d8d1a.wav",
+        "taps": {
+          "input": {
+            "active_frames": 32634,
+            "active_rms_dbfs": -15.2792087522213,
+            "captured_frames": 40960,
+            "peak_dbfs": -3.47826496382989
+          },
+          "master": {
+            "active_frames": 33516,
+            "active_rms_dbfs": -9.88143043694621,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38760002933382
+          },
+          "prelimit": {
+            "active_frames": 32634,
+            "active_rms_dbfs": -6.79315833575211,
+            "captured_frames": 40960,
+            "peak_dbfs": 4.07530931126564
+          },
+          "voice": {
+            "active_frames": 33516,
+            "active_rms_dbfs": -9.79375328783878,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29992252530586
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.7379591836734694,
+          "mean_db": 2.6793274036754973,
+          "max_db": 5.375232525712491,
+          "p95_db": 5.242112549525951,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 95.15702784094401,
+          "active_seconds": 0.7021768707482993,
+          "mean_db": 8.192520864701036,
+          "max_db": 14.668230466332927,
+          "p95_db": 13.018465433739976,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -7.7,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 1.7816875,
+        "label": "MISSION_ACCOMPLISHED",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 12,
+        "stream_path": "res://sounds/voice/l6/phrase_790cffbd5630.wav",
+        "taps": {
+          "input": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -19.5834539993518,
+            "captured_frames": 90112,
+            "peak_dbfs": -3.09278017168051
+          },
+          "master": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -10.5414262809615,
+            "captured_frames": 90112,
+            "peak_dbfs": -1.38759820713558
+          },
+          "prelimit": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -6.97842755611064,
+            "captured_frames": 90112,
+            "peak_dbfs": 4.19770502031034
+          },
+          "voice": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -10.4537491339458,
+            "captured_frames": 90112,
+            "peak_dbfs": -1.29992072140882
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 1.7814965986394558,
+          "mean_db": 3.193219206466716,
+          "max_db": 5.49762619417022,
+          "p95_db": 5.390973358105642,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 90.5717777042336,
+          "active_seconds": 1.6134920634920635,
+          "mean_db": 3.95654111834306,
+          "max_db": 15.184507079305007,
+          "p95_db": 9.87636610852145,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.3,
+        "true_peak_dbfs": -1.2
+      }
+    ],
+    "settings": {
+      "attack_us": 200.0,
+      "limiter_db": -1.29999995231628,
+      "makeup_db": 18.0,
+      "ratio": 3.0,
+      "release_ms": 80.0,
+      "threshold_db": -15.0
+    }
+  },
+  {
+    "baseline": false,
+    "buses": {
+      "Master": {
+        "gain_db": -0.0438385009765625
+      }
+    },
+    "failures": 0,
+    "mix_rate": 44100.0,
+    "renders": [
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.662,
+        "label": "FIRE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 13,
+        "stream_path": "res://sounds/voice/l6/phrase_c2ff8e7c88a0.wav",
+        "taps": {
+          "input": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -15.5720157638987,
+            "captured_frames": 40960,
+            "peak_dbfs": -4.53809518282884
+          },
+          "master": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -9.96517054249722,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38755690407812
+          },
+          "prelimit": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -4.75525649126767,
+            "captured_frames": 40960,
+            "peak_dbfs": 6.10025433281607
+          },
+          "voice": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -9.87749338977728,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29987983317631
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.6618367346938776,
+          "mean_db": 4.863416809195617,
+          "max_db": 7.400134877452899,
+          "p95_db": 7.057626315523303,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 97.41656958815871,
+          "active_seconds": 0.6447165532879818,
+          "mean_db": 8.679914681868715,
+          "max_db": 12.741688116767566,
+          "p95_db": 11.815810713100179,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.1,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.661958333333333,
+        "label": "POWER",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 26,
+        "stream_path": "res://sounds/voice/l6/phrase_809582e3eab7.wav",
+        "taps": {
+          "input": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -15.3649770333105,
+            "captured_frames": 40960,
+            "peak_dbfs": -2.30803872789303
+          },
+          "master": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -10.1875930298913,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38755083011565
+          },
+          "prelimit": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -5.27110881636685,
+            "captured_frames": 40960,
+            "peak_dbfs": 6.36254465523061
+          },
+          "voice": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -10.0999158819326,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29987382021717
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.6618367346938776,
+          "mean_db": 4.756428243762208,
+          "max_db": 7.662418683784942,
+          "p95_db": 7.457360187264843,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 98.80422120194613,
+          "active_seconds": 0.6539002267573696,
+          "mean_db": 8.632480680315327,
+          "max_db": 16.14908461758195,
+          "p95_db": 14.02471445395894,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.1,
+        "true_peak_dbfs": -1.2
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 1.41085416666667,
+        "label": "FIRE_ONE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_f4be220a378a.wav",
+        "taps": {
+          "input": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -15.3618275926264,
+            "captured_frames": 69632,
+            "peak_dbfs": -1.37272965640557
+          },
+          "master": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -9.70322381239572,
+            "captured_frames": 69632,
+            "peak_dbfs": -1.3875575114746
+          },
+          "prelimit": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -4.62204990988561,
+            "captured_frames": 69632,
+            "peak_dbfs": 6.08364826561208
+          },
+          "voice": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -9.61554666186151,
+            "captured_frames": 69632,
+            "peak_dbfs": -1.29988043447245
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 1.4106349206349207,
+          "mean_db": 4.751934621171625,
+          "max_db": 7.383528938598161,
+          "p95_db": 6.904518583528817,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 98.78789827347845,
+          "active_seconds": 1.393469387755102,
+          "mean_db": 7.803497396222909,
+          "max_db": 17.779476271270685,
+          "p95_db": 14.409962604469179,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -7.3,
+        "true_peak_dbfs": -1.2
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.705541666666667,
+        "label": "TWO",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_ab9ce987252b.wav",
+        "taps": {
+          "input": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -15.6006924268685,
+            "captured_frames": 40960,
+            "peak_dbfs": -2.77850387211473
+          },
+          "master": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -9.94387646418993,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38754900792774
+          },
+          "prelimit": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -5.21770147409023,
+            "captured_frames": 40960,
+            "peak_dbfs": 6.41563264109315
+          },
+          "voice": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -9.85619931363422,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29987201633024
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.7053287981859411,
+          "mean_db": 4.302686122681788,
+          "max_db": 7.715505280857422,
+          "p95_db": 6.457448787330885,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 87.36216042436907,
+          "active_seconds": 0.6161904761904762,
+          "mean_db": 8.182851745480061,
+          "max_db": 15.52134381634935,
+          "p95_db": 12.77397264586611,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.0,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.738166666666667,
+        "label": "THREE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_5e8a7b3d8d1a.wav",
+        "taps": {
+          "input": {
+            "active_frames": 32634,
+            "active_rms_dbfs": -15.2792087522213,
+            "captured_frames": 45056,
+            "peak_dbfs": -3.47826496382989
+          },
+          "master": {
+            "active_frames": 33516,
+            "active_rms_dbfs": -9.78158578200492,
+            "captured_frames": 45056,
+            "peak_dbfs": -1.3875575114746
+          },
+          "prelimit": {
+            "active_frames": 32634,
+            "active_rms_dbfs": -4.79321002686479,
+            "captured_frames": 45056,
+            "peak_dbfs": 6.07526745917734
+          },
+          "voice": {
+            "active_frames": 33516,
+            "active_rms_dbfs": -9.69390863049408,
+            "captured_frames": 45056,
+            "peak_dbfs": -1.29988043447245
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.7379591836734694,
+          "mean_db": 4.511465256210366,
+          "max_db": 7.375148593574149,
+          "p95_db": 7.241818143230106,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 95.15702784094401,
+          "active_seconds": 0.7021768707482993,
+          "mean_db": 8.192597894000107,
+          "max_db": 14.6682313373046,
+          "p95_db": 13.018466476280285,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.1,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 1.7816875,
+        "label": "MISSION_ACCOMPLISHED",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 12,
+        "stream_path": "res://sounds/voice/l6/phrase_790cffbd5630.wav",
+        "taps": {
+          "input": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -19.5834539993518,
+            "captured_frames": 90112,
+            "peak_dbfs": -3.09278017168051
+          },
+          "master": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -10.2786811618965,
+            "captured_frames": 90112,
+            "peak_dbfs": -1.38755447449262
+          },
+          "prelimit": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -4.97842835960106,
+            "captured_frames": 90112,
+            "peak_dbfs": 6.19770376190378
+          },
+          "voice": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -10.1910040141846,
+            "captured_frames": 90112,
+            "peak_dbfs": -1.29987742799215
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 1.7814965986394558,
+          "mean_db": 4.749219038712814,
+          "max_db": 7.497581420839763,
+          "p95_db": 7.3909290369534375,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 90.5717777042336,
+          "active_seconds": 1.6134920634920635,
+          "mean_db": 3.9565419216254565,
+          "max_db": 15.184508298412563,
+          "p95_db": 9.876367443144574,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.2,
+        "true_peak_dbfs": -1.2
+      }
+    ],
+    "settings": {
+      "attack_us": 200.0,
+      "limiter_db": -1.29999995231628,
+      "makeup_db": 20.0,
+      "ratio": 3.0,
+      "release_ms": 80.0,
+      "threshold_db": -15.0
+    }
+  },
+  {
+    "baseline": false,
+    "buses": {
+      "Master": {
+        "gain_db": -0.0438385009765625
+      }
+    },
+    "failures": 0,
+    "mix_rate": 44100.0,
+    "renders": [
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.662,
+        "label": "FIRE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 13,
+        "stream_path": "res://sounds/voice/l6/phrase_c2ff8e7c88a0.wav",
+        "taps": {
+          "input": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -15.5720157638987,
+            "captured_frames": 40960,
+            "peak_dbfs": -4.53809518282884
+          },
+          "master": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -9.92118338348152,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38750345335413
+          },
+          "prelimit": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -2.75525630789849,
+            "captured_frames": 40960,
+            "peak_dbfs": 8.10025428843758
+          },
+          "voice": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -9.83350623475937,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29982631798633
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.6618367346938776,
+          "mean_db": 6.760412030932053,
+          "max_db": 9.400080865538257,
+          "p95_db": 9.0575745593738,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 97.41656958815871,
+          "active_seconds": 0.6447165532879818,
+          "mean_db": 8.679914502088392,
+          "max_db": 12.741687617534119,
+          "p95_db": 11.815810490828172,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.1,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.661958333333333,
+        "label": "POWER",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 26,
+        "stream_path": "res://sounds/voice/l6/phrase_809582e3eab7.wav",
+        "taps": {
+          "input": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -15.3649770333105,
+            "captured_frames": 40960,
+            "peak_dbfs": -2.30803872789303
+          },
+          "master": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -10.1187586070152,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38749555725233
+          },
+          "prelimit": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -3.27110863534469,
+            "captured_frames": 40960,
+            "peak_dbfs": 8.36254456873788
+          },
+          "voice": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -10.0310814541706,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29981789989658
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.6618367346938776,
+          "mean_db": 6.615736813122916,
+          "max_db": 9.662362816758623,
+          "p95_db": 9.457305440208783,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 98.80422120194613,
+          "active_seconds": 0.6539002267573696,
+          "mean_db": 8.632480497114182,
+          "max_db": 16.149084518553174,
+          "p95_db": 14.02471414745947,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.0,
+        "true_peak_dbfs": -1.2
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 1.41085416666667,
+        "label": "FIRE_ONE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_f4be220a378a.wav",
+        "taps": {
+          "input": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -15.3618275926264,
+            "captured_frames": 73728,
+            "peak_dbfs": -1.37272965640557
+          },
+          "master": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -9.63253819566959,
+            "captured_frames": 73728,
+            "peak_dbfs": -1.38576344750125
+          },
+          "prelimit": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -2.62204973040037,
+            "captured_frames": 73728,
+            "peak_dbfs": 8.0836480773649
+          },
+          "voice": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -9.5448610476048,
+            "captured_frames": 73728,
+            "peak_dbfs": -1.29808635201898
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 1.4106349206349207,
+          "mean_db": 6.623444852333481,
+          "max_db": 9.383474595868108,
+          "p95_db": 8.90446804141927,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 98.78789827347845,
+          "active_seconds": 1.393469387755102,
+          "mean_db": 7.8034972177395945,
+          "max_db": 17.779476543166272,
+          "p95_db": 14.409961920930908,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -7.4,
+        "true_peak_dbfs": -1.2
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.705541666666667,
+        "label": "TWO",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_ab9ce987252b.wav",
+        "taps": {
+          "input": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -15.6006924268685,
+            "captured_frames": 45056,
+            "peak_dbfs": -2.77850387211473
+          },
+          "master": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -9.88029379154931,
+            "captured_frames": 45056,
+            "peak_dbfs": -1.38749434246808
+          },
+          "prelimit": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -3.21770129155987,
+            "captured_frames": 45056,
+            "peak_dbfs": 8.41563279321642
+          },
+          "voice": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -9.79261664605426,
+            "captured_frames": 45056,
+            "peak_dbfs": -1.29981669731299
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.7053287981859411,
+          "mean_db": 6.153519086196043,
+          "max_db": 9.715449823927392,
+          "p95_db": 8.457400233264213,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 87.36216042436907,
+          "active_seconds": 0.6161904761904762,
+          "mean_db": 8.182851565495461,
+          "max_db": 15.521343639333708,
+          "p95_db": 12.7739726960348,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.5,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.738166666666667,
+        "label": "THREE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_5e8a7b3d8d1a.wav",
+        "taps": {
+          "input": {
+            "active_frames": 32634,
+            "active_rms_dbfs": -15.2792087522213,
+            "captured_frames": 40960,
+            "peak_dbfs": -3.47826496382989
+          },
+          "master": {
+            "active_frames": 33516,
+            "active_rms_dbfs": -9.70574606384995,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38750406074687
+          },
+          "prelimit": {
+            "active_frames": 32634,
+            "active_rms_dbfs": -2.79315895949951,
+            "captured_frames": 40960,
+            "peak_dbfs": 8.07530812280333
+          },
+          "voice": {
+            "active_frames": 33516,
+            "active_rms_dbfs": -9.61806892091513,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29982691927877
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.7379591836734694,
+          "mean_db": 6.3953853143558375,
+          "max_db": 9.37513535501428,
+          "p95_db": 9.242016964871242,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 95.15702784094401,
+          "active_seconds": 0.7021768707482993,
+          "mean_db": 8.192521487369,
+          "max_db": 14.668231275266088,
+          "p95_db": 13.01846664113721,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -7.6,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 1.7816875,
+        "label": "MISSION_ACCOMPLISHED",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 12,
+        "stream_path": "res://sounds/voice/l6/phrase_790cffbd5630.wav",
+        "taps": {
+          "input": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -19.5834539993518,
+            "captured_frames": 90112,
+            "peak_dbfs": -3.09278017168051
+          },
+          "master": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -10.1573093441524,
+            "captured_frames": 90112,
+            "peak_dbfs": -1.38311554206788
+          },
+          "prelimit": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -2.97847880073795,
+            "captured_frames": 90112,
+            "peak_dbfs": 8.19770410513758
+          },
+          "voice": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -10.0696321967157,
+            "captured_frames": 90112,
+            "peak_dbfs": -1.29543859306288
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 1.7815419501133787,
+          "mean_db": 6.549605392520061,
+          "max_db": 9.497527945978426,
+          "p95_db": 9.3907493689376,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 90.5717777042336,
+          "active_seconds": 1.6134920634920635,
+          "mean_db": 3.956613699829286,
+          "max_db": 15.184508115692998,
+          "p95_db": 9.87636685053469,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.1,
+        "true_peak_dbfs": -1.1
+      }
+    ],
+    "settings": {
+      "attack_us": 200.0,
+      "limiter_db": -1.29999995231628,
+      "makeup_db": 22.0,
+      "ratio": 3.0,
+      "release_ms": 80.0,
+      "threshold_db": -15.0
+    }
+  },
+  {
+    "baseline": false,
+    "buses": {
+      "Master": {
+        "gain_db": -0.0438385009765625
+      }
+    },
+    "failures": 0,
+    "mix_rate": 44100.0,
+    "renders": [
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.662,
+        "label": "FIRE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 13,
+        "stream_path": "res://sounds/voice/l6/phrase_c2ff8e7c88a0.wav",
+        "taps": {
+          "input": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -15.5720157638987,
+            "captured_frames": 40960,
+            "peak_dbfs": -4.53809518282884
+          },
+          "master": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -9.89633125886698,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38743481824773
+          },
+          "prelimit": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -0.755256822154758,
+            "captured_frames": 40960,
+            "peak_dbfs": 10.1002540550206
+          },
+          "voice": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -9.80865411687386,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29975777092127
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.6618367346938776,
+          "mean_db": 8.698524583243866,
+          "max_db": 11.400012187730182,
+          "p95_db": 11.057508416982056,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 97.41656958815871,
+          "active_seconds": 0.6447165532879818,
+          "mean_db": 8.679915016323264,
+          "max_db": 12.741687778043909,
+          "p95_db": 11.815810599762631,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.1,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.661958333333333,
+        "label": "POWER",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 26,
+        "stream_path": "res://sounds/voice/l6/phrase_809582e3eab7.wav",
+        "taps": {
+          "input": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -15.3649770333105,
+            "captured_frames": 40960,
+            "peak_dbfs": -2.30803872789303
+          },
+          "master": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -10.0750184679865,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38742449265918
+          },
+          "prelimit": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -1.27110914936351,
+            "captured_frames": 40960,
+            "peak_dbfs": 10.362543953234
+          },
+          "voice": {
+            "active_frames": 29988,
+            "active_rms_dbfs": -9.98734132456497,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29974754903687
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.6618367346938776,
+          "mean_db": 8.522328675923303,
+          "max_db": 11.6622919920729,
+          "p95_db": 11.457236680095315,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 98.80422120194613,
+          "active_seconds": 0.6539002267573696,
+          "mean_db": 8.63248101360181,
+          "max_db": 16.149085236852443,
+          "p95_db": 14.024714265518757,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.0,
+        "true_peak_dbfs": -1.2
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 1.41085416666667,
+        "label": "FIRE_ONE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_f4be220a378a.wav",
+        "taps": {
+          "input": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -15.3618275926264,
+            "captured_frames": 73728,
+            "peak_dbfs": -1.37272965640557
+          },
+          "master": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -9.60100632666903,
+            "captured_frames": 73728,
+            "peak_dbfs": -1.38573612034663
+          },
+          "prelimit": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -0.622050242952852,
+            "captured_frames": 73728,
+            "peak_dbfs": 10.0836478075743
+          },
+          "voice": {
+            "active_frames": 62622,
+            "active_rms_dbfs": -9.51332918007703,
+            "captured_frames": 73728,
+            "peak_dbfs": -1.29805929932212
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 1.4106575963718821,
+          "mean_db": 8.543988598397197,
+          "max_db": 11.38340604067572,
+          "p95_db": 10.904401748591477,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 98.78789827347845,
+          "active_seconds": 1.393469387755102,
+          "mean_db": 7.803497731939196,
+          "max_db": 17.77947696800315,
+          "p95_db": 14.409962106807896,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -7.4,
+        "true_peak_dbfs": -1.2
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.705541666666667,
+        "label": "TWO",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_ab9ce987252b.wav",
+        "taps": {
+          "input": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -15.6006924268685,
+            "captured_frames": 40960,
+            "peak_dbfs": -2.77850387211473
+          },
+          "master": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -9.80490465897272,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.38605737166627
+          },
+          "prelimit": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -1.21767580587807,
+            "captured_frames": 40960,
+            "peak_dbfs": 10.4156926899589
+          },
+          "voice": {
+            "active_frames": 31752,
+            "active_rms_dbfs": -9.7172275149418,
+            "captured_frames": 40960,
+            "peak_dbfs": -1.29837972889858
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.7053287981859411,
+          "mean_db": 8.005357212202197,
+          "max_db": 11.715438021218407,
+          "p95_db": 10.457338954476898,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 87.36216042436907,
+          "active_seconds": 0.6161904761904762,
+          "mean_db": 8.182813330936341,
+          "max_db": 15.521344064890908,
+          "p95_db": 12.773973109468562,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -7.9,
+        "true_peak_dbfs": -1.3
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 0.738166666666667,
+        "label": "THREE",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 24,
+        "stream_path": "res://sounds/voice/l6/phrase_5e8a7b3d8d1a.wav",
+        "taps": {
+          "input": {
+            "active_frames": 32634,
+            "active_rms_dbfs": -15.2792087522213,
+            "captured_frames": 45056,
+            "peak_dbfs": -3.47826496382989
+          },
+          "master": {
+            "active_frames": 33516,
+            "active_rms_dbfs": -9.6226884026691,
+            "captured_frames": 45056,
+            "peak_dbfs": -1.38743542563567
+          },
+          "prelimit": {
+            "active_frames": 32634,
+            "active_rms_dbfs": -0.793210364703254,
+            "captured_frames": 45056,
+            "peak_dbfs": 10.075266542755
+          },
+          "voice": {
+            "active_frames": 33516,
+            "active_rms_dbfs": -9.53501125053809,
+            "captured_frames": 45056,
+            "peak_dbfs": -1.29975837220897
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 0.7379591836734694,
+          "mean_db": 8.278697409845051,
+          "max_db": 11.375025197726721,
+          "p95_db": 11.241698046011217,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 95.15702784094401,
+          "active_seconds": 0.7021768707482993,
+          "mean_db": 8.192598232212271,
+          "max_db": 14.668231231496861,
+          "p95_db": 13.018467140948928,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -8.0,
+        "true_peak_dbfs": -1.2
+      },
+      {
+        "bus": "voice",
+        "category": "speech",
+        "duration": 1.7816875,
+        "label": "MISSION_ACCOMPLISHED",
+        "limiter_delay_frames": 90,
+        "pitch_scale": 1.0,
+        "player_gain_db": 1.0,
+        "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+        "raw": 12,
+        "stream_path": "res://sounds/voice/l6/phrase_790cffbd5630.wav",
+        "taps": {
+          "input": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -19.5834539993518,
+            "captured_frames": 86016,
+            "peak_dbfs": -3.09278017168051
+          },
+          "master": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -10.0724303770273,
+            "captured_frames": 86016,
+            "peak_dbfs": -1.38238221318734
+          },
+          "prelimit": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -0.978428695797718,
+            "captured_frames": 86016,
+            "peak_dbfs": 10.197703706023
+          },
+          "voice": {
+            "active_frames": 79380,
+            "active_rms_dbfs": -9.98475322936616,
+            "captured_frames": 86016,
+            "peak_dbfs": -1.29470541773538
+          }
+        },
+        "limiter_reduction": {
+          "active_percent": 100.0,
+          "active_seconds": 1.7815419501133787,
+          "mean_db": 8.405423207467205,
+          "max_db": 11.49745850137905,
+          "p95_db": 11.390806993555259,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "compressor_reduction": {
+          "active_percent": 90.5717777042336,
+          "active_seconds": 1.6134920634920635,
+          "mean_db": 3.956542256070799,
+          "max_db": 15.18450845662518,
+          "p95_db": 9.876367217443235,
+          "method": "20ms active frame gate; gain inferred only on nonzero samples; active means >0.1 dB reduction"
+        },
+        "integrated_lufs": -7.9,
+        "true_peak_dbfs": -1.1
+      }
+    ],
+    "settings": {
+      "attack_us": 200.0,
+      "limiter_db": -1.29999995231628,
+      "makeup_db": 24.0,
+      "ratio": 3.0,
+      "release_ms": 80.0,
+      "threshold_db": -15.0
+    }
+  }
+]

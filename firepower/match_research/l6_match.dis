@@ -1,0 +1,225 @@
+; Checksum-verified L-6 Match and surrounding lifecycle.
+; Generated with the existing 6800 decoder; addresses are hexadecimal.
+
+7067: 96 46    lda   46
+7069: 8B 10    adda  #10
+706B: 19       daa   
+706C: 97 46    sta   46
+
+73D9: 96 03    lda   03
+73DB: 7F 00 55 clr   0055
+73DE: F6 01 A4 ldb   01A4
+73E1: CA F0    orb   #F0
+73E3: 11       cba   
+73E4: 27 40    beq   7426
+73E6: 4C       inca  
+73E7: 97 03    sta   03
+
+7426: 86 36    lda   #36
+7428: BD 79 3D jsr   793D
+742B: 86 34    lda   #34
+742D: B7 22 03 sta   2203
+7430: CE 01 9B ldx   #019B
+7433: BD 7E 1E jsr   7E1E
+7436: 26 33    bne   746B
+7438: 86 35    lda   #35
+743A: BD 79 2C jsr   792C
+743D: 96 46    lda   46
+743F: 97 03    sta   03
+7441: CE 00 00 ldx   #0000
+7444: D6 56    ldb   56
+7446: 7F 00 67 clr   0067
+7449: A1 02    cmpa  02,X
+744B: 26 03    bne   7450
+744D: 7C 00 67 inc   0067
+7450: 08       inx   
+7451: 08       inx   
+7452: 08       inx   
+7453: 08       inx   
+7454: 5A       decb  
+7455: 2A F2    bpl   7449
+7457: 96 67    lda   67
+7459: 27 10    beq   746B
+745B: FE 60 E8 ldx   60E8
+745E: BD 79 CB jsr   79CB
+7461: 96 67    lda   67
+7463: C6 07    ldb   #07
+7465: BD 7A A9 jsr   7AA9
+7468: BD 76 6C jsr   766C
+746B: 86 38    lda   #38
+746D: 9B 56    adda  56
+746F: BD 79 3D jsr   793D
+7472: CE 00 00 ldx   #0000
+7475: DF 70    stx   70
+7477: DF 72    stx   72
+7479: 4F       clra  
+747A: E6 00    ldb   00,X
+747C: D1 70    cmpb  70
+747E: 27 14    beq   7494
+7480: 23 20    bls   74A2
+7482: E6 00    ldb   00,X
+7484: D7 70    stb   70
+7486: E6 01    ldb   01,X
+7488: D7 71    stb   71
+748A: E6 02    ldb   02,X
+748C: D7 72    stb   72
+748E: 97 73    sta   73
+7490: DF 80    stx   80
+7492: 20 0E    bra   74A2
+7494: E6 01    ldb   01,X
+7496: D1 71    cmpb  71
+7498: 22 E8    bhi   7482
+749A: 26 06    bne   74A2
+749C: E6 02    ldb   02,X
+749E: D1 72    cmpb  72
+74A0: 22 E0    bhi   7482
+74A2: 08       inx   
+74A3: 08       inx   
+74A4: 08       inx   
+74A5: 08       inx   
+74A6: 4C       inca  
+74A7: 91 56    cmpa  56
+74A9: 23 CF    bls   747A
+74AB: 86 38    lda   #38
+74AD: 9B 73    adda  73
+74AF: BD 79 4A jsr   794A
+74B2: CE 01 81 ldx   #0181
+74B5: BD 7E 1E jsr   7E1E
+74B8: 27 4D    beq   7507
+74BA: CE 01 48 ldx   #0148
+74BD: BD 7E 1E jsr   7E1E
+74C0: D1 70    cmpb  70
+74C2: 22 43    bhi   7507
+74C4: 26 16    bne   74DC
+74C6: 08       inx   
+74C7: 08       inx   
+74C8: BD 7E 1E jsr   7E1E
+74CB: D1 71    cmpb  71
+74CD: 22 38    bhi   7507
+74CF: 26 0B    bne   74DC
+74D1: 08       inx   
+74D2: 08       inx   
+74D3: BD 7E 1E jsr   7E1E
+74D6: D1 72    cmpb  72
+74D8: 22 2D    bhi   7507
+74DA: 26 2B    bne   7507
+74DC: CE 01 48 ldx   #0148
+74DF: D6 70    ldb   70
+74E1: BD 7E 2D jsr   7E2D
+74E4: 08       inx   
+74E5: 08       inx   
+74E6: D6 71    ldb   71
+74E8: BD 7E 2D jsr   7E2D
+74EB: 08       inx   
+74EC: 08       inx   
+74ED: D6 72    ldb   72
+74EF: BD 7E 2D jsr   7E2D
+74F2: FE 60 EA ldx   60EA
+74F5: BD 79 CB jsr   79CB
+74F8: CE 01 99 ldx   #0199
+74FB: BD 7E 1E jsr   7E1E
+74FE: 17       tba   
+74FF: C6 07    ldb   #07
+7501: BD 7A A9 jsr   7AA9
+7504: BD 76 6C jsr   766C
+7507: FE 60 EC ldx   60EC
+750A: BD 79 CB jsr   79CB
+750D: 86 01    lda   #01
+750F: 97 78    sta   78
+7511: B6 28 00 lda   2800
+7514: 86 3D    lda   #3D
+7516: BD 79 4A jsr   794A
+7519: 97 40    sta   40
+751B: 97 43    sta   43
+751D: 7E 70 62 jmp   7062
+
+766C: 37       pshb  
+766D: C6 08    ldb   #08
+766F: BD 7A A9 jsr   7AA9
+7672: 8D 4F    bsr   76C3
+7674: 23 1E    bls   7694
+7676: 16       tab   
+7677: 27 1B    beq   7694
+7679: B6 60 CD lda   60CD
+767C: BD 71 CB jsr   71CB
+767F: B6 60 CE lda   60CE
+7682: 97 3A    sta   3A
+7684: 96 07    lda   07
+7686: 8B 01    adda  #01
+7688: 19       daa   
+7689: 97 07    sta   07
+768B: 5A       decb  
+768C: 27 06    beq   7694
+768E: 96 3A    lda   3A
+7690: 26 FC    bne   768E
+7692: 20 E5    bra   7679
+7694: 86 80    lda   #80
+7696: 8D 2B    bsr   76C3
+7698: 23 0A    bls   76A4
+769A: 0F       sei   
+769B: BA 22 02 ora   2202
+769E: B7 22 02 sta   2202
+76A1: 0E       cli   
+76A2: 20 09    bra   76AD
+76A4: 43       coma  
+76A5: 0F       sei   
+76A6: B4 22 02 anda  2202
+76A9: B7 22 02 sta   2202
+76AC: 0E       cli   
+76AD: 86 37    lda   #37
+76AF: D6 07    ldb   07
+76B1: 27 05    beq   76B8
+76B3: BD 79 2C jsr   792C
+76B6: 20 03    bra   76BB
+76B8: BD 79 3D jsr   793D
+76BB: CE 01 52 ldx   #0152
+76BE: BD 7E 2D jsr   7E2D
+76C1: 33       pulb  
+76C2: 39       rts   
+76C3: CE 01 8B ldx   #018B
+76C6: BD 7E 1E jsr   7E1E
+76C9: D1 07    cmpb  07
+76CB: 39       rts   
+
+79CB: E6 00    ldb   00,X
+79CD: 96 3A    lda   3A
+79CF: 26 FC    bne   79CD
+79D1: A6 01    lda   01,X
+79D3: 27 0C    beq   79E1
+79D5: 81 FF    cmpa  #FF
+79D7: 27 03    beq   79DC
+79D9: BD 71 CB jsr   71CB
+79DC: D7 3A    stb   3A
+79DE: 08       inx   
+79DF: 20 EC    bra   79CD
+79E1: 7E 76 CC jmp   76CC
+79E4: 37       pshb  
+79E5: DF 80    stx   80
+79E7: 85 08    bita  #08
+79E9: 26 18    bne   7A03
+79EB: 16       tab   
+79EC: C4 07    andb  #07
+79EE: CE 00 5D ldx   #005D
+79F1: BD 72 1F jsr   721F
+79F4: 44       lsra  
+79F5: 44       lsra  
+79F6: 44       lsra  
+79F7: 44       lsra  
+79F8: AB 00    adda  00,X
+79FA: A7 00    sta   00,X
+79FC: DE 80    ldx   80
+79FE: 33       pulb  
+79FF: 39       rts   
+7A00: 37       pshb  
+7A01: DF 80    stx   80
+7A03: 16       tab   
+7A04: 84 F0    anda  #F0
+7A06: C4 07    andb  #07
+7A08: D7 68    stb   68
+7A0A: 54       lsrb  
+7A0B: 25 04    bcs   7A11
+7A0D: 44       lsra  
+7A0E: 44       lsra  
+7A0F: 44       lsra  
+7A10: 44       lsra  
+7A11: 97 67    sta   67

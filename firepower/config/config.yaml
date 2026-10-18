@@ -31,6 +31,12 @@ game:
   balls_per_game: 5
   max_players: 4
 
+machine_vars:
+  firepower_high_score_to_date:
+    initial_value: 550000
+    value_type: int
+    persist: true
+
 player_vars:
   firepower_bonus_level:
     initial_value: 1

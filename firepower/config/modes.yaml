@@ -1,7 +1,11 @@
 #config_version=6
 modes:
   - base
+  - start_button_lamp
+  - player_up
   - background_audio
+  - original_audio
+  - original_speech
   - bonus_collect
   - bonus_ladder
   - lock_qualification
@@ -10,7 +14,11 @@ modes:
   - jet_bumpers
   - lane_change
   - power_targets
+  - extra_ball_feature
   - segment_display
+  - firepower_match
+  - high_score_to_date
+  - credits
   - shield_qualifier
   - shield
   - spinner

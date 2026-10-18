@@ -25,6 +25,7 @@ show_player:
       events_when_stopped: firepower_background_award_stopped
       action: play
       loops: 3
+      priority: 2001  # Above lane_change's steady FIRE light_player (2000).
     firepower_bonus_10000_lit:
       action: stop
     firepower_bonus_30000_lit:
@@ -37,6 +38,7 @@ show_player:
       events_when_stopped: firepower_background_award_stopped
       action: play
       loops: 3
+      priority: 2001
     firepower_bonus_30000_lit:
       action: stop
     firepower_bonus_50000_lit:
@@ -49,6 +51,7 @@ show_player:
       events_when_stopped: firepower_background_award_stopped
       action: play
       loops: 3
+      priority: 2001
     firepower_bonus_50000_lit:
       action: stop
 
@@ -58,6 +61,7 @@ show_player:
       events_when_stopped: firepower_background_award_stopped
       action: play
       loops: 3
+      priority: 2001
     specials_lit_show:
       action: play
       loops: -1

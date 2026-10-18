@@ -1,0 +1,2718 @@
+{
+  "rom_crc32": {
+    "prom1_6.474": "af6eb0b9",
+    "prom2.474": "f75ade1a",
+    "prom3.474": "242ec687",
+    "gamerom.716": "fdd3b983",
+    "green1.716": "2145f8ab",
+    "green2.716": "1c978a4a"
+  },
+  "descriptor6224_hex": "809c00",
+  "credit_spacing_ticks": 16,
+  "cases": [
+    {
+      "case": "decimal phase increment",
+      "before": 0,
+      "after": 10
+    },
+    {
+      "case": "decimal phase increment",
+      "before": 10,
+      "after": 20
+    },
+    {
+      "case": "decimal phase increment",
+      "before": 20,
+      "after": 30
+    },
+    {
+      "case": "decimal phase increment",
+      "before": 30,
+      "after": 40
+    },
+    {
+      "case": "decimal phase increment",
+      "before": 40,
+      "after": 50
+    },
+    {
+      "case": "decimal phase increment",
+      "before": 50,
+      "after": 60
+    },
+    {
+      "case": "decimal phase increment",
+      "before": 60,
+      "after": 70
+    },
+    {
+      "case": "decimal phase increment",
+      "before": 70,
+      "after": 80
+    },
+    {
+      "case": "decimal phase increment",
+      "before": 80,
+      "after": 90
+    },
+    {
+      "case": "decimal phase increment",
+      "before": 90,
+      "after": 0
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 0,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 0,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 10,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 10,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 20,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 20,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 30,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 30,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 40,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 40,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 50,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 50,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 60,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 60,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 70,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 70,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 80,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 80,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 90,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 1,
+      "number": 90,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 0,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 0,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 0,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 10,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 10,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 10,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 20,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 20,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 20,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 30,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 30,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 30,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 40,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 40,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 40,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 50,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 50,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 50,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 60,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 60,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 60,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 70,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 70,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 70,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 80,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 80,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 80,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 90,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 90,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 2,
+      "number": 90,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 0,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 0,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 0,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 0,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 10,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 10,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 10,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 10,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 20,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 20,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 20,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 20,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 30,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 30,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 30,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 30,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 40,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 40,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 40,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 40,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 50,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 50,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 50,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 50,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 60,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 60,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 60,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 60,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 70,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 70,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 70,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 70,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 80,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 80,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 80,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 80,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 90,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 90,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 90,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 3,
+      "number": 90,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 0,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 0,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 0,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 0,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 0,
+      "winners": 4,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "03"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 10,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 10,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 10,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 10,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 10,
+      "winners": 4,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "03"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 20,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 20,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 20,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 20,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 20,
+      "winners": 4,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "03"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 30,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 30,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 30,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 30,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 30,
+      "winners": 4,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "03"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 40,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 40,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 40,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 40,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 40,
+      "winners": 4,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "03"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 50,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 50,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 50,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 50,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 50,
+      "winners": 4,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "03"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 60,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 60,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 60,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 60,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 60,
+      "winners": 4,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "03"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 70,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 70,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 70,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 70,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 70,
+      "winners": 4,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "03"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 80,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 80,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 80,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 80,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 80,
+      "winners": 4,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "03"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 90,
+      "winners": 0,
+      "records": []
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 90,
+      "winners": 1,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 90,
+      "winners": 2,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 90,
+      "winners": 3,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        }
+      ]
+    },
+    {
+      "case": "match",
+      "players": 4,
+      "number": 90,
+      "winners": 4,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "00"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "01"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "02"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "03"
+        }
+      ]
+    },
+    {
+      "case": "credit cap/free play",
+      "maximum": 12,
+      "existing": 11,
+      "after": 15,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "11"
+        },
+        {
+          "token": "4d",
+          "ticks": 128,
+          "credits_bcd": "11"
+        },
+        {
+          "token": "4d",
+          "ticks": 144,
+          "credits_bcd": "12"
+        },
+        {
+          "token": "4d",
+          "ticks": 160,
+          "credits_bcd": "13"
+        },
+        {
+          "token": "4d",
+          "ticks": 176,
+          "credits_bcd": "14"
+        }
+      ]
+    },
+    {
+      "case": "credit cap/free play",
+      "maximum": 12,
+      "existing": 12,
+      "after": 12,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "12"
+        }
+      ]
+    },
+    {
+      "case": "credit cap/free play",
+      "maximum": 0,
+      "existing": 0,
+      "after": 0,
+      "records": [
+        {
+          "token": "9c",
+          "ticks": 0,
+          "credits_bcd": "00"
+        }
+      ]
+    },
+    {
+      "case": "disabled",
+      "display03_bcd": "f6",
+      "match_lamp": false
+    },
+    {
+      "case": "same tens but different ones does not match",
+      "number": 0,
+      "score_last_byte": "01"
+    },
+    {
+      "case": "same tens but different ones does not match",
+      "number": 90,
+      "score_last_byte": "91"
+    }
+  ]
+}

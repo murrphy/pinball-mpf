@@ -11,89 +11,44 @@ mode:
 ### Thanks to @FatBoy in TridentPinball/MPF                          ###
 ########################################################################
 show_player:
-  ball_started{player==1 and (ball>1 or is_extra_ball==True)}:
-    P1_scoreFlash:
-      show_tokens:
-        txt: "{(players[0].score):>7,d}"
-      key: scoreFlash
-      priority: 2
-      speed: 3
-  ball_started{player==2 and (ball>1 or is_extra_ball==True)}:
-    P2_scoreFlash:
-      show_tokens:
-        txt: "{(players[1].score):>7,d}"
-      key: scoreFlash
-      priority: 2
-      speed: 3
-  ball_started{player==3 and (ball>1 or is_extra_ball==True)}:
-    P3_scoreFlash:
-      show_tokens:
-        txt: "{(players[2].score):>7,d}"
-      key: scoreFlash
-      priority: 2
-      speed: 3
-  ball_started{player==4 and (ball>1 or is_extra_ball==True)}:
-    P4_scoreFlash:
-      show_tokens:
-        txt: "{(players[3].score):>7,d}"
-      key: scoreFlash
-      priority: 2
-      speed: 3
-
   player_score{player_num==1 and value>0}:
-    scoreFlash: stop
     P1_score:
       show_tokens:
         txt: "{(players[0].score):>7,d}"
       key: p1score
   player_score{player_num==2 and value>0}:
-    scoreFlash: stop
     P2_score:
       show_tokens:
         txt: "{(players[1].score):>7,d}"
       key: p2score
   player_score{player_num==3 and value>0}:
-    scoreFlash: stop
     P3_score:
       show_tokens:
         txt: "{(players[2].score):>7,d}"
       key: p3score
   player_score{player_num==4 and value>0}:
-    scoreFlash: stop
     P4_score:
       show_tokens:
         txt: "{(players[3].score):>7,d}"
       key: p4score
 
-  ball_started{player==1 and is_extra_ball==False}:
-    credit_ball:
-        show_tokens:
-            txt: "{(machine.credit_units):<2,d} {(players[0].ball):<2,d} "
+  # firepower_match owns the six-cell credits/ball text in every lifecycle.
 
+# Push initialization directly: identical indefinite shows are reused across games
+# and do not replay their first step. Preserve the existing two-zero score format.
+segment_display_player:
   player_added{num==1}:
-    P1_score:
-      show_tokens:
-        txt: "     00"
-      key: p1scoreadd
-      priority: 3
+    player1_display:
+      text: "     00"
   player_added{num==2}:
-    P2_score:
-      show_tokens:
-        txt: "     00"
-      key: p2scoreadd
-      priority: 3
+    player2_display:
+      text: "     00"
   player_added{num==3}:
-    P3_score:
-      show_tokens:
-        txt: "     00"
-      key: p3scoreadd
-      priority: 3
+    player3_display:
+      text: "     00"
   player_added{num==4}:
-    P4_score:
-      show_tokens:
-        txt: "     00"
-      key: p4scoreadd
-      priority: 3
+    player4_display:
+      text: "     00"
 
 
 # Delete everything down here once it is confirmed that it isn't needed.

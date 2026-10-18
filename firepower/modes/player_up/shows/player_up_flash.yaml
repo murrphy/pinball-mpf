@@ -1,0 +1,9 @@
+#show_version=6
+# L-6 $604C: 8 * 16 IRQ ticks, approximately 133 ms per half-cycle.
+# Shared by gameplay and attract; light_settings retains the 40 ms lamp fade.
+- duration: 133ms
+  lights:
+    (lamp): on
+- duration: 133ms
+  lights:
+    (lamp): off

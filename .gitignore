@@ -24,6 +24,7 @@ firepower/data/machine_vars.yaml
 firepower/data/audits.yaml
 firepower/logs/
 firepower/sounds/fx/*.import
+!firepower/sounds/fx/l6_cmd_*.wav.import
 firepower/sounds/voice/*.import
 .python-version
 

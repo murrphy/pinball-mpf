@@ -1,0 +1,12 @@
+#config_version=6
+mode:
+  code: high_score_to_date.HighScoreToDate
+  game_mode: false
+  start_events: reset_complete
+  stop_events: shutdown
+  priority: 450
+mode_settings:
+  # Function13=55: reset score in ten-thousands; 00 disables HSTD.
+  function_13: 55
+  # Function25=03: credits for one qualifying game's highest score.
+  function_25: 3

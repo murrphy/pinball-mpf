@@ -45,7 +45,7 @@ class SegmentDisplaysTest(MpfMachineTestCase):
             display.add_text("1234567")
             self.assertEqual("PA:{},1234567".format(address), self._payload(display)[0])
 
-    def test_real_ball_transition_flash_and_later_scores(self):
+    def test_real_ball_transition_steady_score_and_later_scores(self):
         self._start_single_ball_game()
         self.machine.game.player.score = 12345
         self.advance_time_and_run(0.01)
@@ -59,20 +59,20 @@ class SegmentDisplaysTest(MpfMachineTestCase):
             self.advance_time_and_run(0.01)
             self.assertEqual(7, len(display._current_state.text))
             colors.append(display.text)
-        self.assertIn("       ", colors)  # software show blanks all seven positions
+        self.assertNotIn("       ", colors)  # Player Up lamps own flashing now
         self.assertIn("  12,345", colors)
         self.machine.game.player.score = 12346
         self.advance_time_and_run(0.01)
         self._assert_score(1, 12346)
         self.assertEqual("PA:00,  12,346", self._payload(display)[0])
         self.advance_time_and_run(1)
-        self._assert_score(1, 12346)  # scoreFlash really stopped
+        self._assert_score(1, 12346)  # score remains steady
         self.machine.game.player.score = 123
         self.advance_time_and_run(0.01)
         self.assertEqual("PA:00,    123", self._payload(self._assert_score(1, 123))[0])
         self.assertEqual(6, len(self.machine.segment_displays["credit_ball_display"]._current_state.text))
 
-    def test_later_game_score_refresh_restores_logical_digits_without_process_restart(self):
+    def test_new_game_initializes_score_before_first_scoring_switch(self):
         self._start_single_ball_game()
         self.machine.game.player.score = 12345
         self.advance_time_and_run(0.01)
@@ -84,13 +84,72 @@ class SegmentDisplaysTest(MpfMachineTestCase):
         self.advance_time_and_run(5)
         self.assertTrue(self.machine.game)
         self.assertEqual(0, self.machine.game.player.score)
-        # The persistent player-added show is already running with the same
-        # config, so it does not rewrite zero in the later game (separate finding).
-        self._assert_score(1, 12345)
-        self.machine.game.player.score = 123
+        display = self._assert_score(1, 0)
+        self.assertEqual("PA:00,     00", self._payload(display)[0])
+        self.hit_and_release_switch("s_spinner")
         self.advance_time_and_run(0.01)
-        display = self._assert_score(1, 123)
-        self.assertEqual("PA:00,    123", self._payload(display)[0])
+        display = self._assert_score(1, 100)
+        self.assertEqual("PA:00,    100", self._payload(display)[0])
+
+    def test_two_player_initialization_and_turns_across_games(self):
+        self._check_multiplayer_initialization_and_turns(2)
+
+    def test_four_player_initialization_and_turns_across_games(self):
+        self._check_multiplayer_initialization_and_turns(4)
+
+    def _check_multiplayer_initialization_and_turns(self, player_count):
+        self._start_single_ball_game()
+        # Complete a multiplayer game with distinct final scores, then create
+        # another game in the same process (the display mode remains active).
+        for number in range(2, player_count + 1):
+            self.hit_and_release_switch("s_start_button")
+            self.advance_time_and_run(0.1)
+            self.assertEqual(number, self.machine.game.num_players)
+        for number, player in enumerate(self.machine.game.player_list, 1):
+            player.score = 12340 + number
+        self.advance_time_and_run(0.1)
+        self.machine.game.end_game()
+        self.machine.default_platform.add_ball_to_device(self.machine.ball_devices["bd_drain"])
+        self.advance_time_and_run(5)
+        self.assertFalse(self.machine.game)
+        self.hit_and_release_switch("s_start_button")
+        self.advance_time_and_run(5)
+        self.assertEqual("PA:00,     00", self._payload(self._assert_score(1, 0))[0])
+        # Adding each player resets only that player's display, not opponents.
+        for number in range(2, player_count + 1):
+            before = [self.machine.segment_displays[f"player{n}_display"].text
+                      for n in range(1, 5)]
+            self.hit_and_release_switch("s_start_button")
+            self.advance_time_and_run(0.1)
+            self.assertEqual(number, self.machine.game.num_players)
+            display = self._assert_score(number, 0)
+            self.assertEqual(f"PA:{(number - 1) * 7:02X},     00", self._payload(display)[0])
+            for n in range(1, 5):
+                if n != number:
+                    self.assertEqual(before[n - 1], self.machine.segment_displays[f"player{n}_display"].text)
+        # Actual ball/turn transitions leave waiting players' scores intact.
+        for number in range(1, player_count + 1):
+            self.assertEqual(number, self.machine.game.player.number)
+            self._assert_score(number, 0)
+            if self.machine.switch_controller.is_active(self.machine.switches["s_plunger"]):
+                self.release_switch_and_run("s_plunger", 0.1)
+            self.hit_and_release_switch("s_spinner")
+            self.machine.game.player.score = 12340 + number
+            self.advance_time_and_run(0.1)
+            self.machine.default_platform.add_ball_to_device(self.machine.ball_devices["bd_drain"])
+            self.advance_time_and_run(5)
+            for n in range(2, player_count + 1):
+                self._assert_score(n, 12340 + n if n <= number else 0)
+        self.assertEqual(1, self.machine.game.player.number)
+        self.assertEqual(2, self.machine.game.player.ball)
+        # Ball 2 retains a steady score and its final digit.
+        visible = []
+        for _ in range(100):
+            self.advance_time_and_run(0.01)
+            display = self.machine.segment_displays["player1_display"]
+            visible.append(self._payload(display)[0])
+        self.assertIn("PA:00,  12,341", visible)
+        self.assertNotIn("PA:00,       ", visible)
 
     def test_opt_in_trace_observes_without_changing_display(self):
         from unittest.mock import patch

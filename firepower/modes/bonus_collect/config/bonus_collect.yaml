@@ -8,7 +8,7 @@
 # from starting the next ball and resetting bonus_value before collection.
 #
 # Canonical player vars used by this mode:
-#   bonus_value       0..39, current displayed end-of-ball bonus units
+#   bonus_value       0..29, current displayed end-of-ball bonus units
 #   bonus_multiplier  1..5, advanced by completing F-I-R-E
 #
 # Countdown behavior:
@@ -26,7 +26,9 @@ mode:
 
 mode_settings:
   # Wait after processing a countdown cycle; never catch up overdue ticks.
-  step_interval: 130ms
+  # Float milliseconds: MPF's ms type would truncate these values.
+  step_interval: 66.368
+  pass_interval: 165.448
 
 event_player:
   # Initialize the pass counter and save the original bonus before the first tick.
@@ -40,15 +42,6 @@ event_player:
   # One real scoring/countdown step.
   bonus_collect_countdown_tick{current_player.bonus_value > 0 and current_player.bonus_collect_pass <= current_player.bonus_multiplier}:
     - bonus_collect_score_step
-
-  # Finished one pass, but more multiplier passes remain.
-  bonus_collect_countdown_tick{current_player.bonus_value <= 0 and current_player.bonus_collect_pass < current_player.bonus_multiplier}:
-    - bonus_collect_next_pass
-    - bonus_collect_restore_base|10ms
-
-  # Finished the final pass.
-  bonus_collect_countdown_tick{current_player.bonus_value <= 0 and current_player.bonus_collect_pass >= current_player.bonus_multiplier}:
-    - bonus_collect_done
 
   bonus_collect_done:
     - mode_bonus_collect_show_ended
@@ -100,6 +93,3 @@ variable_player:
     bonus_collect_running:
       int: 0
       action: set
-
-sound_player:
-  bonus_collect_score_step: bump

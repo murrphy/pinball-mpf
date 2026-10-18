@@ -1,6 +1,19 @@
 #config_version=6
 
 coils:
+  # l_start_button instead of c_start_button and l_coin_lamps instead of
+  # c_coin_lamps because this is a 12v driver for a normal incandescent or 12v
+  # LED bayonett lamp and not an RGB LED.  Old school!
+  l_coin_lamps:
+    number: cabinet-1
+    allow_enable: true
+    default_pulse_ms: 0
+  l_start_button:
+    number: cabinet-3
+    allow_enable: true
+    default_pulse_ms: 0
+
+  # Regular 48V coil drivers
   c_left_flipper:
     number: playfield1-1
     default_pulse_ms: 9
@@ -97,3 +110,9 @@ autofire_coils:
     ball_search_order: 0
     enable_events: mode_shield_started
     disable_events: mode_shield_stopped, ball_ended, game_ended
+
+# Power-on cabinet lamps: enable once after FAST startup, independent of modes.
+# FAST's normal shutdown expires the driver watchdog; no off show is needed.
+coil_player:
+  init_phase_4:
+    l_coin_lamps: enable

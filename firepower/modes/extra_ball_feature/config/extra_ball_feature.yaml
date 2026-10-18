@@ -1,0 +1,15 @@
+#config_version=6
+mode:
+  code: extra_ball_feature.ExtraBallFeature
+  start_events: ball_starting
+  stop_events: ball_ended, game_ended
+  priority: 350
+
+extra_balls:
+  firepower_center:
+    enabled: true
+    max_per_game: 0
+
+mode_settings:
+  # Original Function 34 = 12: attract speech ON, light on reaching 5X.
+  function_34: 12

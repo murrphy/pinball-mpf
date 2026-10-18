@@ -1,0 +1,22 @@
+{
+  "1": {
+    "frames": 29138,
+    "sha256": "9dded11561a313fb4f5d007bea4344acdec45cd9d2903d71d538b9ff0571bb6f"
+  },
+  "2": {
+    "frames": 27703,
+    "sha256": "92d5bf04651944566a0527296538e1721ddbca3ebe3d011bf59fbb1fb30e072d"
+  },
+  "29": {
+    "frames": 22698,
+    "sha256": "411b3e8de0cdf53536041614cf4dc30282722ba7b74bb50f3600396b8989ad75"
+  },
+  "87": {
+    "frames": 11948,
+    "sha256": "d70e3cc8e440f2d0a152bb35c88869c39d6f7975676e26beef3fb611655c45c2"
+  },
+  "145": {
+    "frames": 1198,
+    "sha256": "6a299d4357964c8d6f1aca8610a43ae6da30631dec13cf355c879d0856448080"
+  }
+}

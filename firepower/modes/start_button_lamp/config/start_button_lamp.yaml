@@ -1,0 +1,7 @@
+#config_version=6
+mode:
+  code: start_button_lamp.StartButtonLamp
+  start_events: reset_complete, mode_attract_started
+  stop_events: service_mode_entered
+  game_mode: false
+  priority: 100

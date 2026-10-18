@@ -1,0 +1,969 @@
+{
+  "clock_hz": 894886.25,
+  "sample_rate": 48000,
+  "entry": "DDF6",
+  "decoder_source_sha256": "4eef48eb9589f8fd914692cd0251457495d6dc65a491326d542f20a5d8571ba4",
+  "commands": {
+    "00_0": {
+      "speech": false,
+      "returned_command": 0,
+      "next_state": 0
+    },
+    "01_0": {
+      "speech": false,
+      "returned_command": 1,
+      "next_state": 0
+    },
+    "02_0": {
+      "speech": false,
+      "returned_command": 2,
+      "next_state": 0
+    },
+    "03_0": {
+      "speech": false,
+      "returned_command": 3,
+      "next_state": 0
+    },
+    "04_0": {
+      "speech": false,
+      "returned_command": 4,
+      "next_state": 0
+    },
+    "05_0": {
+      "speech": false,
+      "returned_command": 5,
+      "next_state": 0
+    },
+    "06_0": {
+      "speech": false,
+      "returned_command": 6,
+      "next_state": 0
+    },
+    "07_0": {
+      "speech": true,
+      "phrase": "phrase_fc5160a7955d",
+      "returned_command": 1,
+      "next_state": 0
+    },
+    "08_0": {
+      "speech": true,
+      "phrase": "phrase_309825bdde17",
+      "returned_command": 0,
+      "next_state": 0
+    },
+    "09_0": {
+      "speech": false,
+      "returned_command": 9,
+      "next_state": 0
+    },
+    "0a_0": {
+      "speech": false,
+      "returned_command": 10,
+      "next_state": 0
+    },
+    "0b_0": {
+      "speech": false,
+      "returned_command": 11,
+      "next_state": 0
+    },
+    "0c_0": {
+      "speech": true,
+      "phrase": "phrase_790cffbd5630",
+      "returned_command": 12,
+      "next_state": 0
+    },
+    "0d_0": {
+      "speech": true,
+      "phrase": "phrase_c2ff8e7c88a0",
+      "returned_command": 13,
+      "next_state": 0
+    },
+    "0e_0": {
+      "speech": true,
+      "phrase": "phrase_1466a6364be5",
+      "returned_command": 0,
+      "next_state": 0
+    },
+    "0f_0": {
+      "speech": true,
+      "phrase": "phrase_212a61bf57ff",
+      "returned_command": 15,
+      "next_state": 0
+    },
+    "10_0": {
+      "speech": false,
+      "returned_command": 16,
+      "next_state": 0
+    },
+    "11_0": {
+      "speech": false,
+      "returned_command": 17,
+      "next_state": 0
+    },
+    "12_0": {
+      "speech": false,
+      "returned_command": 18,
+      "next_state": 0
+    },
+    "13_0": {
+      "speech": false,
+      "returned_command": 19,
+      "next_state": 0
+    },
+    "14_0": {
+      "speech": false,
+      "returned_command": 20,
+      "next_state": 0
+    },
+    "15_0": {
+      "speech": false,
+      "returned_command": 21,
+      "next_state": 0
+    },
+    "16_0": {
+      "speech": false,
+      "returned_command": 22,
+      "next_state": 0
+    },
+    "17_0": {
+      "speech": false,
+      "returned_command": 23,
+      "next_state": 0
+    },
+    "18_0": {
+      "speech": true,
+      "phrase": "phrase_f4be220a378a",
+      "returned_command": 20,
+      "next_state": 1
+    },
+    "18_1": {
+      "speech": true,
+      "phrase": "phrase_ab9ce987252b",
+      "returned_command": 20,
+      "next_state": 2
+    },
+    "18_2": {
+      "speech": true,
+      "phrase": "phrase_5e8a7b3d8d1a",
+      "returned_command": 20,
+      "next_state": 0
+    },
+    "19_0": {
+      "speech": false,
+      "returned_command": 25,
+      "next_state": 0
+    },
+    "1a_0": {
+      "speech": true,
+      "phrase": "phrase_809582e3eab7",
+      "returned_command": 26,
+      "next_state": 0
+    },
+    "1b_0": {
+      "speech": true,
+      "phrase": "phrase_33e561887560",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_1": {
+      "speech": true,
+      "phrase": "phrase_f1902f924358",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_2": {
+      "speech": true,
+      "phrase": "phrase_16f30506ab47",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_3": {
+      "speech": true,
+      "phrase": "phrase_adf2083893e4",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_4": {
+      "speech": true,
+      "phrase": "phrase_2836c0fbadb2",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_5": {
+      "speech": true,
+      "phrase": "phrase_4cbb8f3cc4f0",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_6": {
+      "speech": true,
+      "phrase": "phrase_e26ad47a3938",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_7": {
+      "speech": true,
+      "phrase": "phrase_ac3bfbfb233a",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_8": {
+      "speech": true,
+      "phrase": "phrase_513fd6607490",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_9": {
+      "speech": true,
+      "phrase": "phrase_d44b13648237",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_10": {
+      "speech": true,
+      "phrase": "phrase_d44b13648237",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_11": {
+      "speech": true,
+      "phrase": "phrase_41eaa042150a",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_12": {
+      "speech": true,
+      "phrase": "phrase_2836c0fbadb2",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_13": {
+      "speech": true,
+      "phrase": "phrase_ac3bfbfb233a",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_14": {
+      "speech": true,
+      "phrase": "phrase_41eaa042150a",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1b_15": {
+      "speech": true,
+      "phrase": "phrase_adf2083893e4",
+      "returned_command": 27,
+      "next_state": 0
+    },
+    "1c_0": {
+      "speech": false,
+      "returned_command": 28,
+      "next_state": 0
+    },
+    "1d_0": {
+      "speech": false,
+      "returned_command": 29,
+      "next_state": 0
+    },
+    "1e_0": {
+      "speech": true,
+      "phrase": "phrase_1a5367917ba6",
+      "returned_command": 30,
+      "next_state": 0
+    },
+    "1f_0": {
+      "speech": true,
+      "phrase": "phrase_3d7494d484e5",
+      "returned_command": 31,
+      "next_state": 0
+    }
+  },
+  "phrases": {
+    "phrase_fc5160a7955d": {
+      "words": [
+        {
+          "word": "you",
+          "cycle": 201
+        },
+        {
+          "word": "are",
+          "cycle": 622766
+        },
+        {
+          "word": "destroyed",
+          "cycle": 874586
+        }
+      ],
+      "cycles": 1739208,
+      "duration": 1.9434961706026883,
+      "clock_edges": 45760,
+      "edge_sha256": "fc5160a7955de2e6ff886129f7cefcba43e6a7e4a2f089bb1b9a64ac887f96e6",
+      "interruptible": false,
+      "cli_cycles": [
+        1739201
+      ],
+      "production_file": "sounds/voice/l6/phrase_fc5160a7955d.wav",
+      "wav_sha256": "39f0df4d91fb3ef857623ec03bb3ea7865b170a8a8db5940a0eb1c0a53837570",
+      "pcm_sha256": "5d06ff63d52e8765307c41b375006e19d74c437bf65141f19bd0d88b75d525e8"
+    },
+    "phrase_309825bdde17": {
+      "words": [
+        {
+          "word": "you",
+          "cycle": 190
+        },
+        {
+          "word": "one",
+          "cycle": 621647
+        },
+        {
+          "word": "one",
+          "cycle": 1291744
+        },
+        {
+          "word": "mission",
+          "cycle": 1961841
+        }
+      ],
+      "cycles": 2690271,
+      "duration": 3.0062714674630433,
+      "clock_edges": 70784,
+      "edge_sha256": "309825bdde17ab800921e25e3636e7c7be399aa405fb71cbe8c0a150cafe8482",
+      "interruptible": false,
+      "cli_cycles": [
+        2690264
+      ],
+      "production_file": "sounds/voice/l6/phrase_309825bdde17.wav",
+      "wav_sha256": "9189f276261857c9425a900037980df8b949bfba9c9819c62b4601e22abe16ef",
+      "pcm_sha256": "aa9d292cf9f161573c5695617eb116088aee2a462cc87d016218f5bff3370ead"
+    },
+    "phrase_790cffbd5630": {
+      "words": [
+        {
+          "word": "mission",
+          "cycle": 170
+        },
+        {
+          "word": "accomplished",
+          "cycle": 729743
+        }
+      ],
+      "cycles": 1594392,
+      "duration": 1.7816700167200021,
+      "clock_edges": 41952,
+      "edge_sha256": "790cffbd563026ab46361325e775140b75b5b3ed726161a871d0e05fba245661",
+      "interruptible": false,
+      "cli_cycles": [
+        1594385
+      ],
+      "production_file": "sounds/voice/l6/phrase_790cffbd5630.wav",
+      "wav_sha256": "4c3a80e2659de367dfece57dfc71b0a46a8f4c918ce26cbfd805e69f380897d1",
+      "pcm_sha256": "cf8d4d6f05891a7703974516a009656036de7743b499c9e45fcda865792b1afa"
+    },
+    "phrase_c2ff8e7c88a0": {
+      "words": [
+        {
+          "word": "fire",
+          "cycle": 159
+        }
+      ],
+      "cycles": 592397,
+      "duration": 0.6619802237435205,
+      "clock_edges": 15584,
+      "edge_sha256": "c2ff8e7c88a098e6d987522d57a077e038c3d190872392d02115e84128903fdd",
+      "interruptible": false,
+      "cli_cycles": [
+        592390
+      ],
+      "production_file": "sounds/voice/l6/phrase_c2ff8e7c88a0.wav",
+      "wav_sha256": "5ebbd18b8b15b520ee0248e4276ecd174209f51e8c3d018e3780ccb220cd4435",
+      "pcm_sha256": "b9012444697951fd21152a5475e40da461dacf9cf692a66e59d8d6265d57d8f0"
+    },
+    "phrase_1466a6364be5": {
+      "words": [
+        {
+          "word": "enemy",
+          "cycle": 58532
+        },
+        {
+          "word": "destroyed",
+          "cycle": 690825
+        }
+      ],
+      "cycles": 1555474,
+      "duration": 1.7381806905626274,
+      "clock_edges": 39392,
+      "edge_sha256": "1466a6364be56be7799f8ea5f4f7468a3b5ba11382f60a2248d9041688c0751d",
+      "interruptible": false,
+      "cli_cycles": [
+        1555467
+      ],
+      "production_file": "sounds/voice/l6/phrase_1466a6364be5.wav",
+      "wav_sha256": "77effcc60b9c9cf75251d5207baaf6dd813300427f0bd2082bc3e8b8f02bd8d5",
+      "pcm_sha256": "82eef3b79ea233b2df8e651dedd0f5acbaf5267d98a42956056510777bbee1d5"
+    },
+    "phrase_212a61bf57ff": {
+      "words": [
+        {
+          "word": "fire",
+          "cycle": 148
+        },
+        {
+          "word": "power",
+          "cycle": 593529
+        },
+        {
+          "word": "mission",
+          "cycle": 1185829
+        },
+        {
+          "word": "accomplished",
+          "cycle": 1915402
+        }
+      ],
+      "cycles": 2780051,
+      "duration": 3.1065970675043895,
+      "clock_edges": 73152,
+      "edge_sha256": "212a61bf57ff0256ca035b6d93600f281bda5c4d2724dfb328e55eb44bf71b82",
+      "interruptible": false,
+      "cli_cycles": [
+        2780044
+      ],
+      "production_file": "sounds/voice/l6/phrase_212a61bf57ff.wav",
+      "wav_sha256": "121733d2756a293f07696895678ca9d2277a1c357775cd41d9710058fd26e6c8",
+      "pcm_sha256": "4238a244e3a23bb275ee4bd12dd802c7f278749bfc999c7016115b4b796117d5"
+    },
+    "phrase_f4be220a378a": {
+      "words": [
+        {
+          "word": "fire",
+          "cycle": 215
+        },
+        {
+          "word": "one",
+          "cycle": 592488
+        }
+      ],
+      "cycles": 1262550,
+      "duration": 1.4108497029650418,
+      "clock_edges": 33216,
+      "edge_sha256": "f4be220a378ae61ecdcdb54ebab713f5fc4d6a68b69dd0db189ae35be8379564",
+      "interruptible": false,
+      "cli_cycles": [
+        1262543
+      ],
+      "production_file": "sounds/voice/l6/phrase_f4be220a378a.wav",
+      "wav_sha256": "bbdd9a8aa032dada3e4ec5b725bdaaaef9bb4efea7a52dde9a911e54882c389c",
+      "pcm_sha256": "722e72358a50b1e2c5581acc247478b54c6dbff9e209e61f0ea20927a0701be8"
+    },
+    "phrase_ab9ce987252b": {
+      "words": [
+        {
+          "word": "two",
+          "cycle": 224
+        }
+      ],
+      "cycles": 631374,
+      "duration": 0.7055354800679975,
+      "clock_edges": 16608,
+      "edge_sha256": "ab9ce987252b5229f9456cd7fa421d166fc999b8f614b0ff9dc0b4547eca4dd4",
+      "interruptible": false,
+      "cli_cycles": [
+        631367
+      ],
+      "production_file": "sounds/voice/l6/phrase_ab9ce987252b.wav",
+      "wav_sha256": "521ed7380744f0a86a66e9b25e36ecccc0877a650d7d33d9ebc1255fe853eee1",
+      "pcm_sha256": "df1d1ee177330183f02fd006f0f8d72a836dc6f97deaaee2917389a08a573827"
+    },
+    "phrase_5e8a7b3d8d1a": {
+      "words": [
+        {
+          "word": "three",
+          "cycle": 235
+        }
+      ],
+      "cycles": 660569,
+      "duration": 0.7381597381790144,
+      "clock_edges": 17376,
+      "edge_sha256": "5e8a7b3d8d1aebf888ff453ae43fa66e49dcab343cd59bbbbd320bf614687b7d",
+      "interruptible": false,
+      "cli_cycles": [
+        660562
+      ],
+      "production_file": "sounds/voice/l6/phrase_5e8a7b3d8d1a.wav",
+      "wav_sha256": "c6255e9fdfa4227e23c2be715ac41f20e61d4cb4122708a71e30e9da65c3d09c",
+      "pcm_sha256": "25db01c5b8a389393c8cdadf6c8e2444f826d52c995a8fb0968238f8d27e024e"
+    },
+    "phrase_809582e3eab7": {
+      "words": [
+        {
+          "word": "power",
+          "cycle": 137
+        }
+      ],
+      "cycles": 592375,
+      "duration": 0.6619556396134145,
+      "clock_edges": 15584,
+      "edge_sha256": "809582e3eab7fcde420b520b34e7c0e4fcf86d9e562e60264901ab6794f0a885",
+      "interruptible": false,
+      "cli_cycles": [
+        592368
+      ],
+      "production_file": "sounds/voice/l6/phrase_809582e3eab7.wav",
+      "wav_sha256": "5a7c8d27a9dcfde1c552c5ad8ce3614d07b143a78e0eaaa9e02560107197dcf3",
+      "pcm_sha256": "8ac4b51f49c2452fda83ee754986e1e9ce8d9c969b049f366abe2297b3d43f5e"
+    },
+    "phrase_33e561887560": {
+      "words": [
+        {
+          "word": "you",
+          "cycle": 279
+        },
+        {
+          "word": "destroyed",
+          "cycle": 621736
+        },
+        {
+          "word": "fire",
+          "cycle": 1486393
+        },
+        {
+          "word": "power",
+          "cycle": 2079774
+        }
+      ],
+      "cycles": 2672039,
+      "duration": 2.985897928367991,
+      "clock_edges": 70304,
+      "edge_sha256": "33e561887560ea22db1f8b3c5ac6b8d65c83872f64682ee05c6dca809540e77e",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        2672032
+      ],
+      "production_file": "sounds/voice/l6/phrase_33e561887560.wav",
+      "wav_sha256": "ebe2041c13dd837d1ae973430746ad3cae8fe832580d0bae3fd08dd0ba430e1b",
+      "pcm_sha256": "6c6d7678a0259bba0684abac0cfc9ff5e0d9f20db80ea0ba33d2ef43189356be"
+    },
+    "phrase_f1902f924358": {
+      "words": [
+        {
+          "word": "enemy",
+          "cycle": 279
+        },
+        {
+          "word": "destroyed",
+          "cycle": 632572
+        },
+        {
+          "word": "you",
+          "cycle": 1497256
+        }
+      ],
+      "cycles": 2118678,
+      "duration": 2.3675388911160495,
+      "clock_edges": 55744,
+      "edge_sha256": "f1902f924358b3aa874ebbf65f108ac564f5d241264d0624303bc76fd9ba5444",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        2118671
+      ],
+      "production_file": "sounds/voice/l6/phrase_f1902f924358.wav",
+      "wav_sha256": "7a2b8c3bf56d62137137f50d678965c9f413fe2ef1efd0c2c94200abef107604",
+      "pcm_sha256": "03ea5ab708479d4943fcbf253962d2b54c618b15eb154bc691f9d8b0e3bfd316"
+    },
+    "phrase_16f30506ab47": {
+      "words": [
+        {
+          "word": "mission",
+          "cycle": 279
+        },
+        {
+          "word": "two",
+          "cycle": 728744
+        },
+        {
+          "word": "one",
+          "cycle": 1359929
+        },
+        {
+          "word": "three",
+          "cycle": 2030026
+        },
+        {
+          "word": "accomplished",
+          "cycle": 2690395
+        }
+      ],
+      "cycles": 3555017,
+      "duration": 3.9725909298528164,
+      "clock_edges": 93536,
+      "edge_sha256": "16f30506ab47c1ef3907d4c7472561c370f3a58e5008a5f681867447346c86cd",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        3555010
+      ],
+      "production_file": "sounds/voice/l6/phrase_16f30506ab47.wav",
+      "wav_sha256": "5ec2d173c59fadf487ae002c0a185beae7ce536c9bb0628b97a4a03ac3830736",
+      "pcm_sha256": "30c86bb5054f0c823707c0a2457ff984fb231c35179576b1b4eebfd3ed321ca6"
+    },
+    "phrase_adf2083893e4": {
+      "words": [
+        {
+          "word": "you",
+          "cycle": 279
+        },
+        {
+          "word": "are",
+          "cycle": 622844
+        },
+        {
+          "word": "enemy",
+          "cycle": 874664
+        }
+      ],
+      "cycles": 1505814,
+      "duration": 1.682687604150807,
+      "clock_edges": 39616,
+      "edge_sha256": "adf2083893e4b035e76349b4f329630612492ee7843f7c00a48b01a535f123ef",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        1505807
+      ],
+      "production_file": "sounds/voice/l6/phrase_adf2083893e4.wav",
+      "wav_sha256": "bac5dec1c3d97e6cad4f80a1e3d23819004fb69c4792e67f7bde9cf385e03368",
+      "pcm_sha256": "d1957801a92cc4b3b48a9a1de446527bdee40f7d0d8da967f397a9847afe7cc0"
+    },
+    "phrase_2836c0fbadb2": {
+      "words": [
+        {
+          "word": "enemy",
+          "cycle": 279
+        },
+        {
+          "word": "fire",
+          "cycle": 631464
+        },
+        {
+          "word": "destroyed",
+          "cycle": 1223737
+        },
+        {
+          "word": "you",
+          "cycle": 2088394
+        }
+      ],
+      "cycles": 2709816,
+      "duration": 3.0281122321412357,
+      "clock_edges": 71296,
+      "edge_sha256": "2836c0fbadb2dfdb7fa6d8a3e4a3392e03381dff0459eaeeb7db7a96ee8ec555",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        2709809
+      ],
+      "production_file": "sounds/voice/l6/phrase_2836c0fbadb2.wav",
+      "wav_sha256": "36447d319ed09c2f187f1e50a19f01715dd0dd7ac4f06003f92cea486555cc7a",
+      "pcm_sha256": "4ab9670967a975d45e587cf25878d8a4d3f5f5efd3da6d692284f63c715a62a6"
+    },
+    "phrase_4cbb8f3cc4f0": {
+      "words": [
+        {
+          "word": "mission",
+          "cycle": 279
+        },
+        {
+          "word": "destroyed",
+          "cycle": 728744
+        },
+        {
+          "word": "you",
+          "cycle": 1593401
+        }
+      ],
+      "cycles": 2214823,
+      "duration": 2.4749771269812224,
+      "clock_edges": 58272,
+      "edge_sha256": "4cbb8f3cc4f0dfefb834039b4d384b2be9a98b02d667f07fa3aabdd696f4d518",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        2214816
+      ],
+      "production_file": "sounds/voice/l6/phrase_4cbb8f3cc4f0.wav",
+      "wav_sha256": "77a17359a550dab22deb4f17192df5aa42d18b07eb6eb4933f8d4149a3ecba98",
+      "pcm_sha256": "9e869a0ed379c995528cfb8011888c15194bb8e93764d19ddd2403fc4cadef52"
+    },
+    "phrase_e26ad47a3938": {
+      "words": [
+        {
+          "word": "enemy",
+          "cycle": 279
+        },
+        {
+          "word": "power",
+          "cycle": 631464
+        },
+        {
+          "word": "one",
+          "cycle": 1224845
+        }
+      ],
+      "cycles": 1894934,
+      "duration": 2.1175138180969926,
+      "clock_edges": 49856,
+      "edge_sha256": "e26ad47a39382fa5b52c90e7f4a7ea6f2f371acea9d9ba81248e565e20afbab2",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        1894927
+      ],
+      "production_file": "sounds/voice/l6/phrase_e26ad47a3938.wav",
+      "wav_sha256": "b8d432653413ee2eee5f8ca449bb5b4ff33359a1c6bd023f7c7e9f0e8f68a6b9",
+      "pcm_sha256": "7bedda82c6d71ab8228ee8e53a3a130dfec50d7437e4a3f3b5f7852f40e03d63"
+    },
+    "phrase_ac3bfbfb233a": {
+      "words": [
+        {
+          "word": "you",
+          "cycle": 279
+        },
+        {
+          "word": "destroyed",
+          "cycle": 621736
+        },
+        {
+          "word": "enemy",
+          "cycle": 1486393
+        },
+        {
+          "word": "mission",
+          "cycle": 2117578
+        }
+      ],
+      "cycles": 2846008,
+      "duration": 3.1803014070224007,
+      "clock_edges": 74880,
+      "edge_sha256": "ac3bfbfb233af81c8c6fb392c1aae192cf29951d4f68121d97f390c01adffd87",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        2846001
+      ],
+      "production_file": "sounds/voice/l6/phrase_ac3bfbfb233a.wav",
+      "wav_sha256": "7f66c4e08b193b6a60cc9dfdf66dd1fc015688bd002265a59b3eb0b7c8729472",
+      "pcm_sha256": "be5c923724d91359cfeb6e4d2305ea1fcf8f5029a9cbbd62d4339a4a97eaf5cd"
+    },
+    "phrase_513fd6607490": {
+      "words": [
+        {
+          "word": "you",
+          "cycle": 279
+        },
+        {
+          "word": "one",
+          "cycle": 621736
+        },
+        {
+          "word": "fire",
+          "cycle": 1350184
+        },
+        {
+          "word": "power",
+          "cycle": 1943565
+        },
+        {
+          "word": "destroyed",
+          "cycle": 2535865
+        }
+      ],
+      "cycles": 3400487,
+      "duration": 3.799909765067907,
+      "clock_edges": 87936,
+      "edge_sha256": "513fd6607490bbee8edbbfc31ec5fb3eadbc3ac46cd980908009f7667d8bd724",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        3400480
+      ],
+      "production_file": "sounds/voice/l6/phrase_513fd6607490.wav",
+      "wav_sha256": "0f5d223a4de904712d5bb83f6dc4382b14071b55889cbde2dea362462add916a",
+      "pcm_sha256": "6bddebc3f450b9c173706da1075fa9e411e27261c92cd21bde3f25ae713db0fa"
+    },
+    "phrase_d44b13648237": {
+      "words": [
+        {
+          "word": "fire",
+          "cycle": 279
+        },
+        {
+          "word": "power",
+          "cycle": 593660
+        },
+        {
+          "word": "destroyed",
+          "cycle": 1185960
+        }
+      ],
+      "cycles": 2050582,
+      "duration": 2.2914443036754673,
+      "clock_edges": 53952,
+      "edge_sha256": "d44b1364823762e1cc53bb954aa64d8fb238dda6bf9a36fa19dde9ca090c4008",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        2050575
+      ],
+      "production_file": "sounds/voice/l6/phrase_d44b13648237.wav",
+      "wav_sha256": "653466f8c2defce9b16ef9033f011a12886c33c592ff96529ad83c28fffea677",
+      "pcm_sha256": "fbfcb12a5c652db5d31183e57a75fc2f3318d4591e76f37b8b82075a445abf0d"
+    },
+    "phrase_41eaa042150a": {
+      "words": [
+        {
+          "word": "fire",
+          "cycle": 279
+        },
+        {
+          "word": "destroyed",
+          "cycle": 592552
+        },
+        {
+          "word": "you",
+          "cycle": 1457209
+        }
+      ],
+      "cycles": 2078631,
+      "duration": 2.3227879521000574,
+      "clock_edges": 54688,
+      "edge_sha256": "41eaa042150a725cab5ca44e5e7765f2352f659ed0206fb7dc58332f0eba641e",
+      "interruptible": true,
+      "cli_cycles": [
+        120,
+        2078624
+      ],
+      "production_file": "sounds/voice/l6/phrase_41eaa042150a.wav",
+      "wav_sha256": "4af1db6d2657cfa92445979e97b83e7d1986e39ae96f92144f14cb5635177d87",
+      "pcm_sha256": "3f8efc4c19f7c2aa604d076629bcbdd73d5c3a4cdee77aca9631546929566779"
+    },
+    "phrase_1a5367917ba6": {
+      "words": [
+        {
+          "word": "fire",
+          "cycle": 126
+        },
+        {
+          "word": "power",
+          "cycle": 593507
+        }
+      ],
+      "cycles": 1185772,
+      "duration": 1.3250533238162951,
+      "clock_edges": 31200,
+      "edge_sha256": "1a5367917ba6c7f4bc48eac750ee00821e52a573e5dc27c189df86aaae074ef4",
+      "interruptible": false,
+      "cli_cycles": [
+        1185765
+      ],
+      "production_file": "sounds/voice/l6/phrase_1a5367917ba6.wav",
+      "wav_sha256": "4f86ee572e774838d8fa59d582f578ed27552741959225cdbb8d4938453370bd",
+      "pcm_sha256": "03bcbd28a1e15ca3e86c8d11cfae0c47fb811ad25bb87efa0d1521d73d3ee3ba"
+    },
+    "phrase_3d7494d484e5": {
+      "words": [
+        {
+          "word": "fire",
+          "cycle": 118
+        },
+        {
+          "word": "power",
+          "cycle": 593499
+        }
+      ],
+      "cycles": 1185764,
+      "duration": 1.3250443841326203,
+      "clock_edges": 31200,
+      "edge_sha256": "3d7494d484e50e25b6e722a26605ef643359188c5131d43fd3ba4ec16cfd84b7",
+      "interruptible": false,
+      "cli_cycles": [
+        1185757
+      ],
+      "production_file": "sounds/voice/l6/phrase_3d7494d484e5.wav",
+      "wav_sha256": "b3176c8420167c6144f66d296694bbe5cb89431614b455e34a3097605f4d7b33",
+      "pcm_sha256": "fb23972d2f49f82a3cfdd6cb02656601ff5d334b8f46b54b3ba36ac13b42763f"
+    }
+  },
+  "random_selectors": [
+    "phrase_33e561887560",
+    "phrase_f1902f924358",
+    "phrase_16f30506ab47",
+    "phrase_adf2083893e4",
+    "phrase_2836c0fbadb2",
+    "phrase_4cbb8f3cc4f0",
+    "phrase_e26ad47a3938",
+    "phrase_ac3bfbfb233a",
+    "phrase_513fd6607490",
+    "phrase_d44b13648237",
+    "phrase_d44b13648237",
+    "phrase_41eaa042150a",
+    "phrase_2836c0fbadb2",
+    "phrase_ac3bfbfb233a",
+    "phrase_41eaa042150a",
+    "phrase_adf2083893e4"
+  ],
+  "roms": [
+    {
+      "file": "v_ic7.532",
+      "crc32": "94c5c0a7",
+      "sha1": "ff7c618d1666c1d5c3319fdd72c1af2846659290"
+    },
+    {
+      "file": "v_ic5.532",
+      "crc32": "1737fdd2",
+      "sha1": "6307e0ae715e97294ee8aaaeb2e2bebb0cb590c2"
+    },
+    {
+      "file": "v_ic6.532",
+      "crc32": "e56f7aa2",
+      "sha1": "cb922c3f4d91285dda4ccae880c2d798a82fd51b"
+    },
+    {
+      "file": "prom1_6.474",
+      "crc32": "af6eb0b9",
+      "sha1": "28f8366737e09ffd60cb5ea55a5734143cdb9663"
+    },
+    {
+      "file": "prom2.474",
+      "crc32": "f75ade1a",
+      "sha1": "a5572c5c721dbcb82988b709f4ef2119118e37c2"
+    },
+    {
+      "file": "prom3.474",
+      "crc32": "242ec687",
+      "sha1": "c3366c898a66c78034687e6a6000193d52be4141"
+    },
+    {
+      "file": "gamerom.716",
+      "crc32": "fdd3b983",
+      "sha1": "fb5d1eb01589311cf4b2ef16e25db03d40bca2f7"
+    },
+    {
+      "file": "green1.716",
+      "crc32": "2145f8ab",
+      "sha1": "ddf63208559a3a08d4e88327c55426b0eed27654"
+    },
+    {
+      "file": "green2.716",
+      "crc32": "1c978a4a",
+      "sha1": "1959184764643d58f1740c54bb74c2aad7d667d2"
+    },
+    {
+      "file": "sound3.716",
+      "crc32": "55a10d13",
+      "sha1": "521d4cdfb0ed8178b3594cedceae93b772a951a4"
+    }
+  ]
+}

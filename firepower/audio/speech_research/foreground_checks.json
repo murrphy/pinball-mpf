@@ -1,0 +1,372 @@
+[
+  {
+    "case": "full nine-frame prelude and three releases; nominal explicit waits only",
+    "records": [
+      {
+        "token": "3E",
+        "ticks": 0
+      },
+      {
+        "token": "83",
+        "ticks": 0
+      },
+      {
+        "token": "3E",
+        "ticks": 24
+      },
+      {
+        "token": "83",
+        "ticks": 24
+      },
+      {
+        "token": "3E",
+        "ticks": 48
+      },
+      {
+        "token": "83",
+        "ticks": 48
+      },
+      {
+        "token": "3E",
+        "ticks": 72
+      },
+      {
+        "token": "83",
+        "ticks": 72
+      },
+      {
+        "token": "3E",
+        "ticks": 96
+      },
+      {
+        "token": "83",
+        "ticks": 96
+      },
+      {
+        "token": "3E",
+        "ticks": 120
+      },
+      {
+        "token": "83",
+        "ticks": 120
+      },
+      {
+        "token": "3E",
+        "ticks": 144
+      },
+      {
+        "token": "83",
+        "ticks": 144
+      },
+      {
+        "token": "3E",
+        "ticks": 168
+      },
+      {
+        "token": "83",
+        "ticks": 168
+      },
+      {
+        "token": "3E",
+        "ticks": 192
+      },
+      {
+        "token": "98",
+        "ticks": 192
+      },
+      {
+        "token": "83",
+        "ticks": 192
+      },
+      {
+        "token": "98",
+        "ticks": 233
+      },
+      {
+        "token": "97",
+        "ticks": 233
+      },
+      {
+        "token": "25",
+        "ticks": 273
+      },
+      {
+        "token": "94",
+        "ticks": 273
+      },
+      {
+        "token": "3E",
+        "ticks": 281
+      },
+      {
+        "token": "3E",
+        "ticks": 291
+      },
+      {
+        "token": "3E",
+        "ticks": 302
+      },
+      {
+        "token": "3E",
+        "ticks": 314
+      },
+      {
+        "token": "3E",
+        "ticks": 327
+      },
+      {
+        "token": "98",
+        "ticks": 338
+      },
+      {
+        "token": "97",
+        "ticks": 338
+      },
+      {
+        "token": "24",
+        "ticks": 378
+      },
+      {
+        "token": "94",
+        "ticks": 378
+      },
+      {
+        "token": "3E",
+        "ticks": 386
+      },
+      {
+        "token": "3E",
+        "ticks": 396
+      },
+      {
+        "token": "3E",
+        "ticks": 407
+      },
+      {
+        "token": "3E",
+        "ticks": 419
+      },
+      {
+        "token": "3E",
+        "ticks": 432
+      },
+      {
+        "token": "98",
+        "ticks": 443
+      },
+      {
+        "token": "97",
+        "ticks": 443
+      },
+      {
+        "token": "23",
+        "ticks": 483
+      },
+      {
+        "token": "94",
+        "ticks": 483
+      },
+      {
+        "token": "3E",
+        "ticks": 491
+      },
+      {
+        "token": "3E",
+        "ticks": 501
+      },
+      {
+        "token": "3E",
+        "ticks": 512
+      },
+      {
+        "token": "3E",
+        "ticks": 524
+      },
+      {
+        "token": "3E",
+        "ticks": 537
+      }
+    ]
+  },
+  {
+    "case": "three-release nominal explicit wait counts; excludes execution/IRQ latency",
+    "records": [
+      {
+        "token": "98",
+        "ticks": 17
+      },
+      {
+        "token": "97",
+        "ticks": 17
+      },
+      {
+        "token": "25",
+        "ticks": 57
+      },
+      {
+        "token": "94",
+        "ticks": 57
+      },
+      {
+        "token": "3E",
+        "ticks": 65
+      },
+      {
+        "token": "3E",
+        "ticks": 75
+      },
+      {
+        "token": "3E",
+        "ticks": 86
+      },
+      {
+        "token": "3E",
+        "ticks": 98
+      },
+      {
+        "token": "3E",
+        "ticks": 111
+      },
+      {
+        "token": "98",
+        "ticks": 122
+      },
+      {
+        "token": "97",
+        "ticks": 122
+      },
+      {
+        "token": "24",
+        "ticks": 162
+      },
+      {
+        "token": "94",
+        "ticks": 162
+      },
+      {
+        "token": "3E",
+        "ticks": 170
+      },
+      {
+        "token": "3E",
+        "ticks": 180
+      },
+      {
+        "token": "3E",
+        "ticks": 191
+      },
+      {
+        "token": "3E",
+        "ticks": 203
+      },
+      {
+        "token": "3E",
+        "ticks": 216
+      },
+      {
+        "token": "98",
+        "ticks": 227
+      },
+      {
+        "token": "97",
+        "ticks": 227
+      },
+      {
+        "token": "23",
+        "ticks": 267
+      },
+      {
+        "token": "94",
+        "ticks": 267
+      },
+      {
+        "token": "3E",
+        "ticks": 275
+      },
+      {
+        "token": "3E",
+        "ticks": 285
+      },
+      {
+        "token": "3E",
+        "ticks": 296
+      },
+      {
+        "token": "3E",
+        "ticks": 308
+      },
+      {
+        "token": "3E",
+        "ticks": 321
+      }
+    ]
+  },
+  {
+    "case": "accepted first-player start indirect descriptor",
+    "records": [
+      {
+        "token": "9F",
+        "ticks": 0
+      }
+    ]
+  },
+  {
+    "case": "added player index 1",
+    "records": [
+      {
+        "token": "84",
+        "ticks": 0
+      }
+    ]
+  },
+  {
+    "case": "added player index 2",
+    "records": [
+      {
+        "token": "99",
+        "ticks": 0
+      }
+    ]
+  },
+  {
+    "case": "added player index 3",
+    "records": [
+      {
+        "token": "9D",
+        "ticks": 0
+      }
+    ]
+  },
+  {
+    "case": "POWER completion flags schedule cleanup",
+    "timer40": 64,
+    "callback41": "6F28",
+    "timer43": 0,
+    "callback44": "0000"
+  },
+  {
+    "case": "POWER cleanup presentation70=0",
+    "records": [
+      {
+        "effect": "19",
+        "token": "9A"
+      }
+    ],
+    "flags19": "04"
+  },
+  {
+    "case": "POWER cleanup presentation70=1",
+    "records": [],
+    "flags19": "04"
+  },
+  {
+    "case": "POWER cleanup presentation70=3",
+    "records": [],
+    "flags19": "04"
+  },
+  {
+    "case": "POWER cleanup presentation70=17",
+    "records": [],
+    "flags19": "04"
+  }
+]

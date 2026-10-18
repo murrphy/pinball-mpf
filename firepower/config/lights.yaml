@@ -3,6 +3,11 @@
 light_settings:
     default_fade_ms: 40
 lights:
+  l_start_button:
+    platform: drivers
+    number: l_start_button
+    default_on_color: white
+
   # Backbox Lamps
   l_player_1_score_indicator:
     number: backbox-1-1

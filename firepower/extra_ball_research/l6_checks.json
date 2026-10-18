@@ -1,0 +1,225 @@
+{
+  "rom_crc32": {
+    "prom1_6.474": "af6eb0b9",
+    "prom2.474": "f75ade1a",
+    "prom3.474": "242ec687",
+    "gamerom.716": "fdd3b983",
+    "green1.716": "2145f8ab",
+    "green2.716": "1c978a4a"
+  },
+  "rom_region_sha256": "66deb719423590f10969e72fe6cbdb1c261048b4dfabdeda4358250447aa7709",
+  "cases": [
+    {
+      "case": "FIRE lighting",
+      "adjustment_low": 0,
+      "multiplier_before_bits": 16,
+      "after": {
+        "lamp": false,
+        "qualified_once": false,
+        "collected": false,
+        "pending": 0
+      }
+    },
+    {
+      "case": "FIRE lighting",
+      "adjustment_low": 0,
+      "multiplier_before_bits": 32,
+      "after": {
+        "lamp": false,
+        "qualified_once": false,
+        "collected": false,
+        "pending": 0
+      }
+    },
+    {
+      "case": "FIRE lighting",
+      "adjustment_low": 0,
+      "multiplier_before_bits": 64,
+      "after": {
+        "lamp": false,
+        "qualified_once": false,
+        "collected": false,
+        "pending": 0
+      }
+    },
+    {
+      "case": "FIRE lighting",
+      "adjustment_low": 1,
+      "multiplier_before_bits": 16,
+      "after": {
+        "lamp": false,
+        "qualified_once": false,
+        "collected": false,
+        "pending": 0
+      }
+    },
+    {
+      "case": "FIRE lighting",
+      "adjustment_low": 1,
+      "multiplier_before_bits": 32,
+      "after": {
+        "lamp": false,
+        "qualified_once": false,
+        "collected": false,
+        "pending": 0
+      }
+    },
+    {
+      "case": "FIRE lighting",
+      "adjustment_low": 1,
+      "multiplier_before_bits": 64,
+      "after": {
+        "lamp": true,
+        "qualified_once": true,
+        "collected": false,
+        "pending": 0
+      }
+    },
+    {
+      "case": "FIRE lighting",
+      "adjustment_low": 2,
+      "multiplier_before_bits": 16,
+      "after": {
+        "lamp": false,
+        "qualified_once": false,
+        "collected": false,
+        "pending": 0
+      }
+    },
+    {
+      "case": "FIRE lighting",
+      "adjustment_low": 2,
+      "multiplier_before_bits": 32,
+      "after": {
+        "lamp": true,
+        "qualified_once": true,
+        "collected": false,
+        "pending": 0
+      }
+    },
+    {
+      "case": "FIRE lighting",
+      "adjustment_low": 2,
+      "multiplier_before_bits": 64,
+      "after": {
+        "lamp": true,
+        "qualified_once": true,
+        "collected": false,
+        "pending": 0
+      }
+    },
+    {
+      "case": "center collection before presentation cleanup",
+      "after": {
+        "lamp": true,
+        "qualified_once": true,
+        "collected": true,
+        "pending": 0
+      },
+      "records": [
+        {
+          "score_descriptor": "13"
+        },
+        {
+          "output_token": "88"
+        }
+      ],
+      "repeats": 23
+    },
+    {
+      "case": "subsequent FIRE cannot relight on same physical ball",
+      "after": {
+        "lamp": false,
+        "qualified_once": true,
+        "collected": true,
+        "pending": 1
+      }
+    },
+    {
+      "case": "next physical ball resets flags, awarded extra survives tilt",
+      "tilt": false,
+      "after": {
+        "lamp": true,
+        "qualified_once": true,
+        "collected": false,
+        "pending": 1
+      }
+    },
+    {
+      "case": "next physical ball resets flags, awarded extra survives tilt",
+      "tilt": true,
+      "after": {
+        "lamp": true,
+        "qualified_once": true,
+        "collected": false,
+        "pending": 1
+      }
+    },
+    {
+      "case": "ball-end pending clamp",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "case": "ball-end pending clamp",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "case": "ball-end pending clamp",
+      "before": 2,
+      "after": 2
+    },
+    {
+      "case": "ball-end pending clamp",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "case": "ball-end pending clamp",
+      "before": 4,
+      "after": 2
+    },
+    {
+      "case": "first scoring after extra serve",
+      "pending_before": 1,
+      "pending_after": 0,
+      "lamps_before": {
+        "playfield_flag00": true,
+        "backbox_flag3e": true
+      },
+      "lamps_after": {
+        "playfield_flag00": false,
+        "backbox_flag3e": false
+      }
+    },
+    {
+      "case": "first scoring after extra serve",
+      "pending_before": 2,
+      "pending_after": 1,
+      "lamps_before": {
+        "playfield_flag00": true,
+        "backbox_flag3e": true
+      },
+      "lamps_after": {
+        "playfield_flag00": true,
+        "backbox_flag3e": true
+      }
+    },
+    {
+      "case": "pending extra suppresses regular-ball advancement after normal or tilt path",
+      "pending": 0,
+      "ball_counter03": "f2"
+    },
+    {
+      "case": "pending extra suppresses regular-ball advancement after normal or tilt path",
+      "pending": 1,
+      "ball_counter03": "f1"
+    },
+    {
+      "case": "pending extra suppresses regular-ball advancement after normal or tilt path",
+      "pending": 2,
+      "ball_counter03": "f1"
+    }
+  ]
+}

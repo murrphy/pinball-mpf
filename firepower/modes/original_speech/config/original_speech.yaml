@@ -1,0 +1,11 @@
+#config_version=6
+mode:
+  code: original_speech.OriginalSpeech
+  game_mode: false
+  start_events: reset_complete
+  stop_events: service_mode_entered, shutdown
+  priority: 250
+
+mode_settings:
+  # Temporary: restore true to re-enable the periodic 1C/1D/1B attract rotation.
+  attract_speech: false

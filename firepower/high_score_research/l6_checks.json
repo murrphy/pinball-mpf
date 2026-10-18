@@ -1,0 +1,1143 @@
+{
+  "rom_crc32": {
+    "prom1_6.474": "af6eb0b9",
+    "prom2.474": "f75ade1a",
+    "prom3.474": "242ec687",
+    "gamerom.716": "fdd3b983",
+    "green1.716": "2145f8ab",
+    "green2.716": "1c978a4a"
+  },
+  "default": 550000,
+  "default_credits": 3,
+  "descriptor": "f88fffff00",
+  "cases": [
+    {
+      "scores": [
+        540000
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 12,
+      "before": 0,
+      "after": 0,
+      "tokens": []
+    },
+    {
+      "scores": [
+        540000
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 12,
+      "before": 11,
+      "after": 11,
+      "tokens": []
+    },
+    {
+      "scores": [
+        540000
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 12,
+      "before": 12,
+      "after": 12,
+      "tokens": []
+    },
+    {
+      "scores": [
+        540000
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 0,
+      "before": 0,
+      "after": 0,
+      "tokens": []
+    },
+    {
+      "scores": [
+        550000
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 0,
+      "after": 3,
+      "tokens": [
+        [
+          143,
+          0
+        ],
+        [
+          77,
+          744
+        ],
+        [
+          77,
+          760
+        ],
+        [
+          77,
+          776
+        ]
+      ]
+    },
+    {
+      "scores": [
+        550000
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 11,
+      "after": 14,
+      "tokens": [
+        [
+          143,
+          0
+        ],
+        [
+          77,
+          744
+        ],
+        [
+          77,
+          760
+        ],
+        [
+          77,
+          776
+        ]
+      ]
+    },
+    {
+      "scores": [
+        550000
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 12,
+      "after": 12,
+      "tokens": [
+        [
+          143,
+          0
+        ]
+      ]
+    },
+    {
+      "scores": [
+        550000
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 0,
+      "before": 0,
+      "after": 0,
+      "tokens": [
+        [
+          143,
+          0
+        ]
+      ]
+    },
+    {
+      "scores": [
+        550010
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 12,
+      "before": 0,
+      "after": 0,
+      "tokens": []
+    },
+    {
+      "scores": [
+        550010
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 12,
+      "before": 11,
+      "after": 11,
+      "tokens": []
+    },
+    {
+      "scores": [
+        550010
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 12,
+      "before": 12,
+      "after": 12,
+      "tokens": []
+    },
+    {
+      "scores": [
+        550010
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 0,
+      "before": 0,
+      "after": 0,
+      "tokens": []
+    },
+    {
+      "scores": [
+        550100
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 0,
+      "after": 3,
+      "tokens": [
+        [
+          143,
+          0
+        ],
+        [
+          77,
+          744
+        ],
+        [
+          77,
+          760
+        ],
+        [
+          77,
+          776
+        ]
+      ]
+    },
+    {
+      "scores": [
+        550100
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 11,
+      "after": 14,
+      "tokens": [
+        [
+          143,
+          0
+        ],
+        [
+          77,
+          744
+        ],
+        [
+          77,
+          760
+        ],
+        [
+          77,
+          776
+        ]
+      ]
+    },
+    {
+      "scores": [
+        550100
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 12,
+      "after": 12,
+      "tokens": [
+        [
+          143,
+          0
+        ]
+      ]
+    },
+    {
+      "scores": [
+        550100
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 0,
+      "before": 0,
+      "after": 0,
+      "tokens": [
+        [
+          143,
+          0
+        ]
+      ]
+    },
+    {
+      "scores": [
+        600000,
+        700000
+      ],
+      "winner": 2,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 0,
+      "after": 3,
+      "tokens": [
+        [
+          143,
+          0
+        ],
+        [
+          77,
+          744
+        ],
+        [
+          77,
+          760
+        ],
+        [
+          77,
+          776
+        ]
+      ]
+    },
+    {
+      "scores": [
+        600000,
+        700000
+      ],
+      "winner": 2,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 11,
+      "after": 14,
+      "tokens": [
+        [
+          143,
+          0
+        ],
+        [
+          77,
+          744
+        ],
+        [
+          77,
+          760
+        ],
+        [
+          77,
+          776
+        ]
+      ]
+    },
+    {
+      "scores": [
+        600000,
+        700000
+      ],
+      "winner": 2,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 12,
+      "after": 12,
+      "tokens": [
+        [
+          143,
+          0
+        ]
+      ]
+    },
+    {
+      "scores": [
+        600000,
+        700000
+      ],
+      "winner": 2,
+      "qualifies": true,
+      "maximum": 0,
+      "before": 0,
+      "after": 0,
+      "tokens": [
+        [
+          143,
+          0
+        ]
+      ]
+    },
+    {
+      "scores": [
+        700000,
+        600000,
+        650000
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 0,
+      "after": 3,
+      "tokens": [
+        [
+          143,
+          0
+        ],
+        [
+          77,
+          744
+        ],
+        [
+          77,
+          760
+        ],
+        [
+          77,
+          776
+        ]
+      ]
+    },
+    {
+      "scores": [
+        700000,
+        600000,
+        650000
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 11,
+      "after": 14,
+      "tokens": [
+        [
+          143,
+          0
+        ],
+        [
+          77,
+          744
+        ],
+        [
+          77,
+          760
+        ],
+        [
+          77,
+          776
+        ]
+      ]
+    },
+    {
+      "scores": [
+        700000,
+        600000,
+        650000
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 12,
+      "after": 12,
+      "tokens": [
+        [
+          143,
+          0
+        ]
+      ]
+    },
+    {
+      "scores": [
+        700000,
+        600000,
+        650000
+      ],
+      "winner": 1,
+      "qualifies": true,
+      "maximum": 0,
+      "before": 0,
+      "after": 0,
+      "tokens": [
+        [
+          143,
+          0
+        ]
+      ]
+    },
+    {
+      "scores": [
+        600000,
+        700000,
+        700000,
+        650000
+      ],
+      "winner": 2,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 0,
+      "after": 3,
+      "tokens": [
+        [
+          143,
+          0
+        ],
+        [
+          77,
+          744
+        ],
+        [
+          77,
+          760
+        ],
+        [
+          77,
+          776
+        ]
+      ]
+    },
+    {
+      "scores": [
+        600000,
+        700000,
+        700000,
+        650000
+      ],
+      "winner": 2,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 11,
+      "after": 14,
+      "tokens": [
+        [
+          143,
+          0
+        ],
+        [
+          77,
+          744
+        ],
+        [
+          77,
+          760
+        ],
+        [
+          77,
+          776
+        ]
+      ]
+    },
+    {
+      "scores": [
+        600000,
+        700000,
+        700000,
+        650000
+      ],
+      "winner": 2,
+      "qualifies": true,
+      "maximum": 12,
+      "before": 12,
+      "after": 12,
+      "tokens": [
+        [
+          143,
+          0
+        ]
+      ]
+    },
+    {
+      "scores": [
+        600000,
+        700000,
+        700000,
+        650000
+      ],
+      "winner": 2,
+      "qualifies": true,
+      "maximum": 0,
+      "before": 0,
+      "after": 0,
+      "tokens": [
+        [
+          143,
+          0
+        ]
+      ]
+    },
+    {
+      "scores": [
+        500000,
+        500000,
+        500000,
+        500000
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 12,
+      "before": 0,
+      "after": 0,
+      "tokens": []
+    },
+    {
+      "scores": [
+        500000,
+        500000,
+        500000,
+        500000
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 12,
+      "before": 11,
+      "after": 11,
+      "tokens": []
+    },
+    {
+      "scores": [
+        500000,
+        500000,
+        500000,
+        500000
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 12,
+      "before": 12,
+      "after": 12,
+      "tokens": []
+    },
+    {
+      "scores": [
+        500000,
+        500000,
+        500000,
+        500000
+      ],
+      "winner": 1,
+      "qualifies": false,
+      "maximum": 0,
+      "before": 0,
+      "after": 0,
+      "tokens": []
+    }
+  ],
+  "attract": [
+    {
+      "score": 550000,
+      "lamp": true
+    },
+    {
+      "score": 430000,
+      "lamp": false
+    },
+    {
+      "score": 550000,
+      "lamp": true
+    },
+    {
+      "score": 430000,
+      "lamp": false
+    }
+  ],
+  "low_byte_cases": [
+    {
+      "score": 550000,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550001,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550002,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550003,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550004,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550005,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550006,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550007,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550008,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550009,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550010,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550011,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550012,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550013,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550014,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550015,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550016,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550017,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550018,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550019,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550020,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550021,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550022,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550023,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550024,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550025,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550026,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550027,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550028,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550029,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550030,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550031,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550032,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550033,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550034,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550035,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550036,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550037,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550038,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550039,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550040,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550041,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550042,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550043,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550044,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550045,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550046,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550047,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550048,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550049,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550050,
+      "stored": 550050,
+      "qualifies": true
+    },
+    {
+      "score": 550051,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550052,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550053,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550054,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550055,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550056,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550057,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550058,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550059,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550060,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550061,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550062,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550063,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550064,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550065,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550066,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550067,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550068,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550069,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550070,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550071,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550072,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550073,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550074,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550075,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550076,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550077,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550078,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550079,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550080,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550081,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550082,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550083,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550084,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550085,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550086,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550087,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550088,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550089,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550090,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550091,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550092,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550093,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550094,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550095,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550096,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550097,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550098,
+      "stored": 550050,
+      "qualifies": false
+    },
+    {
+      "score": 550099,
+      "stored": 550050,
+      "qualifies": false
+    }
+  ]
+}

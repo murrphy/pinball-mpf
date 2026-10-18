@@ -1,0 +1,255 @@
+{
+  "sound_crc32": "55a10d13",
+  "routine": "FA3C",
+  "clock_hz": 895000,
+  "states": [
+    {
+      "stage": 1,
+      "low_period": 254,
+      "first_dac_cycle": 838,
+      "cycles": 390676,
+      "dac_writes": 189,
+      "dac_sha256": "87745132112a1be668af7d60f5896e839f83c63bcd5e5e285466ce40e9a702b8"
+    },
+    {
+      "stage": 2,
+      "low_period": 240,
+      "first_dac_cycle": 824,
+      "cycles": 390698,
+      "dac_writes": 193,
+      "dac_sha256": "fa2bb2de82770c1eb34c7b2fb7f41195980995b5624946cb75c2e8ab3f795ee6"
+    },
+    {
+      "stage": 3,
+      "low_period": 226,
+      "first_dac_cycle": 810,
+      "cycles": 390794,
+      "dac_writes": 203,
+      "dac_sha256": "2d9622f6de456e561720bcfbee36b39146d8dff413920a0e4c873d6ec201b9e2"
+    },
+    {
+      "stage": 4,
+      "low_period": 212,
+      "first_dac_cycle": 796,
+      "cycles": 390875,
+      "dac_writes": 212,
+      "dac_sha256": "f50efc32147a386c1e7ca025a2a9a9a6c00df7dca9a933014b1eadd5d7ca3a65"
+    },
+    {
+      "stage": 5,
+      "low_period": 198,
+      "first_dac_cycle": 782,
+      "cycles": 390927,
+      "dac_writes": 218,
+      "dac_sha256": "7a62e06abe7379ce975ce11b9a2e3354646a5c186b0daa47dce768049cb5bdca"
+    },
+    {
+      "stage": 6,
+      "low_period": 184,
+      "first_dac_cycle": 768,
+      "cycles": 391037,
+      "dac_writes": 230,
+      "dac_sha256": "2256b5529ecbb2af64fb21d7cc19656b90c9acee40b14b84281ec39592e6332a"
+    },
+    {
+      "stage": 7,
+      "low_period": 170,
+      "first_dac_cycle": 754,
+      "cycles": 391148,
+      "dac_writes": 241,
+      "dac_sha256": "79bf9b4f6b423e6bc06464def95131c209307aa1d5d515b7a855c91636ece533"
+    },
+    {
+      "stage": 8,
+      "low_period": 156,
+      "first_dac_cycle": 740,
+      "cycles": 391296,
+      "dac_writes": 255,
+      "dac_sha256": "12cb6693e5814740e96ab3c1f1714638a1c355429ba6634447e423721ce430a4"
+    },
+    {
+      "stage": 9,
+      "low_period": 142,
+      "first_dac_cycle": 726,
+      "cycles": 391465,
+      "dac_writes": 272,
+      "dac_sha256": "4467da8c29ba4e568e25f5ea221859563e7d27cae1d5289d40de5e68cf906697"
+    },
+    {
+      "stage": 10,
+      "low_period": 128,
+      "first_dac_cycle": 712,
+      "cycles": 391605,
+      "dac_writes": 286,
+      "dac_sha256": "b7c666bf8e5aa65a4302e4ba92eb968e0537b0e12a0c43ccbdcb2a122edafc4f"
+    },
+    {
+      "stage": 11,
+      "low_period": 114,
+      "first_dac_cycle": 698,
+      "cycles": 391825,
+      "dac_writes": 308,
+      "dac_sha256": "d8cdf03759f2b30b7ac14efbe60d052c3ef28618f0623c57ffb8f5f9354b931e"
+    },
+    {
+      "stage": 12,
+      "low_period": 100,
+      "first_dac_cycle": 684,
+      "cycles": 392060,
+      "dac_writes": 331,
+      "dac_sha256": "8546297a0e3e3d5436572f8f07918880866d3670bbaf9619a8fd4dbeec463e41"
+    },
+    {
+      "stage": 13,
+      "low_period": 95,
+      "first_dac_cycle": 676,
+      "cycles": 392124,
+      "dac_writes": 339,
+      "dac_sha256": "1aec921adbb41b6f60d3d4bd17a333962832c2bb7803be2c1cf0494bb4e84bc1"
+    },
+    {
+      "stage": 14,
+      "low_period": 90,
+      "first_dac_cycle": 668,
+      "cycles": 392249,
+      "dac_writes": 350,
+      "dac_sha256": "c346a67df2bc6e8ac32a3f59afdc750b40d4f7c381468dc97c6f4bb6eb097bb0"
+    },
+    {
+      "stage": 15,
+      "low_period": 85,
+      "first_dac_cycle": 660,
+      "cycles": 392396,
+      "dac_writes": 363,
+      "dac_sha256": "063b2210fa7c89296b55b4a978b44b763fb8a1dd1051e04cbc12bca29eef44ad"
+    },
+    {
+      "stage": 16,
+      "low_period": 80,
+      "first_dac_cycle": 652,
+      "cycles": 392489,
+      "dac_writes": 374,
+      "dac_sha256": "b81d62f77153fbabcadf316c8f68f85b06f0785586b31e7105181af6fd820f8c"
+    },
+    {
+      "stage": 17,
+      "low_period": 75,
+      "first_dac_cycle": 644,
+      "cycles": 392599,
+      "dac_writes": 384,
+      "dac_sha256": "0731abcf5c9dd63eacc2d822cf0b42f356cc513fd1f9f90bf8230b89f4d84d94"
+    },
+    {
+      "stage": 18,
+      "low_period": 70,
+      "first_dac_cycle": 636,
+      "cycles": 392804,
+      "dac_writes": 403,
+      "dac_sha256": "3d80cc2065072070c3705099accf2f4cc2104aa74e3452ff4b5db961d61bcde3"
+    },
+    {
+      "stage": 19,
+      "low_period": 65,
+      "first_dac_cycle": 628,
+      "cycles": 392920,
+      "dac_writes": 415,
+      "dac_sha256": "eb274744ba342e789b76d54cf58b08222253bbdb4b227204c36c5c037d847eef"
+    },
+    {
+      "stage": 20,
+      "low_period": 60,
+      "first_dac_cycle": 620,
+      "cycles": 393103,
+      "dac_writes": 432,
+      "dac_sha256": "7257c655f7d23559c8bc69c3c30528f47fce484fef109de188fdd233e5cbf683"
+    },
+    {
+      "stage": 21,
+      "low_period": 55,
+      "first_dac_cycle": 612,
+      "cycles": 393307,
+      "dac_writes": 452,
+      "dac_sha256": "693c3bc03c75713543cdc87ee56a028892071cc7ecc9fcf65b5f9d71b06bbbe0"
+    },
+    {
+      "stage": 22,
+      "low_period": 50,
+      "first_dac_cycle": 604,
+      "cycles": 393540,
+      "dac_writes": 475,
+      "dac_sha256": "17562a6d61c0e67e817d2cc03b88815dada430f8a615d5a685fd1e83459fe688"
+    },
+    {
+      "stage": 23,
+      "low_period": 45,
+      "first_dac_cycle": 596,
+      "cycles": 393820,
+      "dac_writes": 499,
+      "dac_sha256": "4f2b06eec7300ac2499b42d16bcbf4d8eaf80224e321d6a0d1229cf1ff332826"
+    },
+    {
+      "stage": 24,
+      "low_period": 40,
+      "first_dac_cycle": 588,
+      "cycles": 394111,
+      "dac_writes": 528,
+      "dac_sha256": "67018e5215cb37d31c54f56e7546e9f93d4513a75ad3c41e75c148790a16d1fd"
+    },
+    {
+      "stage": 25,
+      "low_period": 35,
+      "first_dac_cycle": 580,
+      "cycles": 394507,
+      "dac_writes": 564,
+      "dac_sha256": "5b85c978f72ad2e2b8338c66e0cb300c1a5a4af094c55155b0aad7a342c5a1bd"
+    },
+    {
+      "stage": 26,
+      "low_period": 30,
+      "first_dac_cycle": 572,
+      "cycles": 394946,
+      "dac_writes": 605,
+      "dac_sha256": "fd3cb5a0656fdb75fe06f611ae14363ce7f40bca7be5cdaeeecf33dcefe329e3"
+    },
+    {
+      "stage": 27,
+      "low_period": 25,
+      "first_dac_cycle": 564,
+      "cycles": 395443,
+      "dac_writes": 652,
+      "dac_sha256": "d65b2542441285edacfcdfdfd6540bbf7bff3d3f1fc00c64552d33bd1cf567a4"
+    },
+    {
+      "stage": 28,
+      "low_period": 20,
+      "first_dac_cycle": 556,
+      "cycles": 396131,
+      "dac_writes": 716,
+      "dac_sha256": "40eca9bd110810aa9c9611f76aea331b7b613e9945cce112ccffe9e94c0f6481"
+    },
+    {
+      "stage": 29,
+      "low_period": 15,
+      "first_dac_cycle": 548,
+      "cycles": 397039,
+      "dac_writes": 800,
+      "dac_sha256": "f3a80d0e161bdb85de37f8bb699173b71ff7674b9a40b73f07144d6756c86c65"
+    },
+    {
+      "stage": 30,
+      "low_period": 10,
+      "first_dac_cycle": 540,
+      "cycles": 398608,
+      "dac_writes": 943,
+      "dac_sha256": "2aef947b8cb6e15c016fa2f8211688e3bcce7799b1c0b01a03b16919ac9c94a0"
+    },
+    {
+      "stage": 31,
+      "low_period": 5,
+      "first_dac_cycle": 532,
+      "cycles": 401673,
+      "dac_writes": 1222,
+      "dac_sha256": "c60a06af865ef2345d47b94ad406029623ce195af4bb59e37da0bcb94e1f484c"
+    }
+  ]
+}

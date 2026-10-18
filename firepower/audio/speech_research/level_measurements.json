@@ -1,0 +1,458 @@
+{
+  "method": "20ms frame RMS gate: max(-50 dBFS, loudest frame minus 35 dB); peak over entire PCM; no per-sample gate",
+  "speech": [
+    {
+      "file": "sounds/voice/l6/phrase_fc5160a7955d.wav",
+      "wav_sha256": "39f0df4d91fb3ef857623ec03bb3ea7865b170a8a8db5940a0eb1c0a53837570",
+      "peak_dbfs": -3.333169347982678,
+      "active_rms_dbfs": -16.04646031823964,
+      "crest_db": 12.71329097025696,
+      "active_seconds": 1.9435,
+      "duration_seconds": 1.9435,
+      "full_scale_samples": 0,
+      "words": [
+        "you",
+        "are",
+        "destroyed"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_309825bdde17.wav",
+      "wav_sha256": "9189f276261857c9425a900037980df8b949bfba9c9819c62b4601e22abe16ef",
+      "peak_dbfs": -2.389198737181419,
+      "active_rms_dbfs": -16.626319299008717,
+      "crest_db": 14.237120561827298,
+      "active_seconds": 3.006291666666667,
+      "duration_seconds": 3.006291666666667,
+      "full_scale_samples": 0,
+      "words": [
+        "you",
+        "one",
+        "one",
+        "mission"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_790cffbd5630.wav",
+      "wav_sha256": "4c3a80e2659de367dfece57dfc71b0a46a8f4c918ce26cbfd805e69f380897d1",
+      "peak_dbfs": -4.115118107877513,
+      "active_rms_dbfs": -20.534300958488153,
+      "crest_db": 16.41918285061064,
+      "active_seconds": 1.7816875,
+      "duration_seconds": 1.7816875,
+      "full_scale_samples": 0,
+      "words": [
+        "mission",
+        "accomplished"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_c2ff8e7c88a0.wav",
+      "wav_sha256": "5ebbd18b8b15b520ee0248e4276ecd174209f51e8c3d018e3780ccb220cd4435",
+      "peak_dbfs": -5.59842976104338,
+      "active_rms_dbfs": -16.450256097663665,
+      "crest_db": 10.851826336620285,
+      "active_seconds": 0.662,
+      "duration_seconds": 0.662,
+      "full_scale_samples": 0,
+      "words": [
+        "fire"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_1466a6364be5.wav",
+      "wav_sha256": "77effcc60b9c9cf75251d5207baaf6dd813300427f0bd2082bc3e8b8f02bd8d5",
+      "peak_dbfs": -3.333169347982678,
+      "active_rms_dbfs": -18.04053528454855,
+      "crest_db": 14.707365936565871,
+      "active_seconds": 1.6781875,
+      "duration_seconds": 1.7381875,
+      "full_scale_samples": 0,
+      "words": [
+        "enemy",
+        "destroyed"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_212a61bf57ff.wav",
+      "wav_sha256": "121733d2756a293f07696895678ca9d2277a1c357775cd41d9710058fd26e6c8",
+      "peak_dbfs": -3.3083047723932033,
+      "active_rms_dbfs": -18.247973352146808,
+      "crest_db": 14.939668579753604,
+      "active_seconds": 3.1066041666666666,
+      "duration_seconds": 3.1066041666666666,
+      "full_scale_samples": 0,
+      "words": [
+        "fire",
+        "power",
+        "mission",
+        "accomplished"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_f4be220a378a.wav",
+      "wav_sha256": "bbdd9a8aa032dada3e4ec5b725bdaaaef9bb4efea7a52dde9a911e54882c389c",
+      "peak_dbfs": -2.389198737181419,
+      "active_rms_dbfs": -16.329486134936744,
+      "crest_db": 13.940287397755325,
+      "active_seconds": 1.4108541666666667,
+      "duration_seconds": 1.4108541666666667,
+      "full_scale_samples": 0,
+      "words": [
+        "fire",
+        "one"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_ab9ce987252b.wav",
+      "wav_sha256": "521ed7380744f0a86a66e9b25e36ecccc0877a650d7d33d9ebc1255fe853eee1",
+      "peak_dbfs": -3.8460200975135357,
+      "active_rms_dbfs": -16.509965484304185,
+      "crest_db": 12.66394538679065,
+      "active_seconds": 0.7055416666666666,
+      "duration_seconds": 0.7055416666666666,
+      "full_scale_samples": 0,
+      "words": [
+        "two"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_5e8a7b3d8d1a.wav",
+      "wav_sha256": "c6255e9fdfa4227e23c2be715ac41f20e61d4cb4122708a71e30e9da65c3d09c",
+      "peak_dbfs": -4.505189019788275,
+      "active_rms_dbfs": -16.26576463806881,
+      "crest_db": 11.760575618280534,
+      "active_seconds": 0.7381666666666666,
+      "duration_seconds": 0.7381666666666666,
+      "full_scale_samples": 0,
+      "words": [
+        "three"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_809582e3eab7.wav",
+      "wav_sha256": "5a7c8d27a9dcfde1c552c5ad8ce3614d07b143a78e0eaaa9e02560107197dcf3",
+      "peak_dbfs": -3.3083047723932033,
+      "active_rms_dbfs": -16.24359482003339,
+      "crest_db": 12.935290047640187,
+      "active_seconds": 0.6619583333333333,
+      "duration_seconds": 0.6619583333333333,
+      "full_scale_samples": 0,
+      "words": [
+        "power"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_33e561887560.wav",
+      "wav_sha256": "ebe2041c13dd837d1ae973430746ad3cae8fe832580d0bae3fd08dd0ba430e1b",
+      "peak_dbfs": -3.3083047723932033,
+      "active_rms_dbfs": -16.053344048551473,
+      "crest_db": 12.74503927615827,
+      "active_seconds": 2.9859166666666668,
+      "duration_seconds": 2.9859166666666668,
+      "full_scale_samples": 0,
+      "words": [
+        "you",
+        "destroyed",
+        "fire",
+        "power"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_f1902f924358.wav",
+      "wav_sha256": "7a2b8c3bf56d62137137f50d678965c9f413fe2ef1efd0c2c94200abef107604",
+      "peak_dbfs": -3.333169347982678,
+      "active_rms_dbfs": -16.808899837661496,
+      "crest_db": 13.475730489678817,
+      "active_seconds": 2.367541666666667,
+      "duration_seconds": 2.367541666666667,
+      "full_scale_samples": 0,
+      "words": [
+        "enemy",
+        "destroyed",
+        "you"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_16f30506ab47.wav",
+      "wav_sha256": "5ec2d173c59fadf487ae002c0a185beae7ce536c9bb0628b97a4a03ac3830736",
+      "peak_dbfs": -2.389198737181419,
+      "active_rms_dbfs": -17.741806327027327,
+      "crest_db": 15.352607589845908,
+      "active_seconds": 3.9726041666666667,
+      "duration_seconds": 3.9726041666666667,
+      "full_scale_samples": 0,
+      "words": [
+        "mission",
+        "two",
+        "one",
+        "three",
+        "accomplished"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_adf2083893e4.wav",
+      "wav_sha256": "bac5dec1c3d97e6cad4f80a1e3d23819004fb69c4792e67f7bde9cf385e03368",
+      "peak_dbfs": -4.973549428932918,
+      "active_rms_dbfs": -16.952273260756147,
+      "crest_db": 11.97872383182323,
+      "active_seconds": 1.6827083333333333,
+      "duration_seconds": 1.6827083333333333,
+      "full_scale_samples": 0,
+      "words": [
+        "you",
+        "are",
+        "enemy"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_2836c0fbadb2.wav",
+      "wav_sha256": "36447d319ed09c2f187f1e50a19f01715dd0dd7ac4f06003f92cea486555cc7a",
+      "peak_dbfs": -3.333169347982678,
+      "active_rms_dbfs": -16.725518280339436,
+      "crest_db": 13.392348932356757,
+      "active_seconds": 3.028125,
+      "duration_seconds": 3.028125,
+      "full_scale_samples": 0,
+      "words": [
+        "enemy",
+        "fire",
+        "destroyed",
+        "you"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_4cbb8f3cc4f0.wav",
+      "wav_sha256": "77a17359a550dab22deb4f17192df5aa42d18b07eb6eb4933f8d4149a3ecba98",
+      "peak_dbfs": -3.333169347982678,
+      "active_rms_dbfs": -16.947333596995644,
+      "crest_db": 13.614164249012966,
+      "active_seconds": 2.4749791666666665,
+      "duration_seconds": 2.4749791666666665,
+      "full_scale_samples": 0,
+      "words": [
+        "mission",
+        "destroyed",
+        "you"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_e26ad47a3938.wav",
+      "wav_sha256": "b8d432653413ee2eee5f8ca449bb5b4ff33359a1c6bd023f7c7e9f0e8f68a6b9",
+      "peak_dbfs": -2.389198737181419,
+      "active_rms_dbfs": -17.280731463766443,
+      "crest_db": 14.891532726585025,
+      "active_seconds": 2.1175208333333333,
+      "duration_seconds": 2.1175208333333333,
+      "full_scale_samples": 0,
+      "words": [
+        "enemy",
+        "power",
+        "one"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_ac3bfbfb233a.wav",
+      "wav_sha256": "7f66c4e08b193b6a60cc9dfdf66dd1fc015688bd002265a59b3eb0b7c8729472",
+      "peak_dbfs": -3.333169347982678,
+      "active_rms_dbfs": -17.542511701385795,
+      "crest_db": 14.209342353403116,
+      "active_seconds": 3.1803125,
+      "duration_seconds": 3.1803125,
+      "full_scale_samples": 0,
+      "words": [
+        "you",
+        "destroyed",
+        "enemy",
+        "mission"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_513fd6607490.wav",
+      "wav_sha256": "0f5d223a4de904712d5bb83f6dc4382b14071b55889cbde2dea362462add916a",
+      "peak_dbfs": -2.389198737181419,
+      "active_rms_dbfs": -16.158700277366332,
+      "crest_db": 13.769501540184914,
+      "active_seconds": 3.799916666666667,
+      "duration_seconds": 3.799916666666667,
+      "full_scale_samples": 0,
+      "words": [
+        "you",
+        "one",
+        "fire",
+        "power",
+        "destroyed"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_d44b13648237.wav",
+      "wav_sha256": "653466f8c2defce9b16ef9033f011a12886c33c592ff96529ad83c28fffea677",
+      "peak_dbfs": -3.3083047723932033,
+      "active_rms_dbfs": -16.517914356716805,
+      "crest_db": 13.209609584323601,
+      "active_seconds": 2.2914583333333334,
+      "duration_seconds": 2.2914583333333334,
+      "full_scale_samples": 0,
+      "words": [
+        "fire",
+        "power",
+        "destroyed"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_41eaa042150a.wav",
+      "wav_sha256": "4af1db6d2657cfa92445979e97b83e7d1986e39ae96f92144f14cb5635177d87",
+      "peak_dbfs": -3.333169347982678,
+      "active_rms_dbfs": -16.000216637227368,
+      "crest_db": 12.667047289244689,
+      "active_seconds": 2.322791666666667,
+      "duration_seconds": 2.322791666666667,
+      "full_scale_samples": 0,
+      "words": [
+        "fire",
+        "destroyed",
+        "you"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_1a5367917ba6.wav",
+      "wav_sha256": "4f86ee572e774838d8fa59d582f578ed27552741959225cdbb8d4938453370bd",
+      "peak_dbfs": -3.3083047723932033,
+      "active_rms_dbfs": -16.34536937950449,
+      "crest_db": 13.037064607111287,
+      "active_seconds": 1.3250625,
+      "duration_seconds": 1.3250625,
+      "full_scale_samples": 0,
+      "words": [
+        "fire",
+        "power"
+      ]
+    },
+    {
+      "file": "sounds/voice/l6/phrase_3d7494d484e5.wav",
+      "wav_sha256": "b3176c8420167c6144f66d296694bbe5cb89431614b455e34a3097605f4d7b33",
+      "peak_dbfs": -3.3083047723932033,
+      "active_rms_dbfs": -16.345420469800263,
+      "crest_db": 13.03711569740706,
+      "active_seconds": 1.3250625,
+      "duration_seconds": 1.3250625,
+      "full_scale_samples": 0,
+      "words": [
+        "fire",
+        "power"
+      ]
+    }
+  ],
+  "electronic": [
+    {
+      "file": "sounds/fx/l6_cmd_02.wav",
+      "wav_sha256": "efa36be79f8d5cf12991358d141c0e5fecb30550addf39a22aaea87089131e9a",
+      "peak_dbfs": -2.144199392957367,
+      "active_rms_dbfs": -5.172522185665675,
+      "crest_db": 3.0283227927083076,
+      "active_seconds": 7.616833333333333,
+      "duration_seconds": 7.616833333333333,
+      "full_scale_samples": 0,
+      "command": 2
+    },
+    {
+      "file": "sounds/fx/l6_cmd_03.wav",
+      "wav_sha256": "60f3cc54bc699cf4b5f93bc2202caff380a588290f5817676e70fb2798ce0a4e",
+      "peak_dbfs": -2.144199392957367,
+      "active_rms_dbfs": -3.9432584108682738,
+      "crest_db": 1.7990590179109067,
+      "active_seconds": 1.2199166666666668,
+      "duration_seconds": 1.2199166666666668,
+      "full_scale_samples": 0,
+      "command": 3
+    },
+    {
+      "file": "sounds/fx/l6_cmd_05.wav",
+      "wav_sha256": "031e19e513564d3bc53cff08736b6bec1300f3bdd67c25426cb4d649578e2a97",
+      "peak_dbfs": -2.144199392957367,
+      "active_rms_dbfs": -2.8883434230491316,
+      "crest_db": 0.7441440300917646,
+      "active_seconds": 0.1486875,
+      "duration_seconds": 0.1686875,
+      "full_scale_samples": 0,
+      "command": 5
+    },
+    {
+      "file": "sounds/fx/l6_cmd_09.wav",
+      "wav_sha256": "627b898e973b013d3ea05f3e2653adeb8e58e17714e9536f91925e299ea4810e",
+      "peak_dbfs": -2.144199392957367,
+      "active_rms_dbfs": -6.033229025105708,
+      "crest_db": 3.889029632148341,
+      "active_seconds": 0.6012916666666667,
+      "duration_seconds": 0.6012916666666667,
+      "full_scale_samples": 0,
+      "command": 9
+    },
+    {
+      "file": "sounds/fx/l6_cmd_0a.wav",
+      "wav_sha256": "ff4d47cf525fa00a9d9e8cdfa0539c82982ef27053181f4bf5304a753f6189bd",
+      "peak_dbfs": -2.144199392957367,
+      "active_rms_dbfs": -3.2771781291570194,
+      "crest_db": 1.1329787361996524,
+      "active_seconds": 1.0652083333333333,
+      "duration_seconds": 1.0852083333333333,
+      "full_scale_samples": 0,
+      "command": 10
+    },
+    {
+      "file": "sounds/fx/l6_cmd_0b.wav",
+      "wav_sha256": "27ba3b2c03619c304ccfaa3311254c4d1984fc50338098a9140b70ed80403f43",
+      "peak_dbfs": -2.144199392957367,
+      "active_rms_dbfs": -3.810579957226545,
+      "crest_db": 1.6663805642691778,
+      "active_seconds": 0.8623333333333333,
+      "duration_seconds": 0.8623333333333333,
+      "full_scale_samples": 0,
+      "command": 11
+    },
+    {
+      "file": "sounds/fx/l6_cmd_10.wav",
+      "wav_sha256": "8555cfb1e5a4bb419cc2464a66efd62fc5b2d777171a711f9d6b11824b6dc86f",
+      "peak_dbfs": -2.144199392957367,
+      "active_rms_dbfs": -2.753640498329246,
+      "crest_db": 0.6094411053718791,
+      "active_seconds": 0.11097916666666667,
+      "duration_seconds": 0.11097916666666667,
+      "full_scale_samples": 0,
+      "command": 16
+    },
+    {
+      "file": "sounds/fx/l6_cmd_19.wav",
+      "wav_sha256": "e14718400af875466477a89bc63f0f8a69c0048092018f058f725ba9772e96e7",
+      "peak_dbfs": -2.144199392957367,
+      "active_rms_dbfs": -2.3086038217795695,
+      "crest_db": 0.1644044288222024,
+      "active_seconds": 1.8763125,
+      "duration_seconds": 1.8763125,
+      "full_scale_samples": 0,
+      "command": 25
+    },
+    {
+      "file": "sounds/fx/l6_cmd_1d.wav",
+      "wav_sha256": "8ba96a09bb7ac8022e12715285dc340c8e8f24457c68155130c7b5c14e59f239",
+      "peak_dbfs": -2.144199392957367,
+      "active_rms_dbfs": -2.3161775515339307,
+      "crest_db": 0.17197815857656362,
+      "active_seconds": 2.6408958333333334,
+      "duration_seconds": 2.6408958333333334,
+      "full_scale_samples": 0,
+      "command": 29
+    },
+    {
+      "file": "sounds/fx/l6_cmd_14.wav",
+      "wav_sha256": "9eae6c9823f1ea1081fd147e78120a4d9484c3909d8e65b1b229c6c8637c17c5",
+      "peak_dbfs": -2.144199392957367,
+      "active_rms_dbfs": -3.8362515580230587,
+      "crest_db": 1.6920521650656917,
+      "active_seconds": 9.78975,
+      "duration_seconds": 9.78975,
+      "full_scale_samples": 0,
+      "command": 20
+    }
+  ]
+}

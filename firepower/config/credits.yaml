@@ -3,7 +3,15 @@
 credits:
   max_credits: 12
   free_play: false
-  service_credits_switch: s_service_coin
+  # No physical service-credit switch is defined. Do not substitute paid coins.
+  service_credits_switch: []
+  events:
+    - event: firepower_match_credit
+      credits: 1
+      type: match
+    - event: firepower_high_score_credit
+      credits: 1
+      type: high_score_to_date
   switches:
     - switch: s_coin_left
       type: money

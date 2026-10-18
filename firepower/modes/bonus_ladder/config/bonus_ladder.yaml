@@ -8,8 +8,8 @@
 # FIRE+POWER 10k/30k/50k/Special feature.
 #
 # Lamp encoding:
-#   l_bonus_20 = +20
-#   l_bonus_10 = +10
+#   l_bonus_20 selects the 20..29 decade
+#   l_bonus_10 selects the 10..19 decade
 #   l_bonus_1..l_bonus_9 = cumulative ones lamps
 #
 # Examples:
@@ -19,8 +19,6 @@
 #   19 = 10 + 1..9 lit
 #   20 = 20 lit
 #   29 = 20 + 1..9 lit
-#   30 = 20 + 10 lit
-#   39 = 20 + 10 + 1..9 lit
 
 mode:
   start_events: ball_started
@@ -29,8 +27,8 @@ mode:
 
 variable_player:
   # Shared event used by gameplay switches/modes that should advance end-of-ball bonus.
-  # Max Firepower end-of-ball bonus display is 39 units = 39,000 before multiplier.
-  advance_end_of_ball_bonus{current_player.bonus_value < 39}:
+  # Max Firepower end-of-ball bonus display is 29 units = 29,000 before multiplier.
+  advance_end_of_ball_bonus{current_player.bonus_value < 29}:
     bonus_value:
       int: 1
       action: add
@@ -88,12 +86,10 @@ light_player:
   update_bonus_lamps{current_player.bonus_value%10>=9}:
     l_bonus_9: on
 
-  # 10 lamp is lit for 10..19 and 30..39.
+  # 10 lamp is lit only for 10..19.
   update_bonus_lamps{current_player.bonus_value>=10 and current_player.bonus_value<20}:
     l_bonus_10: on
-  update_bonus_lamps{current_player.bonus_value>=30}:
-    l_bonus_10: on
 
-  # 20 lamp is lit for 20..39.
+  # 20 lamp is lit for 20..29.
   update_bonus_lamps{current_player.bonus_value>=20}:
     l_bonus_20: on

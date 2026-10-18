@@ -1,0 +1,4 @@
+#!/bin/sh
+# Headless display with real cabinet audio. Plain --headless selects Dummy audio.
+set -eu
+exec "${GODOT_BIN:-godot}" --display-driver headless --audio-driver PulseAudio "$@"

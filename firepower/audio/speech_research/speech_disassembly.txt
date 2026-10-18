@@ -1,0 +1,282 @@
+DDF1: CE DF 4C ldx   #DF4C
+DDF4: 20 7E    bra   DE74
+DDF6: 97 13    sta   13
+DDF8: 97 00    sta   00
+DDFA: 84 1F    anda  #1F
+DDFC: CE DF 5A ldx   #DF5A
+DDFF: C6 1F    ldb   #1F
+DE01: 11       cba   
+DE02: 27 66    beq   DE6A
+DE04: 5A       decb  
+DE05: 11       cba   
+DE06: 27 62    beq   DE6A
+DE08: CE DF 34 ldx   #DF34
+DE0B: C6 1A    ldb   #1A
+DE0D: 11       cba   
+DE0E: 27 5A    beq   DE6A
+DE10: CE DF 24 ldx   #DF24
+DE13: C6 0F    ldb   #0F
+DE15: 11       cba   
+DE16: 27 52    beq   DE6A
+DE18: CE DF 2E ldx   #DF2E
+DE1B: C6 0D    ldb   #0D
+DE1D: 11       cba   
+DE1E: 27 4A    beq   DE6A
+DE20: CE DF 28 ldx   #DF28
+DE23: 5A       decb  
+DE24: 11       cba   
+DE25: 27 43    beq   DE6A
+DE27: CE DE FC ldx   #DEFC
+DE2A: 5F       clrb  
+DE2B: 81 0E    cmpa  #0E
+DE2D: 27 3B    beq   DE6A
+DE2F: CE DF 3A ldx   #DF3A
+DE32: 81 08    cmpa  #08
+DE34: 27 34    beq   DE6A
+DE36: CE DF 1A ldx   #DF1A
+DE39: 5C       incb  
+DE3A: 81 07    cmpa  #07
+DE3C: 27 2C    beq   DE6A
+DE3E: C6 14    ldb   #14
+DE40: 81 18    cmpa  #18
+DE42: 26 13    bne   DE57
+DE44: CE DF 04 ldx   #DF04
+DE47: 96 02    lda   02
+DE49: 27 24    beq   DE6F
+DE4B: CE DF 0E ldx   #DF0E
+DE4E: 81 01    cmpa  #01
+DE50: 27 1D    beq   DE6F
+DE52: CE DF 14 ldx   #DF14
+DE55: 20 13    bra   DE6A
+DE57: C6 1B    ldb   #1B
+DE59: 11       cba   
+DE5A: 26 20    bne   DE7C
+DE5C: 0E       cli   
+DE5D: 96 09    lda   09
+DE5F: 84 0F    anda  #0F
+DE61: 48       asla  
+DE62: FE FF F6 ldx   FFF6
+DE65: BD FF F3 jsr   FFF3
+DE68: EE 00    ldx   00,X
+DE6A: 7F 00 02 clr   0002
+DE6D: 20 03    bra   DE72
+DE6F: 7C 00 02 inc   0002
+DE72: D7 03    stb   03
+DE74: DF 18    stx   18
+DE76: DE 18    ldx   18
+DE78: EE 00    ldx   00,X
+DE7A: 26 10    bne   DE8C
+DE7C: 96 00    lda   00
+DE7E: 7D 00 13 tst   0013
+DE81: 26 04    bne   DE87
+DE83: 84 E0    anda  #E0
+DE85: 9B 03    adda  03
+DE87: F6 04 02 ldb   0402
+DE8A: 0E       cli   
+DE8B: 39       rts   
+DE8C: DF 14    stx   14
+DE8E: 96 14    lda   14
+DE90: 2A 12    bpl   DEA4
+DE92: DE 18    ldx   18
+DE94: EE 02    ldx   02,X
+DE96: DF 16    stx   16
+DE98: DE 18    ldx   18
+DE9A: 08       inx   
+DE9B: 08       inx   
+DE9C: 08       inx   
+DE9D: 08       inx   
+DE9E: DF 18    stx   18
+DEA0: 8D 0D    bsr   DEAF
+DEA2: 20 D2    bra   DE76
+DEA4: 8D 50    bsr   DEF6
+DEA6: 09       dex   
+DEA7: 26 FB    bne   DEA4
+DEA9: DE 18    ldx   18
+DEAB: 08       inx   
+DEAC: 08       inx   
+DEAD: 20 C5    bra   DE74
+DEAF: DE 14    ldx   14
+DEB1: A6 00    lda   00,X
+DEB3: 81 AA    cmpa  #AA
+DEB5: 26 20    bne   DED7
+DEB7: 7F 00 13 clr   0013
+DEBA: 97 01    sta   01
+DEBC: 08       inx   
+DEBD: C6 08    ldb   #08
+DEBF: 86 3F    lda   #3F
+DEC1: B7 04 03 sta   0403
+DEC4: 84 F7    anda  #F7
+DEC6: B7 04 03 sta   0403
+DEC9: 5A       decb  
+DECA: 26 0C    bne   DED8
+DECC: C6 08    ldb   #08
+DECE: A6 00    lda   00,X
+DED0: 97 01    sta   01
+DED2: 08       inx   
+DED3: 9C 16    cmpx  16
+DED5: 26 08    bne   DEDF
+DED7: 39       rts   
+DED8: 6D 00    tst   00,X
+DEDA: 6D 00    tst   00,X
+DEDC: 6D 00    tst   00,X
+DEDE: 01       nop   
+DEDF: 08       inx   
+DEE0: 09       dex   
+DEE1: 01       nop   
+DEE2: 01       nop   
+DEE3: 79 00 01 rol   0001
+DEE6: 24 07    bcc   DEEF
+DEE8: 86 3C    lda   #3C
+DEEA: B7 04 01 sta   0401
+DEED: 20 D0    bra   DEBF
+DEEF: 86 34    lda   #34
+DEF1: B7 04 01 sta   0401
+DEF4: 20 C9    bra   DEBF
+DEF6: 86 94    lda   #94
+DEF8: 4A       deca  
+DEF9: 26 FD    bne   DEF8
+DEFB: 39       rts   
+DEFC: 00       data
+DEFD: 40       nega  
+DEFE: C4 40    andb  #40
+DF00: CD       data
+DF01: DF 00    stx   00
+DF03: 00       data
+DF04: B0 00 B3 suba  00B3
+DF07: CF B7 A0 stx   #B7A0
+DF0A: BB EF 00 adda  EF00
+DF0D: 00       data
+DF0E: BB F0 BF adda  F0BF
+DF11: FF 00 00 stx   0000
+DF14: C0 00    subb  #00
+DF16: C4 3F    andb  #3F
+DF18: 00       data
+DF19: 00       data
+DF1A: D8 20    eorb  20
+DF1C: DD       data
+DF1D: BF C8 50 sts   C850
+DF20: CD       data
+DF21: DF 00    stx   00
+DF23: 00       data
+DF24: B0 00 B7 suba  00B7
+DF27: 9F CD    sts   CD
+DF29: E0 D8    subb  D8,X
+DF2B: 1F       data
+DF2C: 00       data
+DF2D: 00       data
+DF2E: B0 00 B3 suba  00B3
+DF31: CF 00 00 stx   #0000
+DF34: B3       data
+DF35: D0 B7    subb  B7
+DF37: 9F 00    sts   00
+DF39: 00       data
+DF3A: D8 20    eorb  20
+DF3C: DC       data
+DF3D: 1F       data
+DF3E: B7 A0 BB sta   A0BB
+DF41: EF B7    stx   B7,X
+DF43: A0 BB    suba  BB,X
+DF45: EF CD    stx   CD,X
+DF47: E0 D2    subb  D2,X
+DF49: 8F 00 00 sts   #0000
+DF4C: B0 00 DD suba  00DD
+DF4F: BF 00 00 sts   0000
+DF52: D8 20    eorb  20
+DF54: DC       data
+DF55: 1F       data
+DF56: C8 50    eorb  #50
+DF58: CD       data
+DF59: DF B0    stx   B0
+DF5B: 00       data
+DF5C: B7 9F 00 sta   9F00
+DF5F: 00       data
+DF60: C4 40    andb  #40
+DF62: CD       data
+DF63: DF D8    stx   D8
+DF65: 20 DC    bra   DF43
+DF67: 1F       data
+DF68: 00       data
+DF69: 00       data
+DF6A: CD       data
+DF6B: E0 D2    subb  D2,X
+DF6D: 8F BB F0 sts   #BBF0
+DF70: BF FF B7 sts   FFB7
+DF73: A0 BB    suba  BB,X
+DF75: EF C0    stx   C0,X
+DF77: 00       data
+DF78: C4 3F    andb  #3F
+DF7A: D2 90    sbcb  90
+DF7C: D8 1F    eorb  1F
+DF7E: 00       data
+DF7F: 00       data
+DF80: D8 20    eorb  20
+DF82: DD       data
+DF83: BF C4 40 sts   C440
+DF86: C8 4F    eorb  #4F
+DF88: 00       data
+DF89: 00       data
+DF8A: C4 40    andb  #40
+DF8C: C8 4F    eorb  #4F
+DF8E: B0 00 B3 suba  00B3
+DF91: CF C8 50 stx   #C850
+DF94: CD       data
+DF95: DF D8    stx   D8
+DF97: 20 DC    bra   DF75
+DF99: 1F       data
+DF9A: 00       data
+DF9B: 00       data
+DF9C: CD       data
+DF9D: E0 D2    subb  D2,X
+DF9F: 8F C8 50 sts   #C850
+DFA2: CD       data
+DFA3: DF D8    stx   D8
+DFA5: 20 DC    bra   DF83
+DFA7: 1F       data
+DFA8: 00       data
+DFA9: 00       data
+DFAA: C4 40    andb  #40
+DFAC: C8 4F    eorb  #4F
+DFAE: B3       data
+DFAF: D0 BB    subb  BB
+DFB1: EF 00    stx   00,X
+DFB3: 00       data
+DFB4: D8 20    eorb  20
+DFB6: DC       data
+DFB7: 1F       data
+DFB8: C8 50    eorb  #50
+DFBA: CD       data
+DFBB: DF C4    stx   C4
+DFBD: 40       nega  
+DFBE: C8 4F    eorb  #4F
+DFC0: CD       data
+DFC1: E0 D2    subb  D2,X
+DFC3: 8F 00 00 sts   #0000
+DFC6: D8 20    eorb  20
+DFC8: DC       data
+DFC9: 1F       data
+DFCA: B7 A0 BB sta   A0BB
+DFCD: EF 00    stx   00,X
+DFCF: 40       nega  
+DFD0: B0 00 B7 suba  00B7
+DFD3: 9F C8    sts   C8
+DFD5: 50       negb  
+DFD6: CD       data
+DFD7: DF 00    stx   00
+DFD9: 00       data
+DFDA: DF 52    stx   52
+DFDC: DF 60    stx   60
+DFDE: DF 6A    stx   6A
+DFE0: DF 80    stx   80
+DFE2: DF 8A    stx   8A
+DFE4: DF 9C    stx   9C
+DFE6: DF AA    stx   AA
+DFE8: DF B4    stx   B4
+DFEA: DF C6    stx   C6
+DFEC: DF D0    stx   D0
+DFEE: DF D0    stx   D0
+DFF0: DF 8E    stx   8E
+DFF2: DF 8A    stx   8A
+DFF4: DF B4    stx   B4
+DFF6: DF 8E    stx   8E
+DFF8: DF 80    stx   80
+DFFA: 7E DD F1 jmp   DDF1

@@ -1,0 +1,257 @@
+{
+  "baseline": true,
+  "buses": {
+    "Master": {
+      "effects": [],
+      "gain_db": -0.0438385009765625,
+      "send": ""
+    },
+    "effects": {
+      "effects": [],
+      "gain_db": 0.0,
+      "send": "Master"
+    },
+    "music": {
+      "effects": [],
+      "gain_db": 0.0,
+      "send": "Master"
+    },
+    "voice": {
+      "effects": [],
+      "gain_db": -0.0438385009765625,
+      "send": "Master"
+    }
+  },
+  "driver": "Dummy",
+  "failures": 0,
+  "method": "Actual AudioEffectCapture stereo float32; voice tap after DSP before voice fader; Master tap before Master fader, metrics include that fader mathematically.",
+  "mix_rate": 44100.0,
+  "renders": [
+    {
+      "bus": "voice",
+      "category": "speech",
+      "duration": 0.662,
+      "label": "FIRE",
+      "pitch_scale": 1.0,
+      "player_gain_db": 1.0,
+      "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+      "raw": 13,
+      "stream_path": "res://sounds/voice/l6/phrase_c2ff8e7c88a0.wav",
+      "taps": {
+        "master": {
+          "active_frames": 29988,
+          "active_rms_dbfs": -15.6596929134999,
+          "captured_frames": 40960,
+          "peak_dbfs": -4.62577207273542
+        },
+        "voice": {
+          "active_frames": 29988,
+          "active_rms_dbfs": -15.5720157638987,
+          "captured_frames": 40960,
+          "peak_dbfs": -4.53809518282884
+        }
+      }
+    },
+    {
+      "bus": "voice",
+      "category": "speech",
+      "duration": 0.661958333333333,
+      "label": "POWER",
+      "pitch_scale": 1.0,
+      "player_gain_db": 1.0,
+      "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+      "raw": 26,
+      "stream_path": "res://sounds/voice/l6/phrase_809582e3eab7.wav",
+      "taps": {
+        "master": {
+          "active_frames": 29988,
+          "active_rms_dbfs": -15.4526541822188,
+          "captured_frames": 40960,
+          "peak_dbfs": -2.39571628614628
+        },
+        "voice": {
+          "active_frames": 29988,
+          "active_rms_dbfs": -15.3649770333105,
+          "captured_frames": 40960,
+          "peak_dbfs": -2.30803872789303
+        }
+      }
+    },
+    {
+      "bus": "voice",
+      "category": "speech",
+      "duration": 1.41085416666667,
+      "label": "FIRE_ONE",
+      "pitch_scale": 1.0,
+      "player_gain_db": 1.0,
+      "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+      "raw": 24,
+      "stream_path": "res://sounds/voice/l6/phrase_f4be220a378a.wav",
+      "taps": {
+        "master": {
+          "active_frames": 62622,
+          "active_rms_dbfs": -15.4495047421289,
+          "captured_frames": 73728,
+          "peak_dbfs": -1.46040716745041
+        },
+        "voice": {
+          "active_frames": 62622,
+          "active_rms_dbfs": -15.3618275926264,
+          "captured_frames": 73728,
+          "peak_dbfs": -1.37272965640557
+        }
+      }
+    },
+    {
+      "bus": "voice",
+      "category": "speech",
+      "duration": 0.705541666666667,
+      "label": "TWO",
+      "pitch_scale": 1.0,
+      "player_gain_db": 1.0,
+      "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+      "raw": 24,
+      "stream_path": "res://sounds/voice/l6/phrase_ab9ce987252b.wav",
+      "taps": {
+        "master": {
+          "active_frames": 31752,
+          "active_rms_dbfs": -15.6883695720867,
+          "captured_frames": 45056,
+          "peak_dbfs": -2.86618138212474
+        },
+        "voice": {
+          "active_frames": 31752,
+          "active_rms_dbfs": -15.6006924268685,
+          "captured_frames": 45056,
+          "peak_dbfs": -2.77850387211473
+        }
+      }
+    },
+    {
+      "bus": "voice",
+      "category": "speech",
+      "duration": 0.738166666666667,
+      "label": "THREE",
+      "pitch_scale": 1.0,
+      "player_gain_db": 1.0,
+      "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+      "raw": 24,
+      "stream_path": "res://sounds/voice/l6/phrase_5e8a7b3d8d1a.wav",
+      "taps": {
+        "master": {
+          "active_frames": 32634,
+          "active_rms_dbfs": -15.3668859009804,
+          "captured_frames": 45056,
+          "peak_dbfs": -3.56594240094058
+        },
+        "voice": {
+          "active_frames": 32634,
+          "active_rms_dbfs": -15.2792087522213,
+          "captured_frames": 45056,
+          "peak_dbfs": -3.47826496382989
+        }
+      }
+    },
+    {
+      "bus": "voice",
+      "category": "speech",
+      "duration": 1.7816875,
+      "label": "MISSION_ACCOMPLISHED",
+      "pitch_scale": 1.0,
+      "player_gain_db": 1.0,
+      "player_path": "/root/MPF/@Node@2/OriginalSpeech",
+      "raw": 12,
+      "stream_path": "res://sounds/voice/l6/phrase_790cffbd5630.wav",
+      "taps": {
+        "master": {
+          "active_frames": 79380,
+          "active_rms_dbfs": -19.6711311493244,
+          "captured_frames": 90112,
+          "peak_dbfs": -3.18045733184763
+        },
+        "voice": {
+          "active_frames": 79380,
+          "active_rms_dbfs": -19.5834539993518,
+          "captured_frames": 90112,
+          "peak_dbfs": -3.09278017168051
+        }
+      }
+    },
+    {
+      "bus": "effects",
+      "category": "electronic",
+      "duration": 0.1686875,
+      "label": "SCORING",
+      "pitch_scale": 1.0,
+      "player_gain_db": -3.0,
+      "player_path": "/root/MPF/@Node@2/OriginalElectronicAudio",
+      "raw": 5,
+      "stream_path": "res://sounds/fx/l6_cmd_05.wav",
+      "taps": {
+        "master": {
+          "active_frames": 7056,
+          "active_rms_dbfs": -6.32616507467125,
+          "captured_frames": 16384,
+          "peak_dbfs": -4.05842797934184
+        },
+        "voice": {
+          "active_frames": 0,
+          "active_rms_dbfs": -240.0,
+          "captured_frames": 16384,
+          "peak_dbfs": -240.0
+        }
+      }
+    },
+    {
+      "bus": "effects",
+      "category": "electronic",
+      "duration": 1.08520833333333,
+      "label": "JET",
+      "pitch_scale": 1.0,
+      "player_gain_db": -3.0,
+      "player_path": "/root/MPF/@Node@2/OriginalElectronicAudio",
+      "raw": 10,
+      "stream_path": "res://sounds/fx/l6_cmd_0a.wav",
+      "taps": {
+        "master": {
+          "active_frames": 47628,
+          "active_rms_dbfs": -6.42225996181042,
+          "captured_frames": 57856,
+          "peak_dbfs": -3.58323827926364
+        },
+        "voice": {
+          "active_frames": 0,
+          "active_rms_dbfs": -240.0,
+          "captured_frames": 57856,
+          "peak_dbfs": -240.0
+        }
+      }
+    },
+    {
+      "bus": "effects",
+      "category": "electronic",
+      "duration": 9.78975,
+      "label": "LAUNCH",
+      "pitch_scale": 1.0,
+      "player_gain_db": -3.0,
+      "player_path": "/root/MPF/@Node@2/OriginalElectronicAudio",
+      "raw": 20,
+      "stream_path": "res://sounds/fx/l6_cmd_14.wav",
+      "taps": {
+        "master": {
+          "active_frames": 432180,
+          "active_rms_dbfs": -6.88738375273822,
+          "captured_frames": 442368,
+          "peak_dbfs": -4.04201712958522
+        },
+        "voice": {
+          "active_frames": 0,
+          "active_rms_dbfs": -240.0,
+          "captured_frames": 442368,
+          "peak_dbfs": -240.0
+        }
+      }
+    }
+  ],
+  "speech_players": 1
+}

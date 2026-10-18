@@ -1,0 +1,300 @@
+{
+  "attack_envelope": [
+    {
+      "ms": 0.002,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 1.696,
+      "volume_db": -5.22222232818604
+    },
+    {
+      "ms": 3.116,
+      "volume_db": -7.44444465637207
+    },
+    {
+      "ms": 9.953,
+      "volume_db": -8.0
+    },
+    {
+      "ms": 17.066,
+      "volume_db": -8.0
+    },
+    {
+      "ms": 23.692,
+      "volume_db": -8.0
+    },
+    {
+      "ms": 30.558,
+      "volume_db": -8.0
+    },
+    {
+      "ms": 37.43,
+      "volume_db": -8.0
+    },
+    {
+      "ms": 44.346,
+      "volume_db": -8.0
+    },
+    {
+      "ms": 51.195,
+      "volume_db": -8.0
+    },
+    {
+      "ms": 58.513,
+      "volume_db": -8.0
+    },
+    {
+      "ms": 64.952,
+      "volume_db": -8.0
+    }
+  ],
+  "failures": 0,
+  "mix_rate": 44100.0,
+  "release_envelope": [
+    {
+      "ms": 0.002,
+      "volume_db": -8.0
+    },
+    {
+      "ms": 6.696,
+      "volume_db": -7.77013349533081
+    },
+    {
+      "ms": 13.655,
+      "volume_db": -7.54026651382446
+    },
+    {
+      "ms": 20.577,
+      "volume_db": -7.31040000915527
+    },
+    {
+      "ms": 27.378,
+      "volume_db": -7.08053350448608
+    },
+    {
+      "ms": 34.299,
+      "volume_db": -6.85066652297974
+    },
+    {
+      "ms": 41.152,
+      "volume_db": -6.62080001831055
+    },
+    {
+      "ms": 48.12,
+      "volume_db": -6.39093351364136
+    },
+    {
+      "ms": 54.999,
+      "volume_db": -6.16106700897217
+    },
+    {
+      "ms": 61.964,
+      "volume_db": -5.93120002746582
+    },
+    {
+      "ms": 68.877,
+      "volume_db": -5.70133352279663
+    },
+    {
+      "ms": 75.667,
+      "volume_db": -5.47146654129028
+    },
+    {
+      "ms": 82.653,
+      "volume_db": -5.24160003662109
+    },
+    {
+      "ms": 89.82,
+      "volume_db": -5.0117335319519
+    },
+    {
+      "ms": 96.536,
+      "volume_db": -4.78186702728271
+    },
+    {
+      "ms": 104.114,
+      "volume_db": -4.55200004577637
+    },
+    {
+      "ms": 110.963,
+      "volume_db": -4.32213354110718
+    },
+    {
+      "ms": 117.935,
+      "volume_db": -4.09226655960083
+    },
+    {
+      "ms": 123.985,
+      "volume_db": -3.86240029335022
+    },
+    {
+      "ms": 130.884,
+      "volume_db": -3.63253355026245
+    },
+    {
+      "ms": 137.751,
+      "volume_db": -3.4026665687561
+    },
+    {
+      "ms": 144.757,
+      "volume_db": -3.17280054092407
+    },
+    {
+      "ms": 151.612,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 158.434,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 165.24,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 172.183,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 179.049,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 186.309,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 193.023,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 200.006,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 206.758,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 213.6,
+      "volume_db": -3.0
+    },
+    {
+      "ms": 220.577,
+      "volume_db": -3.0
+    }
+  ],
+  "renders": [
+    {
+      "buses": {
+        "Master": {
+          "rms_dbfs_100_to_600ms": -4.07016063529251,
+          "sample_peak_dbfs": 3.17406702563649
+        },
+        "effects": {
+          "rms_dbfs_100_to_600ms": -6.64520870986674,
+          "sample_peak_dbfs": -3.99817833168769
+        },
+        "voice": {
+          "rms_dbfs_100_to_600ms": -7.65240129765926,
+          "sample_peak_dbfs": -1.29992012010989
+        }
+      },
+      "duck": false,
+      "raw": 24,
+      "master_layout": {
+        "integrated_lufs": -2.5,
+        "true_peak_dbfs": 3.7
+      },
+      "master_persisted_0.7": {
+        "integrated_lufs": -5.5,
+        "true_peak_dbfs": 0.7
+      }
+    },
+    {
+      "buses": {
+        "Master": {
+          "rms_dbfs_100_to_600ms": -6.17352585586164,
+          "sample_peak_dbfs": 1.45013062642485
+        },
+        "effects": {
+          "rms_dbfs_100_to_600ms": -11.6452086923511,
+          "sample_peak_dbfs": -4.49515275531865
+        },
+        "voice": {
+          "rms_dbfs_100_to_600ms": -7.65321625263291,
+          "sample_peak_dbfs": -1.299919518811
+        }
+      },
+      "duck": true,
+      "raw": 24,
+      "master_layout": {
+        "integrated_lufs": -4.5,
+        "true_peak_dbfs": 1.8
+      },
+      "master_persisted_0.7": {
+        "integrated_lufs": -7.6,
+        "true_peak_dbfs": -1.2
+      }
+    },
+    {
+      "buses": {
+        "Master": {
+          "rms_dbfs_100_to_600ms": -4.98937997883586,
+          "sample_peak_dbfs": 2.99638264006872
+        },
+        "effects": {
+          "rms_dbfs_100_to_600ms": -6.64520870986674,
+          "sample_peak_dbfs": -3.99817833168769
+        },
+        "voice": {
+          "rms_dbfs_100_to_600ms": -9.84583237375664,
+          "sample_peak_dbfs": -1.29991891751215
+        }
+      },
+      "duck": false,
+      "raw": 12,
+      "master_layout": {
+        "integrated_lufs": -3.3,
+        "true_peak_dbfs": 3.2
+      },
+      "master_persisted_0.7": {
+        "integrated_lufs": -6.3,
+        "true_peak_dbfs": 0.1
+      }
+    },
+    {
+      "buses": {
+        "Master": {
+          "rms_dbfs_100_to_600ms": -7.69596878834612,
+          "sample_peak_dbfs": 1.35571911704188
+        },
+        "effects": {
+          "rms_dbfs_100_to_600ms": -11.6452086923511,
+          "sample_peak_dbfs": -4.48044395993483
+        },
+        "voice": {
+          "rms_dbfs_100_to_600ms": -9.84201612918813,
+          "sample_peak_dbfs": -1.299919518811
+        }
+      },
+      "duck": true,
+      "raw": 12,
+      "master_layout": {
+        "integrated_lufs": -5.5,
+        "true_peak_dbfs": 1.5
+      },
+      "master_persisted_0.7": {
+        "integrated_lufs": -8.6,
+        "true_peak_dbfs": -1.6
+      }
+    }
+  ],
+  "master_gains_db": {
+    "layout": -0.0438385,
+    "persisted_0.7": -3.0980391997148637
+  },
+  "attack_envelope_first_observed_target_ms": 9.953,
+  "release_envelope_first_observed_target_ms": 151.612
+}

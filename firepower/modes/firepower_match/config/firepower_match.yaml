@@ -1,0 +1,10 @@
+#config_version=6
+mode:
+  code: firepower_match.FirepowerMatch
+  game_mode: false
+  start_events: reset_complete
+  stop_events: shutdown
+  priority: 400
+mode_settings:
+  # Original Function26: 00 ON, 01 OFF.
+  function_26: 0

@@ -2,27 +2,5 @@
 
 sound_player:
   mode_attract_started:
-    fire_power:
-      bus: voice
     FP11:
       bus: effects
-
-  s_start_button_active:
-    fire_power:
-      bus: effects
-
-  play_fire_sound:
-    fire:
-      bus: voice
-
-  play_one_sound:
-    one:
-      bus: voice
-
-  play_two_sound:
-    two:
-      bus: voice
-
-  play_three_sound:
-    three:
-      bus: voice

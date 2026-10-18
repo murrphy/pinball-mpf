@@ -65,11 +65,6 @@ variable_player:
 
 show_player: 
   ball_started: base_light_show
-  ball_started{player==1}: player_1_up_show
-  ball_started{player==2}: player_2_up_show
-  ball_started{player==3}: player_3_up_show
-  ball_started{player==4}: player_4_up_show
-  ball_ended: all_player_indicators_off_show
   bonus_add_updated:
     bonus_lamp_progress:
       show_tokens:
@@ -161,48 +156,9 @@ shots:
     show_tokens:
       light: l_right_target_3
 
-# Gameplay switch audio belongs here so handlers unload when the game ends.
+# Gameplay audio is owned by original_audio; see audio/FIREPOWER_SOUND_MAP.md.
 sound_player:
+  # Unresolved historical presentation; retain its existing semantic binding.
   fire_lane_group_hit_complete:
     FP15:
-      bus: effects
-
-  s_lane_f_active:
-    FP13:
-      bus: effects
-
-  s_lane_i_active:
-    FP13:
-      bus: effects
-
-  s_lane_r_active:
-    FP13:
-      bus: effects
-
-  s_lane_e_active:
-    FP13:
-      bus: effects
-
-  sw_pop_bumpers_active:
-    FP13:
-      bus: effects
-
-  s_spinner_active:
-    FP09:
-      bus: effects
-
-  s_plunger_inactive:
-    FP12:
-      bus: effects
-
-  sw_side_bumper_active:
-    side_bumpers:
-      bus: effects
-
-  sw_fire_arrow_active:
-    fire_targets:
-      bus: effects
-
-  sw_power_arrow_active:
-    power_target:
       bus: effects

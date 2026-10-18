@@ -1,0 +1,6 @@
+#config_version=6
+mode:
+  code: original_audio.OriginalAudio
+  start_events: ball_starting
+  stop_events: ball_will_end, game_ended, tilt, slam_tilt, service_mode_entered
+  priority: 150

@@ -1,5 +1,9 @@
 # Firepower FP03 background
 
+The dedicated L-6 speech restoration, trigger/command matrices, timing, asset
+provenance, unresolved integrations and cabinet checklist are in
+[FIREPOWER_SPEECH_MAP.md](FIREPOWER_SPEECH_MAP.md).
+
 MPF owns the ROM-derived eligible-time counter, accepted reference and BG1
 stage. GMC renders one looping instance of `sounds/fx/FP03.wav` on the music
 bus. See [ROM_INVESTIGATION.md](ROM_INVESTIGATION.md) for the reused evidence and
@@ -146,3 +150,35 @@ same player and playback object each frame, requires zero `finished` signals and
 continuous `playing`, verifies pitch changes just before/after a wrap, and checks
 -3 dB volume, unchanged bus volumes, one player and cleanup. Cabinet listening,
 reported above, establishes the acoustic result separately from these checks.
+
+Speech cabinet tuning uses **`SPEECH_BALANCE_DB = 4.0`** in `speech_player.gd`.
+The voice-only chain is a 90 Hz low cut, broad 2 kHz presence EQ, compressor
+with fixed +14 dB makeup, balance gain, then predictive limiter. A/B presets
+are 0, +3 and +6 dB; these are nominal gains, and the strongest preset is
+limiter-bound rather than 6 dB louder. Retain the natural +4 dB cabinet setting.
+See [SPEECH_BALANCE.md](SPEECH_BALANCE.md) for measured spectra, gain sweeps,
+headroom, unchanged speech assets and physical verification requirements.
+
+Speech temporarily ducks only `OriginalElectronicAudio` by 5 dB, with a 15 ms
+attack and 150 ms release. Tune `SPEECH_EFFECTS_DUCK_DB`,
+`SPEECH_DUCK_ATTACK_MS` and `SPEECH_DUCK_RELEASE_MS` in `electronic_player.gd`.
+Whole ROM phrases and queued continuations retain duck ownership. No effects
+bus, FP03, FA64, Master or mechanical audio gain changes. Cancellation, reset,
+disconnect and speech teardown restore the exact -3 dB foreground gain.
+See the latest ducking section in [SPEECH_BALANCE.md](SPEECH_BALANCE.md).
+
+The original end-of-game [Match feature](../MATCH.md) uses the same monophonic
+electronic player for proven token9C/raw1C VARI3. Match has no speech; existing
+final game-over speech follows it. The physical six-cell FAST credits/ball
+output and native credit ledger are documented with the ROM timing and tests.
+
+## High Score to Date
+
+The original L-6 post-Match HSTD hook now requests existing raw0F speech,
+FIRE POWER MISSION ACCOMPLISHED, followed by Sound ROM3 APPEAR electronics.
+The new lossless `l6_cmd_0f.wav` executes F898/F8A2 with declared noise seed3C00.
+Whole-phrase completion gates the continuation on the existing electronic player.
+See [HIGH_SCORE_TO_DATE.md](../HIGH_SCORE_TO_DATE.md) for ROM evidence, original
+comparison quirks, persistence, credits, physical displays and fidelity limits.
+Run `godot --headless --path . --script res://gmc_tests/test_high_score_audio.gd`
+for the dedicated speech/continuation/import/cancellation check.

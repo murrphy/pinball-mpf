@@ -213,7 +213,7 @@ Bonus lamps represent the current bonus value in decades and units:
 
 The 10K and 20K lamps are decade indicators. They must not be treated as additive indicators that permit values 30–39.
 
-Maximum collectible base bonus is 29 units, or 29,000 points before multiplier. The current `bonus_ladder` implementation incorrectly permits values through 39; this is a known implementation defect.
+Maximum collectible base bonus is 29 units, or 29,000 points before multiplier. The former `bonus_ladder` implementation incorrectly permitted values through 39; that defect is now corrected.
 
 At end of ball, the bonus should count down visibly and audibly.
 
@@ -290,7 +290,7 @@ These defects can leave physical lock balls retained while MPF requests balls fr
 
 ## End-of-ball bonus range
 
-The current `bonus_ladder` increments `bonus_value` while it is below 39 and lights the 10K and 20K lamps together for values 30–39. Intended range is 0–29, with a maximum base collection of 29,000 points before multiplier. The current 30–39 behavior is a defect.
+The `bonus_ladder` now caps earned `bonus_value` at 29 and lights the 10K lamp only for 10–19. The former 30–39 defect exceeded FA64 audio’s finite progression at 5X. See `audio/BONUS_LONG_RUN.md` for the diagnosis and regression coverage.
 
 ## Service-credit switch
 

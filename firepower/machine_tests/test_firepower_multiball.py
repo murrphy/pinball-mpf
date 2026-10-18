@@ -159,3 +159,11 @@ class FirepowerMultiballTest(MpfMachineTestCase):
         self.assertNumBallsKnown(3)
         self.assertEventNotCalled("ball_search_started")
         self.assertEventNotCalled("unexpected_ball_on_playfield")
+
+
+def plunge_without_scoring(test):
+    """Confirm a served ball's physical transfer before simulating its drain."""
+    if test.machine.switch_controller.is_active(test.machine.switches['s_plunger']):
+        test.release_switch_and_run('s_plunger', 0.1)
+    test.machine.playfield.mark_playfield_active_from_device_action('bd_plunger_lane')
+    test.advance_time_and_run(1)

@@ -1,0 +1,296 @@
+[
+  {
+    "command": "00_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "01_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "02_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "03_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "04_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "05_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "06_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "07_0",
+    "cycles": 1739208,
+    "edges": 45760,
+    "passed": true
+  },
+  {
+    "command": "08_0",
+    "cycles": 2690271,
+    "edges": 70784,
+    "passed": true
+  },
+  {
+    "command": "09_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "0a_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "0b_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "0c_0",
+    "cycles": 1594392,
+    "edges": 41952,
+    "passed": true
+  },
+  {
+    "command": "0d_0",
+    "cycles": 592397,
+    "edges": 15584,
+    "passed": true
+  },
+  {
+    "command": "0e_0",
+    "cycles": 1555474,
+    "edges": 39392,
+    "passed": true
+  },
+  {
+    "command": "0f_0",
+    "cycles": 2780051,
+    "edges": 73152,
+    "passed": true
+  },
+  {
+    "command": "10_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "11_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "12_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "13_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "14_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "15_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "16_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "17_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "18_0",
+    "cycles": 1262550,
+    "edges": 33216,
+    "passed": true
+  },
+  {
+    "command": "18_1",
+    "cycles": 631374,
+    "edges": 16608,
+    "passed": true
+  },
+  {
+    "command": "18_2",
+    "cycles": 660569,
+    "edges": 17376,
+    "passed": true
+  },
+  {
+    "command": "19_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "1a_0",
+    "cycles": 592375,
+    "edges": 15584,
+    "passed": true
+  },
+  {
+    "command": "1b_0",
+    "cycles": 2672039,
+    "edges": 70304,
+    "passed": true
+  },
+  {
+    "command": "1b_1",
+    "cycles": 2118678,
+    "edges": 55744,
+    "passed": true
+  },
+  {
+    "command": "1b_2",
+    "cycles": 3555017,
+    "edges": 93536,
+    "passed": true
+  },
+  {
+    "command": "1b_3",
+    "cycles": 1505814,
+    "edges": 39616,
+    "passed": true
+  },
+  {
+    "command": "1b_4",
+    "cycles": 2709816,
+    "edges": 71296,
+    "passed": true
+  },
+  {
+    "command": "1b_5",
+    "cycles": 2214823,
+    "edges": 58272,
+    "passed": true
+  },
+  {
+    "command": "1b_6",
+    "cycles": 1894934,
+    "edges": 49856,
+    "passed": true
+  },
+  {
+    "command": "1b_7",
+    "cycles": 2846008,
+    "edges": 74880,
+    "passed": true
+  },
+  {
+    "command": "1b_8",
+    "cycles": 3400487,
+    "edges": 87936,
+    "passed": true
+  },
+  {
+    "command": "1b_9",
+    "cycles": 2050582,
+    "edges": 53952,
+    "passed": true
+  },
+  {
+    "command": "1b_10",
+    "cycles": 2050582,
+    "edges": 53952,
+    "passed": true
+  },
+  {
+    "command": "1b_11",
+    "cycles": 2078631,
+    "edges": 54688,
+    "passed": true
+  },
+  {
+    "command": "1b_12",
+    "cycles": 2709816,
+    "edges": 71296,
+    "passed": true
+  },
+  {
+    "command": "1b_13",
+    "cycles": 2846008,
+    "edges": 74880,
+    "passed": true
+  },
+  {
+    "command": "1b_14",
+    "cycles": 2078631,
+    "edges": 54688,
+    "passed": true
+  },
+  {
+    "command": "1b_15",
+    "cycles": 1505814,
+    "edges": 39616,
+    "passed": true
+  },
+  {
+    "command": "1c_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "1d_0",
+    "cycles": 144,
+    "edges": 0,
+    "passed": true
+  },
+  {
+    "command": "1e_0",
+    "cycles": 1185772,
+    "edges": 31200,
+    "passed": true
+  },
+  {
+    "command": "1f_0",
+    "cycles": 1185764,
+    "edges": 31200,
+    "passed": true
+  }
+]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://do5nolacwhyd4"
+
+[deps]
+
+files=["res://audio/bonus_research/fa64_full_range.period.translation", "res://audio/bonus_research/fa64_full_range.relative.translation", "res://audio/bonus_research/fa64_full_range.cycle.translation", "res://audio/bonus_research/fa64_full_range.pitch.translation", "res://audio/bonus_research/fa64_full_range.source.translation", "res://audio/bonus_research/fa64_full_range.effective.translation", "res://audio/bonus_research/fa64_full_range.rms.translation", "res://audio/bonus_research/fa64_full_range.next.translation", "res://audio/bonus_research/fa64_full_range.derived.translation", "res://audio/bonus_research/fa64_full_range.derived.translation", "res://audio/bonus_research/fa64_full_range.table.translation", "res://audio/bonus_research/fa64_full_range.cycles.translation", "res://audio/bonus_research/fa64_full_range.first.translation", "res://audio/bonus_research/fa64_full_range.evidence.translation"]
+
+source_file="res://audio/bonus_research/fa64_full_range.csv"
+dest_files=["res://audio/bonus_research/fa64_full_range.period.translation", "res://audio/bonus_research/fa64_full_range.relative.translation", "res://audio/bonus_research/fa64_full_range.cycle.translation", "res://audio/bonus_research/fa64_full_range.pitch.translation", "res://audio/bonus_research/fa64_full_range.source.translation", "res://audio/bonus_research/fa64_full_range.effective.translation", "res://audio/bonus_research/fa64_full_range.rms.translation", "res://audio/bonus_research/fa64_full_range.next.translation", "res://audio/bonus_research/fa64_full_range.derived.translation", "res://audio/bonus_research/fa64_full_range.derived.translation", "res://audio/bonus_research/fa64_full_range.table.translation", "res://audio/bonus_research/fa64_full_range.cycles.translation", "res://audio/bonus_research/fa64_full_range.first.translation", "res://audio/bonus_research/fa64_full_range.evidence.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
